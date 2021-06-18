@@ -1,0 +1,26 @@
+.navbar-form.search-form {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  .form-control {
+    width: 250px !important;
+  }
+
+  .btn {
+    position: static;
+    padding: 0 10px !important;
+  }
+
+}
+
+.top-search {
+  position: fixed;
+  right: 0;
+}
+
+.navbar.navbar-fixed-top {
+  .container-my {
+    width: 100vw;
+  }
+}
