@@ -24,3 +24,17 @@
     width: 100vw;
   }
 }
+
+.content-table {
+  th, td {
+    padding: 5px;
+  }
+  button {
+    background-color: transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+  }
+}
