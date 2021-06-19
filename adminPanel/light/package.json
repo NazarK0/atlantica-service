@@ -6,8 +6,7 @@
   "directories": {
     "doc": "doc"
   },
-  "scripts": {
-  },
+  "scripts": {},
   "keywords": [
     "HexaBit",
     "Version: 1.0.0"

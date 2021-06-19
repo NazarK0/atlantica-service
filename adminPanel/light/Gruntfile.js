@@ -14,7 +14,8 @@ module.exports = function(grunt) {
                     'assets/css/blog.css': 'assets/scss/pages/blog.scss', 				        /* 'Blog App SCSS to CSS' */
                     'assets/css/inbox.css': 'assets/scss/pages/inbox.scss', 				    /* 'inbox App SCSS to CSS' */
                     'assets/css/my_styles.css': 'assets/scss/myStyles/style.scss', 				    /* 'my styles to CSS' */
-				}]
+                    'assets/css/user_create.css': 'assets/scss/myStyles/userCreate.scss', 	
+                }],
             }
         },
         uglify: {
