@@ -227,13 +227,14 @@
                 </li>
                 <li class="breadcrumb-item active">Список запросов</li>
               </ul>
-              <a
-                href="quries-create.html"
+              <button
+                data-toggle="modal"
+                data-target="#query-create-modal"
                 class="btn btn-sm btn-primary"
-                title=""
+                title="Создать"
               >
                 Создать
-              </a>
+              </button>
             </div>
           </div>
         </div>
@@ -263,7 +264,7 @@
                         <td class="text-center">ФИО</td>
                         <td class="text-center">10.10.2021</td>
                         <td class="text-center"></td>
-                        <td class="text-center">Новый</td>
+                        <td class="text-center">КП</td>
                         <td class="text-center"></td>
                         <td class="text-center">
                           <a href="query-show.html">
@@ -284,11 +285,11 @@
                         </td>
                       </tr>
                       <tr>
-                        <td class="text-center">Запрос 1</td>
+                        <td class="text-center">Запрос 9</td>
                         <td class="text-center">ФИО</td>
                         <td class="text-center">10.10.2021</td>
                         <td class="text-center">ФИО</td>
-                        <td class="text-center">Новый</td>
+                        <td class="text-center">На стадии заключения договора</td>
                         <td class="text-center">ООО "Компания"</td>
                         <td class="text-center">
                           <a href="query-show.html">
@@ -307,11 +308,11 @@
                         </td>
                       </tr>
                       <tr>
-                        <td class="text-center">Запрос 1</td>
+                        <td class="text-center">Запрос 8</td>
                         <td class="text-center">ФИО</td>
                         <td class="text-center">10.10.2021</td>
                         <td class="text-center">ФИО</td>
-                        <td class="text-center">Новый</td>
+                        <td class="text-center">Договор подписан</td>
                         <td class="text-center">ООО "Компания"</td>
                         <td class="text-center">
                           <a href="query-show.html">
@@ -330,11 +331,11 @@
                         </td>
                       </tr>
                       <tr>
-                        <td class="text-center">Запрос 1</td>
+                        <td class="text-center">Запрос 7</td>
                         <td class="text-center">ФИО</td>
                         <td class="text-center">10.10.2021</td>
                         <td class="text-center">ФИО</td>
-                        <td class="text-center">Новый</td>
+                        <td class="text-center">Доставка</td>
                         <td class="text-center">ООО "Компания"</td>
                         <td class="text-center">
                           <a href="query-show.html">
@@ -353,11 +354,11 @@
                         </td>
                       </tr>
                       <tr>
-                        <td class="text-center">Запрос 1</td>
+                        <td class="text-center">Запрос 6</td>
                         <td class="text-center">ФИО</td>
                         <td class="text-center">10.10.2021</td>
                         <td class="text-center">ФИО</td>
-                        <td class="text-center">Новый</td>
+                        <td class="text-center">Оплата</td>
                         <td class="text-center">ООО "Компания"</td>
                         <td class="text-center">
                           <a href="query-show.html">
@@ -381,6 +382,93 @@
               </div>
             </div>
           </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Windows -->
+    <div
+      class="modal fade"
+      id="query-create-modal"
+      role="dialog"
+      aria-modal="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">
+              Создать запрос
+            </h5>
+          </div>
+          <div class="modal-body">
+            <form action="" method="post" class="query-create-form">
+              <div class="form-group">
+                <div class="input-group">
+                  <label>Дата</label>
+                  <input type="date" name="" id="" />
+                </div>
+                <div class="form-group-flex-row">
+                  <div class="form-group-flex-column">
+                    <div class="input-group">
+                      <label for="">Наименование запроса</label>
+                      <input type="text" class="form-control" />
+                    </div>
+                    <div class="input-group">
+                      <label for="">Наименование компании</label>
+                      <select
+                        value=""
+                        class="form-control"
+                        placeholder="Тип пользователей"
+                      >
+                        <option value="">Компания 1</option>
+                        <option value="">Компания 2</option>
+                        <option value="">Компания 3</option>
+                      </select>
+                    </div>
+                    <div class="input-group">
+                      <label for="">ФИО</label>
+                      <input type="text" class="form-control" />
+                    </div>
+                  </div>
+                  <div class="form-group-flex-column">
+                    <div class="input-group">
+                      <label for="">Телефон</label>
+                      <input type="tel" class="form-control" />
+                    </div>
+                    <div class="input-group">
+                      <label for="">Вид отрасли</label>
+                      <select
+                        value=""
+                        class="form-control"
+                        placeholder="Тип пользователей"
+                      >
+                        <option value="">Отрасль 1</option>
+                        <option value="">Отрасль 2</option>
+                        <option value="">Отрасль 3</option>
+                      </select>
+                    </div>
+                    <div class="input-group">
+                      <input type="file" name="" id="" />
+                    </div>
+                  </div>
+                </div>
+
+                <div class="description-wrapper">
+                  <textarea
+                    class="description"
+                    name=""
+                    id=""
+                    rows="7"
+                  ></textarea>
+                </div>
+              </div>
+              <button type="submit" class="btn btn-info">Создать</button>
+              <button class="btn btn-secondary" data-dismiss="modal">
+                Отмена
+              </button>
+            </form>
+          </div>
+          <!-- <div class="modal-footer"></div> -->
         </div>
       </div>
     </div>
