@@ -92,7 +92,7 @@ ul {
   flex-direction: column;
   align-items: center;
 
-  input[type="file"] {
+  input[type='file'] {
     position: relative;
     top: 32px;
   }
@@ -108,7 +108,7 @@ ul {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      align-items:flex-start;
+      align-items: flex-start;
       flex-wrap: wrap;
       height: 100%;
     }
@@ -116,7 +116,7 @@ ul {
       display: flex;
       flex-direction: row;
       justify-content: space-around;
-      align-items:flex-start;
+      align-items: flex-start;
       flex-wrap: wrap;
     }
 
@@ -187,6 +187,8 @@ ul {
       cursor: pointer;
       overflow: hidden;
       outline: none;
+      color: #fff;
+      font-weight: bold;
     }
     box-sizing: border-box;
     background-color: grey;
@@ -233,10 +235,60 @@ ul {
   display: flex;
   justify-content: space-around;
   .description {
-    width: 30%;
+    width: 20%;
     min-width: 100px;
   }
   .documents {
-    width: 65%;
+    width: 75%;
+    .query-documents-table {
+      button {
+        color: #000 !important;
+      }
+      thead tr th,
+      tbody tr td {
+
+        white-space: normal;
+        &:last-child {
+          padding: 20px;
+        }
+      }
+    }
+
+    .query-doc-add {
+      font-size: 1.6rem;
+    }
+  }
+}
+
+.query-modal {
+  .query-form-header,
+  .query-form-comment {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+  }
+  .query-form-header {
+    align-items: stretch;
+  }
+  .query-form-comment {
+    label {
+      width: fit-content;
+    }
+
+    
+    textarea {
+      width: 100%;
+      height: max-content;
+      border: 0;
+      padding: 10px;
+    }
+    // textarea:hover,
+    // textarea:active, {
+    //   width: 100%;
+    //   height: max-content;
+    //   border: 0;
+    //   padding: 10px;
+    // }
   }
 }
