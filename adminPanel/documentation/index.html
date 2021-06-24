@@ -388,61 +388,157 @@
           </div>
           <div class="modal-body">
             <form action="" method="post" class="user-create-form">
-              <div class="form-group">
-                <div class="form-other">
+              <div class="form-data-group">
+                <div class="form-fl-column">
                   <div class="input-group">
-                    <label>Дата регистрации</label>
-                    <input type="date" name="" id="" />
+                    <nobr class="my-toggle">
+                      <input
+                        type="checkbox"
+                        id="toggle-button"
+                        class="toggle-button"
+                      />
+                      <label for="toggle-button" class="text">Активен</label>
+                    </nobr>
                   </div>
-                  <div class="container input-group">
-                    <input
-                      type="checkbox"
-                      id="toggle-button"
-                      class="toggle-button"
-                    />
-                    <label for="toggle-button" class="text">Активен</label>
+                  <div class="input-group">
+                    <label for="">ФИО</label>
+                    <input type="text" class="form-control" />
+                  </div>
+                  <div class="input-group">
+                    <label for="">Телефон</label>
+                    <input type="tel" class="form-control" />
+                  </div>
+                  <div class="input-group">
+                    <label for="">Тип пользователя</label>
+                    <select
+                      value=""
+                      class="form-control"
+                      placeholder="Тип пользователей"
+                    >
+                      <option value="">Администраторы</option>
+                      <option value="">Менеджеры</option>
+                      <option value="">Поставщики</option>
+                      <option value="">Клиенты</option>
+                      <option value="">Консультанты</option>
+                      <option value="">Логисты</option>
+                    </select>
                   </div>
                 </div>
-                <div class="input-group">
-                  <label for="">ФИО</label>
-                  <input type="text" class="form-control" />
-                </div>
-                <div class="input-group">
-                  <label for="">Телефон</label>
-                  <input type="tel" class="form-control" />
-                </div>
-                <div class="input-group">
-                  <label for="">Тип пользователя</label>
-                  <select
-                    value=""
-                    class="form-control"
-                    placeholder="Тип пользователей"
-                  >
-                    <option value="">Администраторы</option>
-                    <option value="">Менеджеры</option>
-                    <option value="">Поставщики</option>
-                    <option value="">Клиенты</option>
-                    <option value="">Консультанты</option>
-                    <option value="">Логисты</option>
-                  </select>
-                </div>
-                <div class="input-group">
-                  <label for="">Логин</label>
-                  <input type="text" class="form-control" />
-                </div>
-                <div class="input-group">
-                  <label for="">Пароль</label>
-                  <input type="password" class="form-control" />
-                </div>
-                <div class="input-group">
-                  <label for="">Повторить пароль</label>
-                  <input type="password" class="form-control" />
+                <div class="form-fl-column">
+                  <div class="input-group">
+                    <div class="input-group date">
+                      <label>Дата регистрации</label>
+                      <input type="date" name="" id="" />
+                    </div>
+                  </div>
+                  <div class="input-group">
+                    <label for="">Логин</label>
+                    <input type="text" class="form-control" />
+                  </div>
+                  <div class="input-group">
+                    <label for="">Пароль</label>
+                    <input type="password" class="form-control" />
+                  </div>
+                  <div class="input-group">
+                    <label for="">Повторить пароль</label>
+                    <input type="password" class="form-control" />
+                  </div>
                 </div>
               </div>
-              <button type="submit" class="btn btn-info">Создать</button>
-              <button class="btn btn-secondary" data-dismiss="modal">
-                Отмена
-              </button>
+
+              <div class="form-fl-row">
+                <button type="submit" class="btn btn-info">Создать</button>
+                <button class="btn btn-secondary" data-dismiss="modal">
+                  Отмена
+                </button>
+              </div>
+            </form>
+          </div>
+          <!-- <div class="modal-footer">
+            
+          </div> -->
+        </div>
+      </div>
+    </div>
+    <div
+      class="modal fade"
+      id="user-edit-modal"
+      role="dialog"
+      aria-modal="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">
+              Редактировать пользователя
+            </h5>
+          </div>
+          <div class="modal-body">
+            <form action="" method="post" class="user-create-form">
+              <div class="form-data-group">
+                <div class="form-fl-column">
+                  <div class="input-group">
+                    <nobr class="my-toggle">
+                      <input
+                        type="checkbox"
+                        id="toggle-button"
+                        class="toggle-button"
+                      />
+                      <label for="toggle-button" class="text">Активен</label>
+                    </nobr>
+                  </div>
+                  <div class="input-group">
+                    <label for="">ФИО</label>
+                    <input type="text" class="form-control" />
+                  </div>
+                  <div class="input-group">
+                    <label for="">Телефон</label>
+                    <input type="tel" class="form-control" />
+                  </div>
+                  <div class="input-group">
+                    <label for="">Тип пользователя</label>
+                    <select
+                      value=""
+                      class="form-control"
+                      placeholder="Тип пользователей"
+                    >
+                      <option value="">Администраторы</option>
+                      <option value="">Менеджеры</option>
+                      <option value="">Поставщики</option>
+                      <option value="">Клиенты</option>
+                      <option value="">Консультанты</option>
+                      <option value="">Логисты</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form-fl-column">
+                  <div class="input-group">
+                    <div class="input-group date">
+                      <label>Дата регистрации</label>
+                      <input type="date" name="" id="" value="01.01.2019"/>
+                    </div>
+                  </div>
+                  <div class="input-group">
+                    <label for="">Логин</label>
+                    <input type="text" class="form-control" />
+                  </div>
+                  <div class="input-group">
+                    <label for="">Пароль</label>
+                    <input type="password" class="form-control" />
+                  </div>
+                  <div class="input-group">
+                    <label for="">Повторить пароль</label>
+                    <input type="password" class="form-control" />
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-fl-row">
+                <button type="submit" class="btn btn-info">Создать</button>
+                <button class="btn btn-secondary" data-dismiss="modal">
+                  Отмена
+                </button>
+              </div>
             </form>
           </div>
           <!-- <div class="modal-footer">

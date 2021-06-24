@@ -55,19 +55,36 @@ ul {
   display: flex;
   flex-direction: column;
   align-items: center;
-  .form-group {
+  .form-data-group {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     padding: 10px;
 
-    > div {
-      display: inline-block;
+    input {
+      height: 35px;
+    }
+
+    .form-fl-column {
+      display: flex;
+      flex-direction: column;
+      margin: 7px;
+    }
+
+    .form-fl-row {
+      display: flex;
+      flex-direction: row;
+      margin: 7px;
     }
 
     .input-group {
-      width: 300px;
-      margin: 5px;
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 11px;
+      .my-toggle {
+        margin-top: 35px;
+        margin-bottom: 11px;
+      }
     }
 
     .form-other {
@@ -246,7 +263,6 @@ ul {
       }
       thead tr th,
       tbody tr td {
-
         white-space: normal;
         &:last-child {
           padding: 20px;
@@ -266,7 +282,6 @@ ul {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-
   }
   .query-form-header {
     align-items: stretch;
@@ -276,7 +291,6 @@ ul {
       width: fit-content;
     }
 
-    
     textarea {
       width: 100%;
       height: max-content;
