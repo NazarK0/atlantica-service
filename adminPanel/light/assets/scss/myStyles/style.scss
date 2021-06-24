@@ -37,6 +37,10 @@ ul {
 }
 
 .content-table {
+  border-collapse: collapse !important;
+  tr:hover {
+    background-color: #e2a096 !important;
+  }
 	th {
 		padding: 5px;
 		text-align: center;
@@ -44,6 +48,7 @@ ul {
 	td {
 		padding: 5px;
 		text-align: left;
+
 	}
 	button {
 		background-color: transparent;
