@@ -308,7 +308,10 @@
                             <a href="query-show_new.html">
                               <i class="fa fa-search" aria-hidden="true"></i>
                             </a>
-                            <button>
+                            <button
+                              data-toggle="modal"
+                              data-target="#query-edit-modal-1"
+                            >
                               <i
                                 class="fa fa-pencil-square"
                                 aria-hidden="true"
@@ -332,7 +335,10 @@
                             <a href="query-show_make-contract.html">
                               <i class="fa fa-search" aria-hidden="true"></i>
                             </a>
-                            <button>
+                            <button
+                              data-toggle="modal"
+                              data-target="#query-edit-modal-1"
+                            >
                               <i
                                 class="fa fa-pencil-square"
                                 aria-hidden="true"
@@ -352,7 +358,10 @@
                             <a href="query-show_contract-signed.html">
                               <i class="fa fa-search" aria-hidden="true"></i>
                             </a>
-                            <button>
+                            <button
+                              data-toggle="modal"
+                              data-target="#query-edit-modal-1"
+                            >
                               <i
                                 class="fa fa-pencil-square"
                                 aria-hidden="true"
@@ -372,7 +381,10 @@
                             <a href="query-show_delivery.html">
                               <i class="fa fa-search" aria-hidden="true"></i>
                             </a>
-                            <button>
+                            <button
+                              data-toggle="modal"
+                              data-target="#query-edit-modal-1"
+                            >
                               <i
                                 class="fa fa-pencil-square"
                                 aria-hidden="true"
@@ -392,7 +404,10 @@
                             <a href="query-show_kp.html">
                               <i class="fa fa-search" aria-hidden="true"></i>
                             </a>
-                            <button>
+                            <button
+                              data-toggle="modal"
+                              data-target="#query-edit-modal-1"
+                            >
                               <i
                                 class="fa fa-pencil-square"
                                 aria-hidden="true"
@@ -412,7 +427,10 @@
                             <a href="query-show_payment.html">
                               <i class="fa fa-search" aria-hidden="true"></i>
                             </a>
-                            <button>
+                            <button
+                              data-toggle="modal"
+                              data-target="#query-edit-modal-1"
+                            >
                               <i
                                 class="fa fa-pencil-square"
                                 aria-hidden="true"
@@ -447,66 +465,178 @@
             </h5>
           </div>
           <div class="modal-body">
-            <form action="" method="post" class="query-create-form">
-              <div class="form-group">
+            <form action="" method="post" class="query-form modal-form">
+              <div class="form-fl-row fl-start">
                 <div class="input-group">
                   <label>Дата</label>
                   <input type="date" />
                 </div>
-                <div class="form-group-flex-row">
-                  <div class="form-group-flex-column">
-                    <div class="input-group">
-                      <label for="">Наименование запроса</label>
-                      <input type="text" class="form-control" />
-                    </div>
-                    <div class="input-group">
-                      <label for="">Наименование компании</label>
-                      <select
-                        value=""
-                        class="form-control"
-                        placeholder="Тип пользователей"
-                      >
-                        <option value="">Компания 1</option>
-                        <option value="">Компания 2</option>
-                        <option value="">Компания 3</option>
-                      </select>
-                    </div>
-                    <div class="input-group">
-                      <label for="">ФИО</label>
-                      <input type="text" class="form-control" />
-                    </div>
-                  </div>
-                  <div class="form-group-flex-column">
-                    <div class="input-group">
-                      <label for="">Телефон</label>
-                      <input type="tel" class="form-control" />
-                    </div>
-                    <div class="input-group">
-                      <label for="">Вид отрасли</label>
-                      <select
-                        value=""
-                        class="form-control"
-                        placeholder="Тип пользователей"
-                      >
-                        <option value="">Отрасль 1</option>
-                        <option value="">Отрасль 2</option>
-                        <option value="">Отрасль 3</option>
-                      </select>
-                    </div>
-                    <div class="input-group">
-                      <input type="file" />
-                    </div>
-                  </div>
+              </div>
+              <div class="form-fl-row">
+                <div class="input-group">
+                  <label for="">ФИО</label>
+                  <input type="text" class="form-control" />
                 </div>
-
-                <div class="description-wrapper">
-                  <textarea class="description" rows="7"></textarea>
+                <div class="input-group">
+                  <label for="">Телефон</label>
+                  <input type="text" class="form-control" />
                 </div>
               </div>
-              <button type="submit" class="btn btn-info">Создать</button>
-              <button class="btn btn-secondary" data-dismiss="modal">
-                Отмена
-              </button>
+              <div class="form-fl-row">
+                <div class="input-group">
+                  <label for="">Наименование запроса</label>
+                  <input type="text" class="form-control" />
+                </div>
+                <div class="input-group">
+                  <label for="">Наименование компании</label>
+                  <select class="form-control">
+                    <option value="Компания 1">Компания 1</option>
+                    <option value="Компания 2">Компания 2</option>
+                    <option value="Компания 3">Компания 3</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-fl-row">
+                <div class="input-group">
+                  <div class="form-fl-row">
+                    <div class="fancy-checkbox">
+                      <label>
+                        <input type="checkbox" />
+                        <span>Поставка</span>
+                      </label>
+                    </div>
+                    <div class="fancy-checkbox">
+                      <label>
+                        <input type="checkbox" />
+                        <span>Завод под ключ</span>
+                      </label>
+                    </div>
+                  </div>
+
+                  <label for="">Вид отрасли</label>
+                  <select
+                    value=""
+                    class="form-control"
+                    placeholder="Тип пользователей"
+                  >
+                    <option value="">Отрасль 1</option>
+                    <option value="">Отрасль 2</option>
+                    <option value="">Отрасль 3</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-fl-row">
+                <div class="input-group">
+                  <input type="file" />
+                </div>
+              </div>
+              <div class="form-fl-row">
+                <textarea class="description" rows="7"></textarea>
+              </div>
+              <div class="form-fl-row fl-s-arnd">
+                <button type="submit" class="btn btn-info">Создать</button>
+                <button class="btn btn-secondary" data-dismiss="modal">
+                  Отмена
+                </button>
+              </div>
+            </form>
+          </div>
+          <!-- <div class="modal-footer"></div> -->
+        </div>
+      </div>
+    </div>
+    <div
+      class="modal fade"
+      id="query-edit-modal-1"
+      role="dialog"
+      aria-modal="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">
+              Редактировать запрос
+            </h5>
+          </div>
+          <div class="modal-body">
+            <form action="" method="post" class="query-form modal-form">
+              <div class="form-fl-row fl-start">
+                <div class="input-group">
+                  <label>Дата</label>
+                  <input type="date" value="2021-10-10" />
+                </div>
+              </div>
+              <div class="form-fl-row">
+                <div class="input-group">
+                  <label for="">ФИО</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    value="Петров Алексей Иванович"
+                  />
+                </div>
+                <div class="input-group">
+                  <label for="">Телефон</label>
+                  <input type="text" class="form-control" value="678567345" />
+                </div>
+              </div>
+              <div class="form-fl-row">
+                <div class="input-group">
+                  <label for="">Наименование запроса</label>
+                  <input type="text" class="form-control" value="Запрос 10" />
+                </div>
+                <div class="input-group">
+                  <label for="">Наименование компании</label>
+                  <select class="form-control" value="Компания 3">
+                    <option value="Компания 1">Компания 1</option>
+                    <option value="Компания 2">Компания 2</option>
+                    <option value="Компания 3">Компания 3</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-fl-row">
+                <div class="input-group">
+                  <div class="form-fl-row">
+                    <div class="fancy-checkbox">
+                      <label>
+                        <input type="checkbox" checked />
+                        <span>Поставка</span>
+                      </label>
+                    </div>
+                    <div class="fancy-checkbox">
+                      <label>
+                        <input type="checkbox" />
+                        <span>Завод под ключ</span>
+                      </label>
+                    </div>
+                  </div>
+
+                  <label for="">Вид отрасли</label>
+                  <select
+                    value="Отрасль 2"
+                    class="form-control"
+                    placeholder="Тип пользователей"
+                  >
+                    <option value="">Отрасль 1</option>
+                    <option value="">Отрасль 2</option>
+                    <option value="">Отрасль 3</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-fl-row">
+                <div class="input-group">
+                  <input type="file" />
+                </div>
+              </div>
+              <div class="form-fl-row">
+                <textarea class="description" rows="7"></textarea>
+              </div>
+              <div class="form-fl-row fl-s-arnd">
+                <button type="submit" class="btn btn-info">Создать</button>
+                <button class="btn btn-secondary" data-dismiss="modal">
+                  Отмена
+                </button>
+              </div>
             </form>
           </div>
           <!-- <div class="modal-footer"></div> -->
