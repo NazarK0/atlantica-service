@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
 	<head>
-		<title>Atlantica :: Клиенты</title>
+		<title>Atlantica :: Поставщики</title>
 		<meta charset="utf-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
 		<meta
@@ -90,7 +90,6 @@
 							placeholder="Представитель"
 							type="text"
 						/>
-						<input value="" class="form-control" placeholder="Менеджер" type="text" />
 						<div>
 							<input
 								value=""
@@ -106,21 +105,17 @@
 								style="display: inline-block"
 							/>
 						</div>
-						<div class="search-trash">
-							<button
-								class="btn"
-								data-toggle="modal"
-								data-target="#client-list-query-modal"
-							>
+						<div>
+							<a href="client-show-queries-client.html" style="cursor: pointer">
 								<i class="fa fa-search" style="font-size: 1.5em; color: black"></i>
-							</button>
-							<button class="btn" data-toggle="modal" data-target="">
+							</a>
+							<a href="#client-show">
 								<i
 									class="icon-trash"
 									style="font-size: 21px; color: black"
 									aria-hidden="true"
 								></i>
-							</button>
+							</a>
 						</div>
 					</form>
 				</div>
@@ -206,9 +201,7 @@
 								<a href="reference-books.html"><span>Справочники</span></a>
 							</li>
 							<li>
-								<a href="contract-templates.html"
-									><span>Шаблоны договоров</span></a
-								>
+								<a href="contract-templates.html"><span>Шаблоны договоров</span></a>
 							</li>
 							<li>
 								<a href="#SCSS"><span>Онлайн чат</span></a>
@@ -225,7 +218,7 @@
 				<div class="block-header m-t-20 m-b-20">
 					<div class="row clearfix">
 						<div class="col-md-6 col-sm-12">
-							<h2>Список Клиентов</h2>
+							<h2>Список Поставщиков</h2>
 						</div>
 						<div class="col-md-6 col-sm-12 text-right">
 							<ul class="breadcrumb">
@@ -246,7 +239,7 @@
 									<div class="table-responsive">
 										<div class="p-l-5">
 											<p>
-												Добавить клиента
+												Добавить поставщика
 												<button
 													class="btn client-add"
 													data-toggle="modal"
@@ -265,74 +258,47 @@
 											<thead class="thead-dark">
 												<tr role="row">
 													<th class="text-center sorting" scope="col">№</th>
-													<th class="text-center sorting" scope="col">Логотип</th>
 													<th class="text-center sorting" scope="col">Компания</th>
 													<th class="text-center sorting" scope="col">ФИО представителя</th>
+													<th class="text-center sorting" scope="col">Должность</th>
 													<th class="text-center sorting" scope="col">Телефон</th>
+													<th class="text-center sorting" scope="col">Сайт</th>
 													<th class="text-center sorting" scope="col">Адрес</th>
-													<th class="text-center sorting" scope="col">Менеджер</th>
 													<th></th>
 												</tr>
 											</thead>
 											<tfoot class="thead-dark">
 												<tr role="row">
 													<th class="text-center sorting" scope="col">№</th>
-													<th class="text-center sorting" scope="col">Логотип</th>
 													<th class="text-center sorting" scope="col">Компания</th>
 													<th class="text-center sorting" scope="col">ФИО представителя</th>
+													<th class="text-center sorting" scope="col">Должность</th>
 													<th class="text-center sorting" scope="col">Телефон</th>
+													<th class="text-center sorting" scope="col">Сайт</th>
 													<th class="text-center sorting" scope="col">Адрес</th>
-													<th class="text-center sorting" scope="col">Менеджер</th>
 													<th></th>
 												</tr>
 											</tfoot>
 											<tbody>
-												<tr class="uncompleted">
-													<td class="text-left">1</td>
-													<td class="text-center">
-														<img
-															src="../../assets/images/atlantica/logo_company_example.png"
-															alt="Пример лого компании"
-															class="img-fluid"
-															width="70px"
-														/>
-													</td>
-													<td class="text-left">ООО "Компания"</td>
-													<td class="text-left">Иванов П.А.</td>
-													<td class="text-left">+ ххх ххх ххх ххх</td>
-													<td class="text-left">Адрес 1</td>
-													<td class="text-left">Менеджер 1</td>
-													<td class="text-center">
-														<button
-															class="btn-search"
-															data-toggle="modal"
-															data-target="#client-show-edit-delete-modal"
-															data-imgcompany="../../assets/images/atlantica/logo_company_example.png"
-														>
-															<i class="fa fa-search fa-lg" aria-hidden="true"></i>
-														</button>
-													</td>
-												</tr>
 												<tr>
-													<td class="text-left">2</td>
-													<td class="text-center">
-														<img
-															src="../../assets/images/atlantica/logo_client_example.png"
-															alt="Пример лого компании"
-															class="img-fluid"
-															width="70px"
-														/>
-													</td>
-													<td class="text-left">ООО "Компания"</td>
-													<td class="text-left">Иванов П.А.</td>
+													<td class="text-left">1</td>
+													<td class="text-left">Компания 1</td>
+													<td class="text-left">ФИО представителя</td>
+													<td class="text-left">Руководитель продаж</td>
 													<td class="text-left">+ ххх ххх ххх ххх</td>
-													<td class="text-left">Адрес 2</td>
-													<td class="text-left">Менеджер 2</td>
+													<td class="text-left">
+														<a
+															href="www.aaa.com"
+															target="_blank                                                        "
+															>www.aaa.com</a
+														>
+													</td>
+													<td class="text-left">Адрес 1</td>
 													<td class="text-center">
 														<button
 															class="btn-search"
 															data-toggle="modal"
-															data-target="#client-show-edit-delete-modal"
+															data-target="#provider-show-edit-delete-modal"
 															data-imgcompany="../../assets/images/atlantica/logo_client_example.png"
 														>
 															<i class="fa fa-search fa-lg" aria-hidden="true"></i>
@@ -340,104 +306,25 @@
 													</td>
 												</tr>
 												<tr>
-													<td class="text-left">3</td>
-													<td class="text-center">
-														<img
-															src="../../assets/images/atlantica/company_logo.png"
-															alt="Пример лого компании"
-															class="img-fluid"
-															width="70px"
-														/>
-													</td>
-													<td class="text-left">ООО "Компания"</td>
-													<td class="text-left">Иванов П.А.</td>
+													<td class="text-left">2</td>
+													<td class="text-left">Компания 2</td>
+													<td class="text-left">ФИО представителя</td>
+													<td class="text-left">Руководитель продаж</td>
 													<td class="text-left">+ ххх ххх ххх ххх</td>
-													<td class="text-left">Адрес 3</td>
-													<td class="text-left">Менеджер 3</td>
-													<td class="text-center">
-														<button
-															class="btn-search"
-															data-toggle="modal"
-															data-target="#client-show-edit-delete-modal"
-															data-imgcompany="../../assets/images/atlantica/company_logo.png"
+													<td class="text-left">
+														<a
+															href="www.bbb.com"
+															target="_blank                                                        "
+															>www.bbb.com</a
 														>
-															<i class="fa fa-search fa-lg" aria-hidden="true"></i>
-														</button>
 													</td>
-												</tr>
-												<tr>
-													<td class="text-left">4</td>
-													<td class="text-center">
-														<img
-															src="../../assets/images/atlantica/logo_company_2.png"
-															alt="Пример лого компании"
-															class="img-fluid"
-															width="70px"
-														/>
-													</td>
-													<td class="text-left">ООО "Компания"</td>
-													<td class="text-left">Иванов П.А.</td>
-													<td class="text-left">+ ххх ххх ххх ххх</td>
-													<td class="text-left">Адрес 4</td>
-													<td class="text-left">Менеджер 4</td>
+													<td class="text-left">Адрес 2</td>
 													<td class="text-center">
 														<button
 															class="btn-search"
 															data-toggle="modal"
-															data-target="#client-show-edit-delete-modal"
-															data-imgcompany="../../assets/images/atlantica/logo_company_2.png"
-														>
-															<i class="fa fa-search fa-lg" aria-hidden="true"></i>
-														</button>
-													</td>
-												</tr>
-												<tr>
-													<td class="text-left">5</td>
-													<td class="text-center">
-														<img
-															src="../../assets/images/atlantica/logo_company_5.png"
-															alt="Пример лого компании"
-															class="img-fluid"
-															width="70px"
-														/>
-													</td>
-													<td class="text-left">ООО "Компания"</td>
-													<td class="text-left">Иванов П.А.</td>
-													<td class="text-left">+ ххх ххх ххх ххх</td>
-													<td class="text-left">Адрес 5</td>
-													<td class="text-left">Менеджер 5</td>
-													<td class="text-center">
-														<button
-															class="btn-search"
-															data-toggle="modal"
-															data-target="#client-show-edit-delete-modal"
-															data-imgcompany="../../assets/images/atlantica/logo_company_5.png"
-														>
-															<i class="fa fa-search fa-lg" aria-hidden="true"></i>
-														</button>
-													</td>
-												</tr>
-												<tr>
-													<td class="text-left">6</td>
-													<td class="text-center">
-														<img
-															src="../../assets/images/atlantica/logo_company_4.png"
-															alt="Пример лого компании"
-															class="img-fluid"
-															width="70px"
-														/>
-													</td>
-													<td class="text-left">ООО "Компания"</td>
-													<td class="text-left">Иванов П.А.</td>
-													<td class="text-left">+ ххх ххх ххх ххх</td>
-													<td class="text-left">Адрес 6</td>
-													<td class="text-left">Менеджер 6</td>
-													<td class="text-center">
-														<button
-															class="btn-search"
-															data-toggle="modal"
-															data-target="#client-show-edit-delete-modal"
-															data-imgcompany="../../assets/images/atlantica/logo_company_4.png"
+															data-target="#provider-show-edit-delete-modal"
+															data-imgcompany="../../assets/images/atlantica/logo_client_example.png"
 														>
 															<i class="fa fa-search fa-lg" aria-hidden="true"></i>
 														</button>
@@ -460,7 +347,7 @@
 			<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
 				<div class="modal-content" style="border-radius: 45px">
 					<div class="modal-header" style="justify-content: center">
-						<h5 class="modal-title">Добавить клиента</h5>
+						<h5 class="modal-title">Добавить поставщика</h5>
 					</div>
 					<div class="modal-body">
 						<form action="" method="post" class="client-create-form">
@@ -488,19 +375,24 @@
 									</div>
 									<div class="form-group-flex-column">
 										<div class="input-group">
-											<input type="text" class="form-control" placeholder="Телефон" />
+											<input type="text" class="form-control" placeholder="Должность" />
 										</div>
 									</div>
 								</div>
 								<div class="form-group-flex-row">
 									<div class="form-group-flex-column">
-										<div class="input-group" style="width: 410px">
+										<div class="input-group" style="width: 310px">
 											<input type="text" class="form-control" placeholder="Адрес" />
 										</div>
 									</div>
 									<div class="form-group-flex-column">
-										<div class="input-group">
-											<input type="text" class="form-control" placeholder="E-mail" />
+										<div class="input-group" style="width: 145px">
+											<input type="text" class="form-control" placeholder="Телефон" />
+										</div>
+									</div>
+									<div class="form-group-flex-column">
+										<div class="input-group" style="width: 145px">
+											<input type="text" class="form-control" placeholder="Сайт" />
 										</div>
 									</div>
 								</div>
@@ -615,14 +507,16 @@
 		<!--modal show edit delete -->
 		<div
 			class="modal fade"
-			id="client-show-edit-delete-modal"
+			id="provider-show-edit-delete-modal"
 			role="dialog"
 			aria-modal="true"
 		>
 			<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
 				<div class="modal-content" style="border-radius: 45px">
 					<div class="modal-header" style="justify-content: center">
-						<h5 class="modal-title">Просмотр / редактирование / удаление клиента</h5>
+						<h5 class="modal-title">
+							Просмотр / редактирование / удаление поставщика
+						</h5>
 					</div>
 					<div class="modal-body">
 						<form action="" method="post" class="client-create-form">
@@ -772,7 +666,7 @@
 		<!--list query show from client page-->
 		<div
 			class="modal fade"
-			id="client-list-query-modal"
+			id="provider-list-query-modal"
 			role="dialog"
 			aria-modal="true"
 		>

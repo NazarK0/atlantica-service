@@ -14,6 +14,7 @@
   "author": "thememakker.com",
   "license": "ISC",
   "dependencies": {
+    "bootstrap-icons": "^1.5.0",
     "grunt": "^1.0.2",
     "metismenu": "^2.7.7"
   },
