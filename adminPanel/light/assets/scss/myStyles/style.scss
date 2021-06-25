@@ -11,18 +11,8 @@ ul {
 }
 
 .navbar-form.search-form {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  display: none;
 
-  .form-control {
-    width: 250px !important;
-  }
-
-  .btn {
-    position: static;
-    padding: 0 10px !important;
-  }
 }
 
 .top-search {
@@ -113,14 +103,15 @@ ul {
   }
 }
 
-.user-create-form {
+.user-form {
   .my-toggle {
     margin-top: 35px;
     margin-bottom: 11px;
   }
 }
 
-.query-form{
+.query-form,
+.user-form {
   input[type="date"] {
     width: fit-content;
   }
