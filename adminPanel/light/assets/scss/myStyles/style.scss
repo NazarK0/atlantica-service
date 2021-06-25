@@ -11,18 +11,8 @@ ul {
 }
 
 .navbar-form.search-form {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  display: none;
 
-  .form-control {
-    width: 250px !important;
-  }
-
-  .btn {
-    position: static;
-    padding: 0 10px !important;
-  }
 }
 
 .top-search {

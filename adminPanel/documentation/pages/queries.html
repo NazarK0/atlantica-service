@@ -28,6 +28,7 @@
       href="../../assets/vendor/jquery-datatable/dataTables.bootstrap4.min.css"
     />
     <link rel="stylesheet" href="../../light/assets/css/my_styles.css" />
+    <link rel="stylesheet" href="../../light/assets/css/my_media.css" />
     <style>
       .card .body {
         font-size: 15px;
@@ -82,11 +83,11 @@
           <form id="navbar-search" class="navbar-form navbar-right search-form">
             <input
               value=""
-              class="form-control"
+              class="form-control user-name"
               placeholder="ФИО"
               type="text"
             />
-            <select value="" class="form-control" placeholder="Тип запроса">
+            <select value="" class="form-control query-type" placeholder="Тип запроса">
               <option value="">Тип запроса</option>
               <option value="">Новый</option>
               <option value="">КП</option>
@@ -96,14 +97,14 @@
               <option value="">Оплата</option>
             </select>
             <div>
-              <label>Период регистрации:</label>
+              <label>Регистрация: с</label>
               <input
                 value=""
                 class="form-control"
                 type="date"
                 style="display: inline-block;"
               />
-              <span>&nbsp;-&nbsp;</span>
+              <span>&nbsp;по&nbsp;</span>
               <input
                 value=""
                 class="form-control"
@@ -111,8 +112,8 @@
                 style="display: inline-block;"
               />
             </div>
-            <button type="button" class="btn btn-default">Поиск</button>
-            <button type="button" class="btn btn-default">Очистить</button>
+            <button type="button" class="btn btn-default"><i class="fa fa-search" aria-hidden="true"></i></button>
+            <button type="button" class="btn btn-default"><i class="icon-trash"></i></button>
           </form>
         </div>
       </nav>
