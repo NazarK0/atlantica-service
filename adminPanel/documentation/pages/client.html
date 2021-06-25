@@ -24,6 +24,11 @@
 		<link rel="stylesheet" href="../../light/assets/css/main.css" />
 		<link rel="stylesheet" href="../../light/assets/css/color_skins.css" />
 		<link rel="stylesheet" href="../../light/assets/css/my_styles.css" />
+		<link rel="stylesheet" href="../../light/assets/css/client.css" />
+		<link
+			rel="stylesheet"
+			href="../../assets/vendor/jquery-datatable/dataTables.bootstrap4.min.css"
+		/>
 		<style>
 			.card .body {
 				font-size: 15px;
@@ -231,232 +236,210 @@
 					<div class="row clearfix">
 						<div class="col-sm-12">
 							<div class="card border-danger" id="documenter_cover">
-								<div class="body table-responsive">
-									<div class="p-l-5">
-										<p>
-											Добавить клиента
-											<button
-												class="btn client-add"
-												data-toggle="modal"
-												data-target="#client-add-modal"
-											>
-												<i class="fa fa-plus-circle fa-2x" aria-hidden="true"></i>
-											</button>
-										</p>
+								<div class="body">
+									<div class="table-responsive">
+										<div class="p-l-5">
+											<p>
+												Добавить клиента
+												<button
+													class="btn client-add"
+													data-toggle="modal"
+													data-target="#client-add-modal"
+												>
+													<i class="fa fa-plus-circle fa-2x" aria-hidden="true"></i>
+												</button>
+											</p>
+										</div>
+										<table
+											class="content-table table js-basic-example dataTable"
+											id="DataTables_Table_0"
+											role="grid"
+											aria-describedby="DataTables_Table_0_info"
+										>
+											<thead class="thead-dark">
+												<tr role="row">
+													<th class="text-center sorting" scope="col">№</th>
+													<th class="text-center sorting" scope="col">Логотип</th>
+													<th class="text-center sorting" scope="col">Компания</th>
+													<th class="text-center sorting" scope="col">ФИО представителя</th>
+													<th class="text-center sorting" scope="col">Телефон</th>
+													<th class="text-center sorting" scope="col">Адрес</th>
+													<th class="text-center sorting" scope="col">Менеджер</th>
+													<th></th>
+												</tr>
+											</thead>
+											<tfoot class="thead-dark">
+												<tr role="row">
+													<th class="text-center sorting" scope="col">№</th>
+													<th class="text-center sorting" scope="col">Логотип</th>
+													<th class="text-center sorting" scope="col">Компания</th>
+													<th class="text-center sorting" scope="col">ФИО представителя</th>
+													<th class="text-center sorting" scope="col">Телефон</th>
+													<th class="text-center sorting" scope="col">Адрес</th>
+													<th class="text-center sorting" scope="col">Менеджер</th>
+													<th></th>
+												</tr>
+											</tfoot>
+											<tbody>
+												<tr class="uncompleted">
+													<td class="text-left">1</td>
+													<td class="text-center">
+														<img
+															src="../../assets/images/atlantica/logo_company_example.png"
+															alt="Пример лого компании"
+															class="img-fluid"
+															width="70px"
+														/>
+													</td>
+													<td class="text-left">ООО "Компания"</td>
+													<td class="text-left">Иванов П.А.</td>
+													<td class="text-left">+ ххх ххх ххх ххх</td>
+													<td class="text-left">Адрес 1</td>
+													<td class="text-left">Менеджер 1</td>
+													<td class="text-center">
+														<button
+															class="btn-search"
+															data-toggle="modal"
+															data-target="#client-show-edit-delete-modal"
+															data-imgcompany="../../assets/images/atlantica/logo_company_example.png"
+														>
+															<i class="fa fa-search fa-lg" aria-hidden="true"></i>
+														</button>
+													</td>
+												</tr>
+												<tr>
+													<td class="text-left">2</td>
+													<td class="text-center">
+														<img
+															src="../../assets/images/atlantica/logo_client_example.png"
+															alt="Пример лого компании"
+															class="img-fluid"
+															width="70px"
+														/>
+													</td>
+													<td class="text-left">ООО "Компания"</td>
+													<td class="text-left">Иванов П.А.</td>
+													<td class="text-left">+ ххх ххх ххх ххх</td>
+													<td class="text-left">Адрес 2</td>
+													<td class="text-left">Менеджер 2</td>
+													<td class="text-center">
+														<button
+															class="btn-search"
+															data-toggle="modal"
+															data-target="#client-show-edit-delete-modal"
+															data-imgcompany="../../assets/images/atlantica/logo_client_example.png"
+														>
+															<i class="fa fa-search fa-lg" aria-hidden="true"></i>
+														</button>
+													</td>
+												</tr>
+												<tr>
+													<td class="text-left">3</td>
+													<td class="text-center">
+														<img
+															src="../../assets/images/atlantica/company_logo.png"
+															alt="Пример лого компании"
+															class="img-fluid"
+															width="70px"
+														/>
+													</td>
+													<td class="text-left">ООО "Компания"</td>
+													<td class="text-left">Иванов П.А.</td>
+													<td class="text-left">+ ххх ххх ххх ххх</td>
+													<td class="text-left">Адрес 3</td>
+													<td class="text-left">Менеджер 3</td>
+													<td class="text-center">
+														<button
+															class="btn-search"
+															data-toggle="modal"
+															data-target="#client-show-edit-delete-modal"
+															data-imgcompany="../../assets/images/atlantica/company_logo.png"
+														>
+															<i class="fa fa-search fa-lg" aria-hidden="true"></i>
+														</button>
+													</td>
+												</tr>
+												<tr>
+													<td class="text-left">4</td>
+													<td class="text-center">
+														<img
+															src="../../assets/images/atlantica/logo_company_2.png"
+															alt="Пример лого компании"
+															class="img-fluid"
+															width="70px"
+														/>
+													</td>
+													<td class="text-left">ООО "Компания"</td>
+													<td class="text-left">Иванов П.А.</td>
+													<td class="text-left">+ ххх ххх ххх ххх</td>
+													<td class="text-left">Адрес 4</td>
+													<td class="text-left">Менеджер 4</td>
+													<td class="text-center">
+														<button
+															class="btn-search"
+															data-toggle="modal"
+															data-target="#client-show-edit-delete-modal"
+															data-imgcompany="../../assets/images/atlantica/logo_company_2.png"
+														>
+															<i class="fa fa-search fa-lg" aria-hidden="true"></i>
+														</button>
+													</td>
+												</tr>
+												<tr>
+													<td class="text-left">5</td>
+													<td class="text-center">
+														<img
+															src="../../assets/images/atlantica/logo_company_5.png"
+															alt="Пример лого компании"
+															class="img-fluid"
+															width="70px"
+														/>
+													</td>
+													<td class="text-left">ООО "Компания"</td>
+													<td class="text-left">Иванов П.А.</td>
+													<td class="text-left">+ ххх ххх ххх ххх</td>
+													<td class="text-left">Адрес 5</td>
+													<td class="text-left">Менеджер 5</td>
+													<td class="text-center">
+														<button
+															class="btn-search"
+															data-toggle="modal"
+															data-target="#client-show-edit-delete-modal"
+															data-imgcompany="../../assets/images/atlantica/logo_company_5.png"
+														>
+															<i class="fa fa-search fa-lg" aria-hidden="true"></i>
+														</button>
+													</td>
+												</tr>
+												<tr>
+													<td class="text-left">6</td>
+													<td class="text-center">
+														<img
+															src="../../assets/images/atlantica/logo_company_4.png"
+															alt="Пример лого компании"
+															class="img-fluid"
+															width="70px"
+														/>
+													</td>
+													<td class="text-left">ООО "Компания"</td>
+													<td class="text-left">Иванов П.А.</td>
+													<td class="text-left">+ ххх ххх ххх ххх</td>
+													<td class="text-left">Адрес 6</td>
+													<td class="text-left">Менеджер 6</td>
+													<td class="text-center">
+														<button
+															class="btn-search"
+															data-toggle="modal"
+															data-target="#client-show-edit-delete-modal"
+															data-imgcompany="../../assets/images/atlantica/logo_company_4.png"
+														>
+															<i class="fa fa-search fa-lg" aria-hidden="true"></i>
+														</button>
+													</td>
+												</tr>
+											</tbody>
+										</table>
 									</div>
-									<table class="content-table table-striped table">
-										<thead class="thead-danger">
-											<tr>
-												<th class="text-center" scope="col">№</th>
-												<th class="text-center" scope="col">Логотип</th>
-												<th class="text-center" scope="col">Компания</th>
-												<th class="text-center" scope="col">ФИО представителя</th>
-												<th class="text-center" scope="col">Телефон</th>
-												<th class="text-center" scope="col">Адрес</th>
-												<th class="text-center" scope="col">Менеджер</th>
-												<th class="text-center" scope="col"></th>
-											</tr>
-										</thead>
-										<tbody>
-											<tr class="uncompleted">
-												<td class="text-center">1</td>
-												<td class="text-center">
-													<img
-														src="../../assets/images/atlantica/logo_company_example.png"
-														alt="Пример лого компании"
-														class="img-fluid"
-														width="70px"
-													/>
-												</td>
-												<td class="text-center">ООО "Компания"</td>
-												<td class="text-center">Иванов П.А.</td>
-												<td class="text-center">+ ххх ххх ххх ххх</td>
-												<td class="text-center">Адрес 1</td>
-												<td class="text-center">Менеджер 1</td>
-												<td class="text-center">
-													<button class="btn-search"
-														data-toggle="modal"
-														data-target="#client-show-edit-delete-modal"
-														data-imgcompany="../../assets/images/atlantica/logo_company_example.png"
-													>
-														<i class="fa fa-search fa-lg" aria-hidden="true"></i>
-													</button>
-													<button>
-														<i class="fa fa-pencil-square fa-lg" aria-hidden="true"></i>
-													</button>
-
-													<button>
-														<i class="icon-trash fa-lg"></i>
-													</button>
-												</td>
-											</tr>
-											<tr>
-												<td class="text-center">2</td>
-												<td class="text-center">
-													<img
-														src="../../assets/images/atlantica/logo_client_example.png"
-														alt="Пример лого компании"
-														class="img-fluid"
-														width="70px"
-													/>
-												</td>
-												<td class="text-center">ООО "Компания"</td>
-												<td class="text-center">Иванов П.А.</td>
-												<td class="text-center">+ ххх ххх ххх ххх</td>
-												<td class="text-center">Адрес 2</td>
-												<td class="text-center">Менеджер 2</td>
-												<td class="text-center">
-													<button
-														class="btn-search"												
-														data-toggle="modal"
-														data-target="#client-show-edit-delete-modal"
-														data-imgcompany="../../assets/images/atlantica/logo_client_example.png"
-													>
-														<i class="fa fa-search fa-lg" aria-hidden="true"></i>
-													</button>
-													<button>
-														<i class="fa fa-pencil-square fa-lg" aria-hidden="true"></i>
-													</button>
-
-													<button>
-														<i class="icon-trash fa-lg"></i>
-													</button>
-												</td>
-											</tr>
-											<tr>
-												<td class="text-center">3</td>
-												<td class="text-center">
-													<img
-														src="../../assets/images/atlantica/company_logo.png"
-														alt="Пример лого компании"
-														class="img-fluid"
-														width="70px"
-													/>
-												</td>
-												<td class="text-center">ООО "Компания"</td>
-												<td class="text-center">Иванов П.А.</td>
-												<td class="text-center">+ ххх ххх ххх ххх</td>
-												<td class="text-center">Адрес 3</td>
-												<td class="text-center">Менеджер 3</td>
-												<td class="text-center">
-													<button
-														class="btn-search"												
-														data-toggle="modal"
-														data-target="#client-show-edit-delete-modal"
-														data-imgcompany="../../assets/images/atlantica/company_logo.png"
-													>
-														<i class="fa fa-search fa-lg" aria-hidden="true"></i>
-													</button>
-													<button>
-														<i class="fa fa-pencil-square fa-lg" aria-hidden="true"></i>
-													</button>
-
-													<button>
-														<i class="icon-trash fa-lg"></i>
-													</button>
-												</td>
-											</tr>
-											<tr>
-												<td class="text-center">4</td>
-												<td class="text-center">
-													<img
-														src="../../assets/images/atlantica/logo_company_2.png"
-														alt="Пример лого компании"
-														class="img-fluid"
-														width="70px"
-													/>
-												</td>
-												<td class="text-center">ООО "Компания"</td>
-												<td class="text-center">Иванов П.А.</td>
-												<td class="text-center">+ ххх ххх ххх ххх</td>
-												<td class="text-center">Адрес 4</td>
-												<td class="text-center">Менеджер 4</td>
-												<td class="text-center">
-													<button
-														class="btn-search"												
-														data-toggle="modal"
-														data-target="#client-show-edit-delete-modal"
-														data-imgcompany="../../assets/images/atlantica/logo_company_2.png"
-													>
-														<i class="fa fa-search fa-lg" aria-hidden="true"></i>
-													</button>
-													<button>
-														<i class="fa fa-pencil-square fa-lg" aria-hidden="true"></i>
-													</button>
-
-													<button>
-														<i class="icon-trash fa-lg"></i>
-													</button>
-												</td>
-											</tr>
-											<tr>
-												<td class="text-center">5</td>
-												<td class="text-center">
-													<img
-														src="../../assets/images/atlantica/logo_company_5.png"
-														alt="Пример лого компании"
-														class="img-fluid"
-														width="70px"
-													/>
-												</td>
-												<td class="text-center">ООО "Компания"</td>
-												<td class="text-center">Иванов П.А.</td>
-												<td class="text-center">+ ххх ххх ххх ххх</td>
-												<td class="text-center">Адрес 5</td>
-												<td class="text-center">Менеджер 5</td>
-												<td class="text-center">
-													<button
-														class="btn-search"												
-														data-toggle="modal"
-														data-target="#client-show-edit-delete-modal"
-														data-imgcompany="../../assets/images/atlantica/logo_company_5.png"
-													>
-														<i class="fa fa-search fa-lg" aria-hidden="true"></i>
-													</button>
-													<button>
-														<i class="fa fa-pencil-square fa-lg" aria-hidden="true"></i>
-													</button>
-
-													<button>
-														<i class="icon-trash fa-lg"></i>
-													</button>
-												</td>
-											</tr>
-											<tr>
-												<td class="text-center">6</td>
-												<td class="text-center">
-													<img
-														src="../../assets/images/atlantica/logo_company_4.png"
-														alt="Пример лого компании"
-														class="img-fluid"
-														width="70px"
-													/>
-												</td>
-												<td class="text-center">ООО "Компания"</td>
-												<td class="text-center">Иванов П.А.</td>
-												<td class="text-center">+ ххх ххх ххх ххх</td>
-												<td class="text-center">Адрес 6</td>
-												<td class="text-center">Менеджер 6</td>
-												<td class="text-center">
-													<button
-														class="btn-search"												
-														data-toggle="modal"
-														data-target="#client-show-edit-delete-modal"
-														data-imgcompany="../../assets/images/atlantica/logo_company_4.png"
-													>
-														<i class="fa fa-search fa-lg" aria-hidden="true"></i>
-													</button>
-													<button>
-														<i class="fa fa-pencil-square fa-lg" aria-hidden="true"></i>
-													</button>
-
-													<button>
-														<i class="icon-trash fa-lg"></i>
-													</button>
-												</td>
-											</tr>
-										</tbody>
-									</table>
 								</div>
 							</div>
 						</div>
@@ -474,7 +457,7 @@
 						<h5 class="modal-title">Добавить клиента</h5>
 					</div>
 					<div class="modal-body">
-						<form action="" method="post" class="query-create-form">
+						<form action="" method="post" class="client-create-form">
 							<!-- client add-->
 							<div class="form-group">
 								<div class="form-group-flex-row">
@@ -483,6 +466,7 @@
 											<input
 												type="text"
 												class="form-control"
+												style=""
 												placeholder="Наименование компании"
 											/>
 										</div>
@@ -561,30 +545,7 @@
 															</a>
 														</td>
 													</tr>
-													<tr>
-														<td>2</td>
-														<td>Устав.docx</td>
-														<td style="width: 90px; text-align: center">
-															<a href="#">
-																<i class="fa fa-search fa-lg" aria-hidden="true"></i>
-															</a>
-															<a href="#">
-																<i class="icon-trash fa-lg"></i>
-															</a>
-														</td>
-													</tr>
-													<tr>
-														<td>3</td>
-														<td>ИНН.pdf</td>
-														<td style="width: 90px; text-align: center">
-															<a href="#">
-																<i class="fa fa-search fa-lg" aria-hidden="true"></i>
-															</a>
-															<a href="#">
-																<i class="icon-trash fa-lg"></i>
-															</a>
-														</td>
-													</tr>
+													
 												</tbody>
 											</table>
 										</div>
@@ -616,11 +577,14 @@
 										</div>
 									</div>
 									<div class="form-group-flex-column m-l-10 m-r-10" style="width: 150px">
-										<img
-											src="../../assets/images/atlantica/logo_client_example.png"
-											alt="Atlantica Logo"
+										<div class="logo-company">
+											<img
+											src="../../assets/images/atlantica/create_client_logo_example.png"
+											alt="..."
 											class="img-fluid logo"
 										/>
+										</div>									
+										
 									</div>
 								</div>
 								<div class="form-group-flex-row">
@@ -657,7 +621,7 @@
 						<h5 class="modal-title">Просмотр / редактирование / удаление клиента</h5>
 					</div>
 					<div class="modal-body">
-						<form action="" method="post" class="query-create-form">
+						<form action="" method="post" class="client-create-form">
 							<!-- client add-->
 							<div class="form-group">
 								<div class="form-group-flex-row">
@@ -739,9 +703,8 @@
 													<tr>
 														<td></td>
 														<td></td>
-														<td style="width: 90px; text-align: center">
-														</td>
-													</tr>													
+														<td style="width: 90px; text-align: center"></td>
+													</tr>
 												</tbody>
 											</table>
 										</div>
@@ -774,11 +737,7 @@
 									</div>
 									<div class="form-group-flex-column m-l-10 m-r-10" style="width: 150px">
 										<div class="logo-company">
-										<img
-											src="../../assets/images/atlantica/logo_client_example.png"
-											alt="Atlantica Logo"
-											class="img-fluid logo"
-										/>
+											
 										</div>
 									</div>
 								</div>
@@ -821,7 +780,7 @@
 						<h5 class="modal-title">Список запрос</h5>
 					</div>
 					<div class="modal-body">
-						<form action="" method="post" class="query-create-form">
+						<form action="" method="post" class="client-create-form">
 							<!-- client add-->
 							<div class="form-group">
 								<div class="form-group-flex-row">
@@ -889,6 +848,17 @@
 		<script src="../../light/assets/bundles/vendorscripts.bundle.js"></script>
 
 		<script src="../../light/assets/bundles/mainscripts.bundle.js"></script>
+		<!-- Javascript-->
+		<script src="../../light/assets/bundles/datatablescripts.bundle.js"></script>
+		<script src="../../assets/vendor/jquery-datatable/buttons/dataTables.buttons.min.js"></script>
+		<script src="../../assets/vendor/jquery-datatable/buttons/buttons.bootstrap4.min.js"></script>
+		<script src="../../assets/vendor/jquery-datatable/buttons/buttons.colVis.min.js"></script>
+		<script src="../../assets/vendor/jquery-datatable/buttons/buttons.html5.min.js"></script>
+		<script src="../../assets/vendor/jquery-datatable/buttons/buttons.print.min.js"></script>
+
+		<script src="../../assets/vendor/sweetalert/sweetalert.min.js"></script>
+		<!-- SweetAlert Plugin Js -->
+		<script src="../../light/assets/js/pages/tables/jquery-datatable.js"></script>
 		<script>
 			$(".metismenu li").click(function () {
 				var $this = $(this);
@@ -948,7 +918,7 @@
 			$(function () {
 				$(".btn-search").click(function () {
 					var imgcompany = $(this).attr("data-imgcompany");
-					
+					$(".logo-company").empty();
 					$(".logo-company").append(
 						'<img class="img-fluid" src="' + imgcompany + '" alt="..." />'
 					);
