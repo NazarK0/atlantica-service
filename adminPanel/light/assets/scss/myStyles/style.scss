@@ -113,14 +113,15 @@ ul {
   }
 }
 
-.user-create-form {
+.user-form {
   .my-toggle {
     margin-top: 35px;
     margin-bottom: 11px;
   }
 }
 
-.query-form{
+.query-form,
+.user-form {
   input[type="date"] {
     width: fit-content;
   }

@@ -1,71 +1,99 @@
 <!DOCTYPE html>
 <html lang="ru">
-
-<head>
+  <head>
     <title>Atlantica :: Home</title>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+    />
 
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
     <!-- VENDOR CSS -->
-    <link rel="stylesheet" href="../assets/vendor/bootstrap/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="../assets/vendor/font-awesome/css/font-awesome.min.css" />
+    <link
+      rel="stylesheet"
+      href="../assets/vendor/bootstrap/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../assets/vendor/font-awesome/css/font-awesome.min.css"
+    />
 
     <!-- MAIN CSS -->
     <link rel="stylesheet" href="../light/assets/css/main.css" />
     <link rel="stylesheet" href="../light/assets/css/color_skins.css" />
-    <link rel="stylesheet" href="../assets/vendor/jquery-datatable/dataTables.bootstrap4.min.css" />
+    <link
+      rel="stylesheet"
+      href="../assets/vendor/jquery-datatable/dataTables.bootstrap4.min.css"
+    />
     <link rel="stylesheet" href="../light/assets/css/my_styles.css" />
     <style>
-        .card .body {
-            font-size: 15px;
-        }
-        
-        .main_features li {
-            line-height: 35px;
-        }
-        
-        .main_features li.divider {
-            border-bottom: 1px solid #ececec;
-            margin: 10px 0;
-            list-style: none;
-            font-size: 12px;
-            text-transform: uppercase;
-            line-height: 1;
-            color: #ff0000;
-            padding-top: 15px;
-        }
-    </style>
-</head>
+      .card .body {
+        font-size: 15px;
+      }
 
-<body class="theme-orange">
+      .main_features li {
+        line-height: 35px;
+      }
+
+      .main_features li.divider {
+        border-bottom: 1px solid #ececec;
+        margin: 10px 0;
+        list-style: none;
+        font-size: 12px;
+        text-transform: uppercase;
+        line-height: 1;
+        color: #ff0000;
+        padding-top: 15px;
+      }
+    </style>
+  </head>
+
+  <body class="theme-orange">
     <!-- Page Loader -->
     <div class="page-loader-wrapper">
-        <div class="loader">
-            <div class="m-t-30">
-                <img src="../assets/images/atlantica/logo_base_black.png" height="48" alt="Atlantica" />
-            </div>
-            <p>Пожалуйста, подождите...</p>
+      <div class="loader">
+        <div class="m-t-30">
+          <img
+            src="../assets/images/atlantica/logo_base_black.png"
+            height="48"
+            alt="Atlantica"
+          />
         </div>
+        <p>Пожалуйста, подождите...</p>
+      </div>
     </div>
     <!-- Overlay For Sidebars -->
     <div class="overlay"></div>
 
     <div id="wrapper">
-        <nav class="navbar navbar-fixed-top">
-            <div class="container-my">
-                <div class="navbar-left navbar-btn">
-                    <a href="#">
-                        <img src="../assets/images/atlantica/logo_full_color.png" alt="Atlantica Logo" class="img-fluid logo" />
-                    </a>
-                    <button type="button" class="btn-toggle-offcanvas">
+      <nav class="navbar navbar-fixed-top">
+        <div class="container-my">
+          <div class="navbar-left navbar-btn">
+            <a href="#">
+              <img
+                src="../assets/images/atlantica/logo_full_color.png"
+                alt="Atlantica Logo"
+                class="img-fluid logo"
+              />
+            </a>
+            <button type="button" class="btn-toggle-offcanvas">
               <i class="lnr lnr-menu fa fa-bars"></i>
             </button>
-                </div>
-                <form id="navbar-search" class="navbar-form navbar-right search-form">
-                    <input value="" class="form-control" placeholder="ФИО" type="text" />
-                    <select value="" class="form-control" placeholder="Тип пользователей">
+          </div>
+          <form id="navbar-search" class="navbar-form navbar-right search-form">
+            <input
+              value=""
+              class="form-control"
+              placeholder="ФИО"
+              type="text"
+            />
+            <select
+              value=""
+              class="form-control"
+              placeholder="Тип пользователей"
+            >
               <option value="">Администраторы</option>
               <option value="">Менеджеры</option>
               <option value="">Поставщики</option>
@@ -73,413 +101,514 @@
               <option value="">Консультанты</option>
               <option value="">Логисты</option>
             </select>
-                    <div>
-                        <label>Период регистрации:</label>
-                        <input value="" class="form-control" type="date" style="display: inline-block;" />
-                        <span>&nbsp;-&nbsp;</span>
-                        <input value="" class="form-control" type="date" style="display: inline-block;" />
-                    </div>
-                    <button type="button" class="btn btn-default">Поиск</button>
-                    <button type="button" class="btn btn-default">Очистить</button>
-                </form>
+            <div>
+              <label>Период регистрации:</label>
+              <input
+                value=""
+                class="form-control"
+                type="date"
+                style="display: inline-block;"
+              />
+              <span>&nbsp;-&nbsp;</span>
+              <input
+                value=""
+                class="form-control"
+                type="date"
+                style="display: inline-block;"
+              />
             </div>
-        </nav>
+            <button type="button" class="btn btn-default">Поиск</button>
+            <button type="button" class="btn btn-default">Очистить</button>
+          </form>
+        </div>
+      </nav>
 
-        <div id="left-sidebar" class="sidebar">
-            <div class="navbar-brand">
-                <a href="#">
-                    <img src="../assets/images/atlantica/logo_full_color.png" alt="Atlantica Logo" class="img-fluid logo" />
-                    <!-- <span>Atlantica</span> -->
-                </a>
-                <button type="button" class="btn-toggle-offcanvas btn btn-sm float-right">
+      <div id="left-sidebar" class="sidebar">
+        <div class="navbar-brand">
+          <a href="#">
+            <img
+              src="../assets/images/atlantica/logo_full_color.png"
+              alt="Atlantica Logo"
+              class="img-fluid logo"
+            />
+            <!-- <span>Atlantica</span> -->
+          </a>
+          <button
+            type="button"
+            class="btn-toggle-offcanvas btn btn-sm float-right"
+          >
             <i class="lnr lnr-menu fa fa-chevron-circle-left"></i>
           </button>
-            </div>
-            <div class="sidebar-scroll">
-                <div class="user-account">
-                    <div class="user_div">
-                        <img src="../assets/images/user.png" class="user-photo" alt="User Profile Picture" />
-                    </div>
-                    <div class="dropdown">
-                        <a href="javascript:void(0);" class="dropdown-toggle user-name" data-toggle="dropdown">
-                            <strong>Петров О. П.</strong>
-                        </a>
-                        <ul class="dropdown-menu dropdown-menu-right account">
-                            <li>
-                                <a href="#">
-                                    <i class="icon-user"></i> Профиль
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <i class="icon-envelope-open"></i> Сообщения
-                                </a>
-                            </li>
-                            <li>
-                                <a href="javascript:void(0);">
-                                    <i class="icon-settings"></i> Настройки
-                                </a>
-                            </li>
-                            <li class="divider"></li>
-                            <li>
-                                <a href="#">
-                                    <i class="icon-power"></i> Выйти
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <nav id="left-sidebar-nav" class="sidebar-nav">
-                    <ul id="main-menu" class="metismenu">
-                        <li class="active">
-                            <a href="#"><span>Пользователи</span></a>
-                        </li>
-                        <li>
-                            <a href="pages/queries.html"><span>Запросы</span></a>
-                        </li>
-                        <li>
-                            <a href="pages/client.html"><span>Клиенты</span></a>
-                        </li>
-                        <li>
-                            <a href="#template"><span>Поставщики</span></a>
-                        </li>
-                        <li>
-                            <a href="#grunt_file"><span>Новости</span></a>
-                        </li>
-                        <li>
-                            <a href="#main_content"><span>Справочники</span></a>
-                        </li>
-                        <li>
-                            <a href="#folder_structure"><span>Шаблоны договоров</span></a>
-                        </li>
-                        <li>
-                            <a href="#SCSS"><span>Онлайн чат</span></a>
-                        </li>
-                        <li>
-                            <a href="#javascript"><span>Продукция</span></a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
         </div>
+        <div class="sidebar-scroll">
+          <div class="user-account">
+            <div class="user_div">
+              <img
+                src="../assets/images/user.png"
+                class="user-photo"
+                alt="User Profile Picture"
+              />
+            </div>
+            <div class="dropdown">
+              <a
+                href="javascript:void(0);"
+                class="dropdown-toggle user-name"
+                data-toggle="dropdown"
+              >
+                <strong>Петров О. П.</strong>
+              </a>
+              <ul class="dropdown-menu dropdown-menu-right account">
+                <li>
+                  <a href="#">
+                    <i class="icon-user"></i>
+                    Профиль
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="icon-envelope-open"></i>
+                    Сообщения
+                  </a>
+                </li>
+                <li>
+                  <a href="javascript:void(0);">
+                    <i class="icon-settings"></i>
+                    Настройки
+                  </a>
+                </li>
+                <li class="divider"></li>
+                <li>
+                  <a href="#">
+                    <i class="icon-power"></i>
+                    Выйти
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <nav id="left-sidebar-nav" class="sidebar-nav">
+            <ul id="main-menu" class="metismenu">
+              <li class="active">
+                <a href="#"><span>Пользователи</span></a>
+              </li>
+              <li>
+                <a href="pages/queries.html"><span>Запросы</span></a>
+              </li>
+              <li>
+                <a href="pages/client.html"><span>Клиенты</span></a>
+              </li>
+              <li>
+                <a href="#template"><span>Поставщики</span></a>
+              </li>
+              <li>
+                <a href="#grunt_file"><span>Новости</span></a>
+              </li>
+              <li>
+                <a href="#main_content"><span>Справочники</span></a>
+              </li>
+              <li>
+                <a href="#folder_structure"><span>Шаблоны договоров</span></a>
+              </li>
+              <li>
+                <a href="#SCSS"><span>Онлайн чат</span></a>
+              </li>
+              <li>
+                <a href="#javascript"><span>Продукция</span></a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
 
-        <div id="main-content">
-            <div class="block-header">
-                <div class="row clearfix">
-                    <div class="col-md-6 col-sm-12">
-                        <h2>Список пользователей</h2>
-                    </div>
-                    <div class="col-md-6 col-sm-12 text-right">
-                        <ul class="breadcrumb">
-                            <li class="breadcrumb-item">
-                                <a href="index.html"><i class="icon-home"></i></a>
-                            </li>
-                            <li class="breadcrumb-item active">Список пользователей</li>
-                        </ul>
-                        <button data-toggle="modal" data-target="#user-create-modal" class="btn btn-sm btn-primary" title="Создать">
+      <div id="main-content">
+        <div class="block-header">
+          <div class="row clearfix">
+            <div class="col-md-6 col-sm-12">
+              <h2>Список пользователей</h2>
+            </div>
+            <div class="col-md-6 col-sm-12 text-right">
+              <ul class="breadcrumb">
+                <li class="breadcrumb-item">
+                  <a href="index.html"><i class="icon-home"></i></a>
+                </li>
+                <li class="breadcrumb-item active">Список пользователей</li>
+              </ul>
+              <button
+                data-toggle="modal"
+                data-target="#user-create-modal"
+                class="btn btn-sm btn-primary"
+                title="Создать"
+              >
                 Создать
               </button>
-                    </div>
-                </div>
             </div>
-
-            <div class="container-fluid">
-                <div class="row clearfix">
-                    <div class="col-sm-12">
-                        <div class="card" id="documenter_cover">
-                            <div class="body table-responsive">
-                                <table class="content-table table js-basic-example dataTable" id="DataTables_Table_0" role="grid" aria-describedby="DataTables_Table_0_info">
-                                    <thead class="thead-dark">
-                                        <tr role="row">
-                                            <th class="text-center sorting" scope="col">
-                                                ФИО пользователей
-                                            </th>
-                                            <th class="text-center sorting" scope="col">Телефон</th>
-                                            <th class="text-center sorting" scope="col">Роль</th>
-                                            <th class="text-center" scope="col">
-                                                Дата регистрации
-                                            </th>
-                                            <th class="text-center sorting" scope="col">Логин</th>
-                                            <th class="text-center sorting" scope="col">Статус</th>
-                                            <th></th>
-                                        </tr>
-                                    </thead>
-                                    <tfoot class="thead-dark">
-                                        <tr role="row">
-                                            <th class="text-center sorting" scope="col">
-                                                ФИО пользователей
-                                            </th>
-                                            <th class="text-center sorting" scope="col">Телефон</th>
-                                            <th class="text-center sorting" scope="col">Роль</th>
-                                            <th class="text-center" scope="col">
-                                                Дата регистрации
-                                            </th>
-                                            <th class="text-center sorting" scope="col">Логин</th>
-                                            <th class="text-center sorting" scope="col">Статус</th>
-                                            <th></th>
-                                        </tr>
-                                    </tfoot>
-                                    <tbody>
-                                        <tr>
-                                            <td class="text-center">ФИО пользователя 1</td>
-                                            <td class="text-center">222222222</td>
-                                            <td class="text-center">
-                                                Дополнительный администратор
-                                            </td>
-                                            <td class="text-center">12.05.2021</td>
-                                            <td class="text-center">admin1</td>
-                                            <td class="text-center">активен</td>
-                                            <td class="text-center">
-                                                <button>
-                            <i class="fa fa-search" aria-hidden="true"></i>
-                          </button>
-                                                <button data-toggle="modal" data-target="#user-edit-modal-1">
-                            <i
-                              class="fa fa-pencil-square"
-                              aria-hidden="true"
-                            ></i>
-                          </button>
-                                                <button><i class="icon-trash"></i></button>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="text-center">ФИО пользователя 2</td>
-                                            <td class="text-center">785595959</td>
-                                            <td class="text-center">Логист</td>
-                                            <td class="text-center">12.12.2021</td>
-                                            <td class="text-center">logist3</td>
-                                            <td class="text-center">активен</td>
-                                            <td class="text-center">
-                                                <button>
-                            <i class="fa fa-search" aria-hidden="true"></i>
-                          </button>
-                                                <button data-toggle="modal" data-target="#user-edit-modal-1">
-                            <i
-                              class="fa fa-pencil-square"
-                              aria-hidden="true"
-                            ></i>
-                          </button>
-                                                <button><i class="icon-trash"></i></button>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="text-center">ФИО пользователя 3</td>
-                                            <td class="text-center">123456789</td>
-                                            <td class="text-center">Клиент</td>
-                                            <td class="text-center">07.05.2021</td>
-                                            <td class="text-center">client7866434</td>
-                                            <td class="text-center">Не активен</td>
-                                            <td class="text-center">
-                                                <button>
-                            <i class="fa fa-search" aria-hidden="true"></i>
-                          </button>
-                                                <button data-toggle="modal" data-target="#user-edit-modal-1">
-                            <i
-                              class="fa fa-pencil-square"
-                              aria-hidden="true"
-                            ></i>
-                          </button>
-                                                <button><i class="icon-trash"></i></button>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="text-center">ФИО пользователя 4</td>
-                                            <td class="text-center">667569834</td>
-                                            <td class="text-center">Поставщик</td>
-                                            <td class="text-center">22.05.2021</td>
-                                            <td class="text-center">postavshik11</td>
-                                            <td class="text-center">активен</td>
-                                            <td class="text-center">
-                                                <button>
-                            <i class="fa fa-search" aria-hidden="true"></i>
-                          </button>
-                                                <button data-toggle="modal" data-target="#user-edit-modal-1">
-                            <i
-                              class="fa fa-pencil-square"
-                              aria-hidden="true"
-                            ></i>
-                          </button>
-                                                <button><i class="icon-trash"></i></button>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="text-center">ФИО пользователя 5</td>
-                                            <td class="text-center">443720981</td>
-                                            <td class="text-center">Менеджер</td>
-                                            <td class="text-center">31.07.2021</td>
-                                            <td class="text-center">manager01</td>
-                                            <td class="text-center">Не активен</td>
-                                            <td class="text-center">
-                                                <button>
-                            <i class="fa fa-search" aria-hidden="true"></i>
-                          </button>
-                                                <button data-toggle="modal" data-target="#user-edit-modal-1">
-                            <i
-                              class="fa fa-pencil-square"
-                              aria-hidden="true"
-                            ></i>
-                          </button>
-                                                <button><i class="icon-trash"></i></button>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
+
+        <div class="container-fluid">
+          <div class="row clearfix">
+            <div class="col-sm-12">
+              <div class="card" id="documenter_cover">
+                <div class="body table-responsive">
+                  <table
+                    class="content-table table js-basic-example dataTable"
+                    id="DataTables_Table_0"
+                    role="grid"
+                    aria-describedby="DataTables_Table_0_info"
+                  >
+                    <thead class="thead-dark">
+                      <tr role="row">
+                        <th class="text-center sorting" scope="col">
+                          ФИО
+                        </th>
+                        <th class="text-center sorting" scope="col">Телефон</th>
+                        <th class="text-center sorting" scope="col">Роль</th>
+                        <th class="text-center" scope="col">
+                          Регистрация
+                        </th>
+                        <th class="text-center sorting" scope="col">Логин</th>
+                        <th class="text-center sorting" scope="col">Статус</th>
+                        <th></th>
+                      </tr>
+                    </thead>
+                    <tfoot class="thead-dark">
+                      <tr role="row">
+                        <th class="text-center sorting" scope="col">
+                          ФИО
+                        </th>
+                        <th class="text-center sorting" scope="col">Телефон</th>
+                        <th class="text-center sorting" scope="col">Роль</th>
+                        <th class="text-center" scope="col">
+                          Регистрация
+                        </th>
+                        <th class="text-center sorting" scope="col">Логин</th>
+                        <th class="text-center sorting" scope="col">Статус</th>
+                        <th></th>
+                      </tr>
+                    </tfoot>
+                    <tbody>
+                      <tr>
+                        <td class="text-center">ФИО пользователя 1</td>
+                        <td class="text-center">222222222</td>
+                        <td class="text-center">
+                          Дополнительный администратор
+                        </td>
+                        <td class="text-center">12.05.2021</td>
+                        <td class="text-center">admin1</td>
+                        <td class="text-center">активен</td>
+                        <td class="text-center">
+                          <button>
+                            <i class="fa fa-search" aria-hidden="true"></i>
+                          </button>
+                          <button
+                            data-toggle="modal"
+                            data-target="#user-edit-modal-1"
+                          >
+                            <i
+                              class="fa fa-pencil-square"
+                              aria-hidden="true"
+                            ></i>
+                          </button>
+                          <button><i class="icon-trash"></i></button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="text-center">ФИО пользователя 2</td>
+                        <td class="text-center">785595959</td>
+                        <td class="text-center">Логист</td>
+                        <td class="text-center">12.12.2021</td>
+                        <td class="text-center">logist3</td>
+                        <td class="text-center">активен</td>
+                        <td class="text-center">
+                          <button>
+                            <i class="fa fa-search" aria-hidden="true"></i>
+                          </button>
+                          <button
+                            data-toggle="modal"
+                            data-target="#user-edit-modal-1"
+                          >
+                            <i
+                              class="fa fa-pencil-square"
+                              aria-hidden="true"
+                            ></i>
+                          </button>
+                          <button><i class="icon-trash"></i></button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="text-center">ФИО пользователя 3</td>
+                        <td class="text-center">123456789</td>
+                        <td class="text-center">Клиент</td>
+                        <td class="text-center">07.05.2021</td>
+                        <td class="text-center">client7866434</td>
+                        <td class="text-center">Не активен</td>
+                        <td class="text-center">
+                          <button>
+                            <i class="fa fa-search" aria-hidden="true"></i>
+                          </button>
+                          <button
+                            data-toggle="modal"
+                            data-target="#user-edit-modal-1"
+                          >
+                            <i
+                              class="fa fa-pencil-square"
+                              aria-hidden="true"
+                            ></i>
+                          </button>
+                          <button><i class="icon-trash"></i></button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="text-center">ФИО пользователя 4</td>
+                        <td class="text-center">667569834</td>
+                        <td class="text-center">Поставщик</td>
+                        <td class="text-center">22.05.2021</td>
+                        <td class="text-center">postavshik11</td>
+                        <td class="text-center">активен</td>
+                        <td class="text-center">
+                          <button>
+                            <i class="fa fa-search" aria-hidden="true"></i>
+                          </button>
+                          <button
+                            data-toggle="modal"
+                            data-target="#user-edit-modal-1"
+                          >
+                            <i
+                              class="fa fa-pencil-square"
+                              aria-hidden="true"
+                            ></i>
+                          </button>
+                          <button><i class="icon-trash"></i></button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="text-center">ФИО пользователя 5</td>
+                        <td class="text-center">443720981</td>
+                        <td class="text-center">Менеджер</td>
+                        <td class="text-center">31.07.2021</td>
+                        <td class="text-center">manager01</td>
+                        <td class="text-center">Не активен</td>
+                        <td class="text-center">
+                          <button>
+                            <i class="fa fa-search" aria-hidden="true"></i>
+                          </button>
+                          <button
+                            data-toggle="modal"
+                            data-target="#user-edit-modal-1"
+                          >
+                            <i
+                              class="fa fa-pencil-square"
+                              aria-hidden="true"
+                            ></i>
+                          </button>
+                          <button><i class="icon-trash"></i></button>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <!-- Modal Windows -->
-    <div class="modal fade" id="user-create-modal" role="dialog" aria-modal="true">
-        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title">
-                        Создать пользователя
-                    </h5>
+    <div
+      class="modal fade"
+      id="user-create-modal"
+      role="dialog"
+      aria-modal="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">
+              Создать пользователя
+            </h5>
+          </div>
+          <div class="modal-body">
+            <form action="" method="post" class="user-form modal-form">
+              <div class="form-fl-row">
+                <div class="input-group">
+                  <label>Дата регистрации</label>
+                  <input
+                    type="date"
+                    name=""
+                    id=""
+                    value="2019-01-01"
+                    readonly
+                  />
                 </div>
-                <div class="modal-body">
-                    <form action="" method="post" class="user-create-form">
-                        <div class="form-data-group">
-                            <div class="form-fl-column">
-                                <div class="input-group">
-                                    <nobr class="my-toggle">
-                                        <input type="checkbox" id="toggle-button" class="toggle-button" />
-                                        <label for="toggle-button" class="text">Активен</label>
-                                    </nobr>
-                                </div>
-                                <div class="input-group">
-                                    <label for="">ФИО</label>
-                                    <input type="text" class="form-control" />
-                                </div>
-                                <div class="input-group">
-                                    <label for="">Телефон</label>
-                                    <input type="tel" class="form-control" />
-                                </div>
-                                <div class="input-group">
-                                    <label for="">Тип пользователя</label>
-                                    <select value="" class="form-control" placeholder="Тип пользователей">
-                      <option value="">Администраторы</option>
-                      <option value="">Менеджеры</option>
-                      <option value="">Поставщики</option>
-                      <option value="">Клиенты</option>
-                      <option value="">Консультанты</option>
-                      <option value="">Логисты</option>
-                    </select>
-                                </div>
-                            </div>
-                            <div class="form-fl-column">
-                                <div class="input-group">
-                                    <div class="input-group date">
-                                        <label>Дата регистрации</label>
-                                        <input type="date" name="" id="" value="2019-01-01" readonly />
-                                    </div>
-                                </div>
-                                <div class="input-group">
-                                    <label for="">Логин</label>
-                                    <input type="text" class="form-control" />
-                                </div>
-                                <div class="input-group">
-                                    <label for="">Пароль</label>
-                                    <input type="password" class="form-control" />
-                                </div>
-                                <div class="input-group">
-                                    <label for="">Повторить пароль</label>
-                                    <input type="password" class="form-control" />
-                                </div>
-                            </div>
-                        </div>
+                <div class="input-group">
+                  <nobr class="my-toggle">
+                    <input
+                      type="checkbox"
+                      id="toggle-button"
+                      class="toggle-button"
+                    />
+                    <label for="toggle-button" class="text">Активен</label>
+                  </nobr>
+                </div>
+              </div>
+              <div class="form-fl-row">
+                <div class="input-group">
+                  <label for="">ФИО</label>
+                  <input type="text" class="form-control" />
+                </div>
+                <div class="input-group">
+                  <label for="">Телефон</label>
+                  <input type="tel" class="form-control" />
+                </div>
+              </div>
+              <div class="form-fl-row">
+                <div class="input-group">
+                  <label for="">Тип пользователя</label>
+                  <select
+                    value=""
+                    class="form-control"
+                    placeholder="Тип пользователей"
+                  >
+                    <option value="">Администраторы</option>
+                    <option value="">Менеджеры</option>
+                    <option value="">Поставщики</option>
+                    <option value="">Клиенты</option>
+                    <option value="">Консультанты</option>
+                    <option value="">Логисты</option>
+                  </select>
+                </div>
+                <div class="input-group">
+                  <label for="">Логин</label>
+                  <input type="text" class="form-control" />
+                </div>
+              </div>
+              <div class="form-fl-row">
+                <div class="input-group">
+                  <label for="">Пароль</label>
+                  <input type="password" class="form-control" />
+                </div>
+                <div class="input-group">
+                  <label for="">Повторить пароль</label>
+                  <input type="password" class="form-control" />
+                </div>
+              </div>
+              <div class="form-fl-row"></div>
+              <div class="form-fl-row"></div>
 
-                        <div class="form-fl-row">
-                            <button type="submit" class="btn btn-info">Создать</button>
-                            <button class="btn btn-secondary" data-dismiss="modal">
+              
+
+              <div class="form-fl-row fl-s-arnd">
+                <button type="submit" class="btn btn-info">Создать</button>
+                <button class="btn btn-secondary" data-dismiss="modal">
                   Отмена
                 </button>
-                        </div>
-                    </form>
-                </div>
-                <!-- <div class="modal-footer">
+              </div>
+            </form>
+          </div>
+          <!-- <div class="modal-footer">
             
           </div> -->
-            </div>
         </div>
+      </div>
     </div>
-    <div class="modal fade" id="user-edit-modal-1" role="dialog" aria-modal="true">
-        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title">
-                        Редактировать пользователя
-                    </h5>
+    <div
+      class="modal fade"
+      id="user-edit-modal-1"
+      role="dialog"
+      aria-modal="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">
+              Редактировать пользователя
+            </h5>
+          </div>
+          <div class="modal-body">
+            <form action="" method="post" class="user-form modal-form">
+              <div class="form-fl-row">
+                <div class="input-group">
+                  <label>Дата регистрации</label>
+                  <input
+                    type="date"
+                    name=""
+                    id=""
+                    value="2019-01-01"
+                    readonly
+                  />
                 </div>
-                <div class="modal-body">
-                    <form action="" method="post" class="user-create-form">
-                        <div class="form-data-group">
-                            <div class="form-fl-column">
-                                <div class="input-group">
-                                    <nobr class="my-toggle">
-                                        <input type="checkbox" id="toggle-button" class="toggle-button" />
-                                        <label for="toggle-button" class="text">Активен</label>
-                                    </nobr>
-                                </div>
-                                <div class="input-group">
-                                    <label for="">ФИО</label>
-                                    <input type="text" class="form-control" />
-                                </div>
-                                <div class="input-group">
-                                    <label for="">Телефон</label>
-                                    <input type="tel" class="form-control" />
-                                </div>
-                                <div class="input-group">
-                                    <label for="">Тип пользователя</label>
-                                    <select value="" class="form-control" placeholder="Тип пользователей">
-                      <option value="">Администраторы</option>
-                      <option value="">Менеджеры</option>
-                      <option value="">Поставщики</option>
-                      <option value="">Клиенты</option>
-                      <option value="">Консультанты</option>
-                      <option value="">Логисты</option>
-                    </select>
-                                </div>
-                            </div>
-                            <div class="form-fl-column">
-                                <div class="input-group">
-                                    <div class="input-group date">
-                                        <label>Дата регистрации</label>
-                                        <input type="date" name="" id="" value="2019-01-01" readonly />
-                                    </div>
-                                </div>
-                                <div class="input-group">
-                                    <label for="">Логин</label>
-                                    <input type="text" class="form-control" />
-                                </div>
-                                <div class="input-group">
-                                    <label for="">Пароль</label>
-                                    <input type="password" class="form-control" />
-                                </div>
-                                <div class="input-group">
-                                    <label for="">Повторить пароль</label>
-                                    <input type="password" class="form-control" />
-                                </div>
-                            </div>
-                        </div>
+                <div class="input-group">
+                  <nobr class="my-toggle">
+                    <input
+                      type="checkbox"
+                      id="toggle-button"
+                      class="toggle-button"
+                      checked
+                    />
+                    <label for="toggle-button" class="text">Активен</label>
+                  </nobr>
+                </div>
+              </div>
+              <div class="form-fl-row">
+                <div class="input-group">
+                  <label for="">ФИО</label>
+                  <input type="text" class="form-control" value="Иванов Петр Олегович"/>
+                </div>
+                <div class="input-group">
+                  <label for="">Телефон</label>
+                  <input type="tel" class="form-control" value="222222222"/>
+                </div>
+              </div>
+              <div class="form-fl-row">
+                <div class="input-group">
+                  <label for="">Тип пользователя</label>
+                  <select
+                    value=""
+                    class="form-control"
+                    placeholder="Тип пользователей"
+                  >
+                    <option value="">Администраторы</option>
+                    <option value="">Менеджеры</option>
+                    <option value="">Поставщики</option>
+                    <option value="">Клиенты</option>
+                    <option value="">Консультанты</option>
+                    <option value="">Логисты</option>
+                  </select>
+                </div>
+                <div class="input-group">
+                  <label for="">Логин</label>
+                  <input type="text" class="form-control" value="admin1"/>
+                </div>
+              </div>
+              <div class="form-fl-row">
+                <div class="input-group">
+                  <label for="">Пароль</label>
+                  <input type="password" class="form-control" />
+                </div>
+                <div class="input-group">
+                  <label for="">Повторить пароль</label>
+                  <input type="password" class="form-control" />
+                </div>
+              </div>
+              <div class="form-fl-row"></div>
+              <div class="form-fl-row"></div>
 
-                        <div class="form-fl-row">
-                            <button type="submit" class="btn btn-info">Создать</button>
-                            <button class="btn btn-secondary" data-dismiss="modal">
+              
+
+              <div class="form-fl-row fl-s-arnd">
+                <button type="submit" class="btn btn-info">Сохранить</button>
+                <button class="btn btn-secondary" data-dismiss="modal">
                   Отмена
                 </button>
-                        </div>
-                    </form>
-                </div>
-                <!-- <div class="modal-footer">
+              </div>
+            </form>
+          </div>
+          <!-- <div class="modal-footer">
             
           </div> -->
-            </div>
         </div>
+      </div>
     </div>
 
     <!-- Javascript -->
@@ -495,61 +624,62 @@
     <script src="../assets/vendor/jquery-datatable/buttons/buttons.print.min.js"></script>
 
     <script src="../assets/vendor/sweetalert/sweetalert.min.js"></script>
+    <script src="../light/assets/js/pages/tables/jquery-datatable.js"></script>
     <script>
-        $('.metismenu li').click(function() {
-            var $this = $(this)
-            if (!$this.is('active')) {
-                $('.metismenu li').removeClass('active').removeData('top')
-                $this.addClass('active').data('top', $this.offset().top)
+      $('.metismenu li').click(function () {
+        var $this = $(this)
+        if (!$this.is('active')) {
+          $('.metismenu li').removeClass('active').removeData('top')
+          $this.addClass('active').data('top', $this.offset().top)
+        }
+      })
+      document.createElement('section')
+      var duration = '500',
+        easing = 'swing'
+
+      // Select all links with hashes
+      $('a[href*="#"]')
+        // Remove links that don't actually link to anything
+        .not('[href="#"]')
+        .not('[href="#0"]')
+        .click(function (event) {
+          // On-page links
+          if (
+            location.pathname.replace(/^\//, '') ==
+              this.pathname.replace(/^\//, '') &&
+            location.hostname == this.hostname
+          ) {
+            // Figure out element to scroll to
+            var target = $(this.hash)
+            target = target.length
+              ? target
+              : $('[name=' + this.hash.slice(1) + ']')
+            // Does a scroll target exist?
+            if (target.length) {
+              // Only prevent default if animation is actually gonna happen
+              event.preventDefault()
+              $('html, body').animate(
+                {
+                  scrollTop: target.offset().top,
+                },
+                1000,
+                function () {
+                  // Callback after animation
+                  // Must change focus!
+                  var $target = $(target)
+                  $target.focus()
+                  if ($target.is(':focus')) {
+                    // Checking if the target was focused
+                    return false
+                  } else {
+                    $target.attr('tabindex', '-1') // Adding tabindex for elements not focusable
+                    $target.focus() // Set focus again
+                  }
+                },
+              )
             }
+          }
         })
-        document.createElement('section')
-        var duration = '500',
-            easing = 'swing'
-
-        // Select all links with hashes
-        $('a[href*="#"]')
-            // Remove links that don't actually link to anything
-            .not('[href="#"]')
-            .not('[href="#0"]')
-            .click(function(event) {
-                // On-page links
-                if (
-                    location.pathname.replace(/^\//, '') ==
-                    this.pathname.replace(/^\//, '') &&
-                    location.hostname == this.hostname
-                ) {
-                    // Figure out element to scroll to
-                    var target = $(this.hash)
-                    target = target.length ?
-                        target :
-                        $('[name=' + this.hash.slice(1) + ']')
-                        // Does a scroll target exist?
-                    if (target.length) {
-                        // Only prevent default if animation is actually gonna happen
-                        event.preventDefault()
-                        $('html, body').animate({
-                                scrollTop: target.offset().top,
-                            },
-                            1000,
-                            function() {
-                                // Callback after animation
-                                // Must change focus!
-                                var $target = $(target)
-                                $target.focus()
-                                if ($target.is(':focus')) {
-                                    // Checking if the target was focused
-                                    return false
-                                } else {
-                                    $target.attr('tabindex', '-1') // Adding tabindex for elements not focusable
-                                    $target.focus() // Set focus again
-                                }
-                            },
-                        )
-                    }
-                }
-            })
     </script>
-</body>
-
+  </body>
 </html>
