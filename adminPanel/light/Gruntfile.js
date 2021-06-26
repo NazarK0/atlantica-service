@@ -17,7 +17,7 @@ module.exports = function(grunt) {
 
               "assets/css/user_create.css": "assets/scss/myStyles/userCreate.scss",
               "assets/css/query_create.css": "assets/scss/myStyles/queryCreate.scss",
-              "assets/css/query_create.css": "assets/scss/myStyles/mystyle.scss",
+              "assets/css/client.css": "assets/scss/myStyles/mystyle.scss",             
               "assets/css/my_styles.css":    "assets/scss/myStyles/style.scss" /* 'my styles to CSS' */,
               "assets/css/my_media.css":    "assets/scss/myStyles/main-media.scss" /* 'my media' */,
             },

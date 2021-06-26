@@ -1,0 +1,85 @@
+.client-create-form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	input[type="file"] {
+		position: relative;
+		top: 32px;
+	}
+	.form-group {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		align-items: center;
+		padding: 10px;
+		width: 100%;
+
+		&-flex-column {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			align-items: flex-start;
+			flex-wrap: wrap;
+			height: 100%;
+
+			.upload-file {
+				display: flex;
+				justify-content: flex-start;
+				flex-direction: row;
+				align-items: flex-start;
+				height: 100%;
+				flex-wrap: wrap;
+
+				label {
+					cursor: pointer;
+				}
+			}
+		}
+		&-flex-row {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-around;
+			align-items: flex-start;
+			flex-wrap: wrap;
+		}
+
+		// > div {
+		//   display: inline-block;
+		// }
+
+		.input-group {
+			display: flex;
+			flex-direction: column;
+			width: 200px;
+			margin: 5px;
+		}
+
+		.form-other {
+			width: 100%;
+			display: flex;
+			justify-content: space-between;
+			flex-direction: row-reverse;
+			label {
+				padding: 5px;
+			}
+		}
+	}
+
+	.description {
+		width: 100%;
+		&-wrapper {
+			width: 100%;
+		}
+	}
+	button {
+		width: 150px;
+		margin-bottom: 10px;
+	}
+}
+
+.search-trash{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
