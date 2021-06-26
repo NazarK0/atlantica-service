@@ -83,13 +83,20 @@
 						</button>
 					</div>
 					<form id="navbar-search" class="navbar-form navbar-right search-form">
-						<input value="" class="form-control" placeholder="Компания" type="text" />
-						<input
-							value=""
-							class="form-control"
-							placeholder="Представитель"
-							type="text"
-						/>
+						<div style="display: flex; justify-items: left;">
+							<input
+								value=""
+								class="form-control m-r-10"
+								placeholder="Компания"
+								type="text"
+							/>
+							<input
+								value=""
+								class="form-control"
+								placeholder="Представитель"
+								type="text"
+							/>
+						</div>
 						<div>
 							<input
 								value=""
@@ -105,17 +112,21 @@
 								style="display: inline-block"
 							/>
 						</div>
-						<div>
-							<a href="client-show-queries-client.html" style="cursor: pointer">
+						<div class="search-trash">
+							<button class="btn" data-toggle="modal" data-target="#">
 								<i class="fa fa-search" style="font-size: 1.5em; color: black"></i>
-							</a>
-							<a href="#client-show">
+							</button>
+							<button
+								class="btn"
+								data-toggle="modal"
+								data-target="#client-list-query-modal"
+							>
 								<i
 									class="icon-trash"
 									style="font-size: 21px; color: black"
 									aria-hidden="true"
 								></i>
-							</a>
+							</button>
 						</div>
 					</form>
 				</div>
@@ -188,10 +199,10 @@
 							<li>
 								<a href="queries.html"><span>Запросы</span></a>
 							</li>
-							<li class="active">
+							<li>
 								<a href="client.html"><span>Клиенты</span></a>
 							</li>
-							<li>
+							<li class="active">
 								<a href="provider.html"><span>Поставщики</span></a>
 							</li>
 							<li>
@@ -299,7 +310,7 @@
 															class="btn-search"
 															data-toggle="modal"
 															data-target="#provider-show-edit-delete-modal"
-															data-imgcompany="../../assets/images/atlantica/logo_client_example.png"
+															data-imgcompany="../../assets/images/atlantica/create_client_logo_example.png"
 														>
 															<i class="fa fa-search fa-lg" aria-hidden="true"></i>
 														</button>
@@ -324,7 +335,7 @@
 															class="btn-search"
 															data-toggle="modal"
 															data-target="#provider-show-edit-delete-modal"
-															data-imgcompany="../../assets/images/atlantica/logo_client_example.png"
+															data-imgcompany="../../assets/images/atlantica/create_client_logo_example.png"
 														>
 															<i class="fa fa-search fa-lg" aria-hidden="true"></i>
 														</button>
@@ -440,6 +451,9 @@
 															</a>
 															<a href="#">
 																<i class="icon-trash fa-lg"></i>
+															</a>
+															<a href="#">
+																<i class="fa fa-check fa-lg"></i>
 															</a>
 														</td>
 													</tr>
@@ -595,6 +609,9 @@
 															</a>
 															<a href="#">
 																<i class="icon-trash fa-lg"></i>
+															</a>
+															<a href="#">
+																<i class="fa fa-check fa-lg"></i>
 															</a>
 														</td>
 													</tr>
