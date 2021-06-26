@@ -335,7 +335,7 @@
     </div>
   </div>
 </div>
-<div class="modal fade query-modal" id="query-doc-show-form-modal" role="dialog" aria-modal="true">
+<div class="modal fade query-modal doc-show" id="query-doc-show-form-modal" role="dialog" aria-modal="true">
   <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
@@ -344,34 +344,37 @@
         </h5>
       </div>
       <div class="modal-body">
-        <div class="query-form-header">
+        <div class="form-fl-column">
           <div>Запрос 1&nbsp;</div>
           <div>01.06.2021&nbsp;</div>
-          <div><span>Стадия:</span>получение КП</div>
+          <div><span class="description">Стадия:</span>получение КП</div>
         </div>
-        <div class="query-form-comment">
-          <label for="">Комментарий: </label>
+        <div class="form-fl-column query-form-comment">
+          <label class="description">Комментарий: </label>
           <textarea name="" id="" readonly>
             Прошу вас отправить нам КП в соответствии с нашим техническим
             заданием на поставку оборудования для завода
           </textarea>
         </div>
         <div class="query-form-document">
-          <span>Документ:</span>
+          <span class="description">Документ:</span>
           <span>Teхническое задание</span>
         </div>
-        <a href="./../../ТЗ.pdf" class="btn btn-primary"><i class="fa fa-download" aria-hidden="true"></i></a>
+        
 
-        <button class="btn btn-primary">
-          Подтвердить
-        </button>
-        <button class="btn btn-secondary">
-          Отклонить
-        </button>
+        <div class="ctrl-buttons">
+          <a href="./../../ТЗ.pdf" class="btn btn-primary"><i class="fa fa-download" aria-hidden="true"></i></a>
+          <button class="btn btn-primary">
+            Подтвердить
+          </button>
+          <button class="btn btn-secondary">
+            Отклонить
+          </button>
+        </div>
       </div>
       <div class="modal-footer">
         <button class="btn btn-primary">
-          Следующая стадии
+          Следующая стадия
         </button>
         <button class="btn btn-secondary" data-dismiss="modal">
           Закрыть окно
@@ -389,32 +392,57 @@
         </h5>
       </div>
       <div class="modal-body">
-        <div class="query-form-header">
-          <div>Запрос 1&nbsp;</div>
-          <div>01.06.2021&nbsp;</div>
-          <div><span>Стадия:</span>получение КП</div>
-        </div>
-        <div class="query-form-comment">
-          <label for="">Комментарий: </label>
-          <textarea name="" id="">
-            Ваш запрос обработан и подготовлен КП согласно вашему ТЗ
-          </textarea>
-        </div>
-        <div class="query-form-document">
-          <span>Документ:</span>
-          <span>Коммерческое предложение</span>
-        </div>
-        <input type="file" name="" id="">
-
-        <button class="btn btn-primary">
-          Подтвердить
-        </button>
-        <button class="btn btn-secondary">
-          Отклонить
-        </button>
-        <button class="btn btn-secondary">
-          Сохранить
-        </button>
+        <form action="post" class="query-form modal-form">
+          <div class="form-fl-row">
+            <div class="input-group">
+              <label>Дата:</label>
+              <input
+                type="date"
+                name=""
+                id=""
+                value="2021-06-01"
+                readonly
+              />
+            </div>
+          </div>
+          <div class="form-fl-row">
+            <div class="input-group">
+              <label>Запрос:</label>
+              <input type="text" value="Запрос 1" readonly>
+            </div>
+            <div class="input-group">
+              <label>Стадия:</label>
+              <input type="text" value="получение КП" readonly>
+            </div>
+          </div>
+          <div class="form-fl-row">
+            <div class="input-group">
+              <label>Комментарий:</label>
+              <textarea></textarea>
+            </div>
+          </div>
+          <div class="form-fl-row">
+            <div class="input-group">
+              <label>Документ:</label>
+              <input type="text">
+            </div>
+            <div class="input-group">
+              <label>Прикрепить файл:</label>
+              <input type="file" name="" id="">
+            </div>
+          </div>
+          <div class="form-fl-row fl-center ctrl-buttons">
+            <button class="btn btn-primary">
+              Подтвердить
+            </button>
+            <button class="btn btn-secondary">
+              Отклонить
+            </button>
+            <button class="btn btn-secondary">
+              Сохранить
+            </button>
+          </div>
+        </form>
       </div>
       <div class="modal-footer">
         <button class="btn btn-primary">

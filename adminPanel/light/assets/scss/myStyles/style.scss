@@ -12,7 +12,6 @@ ul {
 
 .navbar-form.search-form {
   display: none;
-
 }
 
 .top-search {
@@ -46,6 +45,24 @@ ul {
     cursor: pointer;
     overflow: hidden;
     outline: none;
+  }
+}
+
+.modal {
+  .description {
+    font-weight: bold;
+    margin-right: 6px;
+  }
+
+  .ctrl-buttons {
+    .btn {
+      margin-right: 7px;
+    }
+  }
+
+  .modal-footer {
+    display: flex;
+    justify-content: center;
   }
 }
 
@@ -93,13 +110,18 @@ ul {
     margin-bottom: 11px;
   }
 
-  textarea{
+  textarea {
     width: 100%;
   }
 
   button {
     width: 150px;
     margin-bottom: 10px;
+    margin-right: 7px;
+  }
+
+  .description {
+    font-weight: bold;
   }
 }
 
@@ -112,7 +134,7 @@ ul {
 
 .query-form,
 .user-form {
-  input[type="date"] {
+  input[type='date'] {
     width: fit-content;
   }
 }
@@ -352,36 +374,5 @@ ul {
     .query-doc-add {
       font-size: 1.6rem;
     }
-  }
-}
-
-.query-modal {
-  .query-form-header,
-  .query-form-comment {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-  .query-form-header {
-    align-items: stretch;
-  }
-  .query-form-comment {
-    label {
-      width: fit-content;
-    }
-
-    textarea {
-      width: 100%;
-      height: max-content;
-      border: 0;
-      padding: 10px;
-    }
-    // textarea:hover,
-    // textarea:active, {
-    //   width: 100%;
-    //   height: max-content;
-    //   border: 0;
-    //   padding: 10px;
-    // }
   }
 }
