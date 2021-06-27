@@ -1,93 +1,72 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
+
+<head>
     <title>Atlantica :: Запросы</title>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
 
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
     <!-- VENDOR CSS -->
-    <link
-      rel="stylesheet"
-      href="../../assets/vendor/bootstrap/css/bootstrap.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="../../assets/vendor/font-awesome/css/font-awesome.min.css"
-    />
+    <link rel="stylesheet" href="../../assets/vendor/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../../assets/vendor/font-awesome/css/font-awesome.min.css" />
 
     <!-- MAIN CSS -->
     <link rel="stylesheet" href="../../light/assets/css/main.css" />
     <link rel="stylesheet" href="../../light/assets/css/color_skins.css" />
-    <link
-      rel="stylesheet"
-      href="../../assets/vendor/jquery-datatable/dataTables.bootstrap4.min.css"
-    />
+    <link rel="stylesheet" href="../../assets/vendor/jquery-datatable/dataTables.bootstrap4.min.css" />
     <link rel="stylesheet" href="../../light/assets/css/my_styles.css" />
     <link rel="stylesheet" href="../../light/assets/css/my_media.css" />
     <style>
-      .card .body {
-        font-size: 15px;
-      }
-      .main_features li {
-        line-height: 35px;
-      }
-      .main_features li.divider {
-        border-bottom: 1px solid #ececec;
-        margin: 10px 0;
-        list-style: none;
-        font-size: 12px;
-        text-transform: uppercase;
-        line-height: 1;
-        color: #ff0000;
-        padding-top: 15px;
-      }
+        .card .body {
+            font-size: 15px;
+        }
+        
+        .main_features li {
+            line-height: 35px;
+        }
+        
+        .main_features li.divider {
+            border-bottom: 1px solid #ececec;
+            margin: 10px 0;
+            list-style: none;
+            font-size: 12px;
+            text-transform: uppercase;
+            line-height: 1;
+            color: #ff0000;
+            padding-top: 15px;
+        }
     </style>
-  </head>
-  <body class="theme-orange">
+</head>
+
+<body class="theme-orange">
     <!-- Page Loader -->
     <div class="page-loader-wrapper">
-      <div class="loader">
-        <div class="m-t-30">
-          <img
-            src="../../assets/images/atlantica/logo_full_black.png"
-            height="48"
-            alt="Atlantica"
-          />
+        <div class="loader">
+            <div class="m-t-30">
+                <img src="../../assets/images/atlantica/logo_full_black.png" height="48" alt="Atlantica" />
+            </div>
+            <p>Пожалуйста, подождите...</p>
         </div>
-        <p>Пожалуйста, подождите...</p>
-      </div>
     </div>
     <!-- Overlay For Sidebars -->
     <div class="overlay"></div>
 
     <div id="wrapper">
-      <nav class="navbar navbar-fixed-top">
-        <div class="container-my">
-          <div class="navbar-left navbar-btn">
-            <a href="#">
-              <img
-                src="../../assets/images/atlantica/logo_full_color.png"
-                alt="Atlantica Logo"
-                class="img-fluid logo"
-              />
-            </a>
-            <button type="button" class="btn-toggle-offcanvas">
+        <nav class="navbar navbar-fixed-top">
+            <div class="container-my">
+                <div class="navbar-left navbar-btn">
+                    <a href="#">
+                        <img src="../../assets/images/atlantica/logo_full_color.png" alt="Atlantica Logo" class="img-fluid logo" />
+                    </a>
+                    <button type="button" class="btn-toggle-offcanvas">
               <i class="lnr lnr-menu fa fa-bars"></i>
             </button>
-          </div>
-          <form id="navbar-search" class="navbar-form navbar-right search-form">
-            <input
-              value=""
-              class="form-control user-name"
-              placeholder="ФИО"
-              type="text"
-            />
-            <select value="" class="form-control query-type" placeholder="Тип запроса">
+                </div>
+                <form id="navbar-search" class="navbar-form navbar-right search-form">
+                    <input value="" class="form-control user-name" placeholder="ФИО" type="text" />
+                    <select value="" class="form-control query-type" placeholder="Тип запроса">
               <option value="">Тип запроса</option>
               <option value="">Новый</option>
               <option value="">КП</option>
@@ -96,555 +75,475 @@
               <option value="">Доставка</option>
               <option value="">Оплата</option>
             </select>
-            <div>
-              <label>Регистрация: с</label>
-              <input
-                value=""
-                class="form-control"
-                type="date"
-                style="display: inline-block;"
-              />
-              <span>&nbsp;по&nbsp;</span>
-              <input
-                value=""
-                class="form-control"
-                type="date"
-                style="display: inline-block;"
-              />
+                    <div>
+                        <label>Регистрация: с</label>
+                        <input value="" class="form-control" type="date" style="display: inline-block;" />
+                        <span>&nbsp;по&nbsp;</span>
+                        <input value="" class="form-control" type="date" style="display: inline-block;" />
+                    </div>
+                    <button type="button" class="btn btn-default"><i class="fa fa-search" aria-hidden="true"></i></button>
+                    <button type="button" class="btn btn-default"><i class="icon-trash"></i></button>
+                </form>
             </div>
-            <button type="button" class="btn btn-default"><i class="fa fa-search" aria-hidden="true"></i></button>
-            <button type="button" class="btn btn-default"><i class="icon-trash"></i></button>
-          </form>
-        </div>
-      </nav>
+        </nav>
 
-      <div id="left-sidebar" class="sidebar">
-        <div class="navbar-brand">
-          <a href="#">
-            <img
-              src="../../assets/images/atlantica/logo_full_color.png"
-              alt="Atlantica Logo"
-              class="img-fluid logo"
-            />
-          </a>
-          <button
-            type="button"
-            class="btn-toggle-offcanvas btn btn-sm float-right"
-          >
+        <div id="left-sidebar" class="sidebar">
+            <div class="navbar-brand">
+                <a href="#">
+                    <img src="../../assets/images/atlantica/logo_full_color.png" alt="Atlantica Logo" class="img-fluid logo" />
+                </a>
+                <button type="button" class="btn-toggle-offcanvas btn btn-sm float-right">
             <i class="lnr lnr-menu fa fa-chevron-circle-left"></i>
           </button>
-        </div>
-        <div class="sidebar-scroll">
-          <div class="user-account">
-            <div class="user_div">
-              <img
-                src="../../assets/images/user.png"
-                class="user-photo"
-                alt="User Profile Picture"
-              />
             </div>
-            <div class="dropdown">
-              <a
-                href="javascript:void(0);"
-                class="dropdown-toggle user-name"
-                data-toggle="dropdown"
-              >
-                <strong>Петров О. П.</strong>
-              </a>
-              <ul class="dropdown-menu dropdown-menu-right account">
-                <li>
-                  <a href="#">
-                    <i class="icon-user"></i>
-                    Профиль
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <i class="icon-envelope-open"></i>
-                    Сообщения
-                  </a>
-                </li>
-                <li>
-                  <a href="javascript:void(0);">
-                    <i class="icon-settings"></i>
-                    Настройки
-                  </a>
-                </li>
-                <li class="divider"></li>
-                <li>
-                  <a href="#">
-                    <i class="icon-power"></i>
-                    Выйти
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <nav id="left-sidebar-nav" class="sidebar-nav">
-            <ul id="main-menu" class="metismenu">
-              <li>
-                <a href="../index.html"><span>Пользователи</span></a>
-              </li>
-              <li class="active">
-                <a href="queries.html"><span>Запросы</span></a>
-              </li>
-              <li>
-                <a href="client.html"><span>Клиенты</span></a>
-              </li>
-              <li>
-								<a href="provider.html"><span>Поставщики</span></a>
-							</li>
-							<li>
-								<a href="news.html"><span>Новости</span></a>
-							</li>
-							<li>
-								<a href="reference-books.html"><span>Справочники</span></a>
-							</li>
-							<li>
-								<a href="contract-templates.html"
-									><span>Шаблоны договоров</span></a
+            <div class="sidebar-scroll">
+                <div class="user-account">
+                    <div class="user_div">
+                        <img src="../../assets/images/user.png" class="user-photo" alt="User Profile Picture" />
+                    </div>
+                    <div class="dropdown">
+                        <a href="javascript:void(0);" class="dropdown-toggle user-name" data-toggle="dropdown">
+                            <strong>Петров О. П.</strong>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-right account">
+                            <li>
+                                <a href="#">
+                                    <i class="icon-user"></i> Профиль
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="icon-envelope-open"></i> Сообщения
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);">
+                                    <i class="icon-settings"></i> Настройки
+                                </a>
+                            </li>
+                            <li class="divider"></li>
+                            <li>
+                                <a href="#">
+                                    <i class="icon-power"></i> Выйти
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <nav id="left-sidebar-nav" class="sidebar-nav">
+                    <ul id="main-menu" class="metismenu">
+                        <li>
+                            <a href="../index.html"><span>Пользователи</span></a>
+                        </li>
+                        <li class="active">
+                            <a href="queries.html"><span>Запросы</span></a>
+                        </li>
+                        <li>
+                            <a href="client.html"><span>Клиенты</span></a>
+                        </li>
+                        <li>
+                            <a href="provider.html"><span>Поставщики</span></a>
+                        </li>
+                        <li>
+                            <a href="news.html"><span>Новости</span></a>
+                        </li>
+                        <li>
+                            <a href="reference-books.html"><span>Справочники</span></a>
+                        </li>
+                        <li>
+                            <a href="contract-templates.html"><span>Шаблоны договоров</span></a
 								>
 							</li>
               <li>
                 <a href="#SCSS"><span>Онлайн чат</span></a>
-              </li>
-              <li>
-                <a href="#javascript"><span>Продукция</span></a>
-              </li>
-            </ul>
-          </nav>
-        </div>
-      </div>
-
-      <div id="main-content">
-        <div class="block-header">
-          <div class="row clearfix">
-            <div class="col-md-6 col-sm-12">
-              <h2>Список запросов</h2>
+                        </li>
+                        <li>
+                            <a href="production.html"><span>Продукция</span></a>
+                        </li>
+                    </ul>
+                </nav>
             </div>
-            <div class="col-md-6 col-sm-12 text-right">
-              <ul class="breadcrumb">
-                <li class="breadcrumb-item">
-                  <a href="../index.html"><i class="icon-home"></i></a>
-                </li>
-                <li class="breadcrumb-item active">Список запросов</li>
-              </ul>
-              <button
-                data-toggle="modal"
-                data-target="#query-create-modal"
-                class="btn btn-sm btn-primary"
-                title="Создать"
-              >
+        </div>
+
+        <div id="main-content">
+            <div class="block-header">
+                <div class="row clearfix">
+                    <div class="col-md-6 col-sm-12">
+                        <h2>Список запросов</h2>
+                    </div>
+                    <div class="col-md-6 col-sm-12 text-right">
+                        <ul class="breadcrumb">
+                            <li class="breadcrumb-item">
+                                <a href="../index.html"><i class="icon-home"></i></a>
+                            </li>
+                            <li class="breadcrumb-item active">Список запросов</li>
+                        </ul>
+                        <button data-toggle="modal" data-target="#query-create-modal" class="btn btn-sm btn-primary" title="Создать">
                 Создать
               </button>
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>
 
-        <div class="container-fluid">
-          <div class="row clearfix">
-            <div class="col-sm-12">
-              <div class="card" id="documenter_cover">
-                <div class="body">
-                  <div class="table-responsive">
-                    <table
-                      class="content-table table js-basic-example dataTable"
-                      id="DataTables_Table_0"
-                      role="grid"
-                      aria-describedby="DataTables_Table_0_info"
-                    >
-                      <thead class="thead-dark">
-                        <tr role="row">
-                          <th class="text-center sorting">
-                            Номер и описание
-                          </th>
-                          <th class="text-center sorting">
-                            От кого
-                          </th>
-                          <th class="text-center sorting">
-                            Дата
-                          </th>
-                          <th class="text-center sorting">
-                            Менеджер
-                          </th>
-                          <th class="text-center sorting">
-                            Стадия
-                          </th>
-                          <th class="text-center sorting">
-                            Поставщик
-                          </th>
-                          <th></th>
-                        </tr>
-                      </thead>
-                        <tfoot class="thead-dark">
-                          <tr role="row">
-                            <th class="text-center sorting">
-                              Номер и описание
-                            </th>
-                            <th class="text-center sorting">
-                              От кого
-                            </th>
-                            <th class="text-center sorting">
-                              Дата
-                            </th>
-                            <th class="text-center sorting">
-                              Менеджер
-                            </th>
-                            <th class="text-center sorting">
-                              Стадия
-                            </th>
-                            <th class="text-center sorting">
-                              Поставщик
-                            </th>
-                            <th></th>
-                          </tr>
-                        </tfoot>
-                      <tbody>
-                        <tr class="uncompleted">
-                          <td class="text-center">Запрос 10</td>
-                          <td class="text-center">ФИО</td>
-                          <td class="text-center">10.10.2021</td>
-                          <td class="text-center"></td>
-                          <td class="text-left">Новый</td>
-                          <td class="text-center"></td>
-                          <td class="text-center">
-                            <a href="query-show_new.html">
-                              <i class="fa fa-search" aria-hidden="true"></i>
-                            </a>
-                            <button
-                              data-toggle="modal"
-                              data-target="#query-edit-modal-1"
-                            >
+            <div class="container-fluid">
+                <div class="row clearfix">
+                    <div class="col-sm-12">
+                        <div class="card" id="documenter_cover">
+                            <div class="body">
+                                <div class="table-responsive">
+                                    <table class="content-table table js-basic-example dataTable" id="DataTables_Table_0" role="grid" aria-describedby="DataTables_Table_0_info">
+                                        <thead class="thead-dark">
+                                            <tr role="row">
+                                                <th class="text-center sorting">
+                                                    Номер и описание
+                                                </th>
+                                                <th class="text-center sorting">
+                                                    От кого
+                                                </th>
+                                                <th class="text-center sorting">
+                                                    Дата
+                                                </th>
+                                                <th class="text-center sorting">
+                                                    Менеджер
+                                                </th>
+                                                <th class="text-center sorting">
+                                                    Стадия
+                                                </th>
+                                                <th class="text-center sorting">
+                                                    Поставщик
+                                                </th>
+                                                <th></th>
+                                            </tr>
+                                        </thead>
+                                        <tfoot class="thead-dark">
+                                            <tr role="row">
+                                                <th class="text-center sorting">
+                                                    Номер и описание
+                                                </th>
+                                                <th class="text-center sorting">
+                                                    От кого
+                                                </th>
+                                                <th class="text-center sorting">
+                                                    Дата
+                                                </th>
+                                                <th class="text-center sorting">
+                                                    Менеджер
+                                                </th>
+                                                <th class="text-center sorting">
+                                                    Стадия
+                                                </th>
+                                                <th class="text-center sorting">
+                                                    Поставщик
+                                                </th>
+                                                <th></th>
+                                            </tr>
+                                        </tfoot>
+                                        <tbody>
+                                            <tr class="uncompleted">
+                                                <td class="text-center">Запрос 10</td>
+                                                <td class="text-center">ФИО</td>
+                                                <td class="text-center">10.10.2021</td>
+                                                <td class="text-center"></td>
+                                                <td class="text-left">Новый</td>
+                                                <td class="text-center"></td>
+                                                <td class="text-center">
+                                                    <a href="query-show_new.html">
+                                                        <i class="fa fa-search" aria-hidden="true"></i>
+                                                    </a>
+                                                    <button data-toggle="modal" data-target="#query-edit-modal-1">
                               <i
                                 class="fa fa-pencil-square"
                                 aria-hidden="true"
                               ></i>
                             </button>
-                            <button>
+                                                    <button>
                               <i class="icon-trash"></i>
                             </button>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td class="text-center">Запрос 9</td>
-                          <td class="text-center">ФИО</td>
-                          <td class="text-center">10.10.2021</td>
-                          <td class="text-center">ФИО</td>
-                          <td class="text-left">
-                            На стадии заключения договора
-                          </td>
-                          <td class="text-center">ООО "Компания"</td>
-                          <td class="text-center">
-                            <a href="query-show_make-contract.html">
-                              <i class="fa fa-search" aria-hidden="true"></i>
-                            </a>
-                            <button
-                              data-toggle="modal"
-                              data-target="#query-edit-modal-1"
-                            >
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-center">Запрос 9</td>
+                                                <td class="text-center">ФИО</td>
+                                                <td class="text-center">10.10.2021</td>
+                                                <td class="text-center">ФИО</td>
+                                                <td class="text-left">
+                                                    На стадии заключения договора
+                                                </td>
+                                                <td class="text-center">ООО "Компания"</td>
+                                                <td class="text-center">
+                                                    <a href="query-show_make-contract.html">
+                                                        <i class="fa fa-search" aria-hidden="true"></i>
+                                                    </a>
+                                                    <button data-toggle="modal" data-target="#query-edit-modal-1">
                               <i
                                 class="fa fa-pencil-square"
                                 aria-hidden="true"
                               ></i>
                             </button>
-                            <button><i class="icon-trash"></i></button>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td class="text-center">Запрос 8</td>
-                          <td class="text-center">ФИО</td>
-                          <td class="text-center">10.10.2021</td>
-                          <td class="text-center">ФИО</td>
-                          <td class="text-left">Договор подписан</td>
-                          <td class="text-center">ООО "Компания"</td>
-                          <td class="text-center">
-                            <a href="query-show_contract-signed.html">
-                              <i class="fa fa-search" aria-hidden="true"></i>
-                            </a>
-                            <button
-                              data-toggle="modal"
-                              data-target="#query-edit-modal-1"
-                            >
+                                                    <button><i class="icon-trash"></i></button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-center">Запрос 8</td>
+                                                <td class="text-center">ФИО</td>
+                                                <td class="text-center">10.10.2021</td>
+                                                <td class="text-center">ФИО</td>
+                                                <td class="text-left">Договор подписан</td>
+                                                <td class="text-center">ООО "Компания"</td>
+                                                <td class="text-center">
+                                                    <a href="query-show_contract-signed.html">
+                                                        <i class="fa fa-search" aria-hidden="true"></i>
+                                                    </a>
+                                                    <button data-toggle="modal" data-target="#query-edit-modal-1">
                               <i
                                 class="fa fa-pencil-square"
                                 aria-hidden="true"
                               ></i>
                             </button>
-                            <button><i class="icon-trash"></i></button>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td class="text-center">Запрос 7</td>
-                          <td class="text-center">ФИО</td>
-                          <td class="text-center">10.10.2021</td>
-                          <td class="text-center">ФИО</td>
-                          <td class="text-left">Доставка</td>
-                          <td class="text-center">ООО "Компания"</td>
-                          <td class="text-center">
-                            <a href="query-show_delivery.html">
-                              <i class="fa fa-search" aria-hidden="true"></i>
-                            </a>
-                            <button
-                              data-toggle="modal"
-                              data-target="#query-edit-modal-1"
-                            >
+                                                    <button><i class="icon-trash"></i></button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-center">Запрос 7</td>
+                                                <td class="text-center">ФИО</td>
+                                                <td class="text-center">10.10.2021</td>
+                                                <td class="text-center">ФИО</td>
+                                                <td class="text-left">Доставка</td>
+                                                <td class="text-center">ООО "Компания"</td>
+                                                <td class="text-center">
+                                                    <a href="query-show_delivery.html">
+                                                        <i class="fa fa-search" aria-hidden="true"></i>
+                                                    </a>
+                                                    <button data-toggle="modal" data-target="#query-edit-modal-1">
                               <i
                                 class="fa fa-pencil-square"
                                 aria-hidden="true"
                               ></i>
                             </button>
-                            <button><i class="icon-trash"></i></button>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td class="text-center">Запрос 6</td>
-                          <td class="text-center">ФИО</td>
-                          <td class="text-center">10.10.2021</td>
-                          <td class="text-center">ФИО</td>
-                          <td class="text-left">КП</td>
-                          <td class="text-center">ООО "Компания"</td>
-                          <td class="text-center">
-                            <a href="query-show_kp.html">
-                              <i class="fa fa-search" aria-hidden="true"></i>
-                            </a>
-                            <button
-                              data-toggle="modal"
-                              data-target="#query-edit-modal-1"
-                            >
+                                                    <button><i class="icon-trash"></i></button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-center">Запрос 6</td>
+                                                <td class="text-center">ФИО</td>
+                                                <td class="text-center">10.10.2021</td>
+                                                <td class="text-center">ФИО</td>
+                                                <td class="text-left">КП</td>
+                                                <td class="text-center">ООО "Компания"</td>
+                                                <td class="text-center">
+                                                    <a href="query-show_kp.html">
+                                                        <i class="fa fa-search" aria-hidden="true"></i>
+                                                    </a>
+                                                    <button data-toggle="modal" data-target="#query-edit-modal-1">
                               <i
                                 class="fa fa-pencil-square"
                                 aria-hidden="true"
                               ></i>
                             </button>
-                            <button><i class="icon-trash"></i></button>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td class="text-center">Запрос 5</td>
-                          <td class="text-center">ФИО</td>
-                          <td class="text-center">10.10.2021</td>
-                          <td class="text-center">ФИО</td>
-                          <td class="text-left">Оплата</td>
-                          <td class="text-center">ООО "Компания"</td>
-                          <td class="text-center">
-                            <a href="query-show_payment.html">
-                              <i class="fa fa-search" aria-hidden="true"></i>
-                            </a>
-                            <button
-                              data-toggle="modal"
-                              data-target="#query-edit-modal-1"
-                            >
+                                                    <button><i class="icon-trash"></i></button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-center">Запрос 5</td>
+                                                <td class="text-center">ФИО</td>
+                                                <td class="text-center">10.10.2021</td>
+                                                <td class="text-center">ФИО</td>
+                                                <td class="text-left">Оплата</td>
+                                                <td class="text-center">ООО "Компания"</td>
+                                                <td class="text-center">
+                                                    <a href="query-show_payment.html">
+                                                        <i class="fa fa-search" aria-hidden="true"></i>
+                                                    </a>
+                                                    <button data-toggle="modal" data-target="#query-edit-modal-1">
                               <i
                                 class="fa fa-pencil-square"
                                 aria-hidden="true"
                               ></i>
                             </button>
-                            <button><i class="icon-trash"></i></button>
-                          </td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div>
+                                                    <button><i class="icon-trash"></i></button>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </div>
             </div>
-          </div>
         </div>
-      </div>
     </div>
 
     <!-- Modal Windows -->
-    <div
-      class="modal fade"
-      id="query-create-modal"
-      role="dialog"
-      aria-modal="true"
-    >
-      <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title">
-              Создать запрос
-            </h5>
-          </div>
-          <div class="modal-body">
-            <form action="" method="post" class="query-form modal-form">
-              <div class="form-fl-row fl-start">
-                <div class="input-group">
-                  <label>Дата</label>
-                  <input type="date" />
+    <div class="modal fade" id="query-create-modal" role="dialog" aria-modal="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">
+                        Создать запрос
+                    </h5>
                 </div>
-              </div>
-              <div class="form-fl-row">
-                <div class="input-group">
-                  <label for="">ФИО</label>
-                  <input type="text" class="form-control" />
-                </div>
-                <div class="input-group">
-                  <label for="">Телефон</label>
-                  <input type="text" class="form-control" />
-                </div>
-              </div>
-              <div class="form-fl-row">
-                <div class="input-group">
-                  <label for="">Наименование запроса</label>
-                  <input type="text" class="form-control" />
-                </div>
-                <div class="input-group">
-                  <label for="">Наименование компании</label>
-                  <select class="form-control">
+                <div class="modal-body">
+                    <form action="" method="post" class="query-form modal-form">
+                        <div class="form-fl-row fl-start">
+                            <div class="input-group">
+                                <label>Дата</label>
+                                <input type="date" />
+                            </div>
+                        </div>
+                        <div class="form-fl-row">
+                            <div class="input-group">
+                                <label for="">ФИО</label>
+                                <input type="text" class="form-control" />
+                            </div>
+                            <div class="input-group">
+                                <label for="">Телефон</label>
+                                <input type="text" class="form-control" />
+                            </div>
+                        </div>
+                        <div class="form-fl-row">
+                            <div class="input-group">
+                                <label for="">Наименование запроса</label>
+                                <input type="text" class="form-control" />
+                            </div>
+                            <div class="input-group">
+                                <label for="">Наименование компании</label>
+                                <select class="form-control">
                     <option value="Компания 1">Компания 1</option>
                     <option value="Компания 2">Компания 2</option>
                     <option value="Компания 3">Компания 3</option>
                   </select>
-                </div>
-              </div>
-              <div class="form-fl-row">
-                <div class="input-group">
-                  <div class="form-fl-row">
-                    <div class="fancy-checkbox">
-                      <label>
+                            </div>
+                        </div>
+                        <div class="form-fl-row">
+                            <div class="input-group">
+                                <div class="form-fl-row">
+                                    <div class="fancy-checkbox">
+                                        <label>
                         <input type="checkbox" />
                         <span>Поставка</span>
                       </label>
-                    </div>
-                    <div class="fancy-checkbox">
-                      <label>
+                                    </div>
+                                    <div class="fancy-checkbox">
+                                        <label>
                         <input type="checkbox" />
                         <span>Завод под ключ</span>
                       </label>
-                    </div>
-                  </div>
+                                    </div>
+                                </div>
 
-                  <label for="">Вид отрасли</label>
-                  <select
-                    value=""
-                    class="form-control"
-                    placeholder="Тип пользователей"
-                  >
+                                <label for="">Вид отрасли</label>
+                                <select value="" class="form-control" placeholder="Тип пользователей">
                     <option value="">Отрасль 1</option>
                     <option value="">Отрасль 2</option>
                     <option value="">Отрасль 3</option>
                   </select>
-                </div>
-              </div>
-              <div class="form-fl-row">
-                <div class="input-group">
-                  <input type="file" />
-                </div>
-              </div>
-              <div class="form-fl-row">
-                <textarea class="description" rows="7"></textarea>
-              </div>
-              <div class="form-fl-row fl-s-arnd">
-                <button type="submit" class="btn btn-info">Создать</button>
-                <button class="btn btn-secondary" data-dismiss="modal">
+                            </div>
+                        </div>
+                        <div class="form-fl-row">
+                            <div class="input-group">
+                                <input type="file" />
+                            </div>
+                        </div>
+                        <div class="form-fl-row">
+                            <textarea class="description" rows="7"></textarea>
+                        </div>
+                        <div class="form-fl-row fl-s-arnd">
+                            <button type="submit" class="btn btn-info">Создать</button>
+                            <button class="btn btn-secondary" data-dismiss="modal">
                   Отмена
                 </button>
-              </div>
-            </form>
-          </div>
-          <!-- <div class="modal-footer"></div> -->
+                        </div>
+                    </form>
+                </div>
+                <!-- <div class="modal-footer"></div> -->
+            </div>
         </div>
-      </div>
     </div>
-    <div
-      class="modal fade"
-      id="query-edit-modal-1"
-      role="dialog"
-      aria-modal="true"
-    >
-      <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title">
-              Редактировать запрос
-            </h5>
-          </div>
-          <div class="modal-body">
-            <form action="" method="post" class="query-form modal-form">
-              <div class="form-fl-row fl-start">
-                <div class="input-group">
-                  <label>Дата</label>
-                  <input type="date" value="2021-10-10" />
+    <div class="modal fade" id="query-edit-modal-1" role="dialog" aria-modal="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">
+                        Редактировать запрос
+                    </h5>
                 </div>
-              </div>
-              <div class="form-fl-row">
-                <div class="input-group">
-                  <label for="">ФИО</label>
-                  <input
-                    type="text"
-                    class="form-control"
-                    value="Петров Алексей Иванович"
-                  />
-                </div>
-                <div class="input-group">
-                  <label for="">Телефон</label>
-                  <input type="text" class="form-control" value="678567345" />
-                </div>
-              </div>
-              <div class="form-fl-row">
-                <div class="input-group">
-                  <label for="">Наименование запроса</label>
-                  <input type="text" class="form-control" value="Запрос 10" />
-                </div>
-                <div class="input-group">
-                  <label for="">Наименование компании</label>
-                  <select class="form-control" value="Компания 3">
+                <div class="modal-body">
+                    <form action="" method="post" class="query-form modal-form">
+                        <div class="form-fl-row fl-start">
+                            <div class="input-group">
+                                <label>Дата</label>
+                                <input type="date" value="2021-10-10" />
+                            </div>
+                        </div>
+                        <div class="form-fl-row">
+                            <div class="input-group">
+                                <label for="">ФИО</label>
+                                <input type="text" class="form-control" value="Петров Алексей Иванович" />
+                            </div>
+                            <div class="input-group">
+                                <label for="">Телефон</label>
+                                <input type="text" class="form-control" value="678567345" />
+                            </div>
+                        </div>
+                        <div class="form-fl-row">
+                            <div class="input-group">
+                                <label for="">Наименование запроса</label>
+                                <input type="text" class="form-control" value="Запрос 10" />
+                            </div>
+                            <div class="input-group">
+                                <label for="">Наименование компании</label>
+                                <select class="form-control" value="Компания 3">
                     <option value="Компания 1">Компания 1</option>
                     <option value="Компания 2">Компания 2</option>
                     <option value="Компания 3">Компания 3</option>
                   </select>
-                </div>
-              </div>
-              <div class="form-fl-row">
-                <div class="input-group">
-                  <div class="form-fl-row">
-                    <div class="fancy-checkbox">
-                      <label>
+                            </div>
+                        </div>
+                        <div class="form-fl-row">
+                            <div class="input-group">
+                                <div class="form-fl-row">
+                                    <div class="fancy-checkbox">
+                                        <label>
                         <input type="checkbox" checked />
                         <span>Поставка</span>
                       </label>
-                    </div>
-                    <div class="fancy-checkbox">
-                      <label>
+                                    </div>
+                                    <div class="fancy-checkbox">
+                                        <label>
                         <input type="checkbox" />
                         <span>Завод под ключ</span>
                       </label>
-                    </div>
-                  </div>
+                                    </div>
+                                </div>
 
-                  <label for="">Вид отрасли</label>
-                  <select
-                    value="Отрасль 2"
-                    class="form-control"
-                    placeholder="Тип пользователей"
-                  >
+                                <label for="">Вид отрасли</label>
+                                <select value="Отрасль 2" class="form-control" placeholder="Тип пользователей">
                     <option value="">Отрасль 1</option>
                     <option value="">Отрасль 2</option>
                     <option value="">Отрасль 3</option>
                   </select>
-                </div>
-              </div>
-              <div class="form-fl-row">
-                <div class="input-group">
-                  <input type="file" />
-                </div>
-              </div>
-              <div class="form-fl-row">
-                <textarea class="description" rows="7"></textarea>
-              </div>
-              <div class="form-fl-row fl-s-arnd">
-                <button type="submit" class="btn btn-info">Создать</button>
-                <button class="btn btn-secondary" data-dismiss="modal">
+                            </div>
+                        </div>
+                        <div class="form-fl-row">
+                            <div class="input-group">
+                                <input type="file" />
+                            </div>
+                        </div>
+                        <div class="form-fl-row">
+                            <textarea class="description" rows="7"></textarea>
+                        </div>
+                        <div class="form-fl-row fl-s-arnd">
+                            <button type="submit" class="btn btn-info">Создать</button>
+                            <button class="btn btn-secondary" data-dismiss="modal">
                   Отмена
                 </button>
-              </div>
-            </form>
-          </div>
-          <!-- <div class="modal-footer"></div> -->
+                        </div>
+                    </form>
+                </div>
+                <!-- <div class="modal-footer"></div> -->
+            </div>
         </div>
-      </div>
     </div>
 
     <!-- Javascript -->
@@ -665,60 +564,60 @@
     <!-- SweetAlert Plugin Js -->
     <script src="../../light/assets/js/pages/tables/jquery-datatable.js"></script>
     <script>
-      $('.metismenu li').click(function () {
-        var $this = $(this)
-        if (!$this.is('active')) {
-          $('.metismenu li').removeClass('active').removeData('top')
-          $this.addClass('active').data('top', $this.offset().top)
-        }
-      })
-      document.createElement('section')
-      var duration = '500',
-        easing = 'swing'
-
-      // Select all links with hashes
-      $('a[href*="#"]')
-        // Remove links that don't actually link to anything
-        .not('[href="#"]')
-        .not('[href="#0"]')
-        .click(function (event) {
-          // On-page links
-          if (
-            location.pathname.replace(/^\//, '') ==
-              this.pathname.replace(/^\//, '') &&
-            location.hostname == this.hostname
-          ) {
-            // Figure out element to scroll to
-            var target = $(this.hash)
-            target = target.length
-              ? target
-              : $('[name=' + this.hash.slice(1) + ']')
-            // Does a scroll target exist?
-            if (target.length) {
-              // Only prevent default if animation is actually gonna happen
-              event.preventDefault()
-              $('html, body').animate(
-                {
-                  scrollTop: target.offset().top,
-                },
-                1000,
-                function () {
-                  // Callback after animation
-                  // Must change focus!
-                  var $target = $(target)
-                  $target.focus()
-                  if ($target.is(':focus')) {
-                    // Checking if the target was focused
-                    return false
-                  } else {
-                    $target.attr('tabindex', '-1') // Adding tabindex for elements not focusable
-                    $target.focus() // Set focus again
-                  }
-                },
-              )
+        $('.metismenu li').click(function() {
+            var $this = $(this)
+            if (!$this.is('active')) {
+                $('.metismenu li').removeClass('active').removeData('top')
+                $this.addClass('active').data('top', $this.offset().top)
             }
-          }
         })
+        document.createElement('section')
+        var duration = '500',
+            easing = 'swing'
+
+        // Select all links with hashes
+        $('a[href*="#"]')
+            // Remove links that don't actually link to anything
+            .not('[href="#"]')
+            .not('[href="#0"]')
+            .click(function(event) {
+                // On-page links
+                if (
+                    location.pathname.replace(/^\//, '') ==
+                    this.pathname.replace(/^\//, '') &&
+                    location.hostname == this.hostname
+                ) {
+                    // Figure out element to scroll to
+                    var target = $(this.hash)
+                    target = target.length ?
+                        target :
+                        $('[name=' + this.hash.slice(1) + ']')
+                        // Does a scroll target exist?
+                    if (target.length) {
+                        // Only prevent default if animation is actually gonna happen
+                        event.preventDefault()
+                        $('html, body').animate({
+                                scrollTop: target.offset().top,
+                            },
+                            1000,
+                            function() {
+                                // Callback after animation
+                                // Must change focus!
+                                var $target = $(target)
+                                $target.focus()
+                                if ($target.is(':focus')) {
+                                    // Checking if the target was focused
+                                    return false
+                                } else {
+                                    $target.attr('tabindex', '-1') // Adding tabindex for elements not focusable
+                                    $target.focus() // Set focus again
+                                }
+                            },
+                        )
+                    }
+                }
+            })
     </script>
-  </body>
+</body>
+
 </html>

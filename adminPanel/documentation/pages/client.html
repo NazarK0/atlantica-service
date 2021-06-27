@@ -1,937 +1,752 @@
 <!DOCTYPE html>
 <html lang="ru">
-	<head>
-		<title>Atlantica :: Клиенты</title>
-		<meta charset="utf-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
-		<meta
-			name="viewport"
-			content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
-		/>
 
-		<link rel="icon" href="favicon.ico" type="image/x-icon" />
-		<!-- VENDOR CSS -->
-		<link
-			rel="stylesheet"
-			href="../../assets/vendor/bootstrap/css/bootstrap.min.css"
-		/>
-		<link
-			rel="stylesheet"
-			href="../../assets/vendor/font-awesome/css/font-awesome.min.css"
-		/>
+<head>
+    <title>Atlantica :: Клиенты</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
 
-		<!-- MAIN CSS -->
-		<link rel="stylesheet" href="../../light/assets/css/main.css" />
-		<link rel="stylesheet" href="../../light/assets/css/color_skins.css" />
-		<link rel="stylesheet" href="../../light/assets/css/my_styles.css" />
-		<link rel="stylesheet" href="../../light/assets/css/client.css" />
-		<link
-			rel="stylesheet"
-			href="../../assets/vendor/jquery-datatable/dataTables.bootstrap4.min.css"
-		/>
-		<link rel="stylesheet" href="../../light/assets/css/my_media.css" />
-		<style>
-			.card .body {
-				font-size: 15px;
-			}
-			.main_features li {
-				line-height: 35px;
-			}
-			.main_features li.divider {
-				border-bottom: 1px solid #ececec;
-				margin: 10px 0;
-				list-style: none;
-				font-size: 12px;
-				text-transform: uppercase;
-				line-height: 1;
-				color: #ff0000;
-				padding-top: 15px;
-			}
-		</style>
-	</head>
-	<body class="theme-orange">
-		<!-- Page Loader -->
-		<div class="page-loader-wrapper">
-			<div class="loader">
-				<div class="m-t-30">
-					<img
-						src="../../assets/images/atlantica/logo_full_black.png"
-						width="48"
-						height="48"
-						alt="Atlantica"
-					/>
-				</div>
-				<p>Пожалуйста, подождите...</p>
-			</div>
-		</div>
-		<!-- Overlay For Sidebars -->
-		<div class="overlay"></div>
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <!-- VENDOR CSS -->
+    <link rel="stylesheet" href="../../assets/vendor/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../../assets/vendor/font-awesome/css/font-awesome.min.css" />
 
-		<div id="wrapper">
-			<nav class="navbar navbar-fixed-top">
-				<div class="container-my">
-					<div class="navbar-left navbar-btn">
-						<a href="#">
-							<img
-								src="../../assets/images/atlantica/logo_full_color.png"
-								alt="Atlantica Logo"
-								class="img-fluid logo"
-							/>
-						</a>
-						<button type="button" class="btn-toggle-offcanvas">
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="../../light/assets/css/main.css" />
+    <link rel="stylesheet" href="../../light/assets/css/color_skins.css" />
+    <link rel="stylesheet" href="../../light/assets/css/my_styles.css" />
+    <link rel="stylesheet" href="../../light/assets/css/client.css" />
+    <link rel="stylesheet" href="../../assets/vendor/jquery-datatable/dataTables.bootstrap4.min.css" />
+    <link rel="stylesheet" href="../../light/assets/css/my_media.css" />
+    <style>
+        .card .body {
+            font-size: 15px;
+        }
+        
+        .main_features li {
+            line-height: 35px;
+        }
+        
+        .main_features li.divider {
+            border-bottom: 1px solid #ececec;
+            margin: 10px 0;
+            list-style: none;
+            font-size: 12px;
+            text-transform: uppercase;
+            line-height: 1;
+            color: #ff0000;
+            padding-top: 15px;
+        }
+    </style>
+</head>
+
+<body class="theme-orange">
+    <!-- Page Loader -->
+    <div class="page-loader-wrapper">
+        <div class="loader">
+            <div class="m-t-30">
+                <img src="../../assets/images/atlantica/logo_full_black.png" width="48" height="48" alt="Atlantica" />
+            </div>
+            <p>Пожалуйста, подождите...</p>
+        </div>
+    </div>
+    <!-- Overlay For Sidebars -->
+    <div class="overlay"></div>
+
+    <div id="wrapper">
+        <nav class="navbar navbar-fixed-top">
+            <div class="container-my">
+                <div class="navbar-left navbar-btn">
+                    <a href="#">
+                        <img src="../../assets/images/atlantica/logo_full_color.png" alt="Atlantica Logo" class="img-fluid logo" />
+                    </a>
+                    <button type="button" class="btn-toggle-offcanvas">
 							<i class="lnr lnr-menu fa fa-bars"></i>
 						</button>
-					</div>
-					<form id="navbar-search" class="navbar-form navbar-right search-form">
-						<input value="" class="form-control" placeholder="Компания" type="text" />
-						<input
-							value=""
-							class="form-control"
-							placeholder="Представитель"
-							type="text"
-						/>
-						<input value="" class="form-control" placeholder="Менеджер" type="text" />
-						<div>
-							<input
-								value=""
-								class="form-control"
-								type="date"
-								style="display: inline-block"
-							/>
-							<span>&nbsp;-&nbsp;</span>
-							<input
-								value=""
-								class="form-control"
-								type="date"
-								style="display: inline-block"
-							/>
-						</div>
-						<div class="search-trash">
-							<button
-								class="btn"
-								data-toggle="modal"
-								data-target="#client-list-query-modal"
-							>
+                </div>
+                <form id="navbar-search" class="navbar-form navbar-right search-form">
+                    <input value="" class="form-control" placeholder="Компания" type="text" />
+                    <input value="" class="form-control" placeholder="Представитель" type="text" />
+                    <input value="" class="form-control" placeholder="Менеджер" type="text" />
+                    <div>
+                        <input value="" class="form-control" type="date" style="display: inline-block" />
+                        <span>&nbsp;-&nbsp;</span>
+                        <input value="" class="form-control" type="date" style="display: inline-block" />
+                    </div>
+                    <div class="search-trash">
+                        <button class="btn" data-toggle="modal" data-target="#client-list-query-modal">
 								<i class="fa fa-search" style="font-size: 1.5em; color: black"></i>
 							</button>
-							<button class="btn" data-toggle="modal" data-target="">
+                        <button class="btn" data-toggle="modal" data-target="">
 								<i
 									class="icon-trash"
 									style="font-size: 21px; color: black"
 									aria-hidden="true"
 								></i>
 							</button>
-						</div>
-					</form>
-				</div>
-			</nav>
+                    </div>
+                </form>
+            </div>
+        </nav>
 
-			<div id="left-sidebar" class="sidebar">
-				<div class="navbar-brand">
-					<a href="#">
-						<img
-							src="../../assets/images/atlantica/logo_full_black.png"
-							alt="Atlantica Logo"
-							class="img-fluid logo"
-						/>
-					</a>
-					<button type="button" class="btn-toggle-offcanvas btn btn-sm float-right">
+        <div id="left-sidebar" class="sidebar">
+            <div class="navbar-brand">
+                <a href="#">
+                    <img src="../../assets/images/atlantica/logo_full_black.png" alt="Atlantica Logo" class="img-fluid logo" />
+                </a>
+                <button type="button" class="btn-toggle-offcanvas btn btn-sm float-right">
 						<i class="lnr lnr-menu fa fa-chevron-circle-left"></i>
 					</button>
-				</div>
-				<div class="sidebar-scroll">
-					<div class="user-account">
-						<div class="user_div">
-							<img
-								src="../../assets/images/user.png"
-								class="user-photo"
-								alt="User Profile Picture"
-							/>
-						</div>
-						<div class="dropdown">
-							<a
-								href="javascript:void(0);"
-								class="dropdown-toggle user-name"
-								data-toggle="dropdown"
-							>
-								<strong>Петров О. П.</strong>
-							</a>
-							<ul class="dropdown-menu dropdown-menu-right account">
-								<li>
-									<a href="#">
-										<i class="icon-user"></i>
-										Профиль
-									</a>
-								</li>
-								<li>
-									<a href="#">
-										<i class="icon-envelope-open"></i>
-										Сообщения
-									</a>
-								</li>
-								<li>
-									<a href="javascript:void(0);">
-										<i class="icon-settings"></i>
-										Настройки
-									</a>
-								</li>
-								<li class="divider"></li>
-								<li>
-									<a href="#">
-										<i class="icon-power"></i>
-										Выйти
-									</a>
-								</li>
-							</ul>
-						</div>
-					</div>
-					<nav id="left-sidebar-nav" class="sidebar-nav">
-						<ul id="main-menu" class="metismenu">
-							<li>
-								<a href="../index.html"><span>Пользователи</span></a>
-							</li>
-							<li>
-								<a href="queries.html"><span>Запросы</span></a>
-							</li>
-							<li class="active">
-								<a href="client.html"><span>Клиенты</span></a>
-							</li>
-							<li>
-								<a href="provider.html"><span>Поставщики</span></a>
-							</li>
-							<li>
-								<a href="news.html"><span>Новости</span></a>
-							</li>
-							<li>
-								<a href="reference-books.html"><span>Справочники</span></a>
-							</li>
-							<li>
-								<a href="contract-templates.html"
-									><span>Шаблоны договоров</span></a
-								>
-							</li>
-							<li>
-								<a href="#SCSS"><span>Онлайн чат</span></a>
-							</li>
-							<li>
-								<a href="#javascript"><span>Продукция</span></a>
-							</li>
-						</ul>
-					</nav>
-				</div>
-			</div>
+            </div>
+            <div class="sidebar-scroll">
+                <div class="user-account">
+                    <div class="user_div">
+                        <img src="../../assets/images/user.png" class="user-photo" alt="User Profile Picture" />
+                    </div>
+                    <div class="dropdown">
+                        <a href="javascript:void(0);" class="dropdown-toggle user-name" data-toggle="dropdown">
+                            <strong>Петров О. П.</strong>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-right account">
+                            <li>
+                                <a href="#">
+                                    <i class="icon-user"></i> Профиль
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="icon-envelope-open"></i> Сообщения
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);">
+                                    <i class="icon-settings"></i> Настройки
+                                </a>
+                            </li>
+                            <li class="divider"></li>
+                            <li>
+                                <a href="#">
+                                    <i class="icon-power"></i> Выйти
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <nav id="left-sidebar-nav" class="sidebar-nav">
+                    <ul id="main-menu" class="metismenu">
+                        <li>
+                            <a href="../index.html"><span>Пользователи</span></a>
+                        </li>
+                        <li>
+                            <a href="queries.html"><span>Запросы</span></a>
+                        </li>
+                        <li class="active">
+                            <a href="client.html"><span>Клиенты</span></a>
+                        </li>
+                        <li>
+                            <a href="provider.html"><span>Поставщики</span></a>
+                        </li>
+                        <li>
+                            <a href="news.html"><span>Новости</span></a>
+                        </li>
+                        <li>
+                            <a href="reference-books.html"><span>Справочники</span></a>
+                        </li>
+                        <li>
+                            <a href="contract-templates.html"><span>Шаблоны договоров</span></a>
+                        </li>
+                        <li>
+                            <a href="#SCSS"><span>Онлайн чат</span></a>
+                        </li>
+                        <li>
+                            <a href="production.html"><span>Продукция</span></a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
 
-			<div id="main-content">
-				<div class="block-header m-t-20 m-b-20">
-					<div class="row clearfix">
-						<div class="col-md-6 col-sm-12">
-							<h2>Список Клиентов</h2>
-						</div>
-						<div class="col-md-6 col-sm-12 text-right">
-							<ul class="breadcrumb">
-								<li class="breadcrumb-item">
-									<a href="../index.html"><i class="icon-home"></i></a>
-								</li>
-								<li class="breadcrumb-item active">Просмотр запроса</li>
-							</ul>
-						</div>
-					</div>
-				</div>
+        <div id="main-content">
+            <div class="block-header m-t-20 m-b-20">
+                <div class="row clearfix">
+                    <div class="col-md-6 col-sm-12">
+                        <h2>Список Клиентов</h2>
+                    </div>
+                    <div class="col-md-6 col-sm-12 text-right">
+                        <ul class="breadcrumb">
+                            <li class="breadcrumb-item">
+                                <a href="../index.html"><i class="icon-home"></i></a>
+                            </li>
+                            <li class="breadcrumb-item active">Просмотр запроса</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
 
-				<div class="container-fluid">
-					<div class="row clearfix">
-						<div class="col-sm-12">
-							<div class="card border-danger" id="documenter_cover">
-								<div class="body">
-									<div class="table-responsive">
-										<div class="p-l-5">
-											<p>
-												Добавить клиента
-												<button
-													class="btn client-add"
-													data-toggle="modal"
-													data-target="#client-add-modal"
-												>
+            <div class="container-fluid">
+                <div class="row clearfix">
+                    <div class="col-sm-12">
+                        <div class="card border-danger" id="documenter_cover">
+                            <div class="body">
+                                <div class="table-responsive">
+                                    <div class="p-l-5">
+                                        <p>
+                                            Добавить клиента
+                                            <button class="btn client-add" data-toggle="modal" data-target="#client-add-modal">
 													<i class="fa fa-plus-circle fa-2x" aria-hidden="true"></i>
 												</button>
-											</p>
-										</div>
-										<table
-											class="content-table table js-basic-example dataTable"
-											id="DataTables_Table_0"
-											role="grid"
-											aria-describedby="DataTables_Table_0_info"
-										>
-											<thead class="thead-dark">
-												<tr role="row">
-													<th class="text-center sorting" scope="col">№</th>
-													<th class="text-center sorting" scope="col">Логотип</th>
-													<th class="text-center sorting" scope="col">Компания</th>
-													<th class="text-center sorting" scope="col">ФИО представителя</th>
-													<th class="text-center sorting" scope="col">Телефон</th>
-													<th class="text-center sorting" scope="col">Адрес</th>
-													<th class="text-center sorting" scope="col">Менеджер</th>
-													<th></th>
-												</tr>
-											</thead>
-											<tfoot class="thead-dark">
-												<tr role="row">
-													<th class="text-center sorting" scope="col">№</th>
-													<th class="text-center sorting" scope="col">Логотип</th>
-													<th class="text-center sorting" scope="col">Компания</th>
-													<th class="text-center sorting" scope="col">ФИО представителя</th>
-													<th class="text-center sorting" scope="col">Телефон</th>
-													<th class="text-center sorting" scope="col">Адрес</th>
-													<th class="text-center sorting" scope="col">Менеджер</th>
-													<th></th>
-												</tr>
-											</tfoot>
-											<tbody>
-												<tr class="uncompleted">
-													<td class="text-left">1</td>
-													<td class="text-center">
-														<img
-															src="../../assets/images/atlantica/logo_company_example.png"
-															alt="Пример лого компании"
-															class="img-fluid"
-															width="70px"
-														/>
-													</td>
-													<td class="text-left">ООО "Компания"</td>
-													<td class="text-left">Иванов П.А.</td>
-													<td class="text-left">+ ххх ххх ххх ххх</td>
-													<td class="text-left">Адрес 1</td>
-													<td class="text-left">Менеджер 1</td>
-													<td class="text-center">
-														<button
-															class="btn-search"
-															data-toggle="modal"
-															data-target="#client-show-edit-delete-modal"
-															data-imgcompany="../../assets/images/atlantica/logo_company_example.png"
-														>
+                                        </p>
+                                    </div>
+                                    <table class="content-table table js-basic-example dataTable" id="DataTables_Table_0" role="grid" aria-describedby="DataTables_Table_0_info">
+                                        <thead class="thead-dark">
+                                            <tr role="row">
+                                                <th class="text-center sorting" scope="col">№</th>
+                                                <th class="text-center sorting" scope="col">Логотип</th>
+                                                <th class="text-center sorting" scope="col">Компания</th>
+                                                <th class="text-center sorting" scope="col">ФИО представителя</th>
+                                                <th class="text-center sorting" scope="col">Телефон</th>
+                                                <th class="text-center sorting" scope="col">Адрес</th>
+                                                <th class="text-center sorting" scope="col">Менеджер</th>
+                                                <th></th>
+                                            </tr>
+                                        </thead>
+                                        <tfoot class="thead-dark">
+                                            <tr role="row">
+                                                <th class="text-center sorting" scope="col">№</th>
+                                                <th class="text-center sorting" scope="col">Логотип</th>
+                                                <th class="text-center sorting" scope="col">Компания</th>
+                                                <th class="text-center sorting" scope="col">ФИО представителя</th>
+                                                <th class="text-center sorting" scope="col">Телефон</th>
+                                                <th class="text-center sorting" scope="col">Адрес</th>
+                                                <th class="text-center sorting" scope="col">Менеджер</th>
+                                                <th></th>
+                                            </tr>
+                                        </tfoot>
+                                        <tbody>
+                                            <tr class="uncompleted">
+                                                <td class="text-left">1</td>
+                                                <td class="text-center">
+                                                    <img src="../../assets/images/atlantica/logo_company_example.png" alt="Пример лого компании" class="img-fluid" width="70px" />
+                                                </td>
+                                                <td class="text-left">ООО "Компания"</td>
+                                                <td class="text-left">Иванов П.А.</td>
+                                                <td class="text-left">+ ххх ххх ххх ххх</td>
+                                                <td class="text-left">Адрес 1</td>
+                                                <td class="text-left">Менеджер 1</td>
+                                                <td class="text-center">
+                                                    <button class="btn-search" data-toggle="modal" data-target="#client-show-edit-delete-modal" data-imgcompany="../../assets/images/atlantica/logo_company_example.png">
 															<i class="fa fa-search fa-lg" aria-hidden="true"></i>
 														</button>
-													</td>
-												</tr>
-												<tr>
-													<td class="text-left">2</td>
-													<td class="text-center">
-														<img
-															src="../../assets/images/atlantica/logo_client_example.png"
-															alt="Пример лого компании"
-															class="img-fluid"
-															width="70px"
-														/>
-													</td>
-													<td class="text-left">ООО "Компания"</td>
-													<td class="text-left">Иванов П.А.</td>
-													<td class="text-left">+ ххх ххх ххх ххх</td>
-													<td class="text-left">Адрес 2</td>
-													<td class="text-left">Менеджер 2</td>
-													<td class="text-center">
-														<button
-															class="btn-search"
-															data-toggle="modal"
-															data-target="#client-show-edit-delete-modal"
-															data-imgcompany="../../assets/images/atlantica/logo_client_example.png"
-														>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-left">2</td>
+                                                <td class="text-center">
+                                                    <img src="../../assets/images/atlantica/logo_client_example.png" alt="Пример лого компании" class="img-fluid" width="70px" />
+                                                </td>
+                                                <td class="text-left">ООО "Компания"</td>
+                                                <td class="text-left">Иванов П.А.</td>
+                                                <td class="text-left">+ ххх ххх ххх ххх</td>
+                                                <td class="text-left">Адрес 2</td>
+                                                <td class="text-left">Менеджер 2</td>
+                                                <td class="text-center">
+                                                    <button class="btn-search" data-toggle="modal" data-target="#client-show-edit-delete-modal" data-imgcompany="../../assets/images/atlantica/logo_client_example.png">
 															<i class="fa fa-search fa-lg" aria-hidden="true"></i>
 														</button>
-													</td>
-												</tr>
-												<tr>
-													<td class="text-left">3</td>
-													<td class="text-center">
-														<img
-															src="../../assets/images/atlantica/company_logo.png"
-															alt="Пример лого компании"
-															class="img-fluid"
-															width="70px"
-														/>
-													</td>
-													<td class="text-left">ООО "Компания"</td>
-													<td class="text-left">Иванов П.А.</td>
-													<td class="text-left">+ ххх ххх ххх ххх</td>
-													<td class="text-left">Адрес 3</td>
-													<td class="text-left">Менеджер 3</td>
-													<td class="text-center">
-														<button
-															class="btn-search"
-															data-toggle="modal"
-															data-target="#client-show-edit-delete-modal"
-															data-imgcompany="../../assets/images/atlantica/company_logo.png"
-														>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-left">3</td>
+                                                <td class="text-center">
+                                                    <img src="../../assets/images/atlantica/company_logo.png" alt="Пример лого компании" class="img-fluid" width="70px" />
+                                                </td>
+                                                <td class="text-left">ООО "Компания"</td>
+                                                <td class="text-left">Иванов П.А.</td>
+                                                <td class="text-left">+ ххх ххх ххх ххх</td>
+                                                <td class="text-left">Адрес 3</td>
+                                                <td class="text-left">Менеджер 3</td>
+                                                <td class="text-center">
+                                                    <button class="btn-search" data-toggle="modal" data-target="#client-show-edit-delete-modal" data-imgcompany="../../assets/images/atlantica/company_logo.png">
 															<i class="fa fa-search fa-lg" aria-hidden="true"></i>
 														</button>
-													</td>
-												</tr>
-												<tr>
-													<td class="text-left">4</td>
-													<td class="text-center">
-														<img
-															src="../../assets/images/atlantica/logo_company_2.png"
-															alt="Пример лого компании"
-															class="img-fluid"
-															width="70px"
-														/>
-													</td>
-													<td class="text-left">ООО "Компания"</td>
-													<td class="text-left">Иванов П.А.</td>
-													<td class="text-left">+ ххх ххх ххх ххх</td>
-													<td class="text-left">Адрес 4</td>
-													<td class="text-left">Менеджер 4</td>
-													<td class="text-center">
-														<button
-															class="btn-search"
-															data-toggle="modal"
-															data-target="#client-show-edit-delete-modal"
-															data-imgcompany="../../assets/images/atlantica/logo_company_2.png"
-														>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-left">4</td>
+                                                <td class="text-center">
+                                                    <img src="../../assets/images/atlantica/logo_company_2.png" alt="Пример лого компании" class="img-fluid" width="70px" />
+                                                </td>
+                                                <td class="text-left">ООО "Компания"</td>
+                                                <td class="text-left">Иванов П.А.</td>
+                                                <td class="text-left">+ ххх ххх ххх ххх</td>
+                                                <td class="text-left">Адрес 4</td>
+                                                <td class="text-left">Менеджер 4</td>
+                                                <td class="text-center">
+                                                    <button class="btn-search" data-toggle="modal" data-target="#client-show-edit-delete-modal" data-imgcompany="../../assets/images/atlantica/logo_company_2.png">
 															<i class="fa fa-search fa-lg" aria-hidden="true"></i>
 														</button>
-													</td>
-												</tr>
-												<tr>
-													<td class="text-left">5</td>
-													<td class="text-center">
-														<img
-															src="../../assets/images/atlantica/logo_company_5.png"
-															alt="Пример лого компании"
-															class="img-fluid"
-															width="70px"
-														/>
-													</td>
-													<td class="text-left">ООО "Компания"</td>
-													<td class="text-left">Иванов П.А.</td>
-													<td class="text-left">+ ххх ххх ххх ххх</td>
-													<td class="text-left">Адрес 5</td>
-													<td class="text-left">Менеджер 5</td>
-													<td class="text-center">
-														<button
-															class="btn-search"
-															data-toggle="modal"
-															data-target="#client-show-edit-delete-modal"
-															data-imgcompany="../../assets/images/atlantica/logo_company_5.png"
-														>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-left">5</td>
+                                                <td class="text-center">
+                                                    <img src="../../assets/images/atlantica/logo_company_5.png" alt="Пример лого компании" class="img-fluid" width="70px" />
+                                                </td>
+                                                <td class="text-left">ООО "Компания"</td>
+                                                <td class="text-left">Иванов П.А.</td>
+                                                <td class="text-left">+ ххх ххх ххх ххх</td>
+                                                <td class="text-left">Адрес 5</td>
+                                                <td class="text-left">Менеджер 5</td>
+                                                <td class="text-center">
+                                                    <button class="btn-search" data-toggle="modal" data-target="#client-show-edit-delete-modal" data-imgcompany="../../assets/images/atlantica/logo_company_5.png">
 															<i class="fa fa-search fa-lg" aria-hidden="true"></i>
 														</button>
-													</td>
-												</tr>
-												<tr>
-													<td class="text-left">6</td>
-													<td class="text-center">
-														<img
-															src="../../assets/images/atlantica/logo_company_4.png"
-															alt="Пример лого компании"
-															class="img-fluid"
-															width="70px"
-														/>
-													</td>
-													<td class="text-left">ООО "Компания"</td>
-													<td class="text-left">Иванов П.А.</td>
-													<td class="text-left">+ ххх ххх ххх ххх</td>
-													<td class="text-left">Адрес 6</td>
-													<td class="text-left">Менеджер 6</td>
-													<td class="text-center">
-														<button
-															class="btn-search"
-															data-toggle="modal"
-															data-target="#client-show-edit-delete-modal"
-															data-imgcompany="../../assets/images/atlantica/logo_company_4.png"
-														>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-left">6</td>
+                                                <td class="text-center">
+                                                    <img src="../../assets/images/atlantica/logo_company_4.png" alt="Пример лого компании" class="img-fluid" width="70px" />
+                                                </td>
+                                                <td class="text-left">ООО "Компания"</td>
+                                                <td class="text-left">Иванов П.А.</td>
+                                                <td class="text-left">+ ххх ххх ххх ххх</td>
+                                                <td class="text-left">Адрес 6</td>
+                                                <td class="text-left">Менеджер 6</td>
+                                                <td class="text-center">
+                                                    <button class="btn-search" data-toggle="modal" data-target="#client-show-edit-delete-modal" data-imgcompany="../../assets/images/atlantica/logo_company_4.png">
 															<i class="fa fa-search fa-lg" aria-hidden="true"></i>
 														</button>
-													</td>
-												</tr>
-											</tbody>
-										</table>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-		<!-- Modal Windows -->
-		<!--modal add client-->
-		<div class="modal fade" id="client-add-modal" role="dialog" aria-modal="true">
-			<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-				<div class="modal-content" style="border-radius: 45px">
-					<div class="modal-header" style="justify-content: center">
-						<h5 class="modal-title">Добавить клиента</h5>
-					</div>
-					<div class="modal-body">
-						<form action="" method="post" class="client-create-form">
-							<!-- client add-->
-							<div class="form-group">
-								<div class="form-group-flex-row">
-									<div class="form-group-flex-column">
-										<div class="input-group">
-											<input
-												type="text"
-												class="form-control"
-												style=""
-												placeholder="Наименование компании"
-											/>
-										</div>
-									</div>
-									<div class="form-group-flex-column">
-										<div class="input-group">
-											<input
-												type="text"
-												class="form-control"
-												placeholder="ФИО представителя"
-											/>
-										</div>
-									</div>
-									<div class="form-group-flex-column">
-										<div class="input-group">
-											<input type="text" class="form-control" placeholder="Телефон" />
-										</div>
-									</div>
-								</div>
-								<div class="form-group-flex-row">
-									<div class="form-group-flex-column">
-										<div class="input-group" style="width: 410px">
-											<input type="text" class="form-control" placeholder="Адрес" />
-										</div>
-									</div>
-									<div class="form-group-flex-column">
-										<div class="input-group">
-											<input type="text" class="form-control" placeholder="E-mail" />
-										</div>
-									</div>
-								</div>
-								<div class="form-group-flex-row">
-									<div class="form-group-flex-column">
-										<div class="input-group" style="width: 410px; flex-direction: row">
-											<p class="m-l-10">Загрузить логотип в формате jpeg, png</p>
-											<a href="#" style="cursor: pointer">
-												<i
-													class="fa fa-download m-l-10"
-													style="font-size: 1.5em; color: black"
-												></i>
-											</a>
-										</div>
-									</div>
-									<div class="form-group-flex-column" style="text-align: center">
-										<div class="input-group">
-											<p>Просмотр логотипа</p>
-										</div>
-									</div>
-								</div>
-								<div class="form-group-flex-row">
-									<!-- table -->
-									<div
-										class="form-group-flex-column m-l-5 m-r-35"
-										style="justify-content: start; width: 420px"
-									>
-										<div class="body table-responsive">
-											<table class="content-table table-striped table">
-												<thead class="thead-danger">
-													<tr>
-														<th class="text-center" scope="col">№</th>
-														<th class="text-center" colspan="2" scope="col">
-															Разрешительные документы
-														</th>
-													</tr>
-												</thead>
-												<tbody>
-													<tr class="uncompleted">
-														<td>1</td>
-														<td>Лицензия.jpeg</td>
-														<td style="width: 90px; text-align: center">
-															<a href="#">
-																<i class="fa fa-search fa-lg" aria-hidden="true"></i>
-															</a>
-															<a href="#">
-																<i class="icon-trash fa-lg"></i>
-															</a>
-															<a href="#">
-																<i class="fa fa-check fa-lg"></i>
-															</a>
-														</td>
-													</tr>
-												</tbody>
-											</table>
-										</div>
-										<div class="upload-file m-l-10">
-											<div
-												class="upload"
-												style="
+    <!-- Modal Windows -->
+    <!--modal add client-->
+    <div class="modal fade" id="client-add-modal" role="dialog" aria-modal="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content" style="border-radius: 45px">
+                <div class="modal-header" style="justify-content: center">
+                    <h5 class="modal-title">Добавить клиента</h5>
+                </div>
+                <div class="modal-body">
+                    <form action="" method="post" class="client-create-form">
+                        <!-- client add-->
+                        <div class="form-group">
+                            <div class="form-group-flex-row">
+                                <div class="form-group-flex-column">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" style="" placeholder="Наименование компании" />
+                                    </div>
+                                </div>
+                                <div class="form-group-flex-column">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" placeholder="ФИО представителя" />
+                                    </div>
+                                </div>
+                                <div class="form-group-flex-column">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" placeholder="Телефон" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group-flex-row">
+                                <div class="form-group-flex-column">
+                                    <div class="input-group" style="width: 410px">
+                                        <input type="text" class="form-control" placeholder="Адрес" />
+                                    </div>
+                                </div>
+                                <div class="form-group-flex-column">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" placeholder="E-mail" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group-flex-row">
+                                <div class="form-group-flex-column">
+                                    <div class="input-group" style="width: 410px; flex-direction: row">
+                                        <p class="m-l-10">Загрузить логотип в формате jpeg, png</p>
+                                        <a href="#" style="cursor: pointer">
+                                            <i class="fa fa-download m-l-10" style="font-size: 1.5em; color: black"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="form-group-flex-column" style="text-align: center">
+                                    <div class="input-group">
+                                        <p>Просмотр логотипа</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group-flex-row">
+                                <!-- table -->
+                                <div class="form-group-flex-column m-l-5 m-r-35" style="justify-content: start; width: 420px">
+                                    <div class="body table-responsive">
+                                        <table class="content-table table-striped table">
+                                            <thead class="thead-danger">
+                                                <tr>
+                                                    <th class="text-center" scope="col">№</th>
+                                                    <th class="text-center" colspan="2" scope="col">
+                                                        Разрешительные документы
+                                                    </th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr class="uncompleted">
+                                                    <td>1</td>
+                                                    <td>Лицензия.jpeg</td>
+                                                    <td style="width: 90px; text-align: center">
+                                                        <a href="#">
+                                                            <i class="fa fa-search fa-lg" aria-hidden="true"></i>
+                                                        </a>
+                                                        <a href="#">
+                                                            <i class="icon-trash fa-lg"></i>
+                                                        </a>
+                                                        <a href="#">
+                                                            <i class="fa fa-check fa-lg"></i>
+                                                        </a>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="upload-file m-l-10">
+                                        <div class="upload" style="
 													border: 2px solid black;
 													padding: 4px;
 													background-color: white;
-												"
-											>
-												<label for="upload-file">Выберите файл:</label>
-												<input
-													type="file"
-													name="doc-access"
-													id="upload-file"
-													style="top: 0px; display: none"
-												/>
-											</div>
-											<div style="display: flex; justify-content: center">
-												<p class="m-l-10">Файл не выбран</p>
-												<i
-													class="fa fa-download fa-lg m-l-10"
-													style="color: black"
-													aria-hidden="true"
-												></i>
-											</div>
-										</div>
-									</div>
-									<div class="form-group-flex-column m-l-10 m-r-10" style="width: 150px">
-										<div class="logo-company">
-											<img
-												src="../../assets/images/atlantica/create_client_logo_example.png"
-												alt="..."
-												class="img-fluid logo"
-											/>
-										</div>
-									</div>
-								</div>
-								<div class="form-group-flex-row">
-									<div class="form-group-flex-column">
-										<div class="input-group" style="flex-direction: row">
-											<button type="submit" class="btn btn-info">Сохранить</button>
-										</div>
-									</div>
-									<div class="form-group-flex-column" style="text-align: center">
-										<div class="input-group">
-											<button class="btn btn-secondary" data-dismiss="modal">
+												">
+                                            <label for="upload-file">Выберите файл:</label>
+                                            <input type="file" name="doc-access" id="upload-file" style="top: 0px; display: none" />
+                                        </div>
+                                        <div style="display: flex; justify-content: center">
+                                            <p class="m-l-10">Файл не выбран</p>
+                                            <i class="fa fa-download fa-lg m-l-10" style="color: black" aria-hidden="true"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group-flex-column m-l-10 m-r-10" style="width: 150px">
+                                    <div class="logo-company">
+                                        <img src="../../assets/images/atlantica/create_client_logo_example.png" alt="..." class="img-fluid logo" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group-flex-row">
+                                <div class="form-group-flex-column">
+                                    <div class="input-group" style="flex-direction: row">
+                                        <button type="submit" class="btn btn-info">Сохранить</button>
+                                    </div>
+                                </div>
+                                <div class="form-group-flex-column" style="text-align: center">
+                                    <div class="input-group">
+                                        <button class="btn btn-secondary" data-dismiss="modal">
 												Отмена
 											</button>
-										</div>
-									</div>
-								</div>
-							</div>
-						</form>
-					</div>
-					<!-- <div class="modal-footer"></div> -->
-				</div>
-			</div>
-		</div>
-		<!--modal show edit delete -->
-		<div
-			class="modal fade"
-			id="client-show-edit-delete-modal"
-			role="dialog"
-			aria-modal="true"
-		>
-			<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-				<div class="modal-content" style="border-radius: 45px">
-					<div class="modal-header" style="justify-content: center">
-						<h5 class="modal-title">Просмотр / редактирование / удаление клиента</h5>
-					</div>
-					<div class="modal-body">
-						<form action="" method="post" class="client-create-form">
-							<!-- client add-->
-							<div class="form-group">
-								<div class="form-group-flex-row">
-									<div class="form-group-flex-column">
-										<div class="input-group">
-											<input type="text" class="form-control" placeholder="Компания" />
-										</div>
-									</div>
-									<div class="form-group-flex-column">
-										<div class="input-group">
-											<input type="text" class="form-control" placeholder="Иванов П.А." />
-										</div>
-									</div>
-									<div class="form-group-flex-column">
-										<div class="input-group">
-											<input type="text" class="form-control" placeholder="Телефон" />
-										</div>
-									</div>
-								</div>
-								<div class="form-group-flex-row">
-									<div class="form-group-flex-column">
-										<div class="input-group" style="width: 410px">
-											<input type="text" class="form-control" placeholder="Адрес" />
-										</div>
-									</div>
-									<div class="form-group-flex-column">
-										<div class="input-group">
-											<input type="text" class="form-control" placeholder="Менеджер" />
-										</div>
-									</div>
-								</div>
-								<div class="form-group-flex-row">
-									<div class="form-group-flex-column">
-										<div class="input-group" style="width: 410px; flex-direction: row">
-											<p class="m-l-10">Загрузить логотип в формате jpeg, png</p>
-											<a href="#" style="cursor: pointer">
-												<i
-													class="fa fa-download m-l-10"
-													style="font-size: 1.5em; color: black"
-												></i>
-											</a>
-										</div>
-									</div>
-									<div class="form-group-flex-column" style="text-align: center">
-										<div class="input-group">
-											<p>Просмотр логотипа</p>
-										</div>
-									</div>
-								</div>
-								<div class="form-group-flex-row">
-									<!-- table -->
-									<div
-										class="form-group-flex-column m-l-5 m-r-35"
-										style="justify-content: start; width: 420px"
-									>
-										<div class="body table-responsive">
-											<table class="content-table table-striped table">
-												<thead class="thead-danger">
-													<tr>
-														<th class="text-center" scope="col">№</th>
-														<th class="text-center" colspan="2" scope="col">
-															Разрешительные документы
-														</th>
-													</tr>
-												</thead>
-												<tbody>
-													<tr class="uncompleted">
-														<td>1</td>
-														<td>Лицензия.jpeg</td>
-														<td style="width: 90px; text-align: center">
-															<a href="#">
-																<i class="fa fa-search fa-lg" aria-hidden="true"></i>
-															</a>
-															<a href="#">
-																<i class="icon-trash fa-lg"></i>
-															</a>
-															<a href="#">
-																<i class="fa fa-check fa-lg"></i>
-															</a>
-														</td>
-													</tr>
-													<tr>
-														<td></td>
-														<td></td>
-														<td style="width: 90px; text-align: center"></td>
-													</tr>
-												</tbody>
-											</table>
-										</div>
-										<div class="upload-file m-l-10">
-											<div
-												class="upload"
-												style="
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <!-- <div class="modal-footer"></div> -->
+            </div>
+        </div>
+    </div>
+    <!--modal show edit delete -->
+    <div class="modal fade" id="client-show-edit-delete-modal" role="dialog" aria-modal="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content" style="border-radius: 45px">
+                <div class="modal-header" style="justify-content: center">
+                    <h5 class="modal-title">Просмотр / редактирование / удаление клиента</h5>
+                </div>
+                <div class="modal-body">
+                    <form action="" method="post" class="client-create-form">
+                        <!-- client add-->
+                        <div class="form-group">
+                            <div class="form-group-flex-row">
+                                <div class="form-group-flex-column">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" placeholder="Компания" />
+                                    </div>
+                                </div>
+                                <div class="form-group-flex-column">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" placeholder="Иванов П.А." />
+                                    </div>
+                                </div>
+                                <div class="form-group-flex-column">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" placeholder="Телефон" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group-flex-row">
+                                <div class="form-group-flex-column">
+                                    <div class="input-group" style="width: 410px">
+                                        <input type="text" class="form-control" placeholder="Адрес" />
+                                    </div>
+                                </div>
+                                <div class="form-group-flex-column">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" placeholder="Менеджер" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group-flex-row">
+                                <div class="form-group-flex-column">
+                                    <div class="input-group" style="width: 410px; flex-direction: row">
+                                        <p class="m-l-10">Загрузить логотип в формате jpeg, png</p>
+                                        <a href="#" style="cursor: pointer">
+                                            <i class="fa fa-download m-l-10" style="font-size: 1.5em; color: black"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="form-group-flex-column" style="text-align: center">
+                                    <div class="input-group">
+                                        <p>Просмотр логотипа</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group-flex-row">
+                                <!-- table -->
+                                <div class="form-group-flex-column m-l-5 m-r-35" style="justify-content: start; width: 420px">
+                                    <div class="body table-responsive">
+                                        <table class="content-table table-striped table">
+                                            <thead class="thead-danger">
+                                                <tr>
+                                                    <th class="text-center" scope="col">№</th>
+                                                    <th class="text-center" colspan="2" scope="col">
+                                                        Разрешительные документы
+                                                    </th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr class="uncompleted">
+                                                    <td>1</td>
+                                                    <td>Лицензия.jpeg</td>
+                                                    <td style="width: 90px; text-align: center">
+                                                        <a href="#">
+                                                            <i class="fa fa-search fa-lg" aria-hidden="true"></i>
+                                                        </a>
+                                                        <a href="#">
+                                                            <i class="icon-trash fa-lg"></i>
+                                                        </a>
+                                                        <a href="#">
+                                                            <i class="fa fa-check fa-lg"></i>
+                                                        </a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td style="width: 90px; text-align: center"></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="upload-file m-l-10">
+                                        <div class="upload" style="
 													border: 2px solid black;
 													padding: 4px;
 													background-color: white;
-												"
-											>
-												<label for="upload-file">Выберите файл:</label>
-												<input
-													type="file"
-													name="doc-access"
-													id="upload-file"
-													style="top: 0px; display: none"
-												/>
-											</div>
-											<div style="display: flex; justify-content: center">
-												<p class="m-l-10">Файл не выбран</p>
-												<i
-													class="fa fa-download fa-lg m-l-10"
-													style="color: black"
-													aria-hidden="true"
-												></i>
-											</div>
-										</div>
-									</div>
-									<div class="form-group-flex-column m-l-10 m-r-10" style="width: 150px">
-										<div class="logo-company"></div>
-									</div>
-								</div>
-								<div class="form-group-flex-row">
-									<div class="form-group-flex-column">
-										<div class="input-group" style="flex-direction: row">
-											<button type="submit" class="btn btn-info">Сохранить</button>
-										</div>
-									</div>
-									<div class="form-group-flex-column" style="text-align: center">
-										<div class="input-group">
-											<button class="btn btn-danger" data-dismiss="modal">Удалить</button>
-										</div>
-									</div>
-									<div class="form-group-flex-column" style="text-align: center">
-										<div class="input-group">
-											<button class="btn btn-secondary" data-dismiss="modal">
+												">
+                                            <label for="upload-file">Выберите файл:</label>
+                                            <input type="file" name="doc-access" id="upload-file" style="top: 0px; display: none" />
+                                        </div>
+                                        <div style="display: flex; justify-content: center">
+                                            <p class="m-l-10">Файл не выбран</p>
+                                            <i class="fa fa-download fa-lg m-l-10" style="color: black" aria-hidden="true"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group-flex-column m-l-10 m-r-10" style="width: 150px">
+                                    <div class="logo-company"></div>
+                                </div>
+                            </div>
+                            <div class="form-group-flex-row">
+                                <div class="form-group-flex-column">
+                                    <div class="input-group" style="flex-direction: row">
+                                        <button type="submit" class="btn btn-info">Сохранить</button>
+                                    </div>
+                                </div>
+                                <div class="form-group-flex-column" style="text-align: center">
+                                    <div class="input-group">
+                                        <button class="btn btn-danger" data-dismiss="modal">Удалить</button>
+                                    </div>
+                                </div>
+                                <div class="form-group-flex-column" style="text-align: center">
+                                    <div class="input-group">
+                                        <button class="btn btn-secondary" data-dismiss="modal">
 												Отмена
 											</button>
-										</div>
-									</div>
-								</div>
-							</div>
-						</form>
-					</div>
-					<!-- <div class="modal-footer"></div> -->
-				</div>
-			</div>
-		</div>
-		<!--list query show from client page-->
-		<div
-			class="modal fade"
-			id="client-list-query-modal"
-			role="dialog"
-			aria-modal="true"
-		>
-			<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-				<div class="modal-content" style="border-radius: 45px">
-					<div class="modal-header">
-						<h5 class="modal-title">Список запрос</h5>
-					</div>
-					<div class="modal-body">
-						<form action="" method="post" class="client-create-form">
-							<!-- client add-->
-							<div class="form-group">
-								<div class="form-group-flex-row">
-									<!-- table -->
-									<div
-										class="form-group-flex-column m-l-5 m-r-35"
-										style="justify-content: start; width: 750px"
-									>
-										<div class="body table-responsive">
-											<table class="content-table table-striped table">
-												<thead class="thead-danger">
-													<tr>
-														<th class="text-center" scope="col">№</th>
-														<th class="text-center" scope="col">Коментарии</th>
-														<th class="text-center" scope="col">Дата</th>
-														<th class="text-center" scope="col">Менеджер</th>
-														<th class="text-center" scope="col">Поставщик</th>
-														<th class="text-center" scope="col">Стадия запроса</th>
-														<th class="text-center" scope="col">Статус</th>
-													</tr>
-												</thead>
-												<tbody>
-													<tr>
-														<td>1</td>
-														<td><a>Запрос №1</a></td>
-														<td>01/05/2021</td>
-														<td>Менеджер 1</td>
-														<td>Компания 1</td>
-														<td>Получение КП</td>
-														<td>Статус завершен</td>
-													</tr>
-													<tr>
-														<td>1</td>
-														<td><a>Запрос №12</a></td>
-														<td>05/06/2021</td>
-														<td>Менеджер 2</td>
-														<td>Компания 3</td>
-														<td>Подписание договора</td>
-														<td>В процессе</td>
-													</tr>
-												</tbody>
-											</table>
-										</div>
-									</div>
-								</div>
-								<div class="form-group-flex-row">
-									<div class="form-group-flex-column" style="text-align: center">
-										<div class="input-group">
-											<button class="btn btn-secondary" data-dismiss="modal">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <!-- <div class="modal-footer"></div> -->
+            </div>
+        </div>
+    </div>
+    <!--list query show from client page-->
+    <div class="modal fade" id="client-list-query-modal" role="dialog" aria-modal="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content" style="border-radius: 45px">
+                <div class="modal-header">
+                    <h5 class="modal-title">Список запрос</h5>
+                </div>
+                <div class="modal-body">
+                    <form action="" method="post" class="client-create-form">
+                        <!-- client add-->
+                        <div class="form-group">
+                            <div class="form-group-flex-row">
+                                <!-- table -->
+                                <div class="form-group-flex-column m-l-5 m-r-35" style="justify-content: start; width: 750px">
+                                    <div class="body table-responsive">
+                                        <table class="content-table table-striped table">
+                                            <thead class="thead-danger">
+                                                <tr>
+                                                    <th class="text-center" scope="col">№</th>
+                                                    <th class="text-center" scope="col">Коментарии</th>
+                                                    <th class="text-center" scope="col">Дата</th>
+                                                    <th class="text-center" scope="col">Менеджер</th>
+                                                    <th class="text-center" scope="col">Поставщик</th>
+                                                    <th class="text-center" scope="col">Стадия запроса</th>
+                                                    <th class="text-center" scope="col">Статус</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>1</td>
+                                                    <td><a>Запрос №1</a></td>
+                                                    <td>01/05/2021</td>
+                                                    <td>Менеджер 1</td>
+                                                    <td>Компания 1</td>
+                                                    <td>Получение КП</td>
+                                                    <td>Статус завершен</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>1</td>
+                                                    <td><a>Запрос №12</a></td>
+                                                    <td>05/06/2021</td>
+                                                    <td>Менеджер 2</td>
+                                                    <td>Компания 3</td>
+                                                    <td>Подписание договора</td>
+                                                    <td>В процессе</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group-flex-row">
+                                <div class="form-group-flex-column" style="text-align: center">
+                                    <div class="input-group">
+                                        <button class="btn btn-secondary" data-dismiss="modal">
 												Закрыть
 											</button>
-										</div>
-									</div>
-								</div>
-							</div>
-						</form>
-					</div>
-					<!-- <div class="modal-footer"></div> -->
-				</div>
-			</div>
-		</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <!-- <div class="modal-footer"></div> -->
+            </div>
+        </div>
+    </div>
 
-		<!-- Javascript -->
-		<script src="../../light/assets/bundles/libscripts.bundle.js"></script>
-		<script src="../../light/assets/bundles/vendorscripts.bundle.js"></script>
+    <!-- Javascript -->
+    <script src="../../light/assets/bundles/libscripts.bundle.js"></script>
+    <script src="../../light/assets/bundles/vendorscripts.bundle.js"></script>
 
-		<script src="../../light/assets/bundles/mainscripts.bundle.js"></script>
-		<!-- Javascript-->
-		<script src="../../light/assets/bundles/datatablescripts.bundle.js"></script>
-		<script src="../../assets/vendor/jquery-datatable/buttons/dataTables.buttons.min.js"></script>
-		<script src="../../assets/vendor/jquery-datatable/buttons/buttons.bootstrap4.min.js"></script>
-		<script src="../../assets/vendor/jquery-datatable/buttons/buttons.colVis.min.js"></script>
-		<script src="../../assets/vendor/jquery-datatable/buttons/buttons.html5.min.js"></script>
-		<script src="../../assets/vendor/jquery-datatable/buttons/buttons.print.min.js"></script>
+    <script src="../../light/assets/bundles/mainscripts.bundle.js"></script>
+    <!-- Javascript-->
+    <script src="../../light/assets/bundles/datatablescripts.bundle.js"></script>
+    <script src="../../assets/vendor/jquery-datatable/buttons/dataTables.buttons.min.js"></script>
+    <script src="../../assets/vendor/jquery-datatable/buttons/buttons.bootstrap4.min.js"></script>
+    <script src="../../assets/vendor/jquery-datatable/buttons/buttons.colVis.min.js"></script>
+    <script src="../../assets/vendor/jquery-datatable/buttons/buttons.html5.min.js"></script>
+    <script src="../../assets/vendor/jquery-datatable/buttons/buttons.print.min.js"></script>
 
-		<script src="../../assets/vendor/sweetalert/sweetalert.min.js"></script>
-		<!-- SweetAlert Plugin Js -->
-		<script src="../../light/assets/js/pages/tables/jquery-datatable.js"></script>
-		<script>
-			$(".metismenu li").click(function () {
-				var $this = $(this);
-				if (!$this.is("active")) {
-					$(".metismenu li").removeClass("active").removeData("top");
-					$this.addClass("active").data("top", $this.offset().top);
-				}
-			});
-			document.createElement("section");
-			var duration = "500",
-				easing = "swing";
+    <script src="../../assets/vendor/sweetalert/sweetalert.min.js"></script>
+    <!-- SweetAlert Plugin Js -->
+    <script src="../../light/assets/js/pages/tables/jquery-datatable.js"></script>
+    <script>
+        $(".metismenu li").click(function() {
+            var $this = $(this);
+            if (!$this.is("active")) {
+                $(".metismenu li").removeClass("active").removeData("top");
+                $this.addClass("active").data("top", $this.offset().top);
+            }
+        });
+        document.createElement("section");
+        var duration = "500",
+            easing = "swing";
 
-			// Select all links with hashes
-			$('a[href*="#"]')
-				// Remove links that don't actually link to anything
-				.not('[href="#"]')
-				.not('[href="#0"]')
-				.click(function (event) {
-					// On-page links
-					if (
-						location.pathname.replace(/^\//, "") ==
-							this.pathname.replace(/^\//, "") &&
-						location.hostname == this.hostname
-					) {
-						// Figure out element to scroll to
-						var target = $(this.hash);
-						target = target.length ? target : $("[name=" + this.hash.slice(1) + "]");
-						// Does a scroll target exist?
-						if (target.length) {
-							// Only prevent default if animation is actually gonna happen
-							event.preventDefault();
-							$("html, body").animate(
-								{
-									scrollTop: target.offset().top,
-								},
-								1000,
-								function () {
-									// Callback after animation
-									// Must change focus!
-									var $target = $(target);
-									$target.focus();
-									if ($target.is(":focus")) {
-										// Checking if the target was focused
-										return false;
-									} else {
-										$target.attr("tabindex", "-1"); // Adding tabindex for elements not focusable
-										$target.focus(); // Set focus again
-									}
-								}
-							);
-						}
-					}
-				});
-		</script>
-		<!-- script for modal icon data img -->
-		<script>
-			$(function () {
-				$(".btn-search").click(function () {
-					var imgcompany = $(this).attr("data-imgcompany");
-					$(".logo-company").empty();
-					$(".logo-company").append(
-						'<img class="img-fluid" src="' + imgcompany + '" alt="..." />'
-					);
-				});
-			});
-		</script>
-	</body>
+        // Select all links with hashes
+        $('a[href*="#"]')
+            // Remove links that don't actually link to anything
+            .not('[href="#"]')
+            .not('[href="#0"]')
+            .click(function(event) {
+                // On-page links
+                if (
+                    location.pathname.replace(/^\//, "") ==
+                    this.pathname.replace(/^\//, "") &&
+                    location.hostname == this.hostname
+                ) {
+                    // Figure out element to scroll to
+                    var target = $(this.hash);
+                    target = target.length ? target : $("[name=" + this.hash.slice(1) + "]");
+                    // Does a scroll target exist?
+                    if (target.length) {
+                        // Only prevent default if animation is actually gonna happen
+                        event.preventDefault();
+                        $("html, body").animate({
+                                scrollTop: target.offset().top,
+                            },
+                            1000,
+                            function() {
+                                // Callback after animation
+                                // Must change focus!
+                                var $target = $(target);
+                                $target.focus();
+                                if ($target.is(":focus")) {
+                                    // Checking if the target was focused
+                                    return false;
+                                } else {
+                                    $target.attr("tabindex", "-1"); // Adding tabindex for elements not focusable
+                                    $target.focus(); // Set focus again
+                                }
+                            }
+                        );
+                    }
+                }
+            });
+    </script>
+    <!-- script for modal icon data img -->
+    <script>
+        $(function() {
+            $(".btn-search").click(function() {
+                var imgcompany = $(this).attr("data-imgcompany");
+                $(".logo-company").empty();
+                $(".logo-company").append(
+                    '<img class="img-fluid" src="' + imgcompany + '" alt="..." />'
+                );
+            });
+        });
+    </script>
+</body>
+
 </html>
