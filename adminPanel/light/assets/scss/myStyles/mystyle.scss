@@ -91,6 +91,18 @@
 .main-content.news {
 	.news{
 		padding-bottom: 15px;
+		.ctrl-btns {
+			display: flex;
+			justify-content: space-evenly;
+			flex-wrap: nowrap;
+			padding-top: 10px;
+			button i {
+				font-size: 1.5rem;
+				display: flex;
+				justify-content: space-around;
+				flex-wrap: nowrap;
+			}
+		}
 	}
 
 	.card{
@@ -132,4 +144,8 @@
 			}
 		}
 	}
+}
+
+#main-content{
+	margin-top: 45px;
 }
