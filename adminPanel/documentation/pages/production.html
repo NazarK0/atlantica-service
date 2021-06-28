@@ -164,75 +164,179 @@
                 <div class="row clearfix">
                     <div class="col-sm-12">
                         <div class="card" id="documenter_cover">
-                            <div class="gallery b4gallery">
-                                <ul class="mb-3 tags-bar nav nav-pills">
-                                    <li class="nav-item">
-                                        <a href="javascript::void(0);" class="nav-link active active-tag" data-images-toggle="all">Все</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="javascript::void(0);" class="nav-link" data-images-toggle="provider1">Поставщик 1</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="javascript::void(0);" class="nav-link" data-images-toggle="provider2">Поставщик 2</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="javascript::void(0);" class="nav-link" data-images-toggle="provider3">Поставщик 3</a>
-                                    </li>
-                                </ul>
-                                <div class="gallery-items-row row">
-                                    <div class="item-column mb-4 col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-                                        <div class="gallery-item h-100" data-gallery-tag="provider1">
-                                            <a href="#news-link">
-                                                <h2>
-                                                    1Стало известно, жители каких стран чаще других получали российское гражданство в 2020 году
-                                                </h2>
-                                                <img class="news-img img-fluid" src="../../assets/images/atlantica/zavod_1.jpg" alt="" />
-                                                <p class="description">
-                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem amet magni numquam ex accusantium, ipsa eligendi sed non nisi
-                                                </p>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="item-column mb-4 col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-                                        <div class="gallery-item h-100" data-gallery-tag="provider1">
-                                            <a href="#news-link">
-                                                <h2>
-                                                    1Стало известно, жители каких стран чаще других получали российское гражданство в 2020 году
-                                                </h2>
-                                                <img class="news-img img-fluid" src="../../assets/images/atlantica/zavod_1.jpg" alt="" />
-                                                <p class="description">
-                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem amet magni numquam ex accusantium, ipsa eligendi sed non nisi
-                                                </p>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="item-column mb-4 col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-                                        <div class="gallery-item h-100" data-gallery-tag="provider2">
-                                            <a href="#news-link">
-                                                <h2>
-                                                    2Стало известно, жители каких стран чаще других получали российское гражданство в 2020 году
-                                                </h2>
-                                                <img class="news-img img-fluid" src="../../assets/images/atlantica/zavod_1.jpg" alt="" />
-                                                <p class="description">
-                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem amet magni numquam ex accusantium, ipsa eligendi sed non nisi
-                                                </p>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="item-column mb-4 col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-                                        <div class="gallery-item h-100" data-gallery-tag="provider1">
-                                            <a href="#news-link">
-                                                <h2>
-                                                    1Стало известно, жители каких стран чаще других получали российское гражданство в 2020 году
-                                                </h2>
-                                                <img class="news-img img-fluid" src="../../assets/images/atlantica/zavod_1.jpg" alt="" />
-                                                <p class="description">
-                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem amet magni numquam ex accusantium, ipsa eligendi sed non nisi
-                                                </p>
-                                            </a>
-                                        </div>
-                                    </div>
+                            <div class="gallery b4gallery provider-gallery hover-item" style="display:none;">
+                                <div class="gallery-item rating-block" data-gallery-tag="Поставщик 1">
+                                    <img src="../../assets/images/atlantica/star.png" alt="">
+                                    <img src="../../assets/images/atlantica/star.png" alt="">
+                                    <img src="../../assets/images/atlantica/star.png" alt="">
+                                    <img src="../../assets/images/atlantica/star.png" alt="">
+                                    <img src="../../assets/images/atlantica/star.png" alt="">
                                 </div>
+                                <div class="gallery-item rating-block" data-gallery-tag="Поставщик 2">
+                                    <img src="../../assets/images/atlantica/star.png" alt="">
+                                    <img src="../../assets/images/atlantica/star.png" alt="">
+                                </div>
+                                <div class="gallery-item" data-gallery-tag="Поставщик 1">
+                                    <a href="provider-detail.html">
+                                        <h5>
+                                            1Завод по производству ...
+                                        </h5>
+                                        <img class="news-img img-fluid" src="../../assets/images/atlantica/zavod_1.jpg" alt="" />
+                                        <p class="description">
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem amet magni numquam ex accusantium, ipsa eligendi sed non nisi
+                                        </p>
+                                        <div class="ctrl-btns toggle-block">
+                                            <button class="btn btn-primary" title="Просмотр"><i class="fa fa-eye" aria-hidden="true"></i></button>
+                                            <button class="btn btn-secondary" title="Редактировать"><i class="fa fa-pencil-square" aria-hidden="true"></i></button>
+                                            <button class="btn btn-danger" title="Удалить"><i class="fa fa-trash-o" aria-hidden="true"></i></button>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="gallery-item" data-gallery-tag="Поставщик 1">
+                                    <a href="provider-detail.html">
+                                        <h5>
+                                            1Завод по производству ...
+                                        </h5>
+                                        <img class="news-img img-fluid" src="../../assets/images/atlantica/zavod_1.jpg" alt="" />
+                                        <p class="description">
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem amet magni numquam ex accusantium, ipsa eligendi sed non nisi
+                                        </p>
+                                        <div class="ctrl-btns toggle-block">
+                                            <button class="btn btn-primary" title="Просмотр"><i class="fa fa-eye" aria-hidden="true"></i></button>
+                                            <button class="btn btn-secondary" title="Редактировать"><i class="fa fa-pencil-square" aria-hidden="true"></i></button>
+                                            <button class="btn btn-danger" title="Удалить"><i class="fa fa-trash-o" aria-hidden="true"></i></button>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="gallery-item" data-gallery-tag="Поставщик 2">
+                                    <a href="provider-detail.html">
+                                        <h5>
+                                            2Завод по производству ...
+                                        </h5>
+                                        <img class="news-img img-fluid" src="../../assets/images/atlantica/zavod_1.jpg" alt="" />
+                                        <p class="description">
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem amet magni numquam ex accusantium, ipsa eligendi sed non nisi
+                                        </p>
+                                        <div class="ctrl-btns toggle-block">
+                                            <button class="btn btn-primary" title="Просмотр"><i class="fa fa-eye" aria-hidden="true"></i></button>
+                                            <button class="btn btn-secondary" title="Редактировать"><i class="fa fa-pencil-square" aria-hidden="true"></i></button>
+                                            <button class="btn btn-danger" title="Удалить"><i class="fa fa-trash-o" aria-hidden="true"></i></button>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="gallery-item" data-gallery-tag="Поставщик 2">
+                                    <a href="provider-detail.html">
+                                        <h5>
+                                            2Завод по производству ...
+                                        </h5>
+                                        <img class="news-img img-fluid" src="../../assets/images/atlantica/zavod_1.jpg" alt="" />
+                                        <p class="description">
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem amet magni numquam ex accusantium, ipsa eligendi sed non nisi
+                                        </p>
+                                        <div class="ctrl-btns toggle-block">
+                                            <button class="btn btn-primary" title="Просмотр"><i class="fa fa-eye" aria-hidden="true"></i></button>
+                                            <button class="btn btn-secondary" title="Редактировать"><i class="fa fa-pencil-square" aria-hidden="true"></i></button>
+                                            <button class="btn btn-danger" title="Удалить"><i class="fa fa-trash-o" aria-hidden="true"></i></button>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="gallery-item" data-gallery-tag="Поставщик 2">
+                                    <a href="provider-detail.html">
+                                        <h5>
+                                            2Завод по производству ...
+                                        </h5>
+                                        <img class="news-img img-fluid" src="../../assets/images/atlantica/zavod_1.jpg" alt="" />
+                                        <p class="description">
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem amet magni numquam ex accusantium, ipsa eligendi sed non nisi
+                                        </p>
+                                        <div class="ctrl-btns toggle-block">
+                                            <button class="btn btn-primary" title="Просмотр"><i class="fa fa-eye" aria-hidden="true"></i></button>
+                                            <button class="btn btn-secondary" title="Редактировать"><i class="fa fa-pencil-square" aria-hidden="true"></i></button>
+                                            <button class="btn btn-danger" title="Удалить"><i class="fa fa-trash-o" aria-hidden="true"></i></button>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="gallery-item" data-gallery-tag="Поставщик 2">
+                                    <a href="provider-detail.html">
+                                        <h5>
+                                            2Завод по производству ...
+                                        </h5>
+                                        <img class="news-img img-fluid" src="../../assets/images/atlantica/zavod_1.jpg" alt="" />
+                                        <p class="description">
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem amet magni numquam ex accusantium, ipsa eligendi sed non nisi
+                                        </p>
+                                        <div class="ctrl-btns toggle-block">
+                                            <button class="btn btn-primary" title="Просмотр"><i class="fa fa-eye" aria-hidden="true"></i></button>
+                                            <button class="btn btn-secondary" title="Редактировать"><i class="fa fa-pencil-square" aria-hidden="true"></i></button>
+                                            <button class="btn btn-danger" title="Удалить"><i class="fa fa-trash-o" aria-hidden="true"></i></button>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="gallery-item" data-gallery-tag="Поставщик 2">
+                                    <a href="provider-detail.html">
+                                        <h5>
+                                            2Завод по производству ...
+                                        </h5>
+                                        <img class="news-img img-fluid" src="../../assets/images/atlantica/zavod_1.jpg" alt="" />
+                                        <p class="description">
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem amet magni numquam ex accusantium, ipsa eligendi sed non nisi
+                                        </p>
+                                        <div class="ctrl-btns toggle-block">
+                                            <button class="btn btn-primary" title="Просмотр"><i class="fa fa-eye" aria-hidden="true"></i></button>
+                                            <button class="btn btn-secondary" title="Редактировать"><i class="fa fa-pencil-square" aria-hidden="true"></i></button>
+                                            <button class="btn btn-danger" title="Удалить"><i class="fa fa-trash-o" aria-hidden="true"></i></button>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="gallery-item" data-gallery-tag="Поставщик 2">
+                                    <a href="provider-detail.html">
+                                        <h5>
+                                            2Завод по производству ...
+                                        </h5>
+                                        <img class="news-img img-fluid" src="../../assets/images/atlantica/zavod_1.jpg" alt="" />
+                                        <p class="description">
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem amet magni numquam ex accusantium, ipsa eligendi sed non nisi
+                                        </p>
+                                        <div class="ctrl-btns toggle-block">
+                                            <button class="btn btn-primary" title="Просмотр"><i class="fa fa-eye" aria-hidden="true"></i></button>
+                                            <button class="btn btn-secondary" title="Редактировать"><i class="fa fa-pencil-square" aria-hidden="true"></i></button>
+                                            <button class="btn btn-danger" title="Удалить"><i class="fa fa-trash-o" aria-hidden="true"></i></button>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="gallery-item" data-gallery-tag="Поставщик 2">
+                                    <a href="provider-detail.html">
+                                        <h5>
+                                            2Завод по производству ...
+                                        </h5>
+                                        <img class="news-img img-fluid" src="../../assets/images/atlantica/zavod_1.jpg" alt="" />
+                                        <p class="description">
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem amet magni numquam ex accusantium, ipsa eligendi sed non nisi
+                                        </p>
+                                        <div class="ctrl-btns toggle-block">
+                                            <button class="btn btn-primary" title="Просмотр"><i class="fa fa-eye" aria-hidden="true"></i></button>
+                                            <button class="btn btn-secondary" title="Редактировать"><i class="fa fa-pencil-square" aria-hidden="true"></i></button>
+                                            <button class="btn btn-danger" title="Удалить"><i class="fa fa-trash-o" aria-hidden="true"></i></button>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="gallery-item" data-gallery-tag="Поставщик 2">
+                                    <a href="provider-detail.html">
+                                        <h5>
+                                            2Завод по производству ...
+                                        </h5>
+                                        <img class="news-img img-fluid" src="../../assets/images/atlantica/zavod_1.jpg" alt="" />
+                                        <p class="description">
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem amet magni numquam ex accusantium, ipsa eligendi sed non nisi
+                                        </p>
+                                        <div class="ctrl-btns toggle-block">
+                                            <button class="btn btn-primary" title="Просмотр"><i class="fa fa-eye" aria-hidden="true"></i></button>
+                                            <button class="btn btn-secondary" title="Редактировать"><i class="fa fa-pencil-square" aria-hidden="true"></i></button>
+                                            <button class="btn btn-danger" title="Удалить"><i class="fa fa-trash-o" aria-hidden="true"></i></button>
+                                        </div>
+                                    </a>
+                                </div>
+
                             </div>
                         </div>
                     </div>
@@ -246,10 +350,11 @@
     <!-- Javascript -->
     <script src="../../light/assets/bundles/libscripts.bundle.js"></script>
     <script src="../../light/assets/bundles/vendorscripts.bundle.js"></script>
-    <script src="../../assets/vendor/LightboxGallery/mauGallery.min.js"></script>
+    <script src="../../assets/vendor/LightboxGallery/mauGalleryMyEdition.min.js"></script>
     <script src="../../assets/vendor/LightboxGallery/scripts.js"></script>
 
     <script src="../../light/assets/bundles/mainscripts.bundle.js"></script>
+    <script src="../../light/assets/bundles/my.bundle.js"></script>
     <!-- JavaScript -->
     <script>
         $(".metismenu li").click(function() {
