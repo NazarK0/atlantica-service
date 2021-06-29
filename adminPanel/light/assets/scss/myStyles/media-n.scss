@@ -16,16 +16,12 @@
 
 /* Extra large devices (large laptops and desktops, 1230px and up) */
 @media only screen and (min-width: 1230px) {
-  .navbar-form.search-form {
+  .navbar-form.search-form.standart {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     .form-control {
       width: 200px;
-      // &.user-type,
-      // &.query-type {
-      //   width: fit-content;
-      // }
     }
 
     .btn {
@@ -34,8 +30,32 @@
       color: #000;
     }
 
-    input[type="date"] {
-    width: fit-content;
+    input[type='date'] {
+      width: fit-content;
+    }
   }
+
+  
+}
+
+/* Extra large devices (large laptops and desktops, 1230px and up) */
+@media only screen and (min-width: 1440px) {
+  .navbar-form.search-form.client {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    .form-control {
+      width: 200px;
+    }
+
+    .btn {
+      position: static;
+      padding: 0 10px !important;
+      color: #000;
+    }
+
+    input[type='date'] {
+      width: fit-content;
+    }
   }
 }

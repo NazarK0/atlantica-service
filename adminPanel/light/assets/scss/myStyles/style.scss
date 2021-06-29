@@ -131,130 +131,6 @@ ul {
     }
 }
 
-// .user-create-form {
-//   display: flex;
-//   flex-direction: column;
-//   align-items: center;
-//   .form-data-group {
-//     display: flex;
-//     flex-wrap: wrap;
-//     justify-content: space-around;
-//     padding: 10px;
-//     input {
-//       height: 35px;
-//     }
-//     .form-fl-column {
-//       display: flex;
-//       flex-direction: column;
-//       margin: 7px;
-//     }
-//     .form-fl-row {
-//       display: flex;
-//       flex-direction: row;
-//       margin: 7px;
-//     }
-//     .input-group {
-//       display: flex;
-//       flex-direction: column;
-//       margin-bottom: 11px;
-//       .my-toggle {
-//         margin-top: 35px;
-//         margin-bottom: 11px;
-//       }
-//     }
-// 		.form-other {
-// 			width: 100%;
-// 			display: flex;
-// 			justify-content: space-between;
-// 			flex-direction: row-reverse;
-// 			label {
-// 				padding: 5px;
-// 			}
-// 		}
-// 	}
-// 	button {
-// 		width: 150px;
-// 		margin-bottom: 10px;
-// 	}
-// }
-// .query-create-form {
-// 	display: flex;
-// 	flex-direction: column;
-// 	align-items: center;
-// 	input[type="file"] {
-// 		position: relative;
-// 		top: 32px;
-// 	}
-// 	.form-group {
-// 		display: flex;
-// 		flex-direction: column;
-// 		justify-content: space-around;
-// 		align-items: center;
-// 		padding: 10px;
-// 		width: 100%;
-// 		&-flex-column {
-// 			display: flex;
-// 			flex-direction: column;
-// 			justify-content: space-between;
-// 			align-items: flex-start;
-// 			flex-wrap: wrap;
-// 			height: 100%;
-// 			.upload-file {
-// 				display: flex;
-// 				justify-content: flex-start;
-// 				flex-direction: row;
-// 				align-items: flex-start;
-// 				height: 100%;
-// 				flex-wrap: wrap;
-// 				label {
-// 					cursor: pointer;
-// 				}
-// 			}
-// 		}
-// 		&-flex-row {
-// 			display: flex;
-// 			flex-direction: row;
-// 			justify-content: space-around;
-// 			align-items: flex-start;
-// 			flex-wrap: wrap;
-// 		}
-// 		// > div {
-// 		//   display: inline-block;
-// 		// }
-// 		.input-group {
-// 			display: flex;
-// 			flex-direction: column;
-// 			width: 200px;
-// 			margin: 5px;
-// 		}
-// 		.form-other {
-// 			width: 100%;
-// 			display: flex;
-// 			justify-content: space-between;
-// 			flex-direction: row-reverse;
-// 			label {
-// 				padding: 5px;
-// 			}
-// 		}
-// 	}
-// 	// .form-row {
-// 	//   width: 100%;
-// 	//   display: flex;
-// 	//   justify-content: space-around;
-// 	//   flex-direction: row;
-// 	// }
-// 	.description {
-// 		width: 100%;
-// 		&-wrapper {
-// 			width: 100%;
-// 		}
-// 		// box-sizing: border-box;
-// 	}
-// 	button {
-// 		width: 150px;
-// 		margin-bottom: 10px;
-// 	}
-// }
 .form-group-row {
     width: 100%;
     display: flex;
@@ -354,11 +230,12 @@ ul {
         margin: 10px;
         .gallery-item {
             // margin: 10px;
-            &.rating-block {
+            &.rating-block .stars {
+
                 flex-direction: row;
                 flex-wrap: nowrap;
                 img {
-                    height: 43px;
+                    width: 20px;
                 }
             }
             h5 {

@@ -76,10 +76,6 @@
 	align-items: center;
 }
 
-.container-my {
-	height: 30px;
-}
-
 .main-content.news {
 	.news {
 		padding-bottom: 15px;
@@ -100,21 +96,21 @@
 		}
 	}
 	.card {
-		padding: 0px 10px;
+		padding: 10px;
 	}
-	.block-header {
-		h2 {
-			color: black;
-			font-size: 25px;
-			line-height: 50px;
-		}
-		.add-news-btn {
-			display: flex;
-			justify-content: flex-end;
-			flex-wrap: wrap;
-			align-content: center;
-		}
-	}
+	// .block-header {
+	// 	h2 {
+	// 		color: black;
+	// 		font-size: 25px;
+	// 		line-height: 50px;
+	// 	}
+	// 	.add-news-btn {
+	// 		display: flex;
+	// 		justify-content: flex-end;
+	// 		flex-wrap: wrap;
+	// 		align-content: center;
+	// 	}
+	// }
 	.list-news {
 		.news-title h2 {
 			text-align: left;

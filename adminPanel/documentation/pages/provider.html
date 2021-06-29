@@ -65,7 +65,19 @@
 							<i class="lnr lnr-menu fa fa-bars"></i>
 						</button>
                 </div>
-                <form id="navbar-search" class="navbar-form navbar-right search-form">
+                <form id="navbar-search" class="navbar-form navbar-right search-form standart">
+                    <input value="" class="form-control company-name" placeholder="Компания" type="text" />
+                    <input value="" class="form-control user-name" placeholder="ФИО" type="text" />
+                    <div>
+                        <label>Регистрация: с</label>
+                        <input value="" class="form-control" type="date" style="display: inline-block;" />
+                        <span>&nbsp;по&nbsp;</span>
+                        <input value="" class="form-control" type="date" style="display: inline-block;" />
+                    </div>
+                    <button type="button" class="btn btn-default"><i class="fa fa-search" aria-hidden="true"></i></button>
+                    <button type="button" class="btn btn-default"><i class="icon-trash"></i></button>
+                </form>
+                <!-- <form id="navbar-search" class="navbar-form navbar-right search-form">
                     <div style="display: flex; justify-items: left;">
                         <input value="" class="form-control m-r-10" placeholder="Компания" type="text" />
                         <input value="" class="form-control" placeholder="Представитель" type="text" />
@@ -87,7 +99,7 @@
 								></i>
 							</button>
                     </div>
-                </form>
+                </form> -->
             </div>
         </nav>
 
@@ -179,8 +191,11 @@
                             <li class="breadcrumb-item">
                                 <a href="../index.html"><i class="icon-home"></i></a>
                             </li>
-                            <li class="breadcrumb-item active">Просмотр запроса</li>
+                            <li class="breadcrumb-item active">Список Поставщиков</li>
                         </ul>
+                        <button data-toggle="modal" data-target="#provider-add-modal" class="btn btn-sm btn-primary" title="Создать">
+                Создать
+              </button>
                     </div>
                 </div>
             </div>
@@ -191,14 +206,6 @@
                         <div class="card border-danger" id="documenter_cover">
                             <div class="body">
                                 <div class="table-responsive">
-                                    <div class="p-l-5">
-                                        <p>
-                                            Добавить поставщика
-                                            <button class="btn client-add" data-toggle="modal" data-target="#client-add-modal">
-													<i class="fa fa-plus-circle fa-2x" aria-hidden="true"></i>
-												</button>
-                                        </p>
-                                    </div>
                                     <table class="content-table table js-basic-example dataTable" id="DataTables_Table_0" role="grid" aria-describedby="DataTables_Table_0_info">
                                         <thead class="thead-dark">
                                             <tr role="row">
@@ -285,7 +292,7 @@
 
 		<!-- Modal Windows -->
 		<!--modal add client-->
-		<div class="modal fade" id="client-add-modal" role="dialog" aria-modal="true">
+		<div class="modal fade" id="provider-add-modal" role="dialog" aria-modal="true">
 			<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
 				<div class="modal-content" style="border-radius: 45px">
 					<div class="modal-header" style="justify-content: center">
