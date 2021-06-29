@@ -25,10 +25,6 @@
 		<link rel="stylesheet" href="../../light/assets/css/color_skins.css" />
 		<link rel="stylesheet" href="../../light/assets/css/my_styles.css" />
 		<link rel="stylesheet" href="../../light/assets/css/client.css" />
-		<link
-			rel="stylesheet"
-			href="../../assets/vendor/jquery-datatable/dataTables.bootstrap4.min.css"
-		/>
 		<link rel="stylesheet" href="../../light/assets/css/my_media.css" />
 		<style>
 			.card .body {
@@ -173,23 +169,28 @@
 
 			<div id="main-content">
 				<div class="block-header m-t-20 m-b-20">
-                <div class="row clearfix">
-                    <div class="col-md-6 col-sm-12">
-                        <h2>Шаблоны договоров</h2>
-                    </div>
-                    <div class="col-md-6 col-sm-12 text-right">
-                        <ul class="breadcrumb">
-                            <li class="breadcrumb-item">
-                                <a href="../index.html"><i class="icon-home"></i></a>
-                            </li>
-                            <li class="breadcrumb-item active">Шаблоны договоров</li>
-                        </ul>
-                        <button data-toggle="modal" data-target="#" class="btn btn-sm btn-primary" title="Создать">
-                Добавить
-              </button>
-                    </div>
-                </div>
-            </div>
+					<div class="row clearfix">
+						<div class="col-md-6 col-sm-12">
+							<h2>Шаблоны договоров</h2>
+						</div>
+						<div class="col-md-6 col-sm-12 text-right">
+							<ul class="breadcrumb">
+								<li class="breadcrumb-item">
+									<a href="../index.html"><i class="icon-home"></i></a>
+								</li>
+								<li class="breadcrumb-item active">Шаблоны договоров</li>
+							</ul>
+							<button
+								data-toggle="modal"
+								data-target="#contract-add-modal"
+								class="btn btn-sm btn-primary"
+								title="Добавить"
+							>
+								Добавить
+							</button>
+						</div>
+					</div>
+				</div>
 
 				<div class="container-fluid">
 					<div class="row clearfix">
@@ -199,9 +200,13 @@
 									<table class="content-table table-striped table">
 										<thead class="thead-danger">
 											<tr>
-												<th class="text-center" style="width: 40%;" scope="col">Наименование</th>
-												<th class="text-center" style="width: 40%;" scope="col">Тип договоров</th>
-												<th class="text-center" style="width: 20%;" scope="col"></th>
+												<th class="text-center" style="width: 40%" scope="col">
+													Наименование
+												</th>
+												<th class="text-center" style="width: 40%" scope="col">
+													Тип договоров
+												</th>
+												<th class="text-center" style="width: 20%" scope="col"></th>
 											</tr>
 										</thead>
 										<tbody>
@@ -209,13 +214,16 @@
 												<td class="text-center">Шаблон 1</td>
 												<td class="text-center">Договор поставки</td>
 												<td class="text-center">
-													<a href="#">
+													<button
+														class="btn-search"
+														data-toggle="modal"
+														data-target="#contract-edit-delete-modal"
+														data-name-contract="Шаблон 1"
+														data-type-contract="Договор поставки"
+													>
 														<i class="fa fa-search" aria-hidden="true"></i>
-													</a>
-													<a href="#">
-														<i class="fa fa-pencil-square" aria-hidden="true"></i>
-													</a>
-													<a href="#">
+													</button>
+													<a href="../doc/images/8.png" download>
 														<i class="fa fa-download"></i>
 													</a>
 												</td>
@@ -224,13 +232,16 @@
 												<td class="text-center">Шаблон 2</td>
 												<td class="text-center">Двухсторонний договор</td>
 												<td class="text-center">
-													<a href="#">
+													<button
+														class="btn-search"
+														data-toggle="modal"
+														data-target="#contract-edit-delete-modal"
+														data-name-contract="Шаблон 2"
+														data-type-contract="Двухсторонний договор"
+													>
 														<i class="fa fa-search" aria-hidden="true"></i>
-													</a>
-													<a href="#">
-														<i class="fa fa-pencil-square" aria-hidden="true"></i>
-													</a>
-													<a href="#">
+													</button>
+													<a href="../doc/images/4.png" download>
 														<i class="fa fa-download"></i>
 													</a>
 												</td>
@@ -239,13 +250,16 @@
 												<td class="text-center">Шаблон 3</td>
 												<td class="text-center">Трехсторонний договор</td>
 												<td class="text-center">
-													<a href="#">
+													<button
+														class="btn-search"
+														data-toggle="modal"
+														data-target="#contract-edit-delete-modal"
+														data-name-contract="Шаблон 3"
+														data-type-contract="Трехсторонний договор"
+													>
 														<i class="fa fa-search" aria-hidden="true"></i>
-													</a>
-													<a href="#">
-														<i class="fa fa-pencil-square" aria-hidden="true"></i>
-													</a>
-													<a href="#">
+													</button>
+													<a href="../doc/images/1.png" download>
 														<i class="fa fa-download"></i>
 													</a>
 												</td>
@@ -261,6 +275,173 @@
 		</div>
 
 		<!-- Modal Windows -->
+		<div
+			class="modal fade"
+			id="contract-add-modal"
+			role="dialog"
+			aria-modal="true"
+		>
+			<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+				<div class="modal-content" style="border-radius: 45px">
+					<div class="modal-header" style="justify-content: start">
+						<h5 class="modal-title">Добавить шаблон договора</h5>
+					</div>
+					<div class="modal-body">
+						<form action="" method="post" class="client-create-form">
+							<!-- client add-->
+							<div class="form-group">
+								<div class="form-group-flex-row">
+									<div class="form-group-flex-column">
+										<div class="input-group" style="width: 420px">
+											<input
+												type="text"
+												class="form-control"
+												style=""
+												placeholder="Наименование"
+											/>
+										</div>
+									</div>
+								</div>
+								<div class="form-group-flex-row">
+									<div class="form-group-flex-column">
+										<div class="input-group" style="width: 420px">
+											<input
+												type="text"
+												class="form-control"
+												style=""
+												placeholder="Тип договора"
+											/>
+										</div>
+									</div>
+								</div>
+								<div class="form-group-flex-row">
+									<!-- table -->
+									<div
+										class="form-group-flex-column m-l-5 m-r-35"
+										style="justify-content: start; width: 420px"
+									>
+										<div class="upload-file m-l-15">
+											<div class="upload">
+												<label for="contract-templ"></label>
+												<input
+													type="file"
+													name="contract-templ"
+													id="upload-file"
+													style="top: 0px"
+												/>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="form-group-flex-row">
+									<div class="form-group-flex-column">
+										<div class="input-group" style="flex-direction: row">
+											<button type="submit" class="btn btn-info">Сохранить</button>
+										</div>
+									</div>
+									<div class="form-group-flex-column" style="text-align: center">
+										<div class="input-group">
+											<button class="btn btn-secondary" data-dismiss="modal">
+												Отмена
+											</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</form>
+					</div>
+					<!-- <div class="modal-footer"></div> -->
+				</div>
+			</div>
+		</div>
+		<!-- edit-delete-modal -->
+		<div
+			class="modal fade"
+			id="contract-edit-delete-modal"
+			role="dialog"
+			aria-modal="true"
+		>
+			<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+				<div class="modal-content" style="border-radius: 45px">
+					<div class="modal-header" style="justify-content: start">
+						<h5 class="modal-title">Добавить шаблон договора</h5>
+					</div>
+					<div class="modal-body">
+						<form action="" method="post" class="client-create-form">
+							<!-- client add-->
+							<div class="form-group">
+								<div class="form-group-flex-row">
+									<div class="form-group-flex-column">
+										<div class="input-group" style="width: 420px">
+											<input
+												type="text"
+												class="form-control name-contract"
+												style=""
+												placeholder="Наименование"
+												value="adgaa"
+											/>
+										</div>
+									</div>
+								</div>
+								<div class="form-group-flex-row">
+									<div class="form-group-flex-column">
+										<div class="input-group" style="width: 420px">
+											<input
+												type="text"
+												class="form-control type-contract"
+												style=""
+												placeholder="Тип договора"
+												value=""
+											/>
+										</div>
+									</div>
+								</div>
+								<div class="form-group-flex-row">
+									<!-- table -->
+									<div
+										class="form-group-flex-column m-l-5 m-r-35"
+										style="justify-content: start; width: 420px"
+									>
+										<div class="upload-file m-l-15">
+											<div class="upload">
+												<label for="contract-templ"></label>
+												<input
+													type="file"
+													class="file-contract"
+													name="contract-templ"
+													id="upload-file"
+													style="top: 0px"
+												/>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="form-group-flex-row m-t-10">
+									<div class="form-group-flex-column">
+										<div class="input-group" style="flex-direction: row">
+											<button type="submit" class="btn btn-info">Сохранить</button>
+										</div>
+									</div>
+									<div class="form-group-flex-column" style="text-align: center">
+										<div class="input-group">
+											<button class="btn btn-danger" data-dismiss="modal">Удалить</button>
+										</div>
+									</div>
+									<div class="form-group-flex-column" style="text-align: center">
+										<div class="input-group">
+											<button class="btn btn-secondary" data-dismiss="modal">
+												Отмена
+											</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</form>
+					</div>
+					<!-- <div class="modal-footer"></div> -->
+				</div>
+			</div>
+		</div>
 
 		<!-- Javascript -->
 		<script src="../../light/assets/bundles/libscripts.bundle.js"></script>
@@ -325,6 +506,19 @@
 						}
 					}
 				});
+		</script>
+
+		<script>
+			$(function () {
+				$(".btn-search").click(function () {
+					var name = $(this).attr("data-name-contract");
+					var type = $(this).attr("data-type-contract");
+					var nameInput = $(".name-contract");
+					nameInput.val(name);
+					var typeInput = $(".type-contract");
+					typeInput.val(type);
+				});
+			});
 		</script>
 	</body>
 </html>
