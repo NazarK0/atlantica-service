@@ -158,7 +158,7 @@
                             </li>
                             <li class="breadcrumb-item active">Продукция</li>
                         </ul>
-                        <button data-toggle="modal" data-target="#l" class="btn btn-sm btn-primary" title="Создать">
+                        <button data-toggle="modal" data-target="#production-add-modal" class="btn btn-sm btn-primary" title="Создать">
                 Добавить
               </button>
                     </div>
@@ -178,7 +178,7 @@
                                         <img src="../../assets/images/atlantica/star.png" alt="">
                                         <img src="../../assets/images/atlantica/star.png" alt="">
                                     </div>
-                                    
+
                                 </div>
                                 <div class="gallery-item rating-block" data-gallery-tag="Поставщик 2">
                                     <div class="stars">
@@ -356,6 +356,85 @@
     </div>
 
     <!-- Modal Windows -->
+    <div class="modal fade" id="production-add-modal" role="dialog" aria-modal="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">
+                        Добавить продукцию
+                    </h5>
+                </div>
+                <div class="modal-body">
+                    <form action="" method="post" class="query-form modal-form">
+                        <div class="form-fl-row">
+                            <div class="input-group">
+                                <label for="">Название</label>
+                                <input type="text" class="form-control" />
+                            </div>
+                            <div class="input-group">
+                                <label for="">Описание</label>
+                                <textarea name="" id="" class="form-control"></textarea>
+                            </div>
+                        </div>
+                        <div class="form-fl-row">
+                            <div class="input-group">
+                                <label for="">Фото</label>
+                                <input type="file" class="form-control" accept="image/*" />
+                            </div>
+                            <div class="input-group">
+                                <label for="">Поставщик</label>
+                                <select class="form-control">
+                                    <option value="Поставщик 1">Поставщик 1</option>
+                                    <option value="Поставщик 2">Поставщик 2</option>
+                                    <option value="Поставщик 3">Поставщик 3</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-fl-row">
+                            <div class="input-group">
+                                <div class="form-fl-row">
+                                    <div class="fancy-checkbox">
+                                        <label>
+                        <input type="checkbox" />
+                        <span>Поставка</span>
+                      </label>
+                                    </div>
+                                    <div class="fancy-checkbox">
+                                        <label>
+                        <input type="checkbox" />
+                        <span>Завод под ключ</span>
+                      </label>
+                                    </div>
+                                </div>
+
+                                <label for="">Вид отрасли</label>
+                                <select value="" class="form-control" placeholder="Тип пользователей">
+                    <option value="">Отрасль 1</option>
+                    <option value="">Отрасль 2</option>
+                    <option value="">Отрасль 3</option>
+                  </select>
+                            </div>
+                        </div>
+                        <div class="form-fl-row">
+                            <div class="input-group">
+                                <input type="file" />
+                            </div>
+                        </div>
+                        <div class="form-fl-row">
+                            <textarea class="description" rows="7"></textarea>
+                        </div>
+                        <div class="form-fl-row fl-s-arnd">
+                            <button type="submit" class="btn btn-info">Создать</button>
+                            <button class="btn btn-secondary" data-dismiss="modal">
+                  Отмена
+                </button>
+                        </div>
+                    </form>
+                </div>
+                <!-- <div class="modal-footer"></div> -->
+            </div>
+        </div>
+    </div>
 
     <!-- Javascript -->
     <script src="../../light/assets/bundles/libscripts.bundle.js"></script>
