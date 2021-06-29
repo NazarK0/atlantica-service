@@ -1,144 +1,257 @@
 .client-create-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    input[type="file"] {
-        position: relative;
-        top: 32px;
-    }
-    .form-group {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-        padding: 10px;
-        width: 100%;
-        &-flex-column {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            align-items: flex-start;
-            flex-wrap: wrap;
-            height: 100%;
-            .upload-file {
-                display: flex;
-                justify-content: flex-start;
-                flex-direction: row;
-                align-items: flex-start;
-                height: 100%;
-                flex-wrap: wrap;
-                label {
-                    cursor: pointer;
-                }
-            }
-        }
-        &-flex-row {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-around;
-            align-items: flex-start;
-            flex-wrap: wrap;
-        }
-        // > div {
-        //   display: inline-block;
-        // }
-        .input-group {
-            display: flex;
-            flex-direction: column;
-            width: 200px;
-            margin: 5px;
-        }
-        .form-other {
-            width: 100%;
-            display: flex;
-            justify-content: space-between;
-            flex-direction: row-reverse;
-            label {
-                padding: 5px;
-            }
-        }
-    }
-    .description {
-        width: 100%;
-        &-wrapper {
-            width: 100%;
-        }
-    }
-    button {
-        width: 150px;
-        margin-bottom: 10px;
-    }
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	input[type="file"] {
+		position: relative;
+		top: 32px;
+	}
+	.form-group {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		align-items: center;
+		padding: 10px;
+		width: 100%;
+		&-flex-column {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			align-items: flex-start;
+			flex-wrap: wrap;
+			height: 100%;
+			.upload-file {
+				display: flex;
+				justify-content: flex-start;
+				flex-direction: row;
+				align-items: flex-start;
+				height: 100%;
+				flex-wrap: wrap;
+				label {
+					cursor: pointer;
+				}
+			}
+		}
+		&-flex-row {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-around;
+			align-items: flex-start;
+			flex-wrap: wrap;
+		}
+		// > div {
+		//   display: inline-block;
+		// }
+		.input-group {
+			display: flex;
+			flex-direction: column;
+			width: 200px;
+			margin: 5px;
+		}
+		.form-other {
+			width: 100%;
+			display: flex;
+			justify-content: space-between;
+			flex-direction: row-reverse;
+			label {
+				padding: 5px;
+			}
+		}
+	}
+	.description {
+		width: 100%;
+		&-wrapper {
+			width: 100%;
+		}
+	}
+	button {
+		width: 150px;
+		margin-bottom: 10px;
+	}
 }
 
 .search-trash {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .container-my {
-    height: 30px;
+	height: 30px;
 }
 
 .main-content.news {
-    .news {
-        padding-bottom: 15px;
-        .ctrl-btns {
-            display: flex;
-            justify-content: center;
-            flex-wrap: nowrap;
-            padding-top: 10px;
-            button {
-                margin-right: 10px;
-            }
-            button i {
-                font-size: 1.5rem;
-                display: flex;
-                justify-content: space-around;
-                flex-wrap: nowrap;
-            }
-        }
-    }
-    .card {
-        padding: 0px 10px;
-    }
-    .block-header {
-        h2 {
-            color: black;
-            font-size: 25px;
-            line-height: 50px;
-        }
-        .add-news-btn {
-            display: flex;
-            justify-content: flex-end;
-            flex-wrap: wrap;
-            align-content: center;
-        }
-    }
-    .list-news {
-        .news-title h2 {
-            text-align: left;
-            font-size: 16px;
-            font-weight: bold;
-            color: black;
-            &:hover {
-                color: rgb(20, 15, 59);
-            }
-        }
-        .news-text {
-            text-align: left;
-            color: black;
-            display: flex;
-            flex-direction: column;
-            p {
-                color: lighten($color: #000000, $amount: 30%);
-                font-size: xx-small;
-                padding-top: 5px;
-            }
-        }
-    }
+	.news {
+		padding-bottom: 15px;
+		.ctrl-btns {
+			display: flex;
+			justify-content: center;
+			flex-wrap: nowrap;
+			padding-top: 10px;
+			button {
+				margin-right: 10px;
+			}
+			button i {
+				font-size: 1.5rem;
+				display: flex;
+				justify-content: space-around;
+				flex-wrap: nowrap;
+			}
+		}
+	}
+	.card {
+		padding: 0px 10px;
+	}
+	.block-header {
+		h2 {
+			color: black;
+			font-size: 25px;
+			line-height: 50px;
+		}
+		.add-news-btn {
+			display: flex;
+			justify-content: flex-end;
+			flex-wrap: wrap;
+			align-content: center;
+		}
+	}
+	.list-news {
+		.news-title h2 {
+			text-align: left;
+			font-size: 16px;
+			font-weight: bold;
+			color: black;
+			&:hover {
+				color: rgb(20, 15, 59);
+			}
+		}
+		.news-text {
+			text-align: left;
+			color: black;
+			display: flex;
+			flex-direction: column;
+			p {
+				color: lighten($color: #000000, $amount: 30%);
+				font-size: xx-small;
+				padding-top: 5px;
+			}
+		}
+	}
 }
 
 #main-content {
-    margin-top: 45px;
+	margin-top: 45px;
+}
+
+.chat-app {
+	.people-list {
+		-webkit-transition: all 0.3s ease-in-out;
+		-moz-transition: all 0.3s ease-in-out;
+		-ms-transition: all 0.3s ease-in-out;
+		-o-transition: all 0.3s ease-in-out;
+		transition: all 0.3s ease-in-out;
+		width: 100%;
+		position: relative;
+		left: 0;
+		top: 0;
+		padding: 10px;
+		z-index: 7;
+		border: 2px solid rgb(213, 220, 223);
+
+        li.readed{
+            background-color: #ffffff
+        }
+        li.unreaded{
+            background-color:#e0dfdf6b;;
+        }
+		.user-group-settings.active > span {
+			color: rgb(19, 144, 194);
+			padding-bottom: 5px;
+			border-bottom: 3px solid rgb(19, 144, 194);
+		}
+
+		.people-header {
+			display: flex;
+			flex-direction: row;
+            justify-content: space-around;
+			margin-bottom: 20px;
+			font-weight: bold;
+		}
+
+		.media {
+            margin-bottom: 0;
+            padding: 5px;
+            
+            .media-object{
+                width: 50px;
+                height: 50px;
+                -webkit-border-radius: 50%;
+                -moz-border-radius: 50%;
+                border-radius: 50%;
+                border: 3px solid rgb(19, 144, 194);
+            }
+
+			.media-body {
+				display: flex;
+				flex-direction: row;
+				justify-content: space-between;
+				.chat-name {
+					display: flex;
+					flex-direction: column;
+
+					font-family: sans-serif;
+                    line-height: 1rem;
+                    
+					.group {                        
+						font-size: 15px;
+						font-weight: 700;
+					}
+					.name {                        
+						font-size: 13px;
+						font-weight: 600;
+					}
+					.message {
+						font-size: 12px;
+						font-weight: 500;
+                        color: #5f5f5fa6;
+					}
+				}
+
+				.chat-time-status {
+					display: flex;
+					flex-direction: column;
+                    justify-content: space-between;
+                    align-items: flex-end;
+                    font-family: sans-serif;
+                    height: 50px;
+                    .time{
+                        font-size: 11px;
+                        font-weight: 500;
+                    }
+                    .pin{
+
+                        .pin-circle {                            
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            align-content: center;
+                            flex-wrap: wrap;
+                            border: 1px solid rgb(213, 220, 223);
+                            border-radius: 50%;
+                            width: 20px;
+                            height: 20px;
+                            color: rgb(213, 220, 223);
+                            .fa.fa-thumb-tack {
+                                font-size: 14px;
+                                transform: rotate(45deg);
+                            }
+                        }
+                    }					
+				}
+			}
+		}
+	}
+    .chat-history{
+        border: 2px solid rgb(213, 220, 223);
+    }
 }
