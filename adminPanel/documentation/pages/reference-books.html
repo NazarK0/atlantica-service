@@ -187,7 +187,7 @@
 							<button
 								data-toggle="modal"
 								data-target="#reference-add-modal"
-								class="btn btn-sm btn-primary"
+								class="btn btn-sm btn-primary btn-clear-ins-table"
 								title="Создать"
 							>
 								Добавить
@@ -374,7 +374,7 @@
 								</div>
 								<div class="form-group-flex-row">
 									<div
-										class="form-group-flex-column m-l-5 m-r-35"
+										class="form-group-flex-column m-l-5 m-r-5"
 										style="justify-content: start; width: 650px"
 									>
 										<div class="body table-responsive">
@@ -441,7 +441,7 @@
 								<div class="form-group-flex-row">
 									<!-- table -->
 									<div
-										class="form-group-flex-column m-l-5 m-r-35"
+										class="form-group-flex-column m-l-5 m-r-5"
 										style="justify-content: start; width: 650px"
 									>
 										<div class="body table-responsive">
@@ -463,6 +463,13 @@
 									<div class="form-group-flex-column">
 										<div class="input-group" style="flex-direction: row">
 											<button type="submit" class="btn btn-info">Сохранить</button>
+										</div>
+									</div>
+									<div class="form-group-flex-column">
+										<div class="input-group">
+											<button class="btn btn-danger" title="Удалить" data-dismiss="modal">
+												Удалить
+											</button>
 										</div>
 									</div>
 									<div class="form-group-flex-column" style="text-align: center">
@@ -667,14 +674,22 @@
 		<script>
 			$(function () {
 				$(".btn-add-subcat-reference").click(function () {
-					var val =$("#subcat-reference").val();
+					var val = $("#subcat-reference").val();
+					$(".insert-reference-books").empty();
 					$(".insert-reference-books").append(
-							'<tr> <td style="width: 720px;">' +
-								val +
-								'</td><td style="width: 30px;"><a href="#" class="btn btn-cust btn-clear-row"><i class="icon-trash"></i></a></td></tr>'
-						);
+						'<tr> <td style="width: 720px;">' +
+							val +
+							'</td><td style="width: 30px;"><a href="#" class="btn btn-cust btn-clear-row"><i class="icon-trash"></i></a></td></tr>'
+					);
+					$("#subcat-reference").val('');
 				});
 			});
+			//funciton for clear insert-reference table when creat new reference-book
+			$(function () {
+				$(".btn-clear-ins-table").click(function () {
+					$(".insert-reference-books").empty();
+				});
+			});			
 		</script>
 	</body>
 </html>
