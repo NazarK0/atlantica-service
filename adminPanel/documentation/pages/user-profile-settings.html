@@ -2,7 +2,7 @@
 <html lang="ru">
 
 <head>
-    <title>Atlantica :: Запросы</title>
+    <title>Atlantica :: Профиль</title>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
@@ -55,36 +55,6 @@
 
     <div id="wrapper">
         <nav class="navbar navbar-fixed-top">
-            <div class="container-my">
-                <div class="navbar-left navbar-btn">
-                    <a href="#">
-                        <img src="../../assets/images/atlantica/logo_full_color.png" alt="Atlantica Logo" class="img-fluid logo" />
-                    </a>
-                    <button type="button" class="btn-toggle-offcanvas">
-              <i class="lnr lnr-menu fa fa-bars"></i>
-            </button>
-                </div>
-                <!-- <form id="navbar-search" class="navbar-form navbar-right search-form standart">
-                    <input value="" class="form-control user-name" placeholder="ФИО" type="text" />
-                    <select value="" class="form-control query-type" placeholder="Тип запроса">
-              <option value="">Тип запроса</option>
-              <option value="">Новый</option>
-              <option value="">КП</option>
-              <option value="">На стадии заключения договора</option>
-              <option value="">Договор подписан</option>
-              <option value="">Доставка</option>
-              <option value="">Оплата</option>
-            </select>
-                    <div>
-                        <label>Регистрация: с</label>
-                        <input value="" class="form-control" type="date" style="display: inline-block;" />
-                        <span>&nbsp;по&nbsp;</span>
-                        <input value="" class="form-control" type="date" style="display: inline-block;" />
-                    </div>
-                    <button type="button" class="btn btn-default"><i class="fa fa-search" aria-hidden="true"></i></button>
-                    <button type="button" class="btn btn-default"><i class="icon-trash"></i></button>
-                </form> -->
-            </div>
         </nav>
 
         <div id="left-sidebar" class="sidebar">
@@ -168,18 +138,15 @@
             <div class="block-header">
                 <div class="row clearfix">
                     <div class="col-md-6 col-sm-12">
-                        <h2>Список запросов</h2>
+                        <h2>Профиль пользователя</h2>
                     </div>
                     <div class="col-md-6 col-sm-12 text-right">
                         <ul class="breadcrumb">
                             <li class="breadcrumb-item">
                                 <a href="../index.html"><i class="icon-home"></i></a>
                             </li>
-                            <li class="breadcrumb-item active">Список запросов</li>
+                            <li class="breadcrumb-item active">Профиль пользователя</li>
                         </ul>
-                        <button data-toggle="modal" data-target="#query-create-modal" class="btn btn-sm btn-primary" title="Создать">
-                Создать
-              </button>
                     </div>
                 </div>
             </div>
@@ -189,182 +156,7 @@
                     <div class="col-sm-12">
                         <div class="card" id="documenter_cover">
                             <div class="body">
-                                <div class="table-responsive">
-                                    <table class="content-table table js-basic-example dataTable" id="DataTables_Table_0" role="grid" aria-describedby="DataTables_Table_0_info">
-                                        <thead class="thead-dark">
-                                            <tr role="row">
-                                                <th class="text-center sorting">
-                                                    Номер и описание
-                                                </th>
-                                                <th class="text-center sorting">
-                                                    От кого
-                                                </th>
-                                                <th class="text-center sorting">
-                                                    Дата
-                                                </th>
-                                                <th class="text-center sorting">
-                                                    Менеджер
-                                                </th>
-                                                <th class="text-center sorting">
-                                                    Стадия
-                                                </th>
-                                                <th class="text-center sorting">
-                                                    Поставщик
-                                                </th>
-                                                <th></th>
-                                            </tr>
-                                        </thead>
-                                        <tfoot class="thead-dark">
-                                            <tr role="row">
-                                                <th class="text-center sorting">
-                                                    Номер и описание
-                                                </th>
-                                                <th class="text-center sorting">
-                                                    От кого
-                                                </th>
-                                                <th class="text-center sorting">
-                                                    Дата
-                                                </th>
-                                                <th class="text-center sorting">
-                                                    Менеджер
-                                                </th>
-                                                <th class="text-center sorting">
-                                                    Стадия
-                                                </th>
-                                                <th class="text-center sorting">
-                                                    Поставщик
-                                                </th>
-                                                <th></th>
-                                            </tr>
-                                        </tfoot>
-                                        <tbody>
-                                            <tr class="uncompleted">
-                                                <td class="text-center">Запрос 10</td>
-                                                <td class="text-center">ФИО</td>
-                                                <td class="text-center">10.10.2021</td>
-                                                <td class="text-center"></td>
-                                                <td class="text-left">Новый</td>
-                                                <td class="text-center"></td>
-                                                <td class="text-center">
-                                                    <a href="query-show_new.html">
-                                                        <i class="fa fa-search" aria-hidden="true"></i>
-                                                    </a>
-                                                    <button data-toggle="modal" data-target="#query-edit-modal-1">
-                              <i
-                                class="fa fa-pencil-square"
-                                aria-hidden="true"
-                              ></i>
-                            </button>
-                                                    <button>
-                              <i class="icon-trash"></i>
-                            </button>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td class="text-center">Запрос 9</td>
-                                                <td class="text-center">ФИО</td>
-                                                <td class="text-center">10.10.2021</td>
-                                                <td class="text-center">ФИО</td>
-                                                <td class="text-left">
-                                                    На стадии заключения договора
-                                                </td>
-                                                <td class="text-center">ООО "Компания"</td>
-                                                <td class="text-center">
-                                                    <a href="query-show_make-contract.html">
-                                                        <i class="fa fa-search" aria-hidden="true"></i>
-                                                    </a>
-                                                    <button data-toggle="modal" data-target="#query-edit-modal-1">
-                              <i
-                                class="fa fa-pencil-square"
-                                aria-hidden="true"
-                              ></i>
-                            </button>
-                                                    <button><i class="icon-trash"></i></button>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td class="text-center">Запрос 8</td>
-                                                <td class="text-center">ФИО</td>
-                                                <td class="text-center">10.10.2021</td>
-                                                <td class="text-center">ФИО</td>
-                                                <td class="text-left">Договор подписан</td>
-                                                <td class="text-center">ООО "Компания"</td>
-                                                <td class="text-center">
-                                                    <a href="query-show_contract-signed.html">
-                                                        <i class="fa fa-search" aria-hidden="true"></i>
-                                                    </a>
-                                                    <button data-toggle="modal" data-target="#query-edit-modal-1">
-                              <i
-                                class="fa fa-pencil-square"
-                                aria-hidden="true"
-                              ></i>
-                            </button>
-                                                    <button><i class="icon-trash"></i></button>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td class="text-center">Запрос 7</td>
-                                                <td class="text-center">ФИО</td>
-                                                <td class="text-center">10.10.2021</td>
-                                                <td class="text-center">ФИО</td>
-                                                <td class="text-left">Доставка</td>
-                                                <td class="text-center">ООО "Компания"</td>
-                                                <td class="text-center">
-                                                    <a href="query-show_delivery.html">
-                                                        <i class="fa fa-search" aria-hidden="true"></i>
-                                                    </a>
-                                                    <button data-toggle="modal" data-target="#query-edit-modal-1">
-                              <i
-                                class="fa fa-pencil-square"
-                                aria-hidden="true"
-                              ></i>
-                            </button>
-                                                    <button><i class="icon-trash"></i></button>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td class="text-center">Запрос 6</td>
-                                                <td class="text-center">ФИО</td>
-                                                <td class="text-center">10.10.2021</td>
-                                                <td class="text-center">ФИО</td>
-                                                <td class="text-left">КП</td>
-                                                <td class="text-center">ООО "Компания"</td>
-                                                <td class="text-center">
-                                                    <a href="query-show_kp.html">
-                                                        <i class="fa fa-search" aria-hidden="true"></i>
-                                                    </a>
-                                                    <button data-toggle="modal" data-target="#query-edit-modal-1">
-                              <i
-                                class="fa fa-pencil-square"
-                                aria-hidden="true"
-                              ></i>
-                            </button>
-                                                    <button><i class="icon-trash"></i></button>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td class="text-center">Запрос 5</td>
-                                                <td class="text-center">ФИО</td>
-                                                <td class="text-center">10.10.2021</td>
-                                                <td class="text-center">ФИО</td>
-                                                <td class="text-left">Оплата</td>
-                                                <td class="text-center">ООО "Компания"</td>
-                                                <td class="text-center">
-                                                    <a href="query-show_payment.html">
-                                                        <i class="fa fa-search" aria-hidden="true"></i>
-                                                    </a>
-                                                    <button data-toggle="modal" data-target="#query-edit-modal-1">
-                              <i
-                                class="fa fa-pencil-square"
-                                aria-hidden="true"
-                              ></i>
-                            </button>
-                                                    <button><i class="icon-trash"></i></button>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
+
                             </div>
                         </div>
                     </div>
