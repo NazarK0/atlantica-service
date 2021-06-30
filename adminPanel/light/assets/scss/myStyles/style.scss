@@ -291,3 +291,39 @@
             margin-left: 7px;
         }
     }
+    
+    .body.user-profile {
+        display: flex;
+        .user-data {
+            margin-left: 10px;
+        }
+    }
+    
+    .body .fl-column {
+        display: flex;
+        flex-direction: column;
+        margin: 7px;
+    }
+    
+    .fl-row {
+        display: flex;
+        flex-direction: row;
+        margin: 7px;
+        width: 100%;
+    }
+    
+    .fl-start {
+        justify-content: start;
+    }
+    
+    .fl-center {
+        justify-content: center;
+    }
+    
+    .fl-s-btwn {
+        justify-content: space-between;
+    }
+    
+    .fl-s-arnd {
+        justify-content: space-around;
+    }
