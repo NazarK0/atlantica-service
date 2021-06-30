@@ -1,993 +1,798 @@
 <!DOCTYPE html>
 <html lang="ru">
-	<head>
-		<title>Atlantica :: Новости</title>
-		<meta charset="utf-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
-		<meta
-			name="viewport"
-			content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
-		/>
 
-		<link rel="icon" href="favicon.ico" type="image/x-icon" />
-		<!-- VENDOR CSS -->
-		<link
-			rel="stylesheet"
-			href="../../assets/vendor/bootstrap/css/bootstrap.min.css"
-		/>
-		<link
-			rel="stylesheet"
-			href="../../assets/vendor/font-awesome/css/font-awesome.min.css"
-		/>
+<head>
+    <title>Atlantica :: Новости</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
 
-		<!-- MAIN CSS -->
-		<link rel="stylesheet" href="../../light/assets/css/main.css" />
-		<link rel="stylesheet" href="../../light/assets/css/color_skins.css" />
-		<link rel="stylesheet" href="../../light/assets/css/my_styles.css" />
-		<link rel="stylesheet" href="../../light/assets/css/client.css" />
-		<link
-			rel="stylesheet"
-			href="../../assets/vendor/jquery-datatable/dataTables.bootstrap4.min.css"
-		/>
-		<link rel="stylesheet" href="../../light/assets/css/my_media.css" />
-		<style>
-			.card .body {
-				font-size: 15px;
-			}
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <!-- VENDOR CSS -->
+    <link rel="stylesheet" href="../../assets/vendor/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../../assets/vendor/font-awesome/css/font-awesome.min.css" />
 
-			.main_features li {
-				line-height: 35px;
-			}
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="../../light/assets/css/main.css" />
+    <link rel="stylesheet" href="../../light/assets/css/color_skins.css" />
+    <link rel="stylesheet" href="../../light/assets/css/my_styles.css" />
+    <link rel="stylesheet" href="../../light/assets/css/client.css" />
+    <link rel="stylesheet" href="../../assets/vendor/jquery-datatable/dataTables.bootstrap4.min.css" />
+    <link rel="stylesheet" href="../../light/assets/css/my_media.css" />
+    <style>
+        .card .body {
+            font-size: 15px;
+        }
+        
+        .main_features li {
+            line-height: 35px;
+        }
+        
+        .main_features li.divider {
+            border-bottom: 1px solid #ececec;
+            margin: 10px 0;
+            list-style: none;
+            font-size: 12px;
+            text-transform: uppercase;
+            line-height: 1;
+            color: #ff0000;
+            padding-top: 15px;
+        }
+    </style>
+</head>
 
-			.main_features li.divider {
-				border-bottom: 1px solid #ececec;
-				margin: 10px 0;
-				list-style: none;
-				font-size: 12px;
-				text-transform: uppercase;
-				line-height: 1;
-				color: #ff0000;
-				padding-top: 15px;
-			}
-		</style>
-	</head>
+<body class="theme-orange">
+    <!-- Page Loader -->
+    <div class="page-loader-wrapper">
+        <div class="loader">
+            <div class="m-t-30">
+                <img src="../../assets/images/atlantica/logo_full_black.png" width="48" height="48" alt="Atlantica" />
+            </div>
+            <p>Пожалуйста, подождите...</p>
+        </div>
+    </div>
+    <!-- Overlay For Sidebars -->
+    <div class="overlay"></div>
 
-	<body class="theme-orange">
-		<!-- Page Loader -->
-		<div class="page-loader-wrapper">
-			<div class="loader">
-				<div class="m-t-30">
-					<img
-						src="../../assets/images/atlantica/logo_full_black.png"
-						width="48"
-						height="48"
-						alt="Atlantica"
-					/>
-				</div>
-				<p>Пожалуйста, подождите...</p>
-			</div>
-		</div>
-		<!-- Overlay For Sidebars -->
-		<div class="overlay"></div>
-
-		<div id="wrapper">
-			<nav class="navbar navbar-fixed-top">
-				<div class="container-my">
-					<div class="navbar-left navbar-btn">
-						<a href="#">
-							<img
-								src="../../assets/images/atlantica/logo_full_color.png"
-								alt="Atlantica Logo"
-								class="img-fluid logo"
-							/>
-						</a>
-						<button type="button" class="btn-toggle-offcanvas">
+    <div id="wrapper">
+        <nav class="navbar navbar-fixed-top">
+            <div class="container-my">
+                <div class="navbar-left navbar-btn">
+                    <a href="#">
+                        <img src="../../assets/images/atlantica/logo_full_color.png" alt="Atlantica Logo" class="img-fluid logo" />
+                    </a>
+                    <button type="button" class="btn-toggle-offcanvas">
 							<i class="lnr lnr-menu fa fa-bars"></i>
 						</button>
-					</div>
-				</div>
-			</nav>
+                </div>
+            </div>
+        </nav>
 
-			<div id="left-sidebar" class="sidebar">
-				<div class="navbar-brand">
-					<a href="#">
-						<img
-							src="../../assets/images/atlantica/logo_full_black.png"
-							alt="Atlantica Logo"
-							class="img-fluid logo"
-						/>
-					</a>
-					<button type="button" class="btn-toggle-offcanvas btn btn-sm float-right">
+        <div id="left-sidebar" class="sidebar">
+            <div class="navbar-brand">
+                <a href="#">
+                    <img src="../../assets/images/atlantica/logo_full_black.png" alt="Atlantica Logo" class="img-fluid logo" />
+                </a>
+                <button type="button" class="btn-toggle-offcanvas btn btn-sm float-right">
 						<i class="lnr lnr-menu fa fa-chevron-circle-left"></i>
 					</button>
-				</div>
-				<div class="sidebar-scroll">
-					<div class="user-account">
-						<div class="user_div">
-							<img
-								src="../../assets/images/user.png"
-								class="user-photo"
-								alt="User Profile Picture"
-							/>
-						</div>
-						<div class="dropdown">
-							<a
-								href="javascript:void(0);"
-								class="dropdown-toggle user-name"
-								data-toggle="dropdown"
-							>
-								<strong>Петров О. П.</strong>
-							</a>
-							<ul class="dropdown-menu dropdown-menu-right account">
-								<li>
-									<a href="#"> <i class="icon-user"></i> Профиль </a>
-								</li>
-								<li>
-									<a href="#"> <i class="icon-envelope-open"></i> Сообщения </a>
-								</li>
-								<li>
-									<a href="javascript:void(0);">
-										<i class="icon-settings"></i> Настройки
-									</a>
-								</li>
-								<li class="divider"></li>
-								<li>
-									<a href="#"> <i class="icon-power"></i> Выйти </a>
-								</li>
-							</ul>
-						</div>
-					</div>
-					<nav id="left-sidebar-nav" class="sidebar-nav">
-						<ul id="main-menu" class="metismenu">
-							<li>
-								<a href="../index.html"><span>Пользователи</span></a>
-							</li>
-							<li>
-								<a href="queries.html"><span>Запросы</span></a>
-							</li>
-							<li>
-								<a href="client.html"><span>Клиенты</span></a>
-							</li>
-							<li>
-								<a href="provider.html"><span>Поставщики</span></a>
-							</li>
-							<li class="active">
-								<a href="news.html"><span>Новости</span></a>
-							</li>
-							<li>
-								<a href="reference-books.html"><span>Справочники</span></a>
-							</li>
-							<li>
-								<a href="contract-templates.html"><span>Шаблоны договоров</span></a>
-							</li>
-							<li>
-								<a href="#SCSS"><span>Онлайн чат</span></a>
-							</li>
-							<li>
-								<a href="production.html"><span>Продукция</span></a>
-							</li>
-						</ul>
-					</nav>
-				</div>
-			</div>
+            </div>
+            <div class="sidebar-scroll">
+                <div class="user-account">
+                    <div class="user_div">
+                        <img src="../../assets/images/user.png" class="user-photo" alt="User Profile Picture" />
+                    </div>
+                    <div class="dropdown">
+                        <a href="javascript:void(0);" class="dropdown-toggle user-name" data-toggle="dropdown">
+                            <strong>Петров О. П.</strong>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-right account">
+                            <li>
+                                <a href="user-profile.html"> <i class="icon-user"></i> Профиль </a>
+                            </li>
+                            <li>
+                                <a href="#"> <i class="icon-envelope-open"></i> Сообщения </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);">
+                                    <i class="icon-settings"></i> Настройки
+                                </a>
+                            </li>
+                            <li class="divider"></li>
+                            <li>
+                                <a href="#"> <i class="icon-power"></i> Выйти </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <nav id="left-sidebar-nav" class="sidebar-nav">
+                    <ul id="main-menu" class="metismenu">
+                        <li>
+                            <a href="../index.html"><span>Пользователи</span></a>
+                        </li>
+                        <li>
+                            <a href="queries.html"><span>Запросы</span></a>
+                        </li>
+                        <li>
+                            <a href="client.html"><span>Клиенты</span></a>
+                        </li>
+                        <li>
+                            <a href="provider.html"><span>Поставщики</span></a>
+                        </li>
+                        <li class="active">
+                            <a href="news.html"><span>Новости</span></a>
+                        </li>
+                        <li>
+                            <a href="reference-books.html"><span>Справочники</span></a>
+                        </li>
+                        <li>
+                            <a href="contract-templates.html"><span>Шаблоны договоров</span></a>
+                        </li>
+                        <li>
+                            <a href="#SCSS"><span>Онлайн чат</span></a>
+                        </li>
+                        <li>
+                            <a href="production.html"><span>Продукция</span></a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
 
-			<div id="main-content" class="main-content news">
-				<div class="block-header m-b-20">
-					<div class="row clearfix">
-						<div class="col-md-6 col-sm-12">
-							<h2>Новости компании</h2>
-						</div>
-						<div class="col-md-6 col-sm-12 text-right">
-							<ul class="breadcrumb">
-								<li class="breadcrumb-item">
-									<a href="../index.html"><i class="icon-home"></i></a>
-								</li>
-								<li class="breadcrumb-item active">Новости компании</li>
-							</ul>
-							<button
-								data-toggle="modal"
-								data-target="#news-add-modal"
-								class="btn btn-sm btn-primary"
-								title="Создать"
-							>
+        <div id="main-content" class="main-content news">
+            <div class="block-header m-b-20">
+                <div class="row clearfix">
+                    <div class="col-md-6 col-sm-12">
+                        <h2>Новости компании</h2>
+                    </div>
+                    <div class="col-md-6 col-sm-12 text-right">
+                        <ul class="breadcrumb">
+                            <li class="breadcrumb-item">
+                                <a href="../index.html"><i class="icon-home"></i></a>
+                            </li>
+                            <li class="breadcrumb-item active">Новости компании</li>
+                        </ul>
+                        <button data-toggle="modal" data-target="#news-add-modal" class="btn btn-sm btn-primary" title="Создать">
 								Создать
 							</button>
-						</div>
-					</div>
-				</div>
+                    </div>
+                </div>
+            </div>
 
-				<div class="container-fluid">
-					<div class="row clearfix">
-						<div class="col-sm-12">
-							<div class="card" id="documenter_cover">
-								<div class="row">
-									<div class="col-lg-6 col-md-12">
-										<div class="list-news">
-											<div class="news">
-												<div class="row">
-													<div class="col-12">
-														<div class="news-title">
-															<a href="#news-link">
-																<h2>
-																	Стало известно, жители каких стран чаще других получали
-																	российское гражданство в 2020 году
-																</h2>
-															</a>
-														</div>
-													</div>
-												</div>
-												<div class="row">
-													<div class="col-4">
-														<a href="#news-link">
-															<img
-																class="news-img img-fluid"
-																src="../../assets/images/atlantica/zavod_1.jpg"
-																alt=""
-															/>
-														</a>
-													</div>
-													<div class="col-8">
-														<div class="news-text">
-															<span>
+            <div class="container-fluid">
+                <div class="row clearfix">
+                    <div class="col-sm-12">
+                        <div class="card" id="documenter_cover">
+                            <div class="row">
+                                <div class="col-lg-6 col-md-12">
+                                    <div class="list-news">
+                                        <div class="news">
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <div class="news-title">
+                                                        <a href="#news-link">
+                                                            <h2>
+                                                                Стало известно, жители каких стран чаще других получали российское гражданство в 2020 году
+                                                            </h2>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-4">
+                                                    <a href="#news-link">
+                                                        <img class="news-img img-fluid" src="../../assets/images/atlantica/zavod_1.jpg" alt="" />
+                                                    </a>
+                                                </div>
+                                                <div class="col-8">
+                                                    <div class="news-text">
+                                                        <span>
 																Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem
 																amet magni numquam ex accusantium, ipsa eligendi sed non nisi
 															</span>
 
-															<p>2 апреля 2021, 05:36</p>
-														</div>
-													</div>
-												</div>
-												<div class="row">
-													<div class="col-12">
-														<div class="ctrl-btns toggle-block align-center">
-															<button
-																class="btn btn-primary btn-edit"
-																data-toggle="modal"
-																data-target="#news-edit-delete-modal"
-																data-news-title="Стало известно, жители каких стран чаще других получали
-                                                                российское гражданство в 2020 году"
-																data-announcement="Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                                        <p>2 апреля 2021, 05:36</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <div class="ctrl-btns toggle-block align-center">
+                                                        <button class="btn btn-primary btn-edit" data-toggle="modal" data-target="#news-edit-delete-modal" data-news-title="Стало известно, жители каких стран чаще других получали
+                                                                российское гражданство в 2020 году" data-announcement="Lorem ipsum dolor sit, amet consectetur adipisicing elit.
 																Laboriosam distinctio, quia nostrum ut ipsa eaque id
-																reprehenderit ad, esse earum error ea ratione. Eum, atque!"
-																data-maintext="Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+																reprehenderit ad, esse earum error ea ratione. Eum, atque!" data-maintext="Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                                                                 Delectus quia aspernatur pariatur, ab veniam modi ducimus molestias eaque libero?
-                                                                Harum fuga dicta reiciendis mollitia!"
-																title="Просмотр"
-															>
+                                                                Harum fuga dicta reiciendis mollitia!" title="Просмотр">
 																<i class="fa fa-eye" aria-hidden="true"></i>
 															</button>
-															<button class="btn btn-secondary" title="Редактировать">
+                                                        <button class="btn btn-secondary" title="Редактировать">
 																<i class="fa fa-pencil-square" aria-hidden="true"></i>
 															</button>
-															<button class="btn btn-danger" title="Удалить">
+                                                        <button class="btn btn-danger" title="Удалить">
 																<i class="fa fa-trash-o" aria-hidden="true"></i>
 															</button>
-														</div>
-													</div>
-												</div>
-											</div>
-											<div class="news">
-												<div class="row">
-													<div class="col-12">
-														<div class="news-title">
-															<a href="#news-link">
-																<h2>
-																	Неравномерный старт: как проходит вакцинация от коронавируса на
-																	постсоветском пространстве
-																</h2>
-															</a>
-														</div>
-													</div>
-												</div>
-												<div class="row">
-													<div class="col-4">
-														<a href="#news-link">
-															<img
-																class="news-img img-fluid"
-																src="../../assets/images/atlantica/zavod_2.jpg"
-																alt=""
-															/>
-														</a>
-													</div>
-													<div class="col-8">
-														<div class="news-text">
-															<span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="news">
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <div class="news-title">
+                                                        <a href="#news-link">
+                                                            <h2>
+                                                                Неравномерный старт: как проходит вакцинация от коронавируса на постсоветском пространстве
+                                                            </h2>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-4">
+                                                    <a href="#news-link">
+                                                        <img class="news-img img-fluid" src="../../assets/images/atlantica/zavod_2.jpg" alt="" />
+                                                    </a>
+                                                </div>
+                                                <div class="col-8">
+                                                    <div class="news-text">
+                                                        <span>
 																Lorem ipsum dolor sit amet consectetur adipisicing elit.
 																Corrupti deleniti aliquam atque nisi, voluptate nemo!
 																Consectetur repudiandae doloribus iste aut in tempora unde odio
 																ab?
 															</span>
 
-															<p>26 марта 2021, 08:34</p>
-														</div>
-													</div>
-												</div>
-												<div class="row">
-													<div class="col-12">
-														<div class="ctrl-btns toggle-block align-center">
-															<button
-																class="btn btn-primary btn-edit"
-																data-toggle="modal"
-																data-target="#news-edit-delete-modal"
-																data-news-title="Неравномерный старт: как проходит вакцинация от коронавируса на
-                                                                постсоветском пространстве"
-																data-announcement="Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                                        <p>26 марта 2021, 08:34</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <div class="ctrl-btns toggle-block align-center">
+                                                        <button class="btn btn-primary btn-edit" data-toggle="modal" data-target="#news-edit-delete-modal" data-news-title="Неравномерный старт: как проходит вакцинация от коронавируса на
+                                                                постсоветском пространстве" data-announcement="Lorem ipsum dolor sit, amet consectetur adipisicing elit.
 																Laboriosam distinctio, quia nostrum ut ipsa eaque id
-																reprehenderit ad, esse earum error ea ratione. Eum, atque!"
-																data-maintext="Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+																reprehenderit ad, esse earum error ea ratione. Eum, atque!" data-maintext="Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                                                                 Delectus quia aspernatur pariatur, ab veniam modi ducimus molestias eaque libero?
-                                                                Harum fuga dicta reiciendis mollitia!"
-																title="Просмотр"
-															>
+                                                                Harum fuga dicta reiciendis mollitia!" title="Просмотр">
 																<i class="fa fa-eye" aria-hidden="true"></i>
 															</button>
-															<button class="btn btn-secondary" title="Редактировать">
+                                                        <button class="btn btn-secondary" title="Редактировать">
 																<i class="fa fa-pencil-square" aria-hidden="true"></i>
 															</button>
-															<button class="btn btn-danger" title="Удалить">
+                                                        <button class="btn btn-danger" title="Удалить">
 																<i class="fa fa-trash-o" aria-hidden="true"></i>
 															</button>
-														</div>
-													</div>
-												</div>
-											</div>
-											<div class="news">
-												<div class="row">
-													<div class="col-12">
-														<div class="news-title">
-															<a href="#news-link">
-																<h2>
-																	В Таджикистане началась вакцинация населения от коронавируса
-																</h2>
-															</a>
-														</div>
-													</div>
-												</div>
-												<div class="row">
-													<div class="col-4">
-														<a href="#news-link">
-															<img
-																class="news-img img-fluid"
-																src="../../assets/images/atlantica/zavod_3.jpg"
-																alt=""
-															/>
-														</a>
-													</div>
-													<div class="col-8">
-														<div class="news-text">
-															<span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="news">
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <div class="news-title">
+                                                        <a href="#news-link">
+                                                            <h2>
+                                                                В Таджикистане началась вакцинация населения от коронавируса
+                                                            </h2>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-4">
+                                                    <a href="#news-link">
+                                                        <img class="news-img img-fluid" src="../../assets/images/atlantica/zavod_3.jpg" alt="" />
+                                                    </a>
+                                                </div>
+                                                <div class="col-8">
+                                                    <div class="news-text">
+                                                        <span>
 																Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem,
 																perspiciatis?
 															</span>
 
-															<p>2 апреля 2021, 05:36</p>
-														</div>
-													</div>
-												</div>
-												<div class="row">
-													<div class="col-12">
-														<div class="ctrl-btns toggle-block align-center">
-															<button
-																class="btn btn-primary btn-edit"
-																data-toggle="modal"
-																data-target="#news-edit-delete-modal"
-																data-news-title="В Таджикистане началась вакцинация населения от коронавируса"
-																data-announcement="Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                                        <p>2 апреля 2021, 05:36</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <div class="ctrl-btns toggle-block align-center">
+                                                        <button class="btn btn-primary btn-edit" data-toggle="modal" data-target="#news-edit-delete-modal" data-news-title="В Таджикистане началась вакцинация населения от коронавируса" data-announcement="Lorem ipsum dolor sit, amet consectetur adipisicing elit.
 																Laboriosam distinctio, quia nostrum ut ipsa eaque id
-																reprehenderit ad, esse earum error ea ratione. Eum, atque!"
-																data-maintext="Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+																reprehenderit ad, esse earum error ea ratione. Eum, atque!" data-maintext="Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                                                                 Delectus quia aspernatur pariatur, ab veniam modi ducimus molestias eaque libero?
-                                                                Harum fuga dicta reiciendis mollitia!"
-																title="Просмотр"
-															>
+                                                                Harum fuga dicta reiciendis mollitia!" title="Просмотр">
 																<i class="fa fa-eye" aria-hidden="true"></i>
 															</button>
-															<button class="btn btn-secondary" title="Редактировать">
+                                                        <button class="btn btn-secondary" title="Редактировать">
 																<i class="fa fa-pencil-square" aria-hidden="true"></i>
 															</button>
-															<button class="btn btn-danger" title="Удалить">
+                                                        <button class="btn btn-danger" title="Удалить">
 																<i class="fa fa-trash-o" aria-hidden="true"></i>
 															</button>
-														</div>
-													</div>
-												</div>
-											</div>
-											<div class="news">
-												<div class="row">
-													<div class="col-12">
-														<div class="news-title">
-															<a href="#news-link">
-																<h2>
-																	"Лди продемонстрировали желание жить в одной стране": почему
-																	референдум 1991 года не смог спасти СССР
-																</h2>
-															</a>
-														</div>
-													</div>
-												</div>
-												<div class="row">
-													<div class="col-4">
-														<a href="#news-link">
-															<img
-																class="news-img img-fluid"
-																src="../../assets/images/atlantica/zavod_4.jpg"
-																alt=""
-															/>
-														</a>
-													</div>
-													<div class="col-8">
-														<div class="news-text">
-															<span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="news">
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <div class="news-title">
+                                                        <a href="#news-link">
+                                                            <h2>
+                                                                "Лди продемонстрировали желание жить в одной стране": почему референдум 1991 года не смог спасти СССР
+                                                            </h2>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-4">
+                                                    <a href="#news-link">
+                                                        <img class="news-img img-fluid" src="../../assets/images/atlantica/zavod_4.jpg" alt="" />
+                                                    </a>
+                                                </div>
+                                                <div class="col-8">
+                                                    <div class="news-text">
+                                                        <span>
 																Lorem ipsum dolor sit, amet consectetur adipisicing elit.
 																Laboriosam distinctio, quia nostrum ut ipsa eaque id
 																reprehenderit ad, esse earum error ea ratione. Eum, atque!
 															</span>
-															<p>17 марта 2021, 09:43</p>
-														</div>
-													</div>
-												</div>
-												<div class="row">
-													<div class="col-12">
-														<div class="ctrl-btns toggle-block align-center">
-															<button
-																class="btn btn-primary btn-edit"
-																data-toggle="modal"
-																data-target="#news-edit-delete-modal"
-																data-news-title='"Лди продемонстрировали желание жить в одной стране": почему
-                                                                референдум 1991 года не смог спасти СССР'
-																data-announcement="Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                                        <p>17 марта 2021, 09:43</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <div class="ctrl-btns toggle-block align-center">
+                                                        <button class="btn btn-primary btn-edit" data-toggle="modal" data-target="#news-edit-delete-modal" data-news-title='"Лди продемонстрировали желание жить в одной стране": почему
+                                                                референдум 1991 года не смог спасти СССР' data-announcement="Lorem ipsum dolor sit, amet consectetur adipisicing elit.
 																Laboriosam distinctio, quia nostrum ut ipsa eaque id
-																reprehenderit ad, esse earum error ea ratione. Eum, atque!"
-																data-maintext="Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+																reprehenderit ad, esse earum error ea ratione. Eum, atque!" data-maintext="Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                                                                 Delectus quia aspernatur pariatur, ab veniam modi ducimus molestias eaque libero?
-                                                                Harum fuga dicta reiciendis mollitia!"
-																title="Просмотр"
-															>
+                                                                Harum fuga dicta reiciendis mollitia!" title="Просмотр">
 																<i class="fa fa-eye" aria-hidden="true"></i>
 															</button>
-															<button class="btn btn-secondary" title="Редактировать">
+                                                        <button class="btn btn-secondary" title="Редактировать">
 																<i class="fa fa-pencil-square" aria-hidden="true"></i>
 															</button>
-															<button class="btn btn-danger" title="Удалить">
+                                                        <button class="btn btn-danger" title="Удалить">
 																<i class="fa fa-trash-o" aria-hidden="true"></i>
 															</button>
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="col-lg-6 col-md-12">
-										<div class="list-news">
-											<div class="news">
-												<div class="row">
-													<div class="col-12">
-														<div class="news-title">
-															<a href="#news-link">
-																<h2>
-																	Стало известно, жители каких стран чаще других получали
-																	российское гражданство в 2020 году
-																</h2>
-															</a>
-														</div>
-													</div>
-												</div>
-												<div class="row">
-													<div class="col-4">
-														<a href="#news-link">
-															<img
-																class="news-img img-fluid"
-																src="../../assets/images/atlantica/zavod_1.jpg"
-																alt=""
-															/>
-														</a>
-													</div>
-													<div class="col-8">
-														<div class="news-text">
-															<span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-12">
+                                    <div class="list-news">
+                                        <div class="news">
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <div class="news-title">
+                                                        <a href="#news-link">
+                                                            <h2>
+                                                                Стало известно, жители каких стран чаще других получали российское гражданство в 2020 году
+                                                            </h2>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-4">
+                                                    <a href="#news-link">
+                                                        <img class="news-img img-fluid" src="../../assets/images/atlantica/zavod_1.jpg" alt="" />
+                                                    </a>
+                                                </div>
+                                                <div class="col-8">
+                                                    <div class="news-text">
+                                                        <span>
 																Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem
 																amet magni numquam ex accusantium, ipsa eligendi sed non nisi
 															</span>
 
-															<p>2 апреля 2021, 05:36</p>
-														</div>
-													</div>
-												</div>
-												<div class="row">
-													<div class="col-12">
-														<div class="ctrl-btns toggle-block align-center">
-															<button
-																class="btn btn-primary btn-edit"
-																data-toggle="modal"
-																data-target="#news-edit-delete-modal"
-																data-news-title="Стало известно, жители каких стран чаще других получали
-                                                                российское гражданство в 2020 году"
-																data-announcement="Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                                        <p>2 апреля 2021, 05:36</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <div class="ctrl-btns toggle-block align-center">
+                                                        <button class="btn btn-primary btn-edit" data-toggle="modal" data-target="#news-edit-delete-modal" data-news-title="Стало известно, жители каких стран чаще других получали
+                                                                российское гражданство в 2020 году" data-announcement="Lorem ipsum dolor sit, amet consectetur adipisicing elit.
 																Laboriosam distinctio, quia nostrum ut ipsa eaque id
-																reprehenderit ad, esse earum error ea ratione. Eum, atque!"
-																data-maintext="Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+																reprehenderit ad, esse earum error ea ratione. Eum, atque!" data-maintext="Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                                                                 Delectus quia aspernatur pariatur, ab veniam modi ducimus molestias eaque libero?
-                                                                Harum fuga dicta reiciendis mollitia!"
-																title="Просмотр"
-															>
+                                                                Harum fuga dicta reiciendis mollitia!" title="Просмотр">
 																<i class="fa fa-eye" aria-hidden="true"></i>
 															</button>
-															<button class="btn btn-secondary" title="Редактировать">
+                                                        <button class="btn btn-secondary" title="Редактировать">
 																<i class="fa fa-pencil-square" aria-hidden="true"></i>
 															</button>
-															<button class="btn btn-danger" title="Удалить">
+                                                        <button class="btn btn-danger" title="Удалить">
 																<i class="fa fa-trash-o" aria-hidden="true"></i>
 															</button>
-														</div>
-													</div>
-												</div>
-											</div>
-											<div class="news">
-												<div class="row">
-													<div class="col-12">
-														<div class="news-title">
-															<a href="#news-link">
-																<h2>
-																	Неравномерный старт: как проходит вакцинация от коронавируса на
-																	постсоветском пространстве
-																</h2>
-															</a>
-														</div>
-													</div>
-												</div>
-												<div class="row">
-													<div class="col-4">
-														<a href="#news-link">
-															<img
-																class="news-img img-fluid"
-																src="../../assets/images/atlantica/zavod_2.jpg"
-																alt=""
-															/>
-														</a>
-													</div>
-													<div class="col-8">
-														<div class="news-text">
-															<span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="news">
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <div class="news-title">
+                                                        <a href="#news-link">
+                                                            <h2>
+                                                                Неравномерный старт: как проходит вакцинация от коронавируса на постсоветском пространстве
+                                                            </h2>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-4">
+                                                    <a href="#news-link">
+                                                        <img class="news-img img-fluid" src="../../assets/images/atlantica/zavod_2.jpg" alt="" />
+                                                    </a>
+                                                </div>
+                                                <div class="col-8">
+                                                    <div class="news-text">
+                                                        <span>
 																Lorem ipsum dolor sit amet consectetur adipisicing elit.
 																Corrupti deleniti aliquam atque nisi, voluptate nemo!
 																Consectetur repudiandae doloribus iste aut in tempora unde odio
 																ab?
 															</span>
 
-															<p>26 марта 2021, 08:34</p>
-														</div>
-													</div>
-												</div>
-												<div class="row">
-													<div class="col-12">
-														<div class="ctrl-btns toggle-block align-center">
-															<button
-																class="btn btn-primary btn-edit"
-																data-toggle="modal"
-																data-target="#news-edit-delete-modal"
-																data-news-title="Неравномерный старт: как проходит вакцинация от коронавируса на
-                                                                постсоветском пространстве"
-																data-announcement="Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                                        <p>26 марта 2021, 08:34</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <div class="ctrl-btns toggle-block align-center">
+                                                        <button class="btn btn-primary btn-edit" data-toggle="modal" data-target="#news-edit-delete-modal" data-news-title="Неравномерный старт: как проходит вакцинация от коронавируса на
+                                                                постсоветском пространстве" data-announcement="Lorem ipsum dolor sit, amet consectetur adipisicing elit.
 																Laboriosam distinctio, quia nostrum ut ipsa eaque id
-																reprehenderit ad, esse earum error ea ratione. Eum, atque!"
-																data-maintext="Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+																reprehenderit ad, esse earum error ea ratione. Eum, atque!" data-maintext="Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                                                                 Delectus quia aspernatur pariatur, ab veniam modi ducimus molestias eaque libero?
-                                                                Harum fuga dicta reiciendis mollitia!"
-																title="Просмотр"
-															>
+                                                                Harum fuga dicta reiciendis mollitia!" title="Просмотр">
 																<i class="fa fa-eye" aria-hidden="true"></i>
 															</button>
-															<button class="btn btn-secondary" title="Редактировать">
+                                                        <button class="btn btn-secondary" title="Редактировать">
 																<i class="fa fa-pencil-square" aria-hidden="true"></i>
 															</button>
-															<button class="btn btn-danger" title="Удалить">
+                                                        <button class="btn btn-danger" title="Удалить">
 																<i class="fa fa-trash-o" aria-hidden="true"></i>
 															</button>
-														</div>
-													</div>
-												</div>
-											</div>
-											<div class="news">
-												<div class="row">
-													<div class="col-12">
-														<div class="news-title">
-															<a href="#news-link">
-																<h2>
-																	В Таджикистане началась вакцинация населения от коронавируса
-																</h2>
-															</a>
-														</div>
-													</div>
-												</div>
-												<div class="row">
-													<div class="col-4">
-														<a href="#news-link">
-															<img
-																class="news-img img-fluid"
-																src="../../assets/images/atlantica/zavod_3.jpg"
-																alt=""
-															/>
-														</a>
-													</div>
-													<div class="col-8">
-														<div class="news-text">
-															<span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="news">
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <div class="news-title">
+                                                        <a href="#news-link">
+                                                            <h2>
+                                                                В Таджикистане началась вакцинация населения от коронавируса
+                                                            </h2>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-4">
+                                                    <a href="#news-link">
+                                                        <img class="news-img img-fluid" src="../../assets/images/atlantica/zavod_3.jpg" alt="" />
+                                                    </a>
+                                                </div>
+                                                <div class="col-8">
+                                                    <div class="news-text">
+                                                        <span>
 																Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem,
 																perspiciatis?
 															</span>
 
-															<p>2 апреля 2021, 05:36</p>
-														</div>
-													</div>
-												</div>
-												<div class="row">
-													<div class="col-12">
-														<div class="ctrl-btns toggle-block align-center">
-															<button
-																class="btn btn-primary btn-edit"
-																data-toggle="modal"
-																data-target="#news-edit-delete-modal"
-																data-news-title="В Таджикистане началась вакцинация населения от коронавируса"
-																data-announcement="Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                                        <p>2 апреля 2021, 05:36</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <div class="ctrl-btns toggle-block align-center">
+                                                        <button class="btn btn-primary btn-edit" data-toggle="modal" data-target="#news-edit-delete-modal" data-news-title="В Таджикистане началась вакцинация населения от коронавируса" data-announcement="Lorem ipsum dolor sit, amet consectetur adipisicing elit.
 																Laboriosam distinctio, quia nostrum ut ipsa eaque id
-																reprehenderit ad, esse earum error ea ratione. Eum, atque!"
-																data-maintext="Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+																reprehenderit ad, esse earum error ea ratione. Eum, atque!" data-maintext="Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                                                                 Delectus quia aspernatur pariatur, ab veniam modi ducimus molestias eaque libero?
-                                                                Harum fuga dicta reiciendis mollitia!"
-																title="Просмотр"
-															>
+                                                                Harum fuga dicta reiciendis mollitia!" title="Просмотр">
 																<i class="fa fa-eye" aria-hidden="true"></i>
 															</button>
-															<button class="btn btn-secondary" title="Редактировать">
+                                                        <button class="btn btn-secondary" title="Редактировать">
 																<i class="fa fa-pencil-square" aria-hidden="true"></i>
 															</button>
-															<button class="btn btn-danger" title="Удалить">
+                                                        <button class="btn btn-danger" title="Удалить">
 																<i class="fa fa-trash-o" aria-hidden="true"></i>
 															</button>
-														</div>
-													</div>
-												</div>
-											</div>
-											<div class="news">
-												<div class="row">
-													<div class="col-12">
-														<div class="news-title">
-															<a href="#news-link">
-																<h2>
-																	"Лди продемонстрировали желание жить в одной стране": почему
-																	референдум 1991 года не смог спасти СССР
-																</h2>
-															</a>
-														</div>
-													</div>
-												</div>
-												<div class="row">
-													<div class="col-4">
-														<a href="#news-link">
-															<img
-																class="news-img img-fluid"
-																src="../../assets/images/atlantica/zavod_4.jpg"
-																alt=""
-															/>
-														</a>
-													</div>
-													<div class="col-8">
-														<div class="news-text">
-															<span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="news">
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <div class="news-title">
+                                                        <a href="#news-link">
+                                                            <h2>
+                                                                "Лди продемонстрировали желание жить в одной стране": почему референдум 1991 года не смог спасти СССР
+                                                            </h2>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-4">
+                                                    <a href="#news-link">
+                                                        <img class="news-img img-fluid" src="../../assets/images/atlantica/zavod_4.jpg" alt="" />
+                                                    </a>
+                                                </div>
+                                                <div class="col-8">
+                                                    <div class="news-text">
+                                                        <span>
 																Lorem ipsum dolor sit, amet consectetur adipisicing elit.
 																Laboriosam distinctio, quia nostrum ut ipsa eaque id
 																reprehenderit ad, esse earum error ea ratione. Eum, atque!
 															</span>
-															<p>17 марта 2021, 09:43</p>
-														</div>
-													</div>
-												</div>
-												<div class="row">
-													<div class="col-12">
-														<div class="ctrl-btns toggle-block align-center">
-															<button
-																class="btn btn-primary btn-edit"
-																data-toggle="modal"
-																data-target="#news-edit-delete-modal"
-																data-news-title='"Лди продемонстрировали желание жить в одной стране": почему
-                                                                референдум 1991 года не смог спасти СССР'
-																data-announcement="Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                                        <p>17 марта 2021, 09:43</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <div class="ctrl-btns toggle-block align-center">
+                                                        <button class="btn btn-primary btn-edit" data-toggle="modal" data-target="#news-edit-delete-modal" data-news-title='"Лди продемонстрировали желание жить в одной стране": почему
+                                                                референдум 1991 года не смог спасти СССР' data-announcement="Lorem ipsum dolor sit, amet consectetur adipisicing elit.
 																Laboriosam distinctio, quia nostrum ut ipsa eaque id
-																reprehenderit ad, esse earum error ea ratione. Eum, atque!"
-																data-maintext="Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+																reprehenderit ad, esse earum error ea ratione. Eum, atque!" data-maintext="Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                                                                 Delectus quia aspernatur pariatur, ab veniam modi ducimus molestias eaque libero?
-                                                                Harum fuga dicta reiciendis mollitia!"
-																title="Просмотр"
-															>
+                                                                Harum fuga dicta reiciendis mollitia!" title="Просмотр">
 																<i class="fa fa-eye" aria-hidden="true"></i>
 															</button>
-															<button class="btn btn-secondary" title="Редактировать">
+                                                        <button class="btn btn-secondary" title="Редактировать">
 																<i class="fa fa-pencil-square" aria-hidden="true"></i>
 															</button>
-															<button class="btn btn-danger" title="Удалить">
+                                                        <button class="btn btn-danger" title="Удалить">
 																<i class="fa fa-trash-o" aria-hidden="true"></i>
 															</button>
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-		<!-- Modal Windows -->
-		<div class="modal fade" id="news-add-modal" role="dialog" aria-modal="true">
-			<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-				<div class="modal-content" style="border-radius: 45px">
-					<div class="modal-header" style="justify-content: center">
-						<h5 class="modal-title">Добавить новость</h5>
-					</div>
-					<div class="modal-body">
-						<form action="" method="post" class="client-create-form">
-							<!-- client add-->
-							<div class="form-group" style="padding: 0">
-								<div class="form-group-flex-row">
-									<div class="form-group-flex-column">
-										<div class="input-group" style="width: 620px">
-                                            <label for="textarea-announcement" class="text-center">Заголовок</label>
-											<input
-                                                id="news-title"
-												type="text"
-												class="form-control"
-												style=""
-												placeholder="Заголовок новости"
-											/>
-										</div>
-									</div>
-								</div>
-								<div class="form-group-flex-row">
-									<div class="form-group-flex-column">
-										<div class="input-group" style="width: 620px">
-											<label for="textarea-announcement" class="text-center">Анонс</label>
-											<textarea
-												class="form-control"
-												id="textarea-announcement"
-												rows="3"
-												style="resize:none"
-											></textarea>
-										</div>
-									</div>
-								</div>
-								<div class="form-group-flex-row">
-									<div class="form-group-flex-column">
-										<div class="input-group" style="width: 620px">
-											<label for="maintext-news" class="text-center">Текст новости</label>
-											<textarea
-												class="form-control"
-												id="maintext-news"
-												rows="5"
-												style="resize: none"
-											></textarea>
-										</div>
-									</div>
-								</div>
-								<div class="form-group-flex-row">
-									<!-- table -->
-									<div
-										class="form-group-flex-column m-t-10 m-r-35"
-										style="justify-content: start; width: 620px"
-									>
-										<div class="upload-file m-l-15">
-											<div class="upload">
-												<label for="news-img"></label>
-												<input
-													type="file"
-													name="news-img"
-													id="upload-file"
-													style="top: 0px"
-												/>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="form-group-flex-row">
-									<div class="form-group-flex-column">
-										<div class="input-group" style="flex-direction: row">
-											<button type="submit" class="btn btn-info">Сохранить</button>
-										</div>
-									</div>
-									<div class="form-group-flex-column" style="text-align: center">
-										<div class="input-group">
-											<button class="btn btn-secondary" data-dismiss="modal">
+    <!-- Modal Windows -->
+    <div class="modal fade" id="news-add-modal" role="dialog" aria-modal="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content" style="border-radius: 45px">
+                <div class="modal-header" style="justify-content: center">
+                    <h5 class="modal-title">Добавить новость</h5>
+                </div>
+                <div class="modal-body">
+                    <form action="" method="post" class="client-create-form">
+                        <!-- client add-->
+                        <div class="form-group" style="padding: 0">
+                            <div class="form-group-flex-row">
+                                <div class="form-group-flex-column">
+                                    <div class="input-group" style="width: 620px">
+                                        <label for="textarea-announcement" class="text-center">Заголовок</label>
+                                        <input id="news-title" type="text" class="form-control" style="" placeholder="Заголовок новости" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group-flex-row">
+                                <div class="form-group-flex-column">
+                                    <div class="input-group" style="width: 620px">
+                                        <label for="textarea-announcement" class="text-center">Анонс</label>
+                                        <textarea class="form-control" id="textarea-announcement" rows="3" style="resize:none"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group-flex-row">
+                                <div class="form-group-flex-column">
+                                    <div class="input-group" style="width: 620px">
+                                        <label for="maintext-news" class="text-center">Текст новости</label>
+                                        <textarea class="form-control" id="maintext-news" rows="5" style="resize: none"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group-flex-row">
+                                <!-- table -->
+                                <div class="form-group-flex-column m-t-10 m-r-35" style="justify-content: start; width: 620px">
+                                    <div class="upload-file m-l-15">
+                                        <div class="upload">
+                                            <label for="news-img"></label>
+                                            <input type="file" name="news-img" id="upload-file" style="top: 0px" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group-flex-row">
+                                <div class="form-group-flex-column">
+                                    <div class="input-group" style="flex-direction: row">
+                                        <button type="submit" class="btn btn-info">Сохранить</button>
+                                    </div>
+                                </div>
+                                <div class="form-group-flex-column" style="text-align: center">
+                                    <div class="input-group">
+                                        <button class="btn btn-secondary" data-dismiss="modal">
 												Отмена
 											</button>
-										</div>
-									</div>
-								</div>
-							</div>
-						</form>
-					</div>
-					<!-- <div class="modal-footer"></div> -->
-				</div>
-			</div>
-		</div>
-		<!-- edit-delete-modal -->
-		<div
-			class="modal fade"
-			id="news-edit-delete-modal"
-			role="dialog"
-			aria-modal="true"
-		>
-			<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-				<div class="modal-content" style="border-radius: 45px">
-					<div class="modal-header" style="justify-content: center">
-						<h5 class="modal-title">Показать / редактировать / удалить новость</h5>
-					</div>
-					<div class="modal-body">
-						<form action="" method="post" class="client-create-form">
-							<!-- client add-->
-							<div class="form-group" style="padding: 0">
-								<div class="form-group-flex-row">
-									<div class="form-group-flex-column">
-										<div class="input-group " style="width: 620px">
-                                            <label for="news-title" class="text-center">Заголовок</label>
-											<input
-												type="text"
-                                                id="news-title"
-												class="form-control news-title"
-												style=""
-												placeholder="Заголовок новости"
-												value=""
-											/>
-										</div>
-									</div>
-								</div>
-								<div class="form-group-flex-row">
-									<div class="form-group-flex-column">
-										<div class="input-group" style="width: 620px">
-											<label for="text-anon" class="text-center">Анонс</label>
-											<textarea
-												class="form-control "
-												id="text-anon"
-												placeholder="Анонс"
-												rows="3"
-												style="resize: none"
-											></textarea>
-										</div>
-									</div>
-								</div>
-								<div class="form-group-flex-row">
-									<div class="form-group-flex-column">
-										<div class="input-group" style="width: 620px">
-											<label for="main-text" class="text-center">Текст новости</label>
-											<textarea
-												class="form-control "
-												id="main-text"
-												placeholder="Новость"
-												rows="6"
-												style="resize: none"
-											></textarea>
-										</div>
-									</div>
-								</div>
-								<div class="form-group-flex-row">
-									<!-- table -->
-									<div
-										class="form-group-flex-column m-t-10 m-r-35"
-										style="justify-content: start; width: 620px"
-									>
-										<div class="upload-file m-l-15">
-											<div class="upload">
-												<label for="news-img"></label>
-												<input
-													type="file"
-													name="news-img"
-													id="upload-file"
-													style="top: 0px"
-												/>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="form-group-flex-row">
-									<div class="form-group-flex-column">
-										<div class="input-group" style="flex-direction: row">
-											<button type="submit" class="btn btn-info">Сохранить</button>
-										</div>
-									</div>
-                                    <div class="form-group-flex-column" style="text-align: center">
-										<div class="input-group">
-											<button class="btn btn-danger" data-dismiss="modal">Удалить</button>
-										</div>
-									</div>
-									<div class="form-group-flex-column" style="text-align: center">
-										<div class="input-group">
-											<button class="btn btn-secondary" data-dismiss="modal">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <!-- <div class="modal-footer"></div> -->
+            </div>
+        </div>
+    </div>
+    <!-- edit-delete-modal -->
+    <div class="modal fade" id="news-edit-delete-modal" role="dialog" aria-modal="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content" style="border-radius: 45px">
+                <div class="modal-header" style="justify-content: center">
+                    <h5 class="modal-title">Показать / редактировать / удалить новость</h5>
+                </div>
+                <div class="modal-body">
+                    <form action="" method="post" class="client-create-form">
+                        <!-- client add-->
+                        <div class="form-group" style="padding: 0">
+                            <div class="form-group-flex-row">
+                                <div class="form-group-flex-column">
+                                    <div class="input-group " style="width: 620px">
+                                        <label for="news-title" class="text-center">Заголовок</label>
+                                        <input type="text" id="news-title" class="form-control news-title" style="" placeholder="Заголовок новости" value="" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group-flex-row">
+                                <div class="form-group-flex-column">
+                                    <div class="input-group" style="width: 620px">
+                                        <label for="text-anon" class="text-center">Анонс</label>
+                                        <textarea class="form-control " id="text-anon" placeholder="Анонс" rows="3" style="resize: none"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group-flex-row">
+                                <div class="form-group-flex-column">
+                                    <div class="input-group" style="width: 620px">
+                                        <label for="main-text" class="text-center">Текст новости</label>
+                                        <textarea class="form-control " id="main-text" placeholder="Новость" rows="6" style="resize: none"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group-flex-row">
+                                <!-- table -->
+                                <div class="form-group-flex-column m-t-10 m-r-35" style="justify-content: start; width: 620px">
+                                    <div class="upload-file m-l-15">
+                                        <div class="upload">
+                                            <label for="news-img"></label>
+                                            <input type="file" name="news-img" id="upload-file" style="top: 0px" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group-flex-row">
+                                <div class="form-group-flex-column">
+                                    <div class="input-group" style="flex-direction: row">
+                                        <button type="submit" class="btn btn-info">Сохранить</button>
+                                    </div>
+                                </div>
+                                <div class="form-group-flex-column" style="text-align: center">
+                                    <div class="input-group">
+                                        <button class="btn btn-danger" data-dismiss="modal">Удалить</button>
+                                    </div>
+                                </div>
+                                <div class="form-group-flex-column" style="text-align: center">
+                                    <div class="input-group">
+                                        <button class="btn btn-secondary" data-dismiss="modal">
 												Отмена
 											</button>
-										</div>
-									</div>
-								</div>
-							</div>
-						</form>
-					</div>
-					<!-- <div class="modal-footer"></div> -->
-				</div>
-			</div>
-		</div>
-		<!-- Javascript -->
-		<script src="../../light/assets/bundles/libscripts.bundle.js"></script>
-		<script src="../../light/assets/bundles/vendorscripts.bundle.js"></script>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <!-- <div class="modal-footer"></div> -->
+            </div>
+        </div>
+    </div>
+    <!-- Javascript -->
+    <script src="../../light/assets/bundles/libscripts.bundle.js"></script>
+    <script src="../../light/assets/bundles/vendorscripts.bundle.js"></script>
 
-		<script src="../../light/assets/bundles/mainscripts.bundle.js"></script>
-		<!-- JavaScript -->
-		<script>
-			$(".metismenu li").click(function () {
-				var $this = $(this);
-				if (!$this.is("active")) {
-					$(".metismenu li").removeClass("active").removeData("top");
-					$this.addClass("active").data("top", $this.offset().top);
-				}
-			});
-			document.createElement("section");
-			var duration = "500",
-				easing = "swing";
+    <script src="../../light/assets/bundles/mainscripts.bundle.js"></script>
+    <!-- JavaScript -->
+    <script>
+        $(".metismenu li").click(function() {
+            var $this = $(this);
+            if (!$this.is("active")) {
+                $(".metismenu li").removeClass("active").removeData("top");
+                $this.addClass("active").data("top", $this.offset().top);
+            }
+        });
+        document.createElement("section");
+        var duration = "500",
+            easing = "swing";
 
-			// Select all links with hashes
-			$('a[href*="#"]')
-				// Remove links that don't actually link to anything
-				.not('[href="#"]')
-				.not('[href="#0"]')
-				.click(function (event) {
-					// On-page links
-					if (
-						location.pathname.replace(/^\//, "") ==
-							this.pathname.replace(/^\//, "") &&
-						location.hostname == this.hostname
-					) {
-						// Figure out element to scroll to
-						var target = $(this.hash);
-						target = target.length ? target : $("[name=" + this.hash.slice(1) + "]");
-						// Does a scroll target exist?
-						if (target.length) {
-							// Only prevent default if animation is actually gonna happen
-							event.preventDefault();
-							$("html, body").animate(
-								{
-									scrollTop: target.offset().top,
-								},
-								1000,
-								function () {
-									// Callback after animation
-									// Must change focus!
-									var $target = $(target);
-									$target.focus();
-									if ($target.is(":focus")) {
-										// Checking if the target was focused
-										return false;
-									} else {
-										$target.attr("tabindex", "-1"); // Adding tabindex for elements not focusable
-										$target.focus(); // Set focus again
-									}
-								}
-							);
-						}
-					}
-				});
-		</script>
-		<script>
-			$(function () {
-				$(".btn-edit").click(function () {
-					var newsTitle = $(this).attr("data-news-title");
-					var newsAnnouncement = $(this).attr("data-announcement");
-					var newsMainText = $(this).attr("data-maintext");
-					var nameInput = $(".news-title");
-                    document.getElementById("text-anon").value= newsAnnouncement;
-                    document.getElementById("main-text").value= newsMainText;
-					nameInput.val(newsTitle);
-				});
-			});
-		</script>
-	</body>
+        // Select all links with hashes
+        $('a[href*="#"]')
+            // Remove links that don't actually link to anything
+            .not('[href="#"]')
+            .not('[href="#0"]')
+            .click(function(event) {
+                // On-page links
+                if (
+                    location.pathname.replace(/^\//, "") ==
+                    this.pathname.replace(/^\//, "") &&
+                    location.hostname == this.hostname
+                ) {
+                    // Figure out element to scroll to
+                    var target = $(this.hash);
+                    target = target.length ? target : $("[name=" + this.hash.slice(1) + "]");
+                    // Does a scroll target exist?
+                    if (target.length) {
+                        // Only prevent default if animation is actually gonna happen
+                        event.preventDefault();
+                        $("html, body").animate({
+                                scrollTop: target.offset().top,
+                            },
+                            1000,
+                            function() {
+                                // Callback after animation
+                                // Must change focus!
+                                var $target = $(target);
+                                $target.focus();
+                                if ($target.is(":focus")) {
+                                    // Checking if the target was focused
+                                    return false;
+                                } else {
+                                    $target.attr("tabindex", "-1"); // Adding tabindex for elements not focusable
+                                    $target.focus(); // Set focus again
+                                }
+                            }
+                        );
+                    }
+                }
+            });
+    </script>
+    <script>
+        $(function() {
+            $(".btn-edit").click(function() {
+                var newsTitle = $(this).attr("data-news-title");
+                var newsAnnouncement = $(this).attr("data-announcement");
+                var newsMainText = $(this).attr("data-maintext");
+                var nameInput = $(".news-title");
+                document.getElementById("text-anon").value = newsAnnouncement;
+                document.getElementById("main-text").value = newsMainText;
+                nameInput.val(newsTitle);
+            });
+        });
+    </script>
+</body>
+
 </html>
