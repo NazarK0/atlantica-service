@@ -172,25 +172,29 @@
 			</div>
 
 			<div id="main-content">
-				<div class="block-header m-t-20 m-b-20">
-                <div class="row clearfix">
-                    <div class="col-md-6 col-sm-12">
-                        <h2>Список справочников</h2>
-                    </div>
-                    <div class="col-md-6 col-sm-12 text-right">
-                        <ul class="breadcrumb">
-                            <li class="breadcrumb-item">
-                                <a href="../index.html"><i class="icon-home"></i></a>
-                            </li>
-                            <li class="breadcrumb-item active">Список справочников</li>
-                        </ul>
-                        <button data-toggle="modal" data-target="#" class="btn btn-sm btn-primary" title="Создать">
-                Добавить
-              </button>
-                    </div>
-                </div>
-            </div>
-				
+				<div class="block-header m-b-20">
+					<div class="row clearfix">
+						<div class="col-md-6 col-sm-12">
+							<h2>Список справочников</h2>
+						</div>
+						<div class="col-md-6 col-sm-12 text-right">
+							<ul class="breadcrumb">
+								<li class="breadcrumb-item">
+									<a href="../index.html"><i class="icon-home"></i></a>
+								</li>
+								<li class="breadcrumb-item active">Список справочников</li>
+							</ul>
+							<button
+								data-toggle="modal"
+								data-target="#reference-add-modal"
+								class="btn btn-sm btn-primary"
+								title="Создать"
+							>
+								Добавить
+							</button>
+						</div>
+					</div>
+				</div>
 
 				<div class="container-fluid">
 					<div class="row clearfix">
@@ -206,101 +210,94 @@
 										</thead>
 										<tbody>
 											<tr class="uncompleted">
-												<td>Легкая промышленность</td>
+												<td>Лёгкая промышленность</td>
 												<td style="width: 90px; text-align: center">
-													<a href="#">
+													<button
+														class="btn-search"
+														data-toggle="modal"
+														data-target="#reference-list-query-modal"
+														data-name-reference="Лёгкая промышленность"
+													>
 														<i class="fa fa-search" aria-hidden="true"></i>
-													</a>
-													<a href="#">
-														<i class="fa fa-pencil-square" aria-hidden="true"></i>
-													</a>
-													<a href="#">
-														<i class="icon-trash"></i>
-													</a>
+													</button>
 												</td>
 											</tr>
 											<tr>
-												<td>Строительство и материалы</td>
+												<td>Строительство и стройматериалы</td>
 												<td style="width: 90px; text-align: center">
-													<a href="#">
+													<button
+														class="btn-search"
+														data-toggle="modal"
+														data-target="#reference-list-query-modal"
+														data-name-reference="Строительство и стройматериалы"
+													>
 														<i class="fa fa-search" aria-hidden="true"></i>
-													</a>
-													<a href="#">
-														<i class="fa fa-pencil-square" aria-hidden="true"></i>
-													</a>
-													<a href="#">
-														<i class="icon-trash"></i>
-													</a>
+													</button>
 												</td>
 											</tr>
 											<tr>
 												<td>Техника</td>
 												<td style="width: 90px; text-align: center">
-													<a href="#">
+													<button
+														class="btn-search"
+														data-toggle="modal"
+														data-target="#reference-list-query-modal"
+														data-name-reference="Техника"
+													>
 														<i class="fa fa-search" aria-hidden="true"></i>
-													</a>
-													<a href="#">
-														<i class="fa fa-pencil-square" aria-hidden="true"></i>
-													</a>
-													<a href="#">
-														<i class="icon-trash"></i>
-													</a>
+													</button>
 												</td>
 											</tr>
 											<tr>
 												<td>Сельськое хозяйство</td>
 												<td style="width: 90px; text-align: center">
-													<a href="#">
+													<button
+														class="btn-search"
+														data-toggle="modal"
+														data-target="#reference-list-query-modal"
+														data-name-reference="Сельськое хозяйство"
+													>
 														<i class="fa fa-search" aria-hidden="true"></i>
-													</a>
-													<a href="#">
-														<i class="fa fa-pencil-square" aria-hidden="true"></i>
-													</a>
-													<a href="#">
-														<i class="icon-trash"></i>
-													</a>
+													</button>
 												</td>
 											</tr>
 											<tr>
 												<td>Пищевое оборудование</td>
 												<td style="width: 90px; text-align: center">
-													<a href="#">
+													<button
+														class="btn-search"
+														data-toggle="modal"
+														data-target="#reference-list-query-modal"
+														data-name-reference="Пищевое оборудование"
+													>
 														<i class="fa fa-search" aria-hidden="true"></i>
-													</a>
-													<a href="#">
-														<i class="fa fa-pencil-square" aria-hidden="true"></i>
-													</a>
-													<a href="#">
-														<i class="icon-trash"></i>
-													</a>
+													</button>
 												</td>
 											</tr>
 											<tr>
 												<td>Оборудование для сфер услуг</td>
 												<td style="width: 90px; text-align: center">
-													<a href="#">
+													<button
+														class="btn-search"
+														data-toggle="modal"
+														data-target="#reference-list-query-modal"
+														data-name-reference="Оборудование для сфер услуг"
+													>
 														<i class="fa fa-search" aria-hidden="true"></i>
-													</a>
-													<a href="#">
-														<i class="fa fa-pencil-square" aria-hidden="true"></i>
-													</a>
-													<a href="#">
-														<i class="icon-trash"></i>
-													</a>
+													</button>
 												</td>
 											</tr>
 											<tr>
 												<td>Потребительские товары</td>
 												<td style="width: 90px; text-align: center">
-													<a href="#">
+													<button
+														class="btn-search"
+														data-toggle="modal"
+														data-target="#reference-list-query-modal"
+														data-name-reference="Потребительские товары"
+													>
 														<i class="fa fa-search" aria-hidden="true"></i>
-													</a>
-													<a href="#">
-														<i class="fa fa-pencil-square" aria-hidden="true"></i>
-													</a>
-													<a href="#">
-														<i class="icon-trash"></i>
-													</a>
+													</button>
 												</td>
 											</tr>
 										</tbody>
@@ -312,8 +309,131 @@
 				</div>
 			</div>
 		</div>
-
 		<!-- Modal Windows -->
+		<div
+			class="modal fade"
+			id="reference-add-modal"
+			role="dialog"
+			aria-modal="true"
+		>
+			<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+				<div class="modal-content" style="border-radius: 45px">
+					<div class="modal-header" style="justify-content: center">
+						<h5 class="modal-title">Добавить справочник</h5>
+					</div>
+					<div class="modal-body">
+						<form action="" method="post" class="client-create-form">
+							<div class="form-group">
+								<div class="form-group-flex-row">
+									<div class="form-group-flex-column">
+										<div class="input-group">
+											<input type="text" class="form-control" placeholder="Компания" />
+										</div>
+									</div>
+								</div>
+								<div class="form-group-flex-row">
+									<div
+										class="form-group-flex-column m-l-5 m-r-35"
+										style="justify-content: start; width: 650px"
+									>
+										<div class="body table-responsive">
+											<table class="content-table table-striped table">
+												<thead class="thead-danger">
+													<tr>
+														<th class="text-center" scope="col">Подкатегории наименования</th>
+														<th class="text-center" scope="col"></th>
+													</tr>
+												</thead>
+												<tbody class="insert-reference-books">
+													<!-- <tr>
+														<td style="width: 720px">Example</td>
+														<td style="width: 30px">
+															<a href=""
+																><button class="btn btn-default btn-cust">
+																	<i class="icon-trash"></i></button
+															></a>
+														</td>
+													</tr> -->
+													<!-- others tr -->
+												</tbody>
+											</table>
+										</div>
+									</div>
+								</div>
+								<div class="form-group-flex-row">
+									<div class="form-group-flex-column" style="text-align: center">
+										<div class="input-group">
+											<button class="btn btn-secondary" data-dismiss="modal">
+												Закрыть
+											</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</form>
+					</div>
+					<!-- <div class="modal-footer"></div> -->
+				</div>
+			</div>
+		</div>
+		<!-- edit delete list reference-book -->
+		<div
+			class="modal fade"
+			id="reference-list-query-modal"
+			role="dialog"
+			aria-modal="true"
+		>
+			<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+				<div class="modal-content" style="border-radius: 45px">
+					<div class="modal-header" style="justify-content: center">
+						<!-- <h5 class="modal-title">Список запрос</h5> -->
+					</div>
+					<div class="modal-body">
+						<form action="" method="post" class="client-create-form">
+							<!-- client add-->
+							<div class="form-group">
+								<div class="form-group-flex-row">
+									<!-- table -->
+									<div
+										class="form-group-flex-column m-l-5 m-r-35"
+										style="justify-content: start; width: 650px"
+									>
+										<div class="body table-responsive">
+											<table class="content-table table-striped table">
+												<thead class="thead-danger">
+													<tr>
+														<th class="text-center" scope="col">Подкатегории наименования</th>
+														<th class="text-center" scope="col"></th>
+													</tr>
+												</thead>
+												<tbody class="insert-reference-books">
+													<!-- others tr -->
+												</tbody>
+											</table>
+										</div>
+									</div>
+								</div>
+								<div class="form-group-flex-row">
+									<div class="form-group-flex-column">
+										<div class="input-group" style="flex-direction: row">
+											<button type="submit" class="btn btn-info">Сохранить</button>
+										</div>
+									</div>
+									<div class="form-group-flex-column" style="text-align: center">
+										<div class="input-group">
+											<button class="btn btn-secondary" data-dismiss="modal">
+												Закрыть
+											</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</form>
+					</div>
+					<!-- <div class="modal-footer"></div> -->
+				</div>
+			</div>
+		</div>
 
 		<!-- Javascript -->
 		<script src="../../light/assets/bundles/libscripts.bundle.js"></script>
@@ -378,6 +498,124 @@
 						}
 					}
 				});
+		</script>
+		<script>
+			let references = [
+				{
+					name: "Лёгкая промышленность",
+					subcategory: [
+						"Текстильное оборудование",
+						"Кожевенное оборудование",
+						"Швейное оборудование",
+						"Оборудование для изготовления обуви",
+					],
+				},
+				{
+					name: "Техника",
+					subcategory: [
+						"Тара и упаковка",
+						"Универсальное оборудование",
+						"Станки",
+						"Детали и узлы машин и механизмов",
+						"Оборудование для строительства",
+						"Спецтехника",
+						"Стекло-обрабатывающие оборудование",
+					],
+				},
+				{
+					name: "Сельськое хозяйство",
+					subcategory: [
+						"Сельхозтехника",
+						"Машины для внесения удобрения и защиты растений",
+						"Оборудование для животноводства и птицеводства",
+						"Сортировочное сельскохозяйственное оборудование",
+						"Комбайны",
+					],
+				},
+				{
+					name: "Пищевое оборудование",
+					subcategory: [
+						"Тепловое оборудование",
+						"Хлебопекарное и кондитерское оборудование",
+						"Мукомольное оборудование",
+						"Электромеханическое оборудование",
+						"Молочное оборудование",
+						"Оборудование для переработки жиров и масел",
+					],
+				},
+				{
+					name: "Оборудование для сферы услуг",
+					subcategory: [
+						"Медтехника",
+						"Банковское оборудование",
+						"Полиграфическое оборудование",
+						"Авто-сервисное оборудование",
+						"Оборудование для салонов красоты и парихмахерских",
+						"Оборудование для саун",
+						"Рекламное и выставочное оборудование",
+					],
+				},
+				{
+					name: "Потребительские товары",
+					subcategory: [
+						"Товары для детей",
+						"Канцелярские товары",
+						"Безопасность и защита",
+						"Техника и электроника",
+						"Подарки, хобби, книги",
+						"Спорт отдых туризм",
+					],
+				},
+				{
+					name: "Строительство и стройматериалы",
+					subcategory: [
+						"Сыпучие строительные материалы",
+						"Кирпич, камень, блоки",
+						"Изаляционные материалы",
+						"Фасадные материалы",
+						"Листовые материалы",
+						"Опоры",
+						"Навесы и козырьки",
+						"Системы водоотвода",
+						"Плиты строительные",
+						"Кровельные материалы",
+						"Окна и двери",
+						"Отделочные материалы",
+						"Сантехника",
+						"Водоснабжение, канализация",
+						"Кондицинирование",
+						"Вентиляция",
+						"Отопление",
+						"Оборудование для строительства",
+						"Фонтаны, басейны",
+					],
+				},
+			];
+
+			$(function () {
+				$(".btn-search").click(function () {
+					let name = $(this).attr("data-name-reference");
+					let subcategories = [];
+					for (let i = 0; i < references.length; i++) {
+						if (name == references[i].name) {
+							subcategories = references[i].subcategory;
+						}
+					}
+					//insert title
+					$(".modal-header").empty();
+					$(".modal-header").append('<h5 class="modal-title">' + name + "</h5>");
+					// fill table
+					$(".insert-reference-books").empty();
+					for (let i = 0; i < subcategories.length; i++) {
+						$(".insert-reference-books").append(
+							'<tr> <td style="width: 720px;">' +
+								subcategories[i] +
+								'</td><td style="width: 30px;"><a href=""><button class="btn btn-default btn-cust"><i class="icon-trash"></i></button></a></td></tr>'
+						);
+					}
+					//end loop
+				});
+			});
 		</script>
 	</body>
 </html>

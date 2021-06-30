@@ -251,3 +251,12 @@
         border: 2px solid rgb(213, 220, 223);
     }
 }
+.btn-cust{
+	display: flex;    
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+	width: 30px !important;
+}
