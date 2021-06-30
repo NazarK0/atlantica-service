@@ -321,13 +321,54 @@
 					<div class="modal-header" style="justify-content: center">
 						<h5 class="modal-title">Добавить справочник</h5>
 					</div>
-					<div class="modal-body">
+					<div class="modal-body" style="padding: 0">
 						<form action="" method="post" class="client-create-form">
 							<div class="form-group">
-								<div class="form-group-flex-row">
+								<div class="form-group-flex-row m-b-10">
 									<div class="form-group-flex-column">
-										<div class="input-group">
-											<input type="text" class="form-control" placeholder="Компания" />
+										<div class="input-group" style="width: 620px">
+											<label for="name-reference" class="text-center"
+												>Название справочника</label
+											>
+											<input
+												id="name-reference"
+												type="text"
+												class="form-control"
+												style=""
+												placeholder="Справочник"
+											/>
+										</div>
+									</div>
+								</div>
+								<div class="form-group-flex-row m-b-10">
+									<div class="form-group-flex-column">
+										<div class="input-group" style="width: 600px">
+											<label for="name-reference" class="text-center"
+												>Добавления елементов справочника</label
+											>
+											<input
+												id="subcat-reference"
+												type="text"
+												class="form-control"
+												style=""
+												placeholder="Елемент справочника"
+											/>
+										</div>
+									</div>
+									<div class="form-group-flex-column">
+										<div class="input-group" style="width: 20px">
+											<a href="">
+												<a
+													class="btn btn-add-subcat-reference"
+													style="width: 20px; margin-top: 30px"
+													onclick="add-subcategory-ref()"
+												>
+													<i
+														class="fa fa-plus"
+														style="display: flex; justify-content: center"
+														aria-hidden="true"
+													></i></a
+											></a>
 										</div>
 									</div>
 								</div>
@@ -361,6 +402,11 @@
 									</div>
 								</div>
 								<div class="form-group-flex-row">
+									<div class="form-group-flex-column">
+										<div class="input-group" style="flex-direction: row">
+											<button type="submit" class="btn btn-info">Сохранить</button>
+										</div>
+									</div>
 									<div class="form-group-flex-column" style="text-align: center">
 										<div class="input-group">
 											<button class="btn btn-secondary" data-dismiss="modal">
@@ -610,10 +656,23 @@
 						$(".insert-reference-books").append(
 							'<tr> <td style="width: 720px;">' +
 								subcategories[i] +
-								'</td><td style="width: 30px;"><a href=""><button class="btn btn-default btn-cust"><i class="icon-trash"></i></button></a></td></tr>'
+								'</td><td style="width: 30px;"><a href="#" class="btn btn-cust btn-clear-row"><i class="icon-trash"></i></a></td></tr>'
 						);
 					}
 					//end loop
+				});
+			});
+		</script>
+		<!-- script for add subcat-references to table in modal -->
+		<script>
+			$(function () {
+				$(".btn-add-subcat-reference").click(function () {
+					var val =$("#subcat-reference").val();
+					$(".insert-reference-books").append(
+							'<tr> <td style="width: 720px;">' +
+								val +
+								'</td><td style="width: 30px;"><a href="#" class="btn btn-cust btn-clear-row"><i class="icon-trash"></i></a></td></tr>'
+						);
 				});
 			});
 		</script>
