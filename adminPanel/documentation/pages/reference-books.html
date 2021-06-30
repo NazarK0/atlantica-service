@@ -24,19 +24,13 @@
             font-size: 15px;
         }
         
-        .main_features li {
-            line-height: 35px;
+        td.details-control {
+            background: url('../../assets/images/details_open.png') no-repeat center center;
+            cursor: pointer;
         }
         
-        .main_features li.divider {
-            border-bottom: 1px solid #ececec;
-            margin: 10px 0;
-            list-style: none;
-            font-size: 12px;
-            text-transform: uppercase;
-            line-height: 1;
-            color: #ff0000;
-            padding-top: 15px;
+        tr.shown td.details-control {
+            background: url('../../assets/images/details_close.png') no-repeat center center;
         }
     </style>
 </head>
@@ -88,7 +82,7 @@
                         </a>
                         <ul class="dropdown-menu dropdown-menu-right account">
                             <li>
-                                <a href="user-profile.html"> <i class="icon-user"></i> Профиль </a>
+                                <a href="user-profile.html"> <i class="icon-user"></i> Профиль</a>
                             </li>
                             <li>
                                 <a href="user-profile-settings.html">
@@ -161,7 +155,24 @@
                     <div class="col-sm-12">
                         <div class="card border-danger" id="documenter_cover">
                             <div class="body table-responsive">
-                                <table class="content-table table-striped table">
+                                <table id="example" class="table table-bordered table-hover table-striped" style="width:100%">
+                                    <thead>
+                                        <tr>
+                                            <th></th>
+                                            <th>Наименование</th>
+                                        </tr>
+                                    </thead>
+                                </table>
+                                <!-- <table id="example">
+                                    <thead>
+                                        <tr>
+                                            <th class="text-center" scope="col">Наименование111</th>
+                                            <th class="text-center" scope="col"></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody></tbody>
+                                </table> -->
+                                <!-- <table id="example" class="content-table table-striped table">
                                     <thead class="thead-danger">
                                         <tr>
                                             <th class="text-center" scope="col">Наименование</th>
@@ -226,7 +237,7 @@
                                             </td>
                                         </tr>
                                     </tbody>
-                                </table>
+                                </table> -->
                             </div>
                         </div>
                     </div>
@@ -408,15 +419,63 @@
 		</div>
 
 		<!-- Javascript -->
-		<script src="../../light/assets/bundles/libscripts.bundle.js"></script>
-		<script src="../../light/assets/bundles/vendorscripts.bundle.js"></script>
+		
+		<!-- Javascript -->
+<script src="../../light/assets/bundles/libscripts.bundle.js"></script>    
+<script src="../../light/assets/bundles/vendorscripts.bundle.js"></script>
 
-		<script src="../../light/assets/bundles/mainscripts.bundle.js"></script>
-		<!-- Javascript-->
+<script src="../../light/assets/bundles/datatablescripts.bundle.js"></script>
+<script src="../../assets/vendor/jquery-datatable/buttons/dataTables.buttons.min.js"></script>
+<script src="../../assets/vendor/jquery-datatable/buttons/buttons.bootstrap4.min.js"></script>
+<script src="../../assets/vendor/jquery-datatable/buttons/buttons.colVis.min.js"></script>
+<script src="../../assets/vendor/jquery-datatable/buttons/buttons.html5.min.js"></script>
+<script src="../../assets/vendor/jquery-datatable/buttons/buttons.print.min.js"></script>
+<script src="../../light/assets/bundles/my.bundle.js"></script>
 
-		<script src="../../assets/vendor/sweetalert/sweetalert.min.js"></script>
-		<!-- SweetAlert Plugin Js -->
-		<script src="../../light/assets/js/pages/tables/jquery-datatable.js"></script>
+<script src="../../assets/vendor/sweetalert/sweetalert.min.js"></script><!-- SweetAlert Plugin Js --> 
+
+
+<script src="../../light/assets/bundles/mainscripts.bundle.js"></script>
+<script src="../../light/assets/js/pages/tables/jquery-datatable.js"></script>
+<!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+		
 		<script>
 			$(".metismenu li").click(function () {
 				var $this = $(this);
@@ -606,6 +665,12 @@
 			//funciton for clear insert-reference table when creat new reference-book
 			$(function () {
 				$(".btn-clear-ins-table").click(function () {
+					$(".insert-reference-books").empty();
+				});
+			});			
+		</script>
+	</body>
+</html>.btn-clear-ins-table").click(function () {
 					$(".insert-reference-books").empty();
 				});
 			});			
