@@ -2,7 +2,7 @@
 <html lang="ru">
 
 <head>
-    <title>Atlantica :: Профиль</title>
+    <title>Atlantica :: Профиль(Настройки)</title>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
@@ -82,11 +82,6 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
-                                    <i class="icon-envelope-open"></i> Сообщения
-                                </a>
-                            </li>
-                            <li>
                                 <a href="user-profile-settings.html">
                                     <i class="icon-settings"></i> Настройки
                                 </a>
@@ -138,14 +133,14 @@
             <div class="block-header">
                 <div class="row clearfix">
                     <div class="col-md-6 col-sm-12">
-                        <h2>Профиль пользователя</h2>
+                        <h2>Профиль пользователя(Настройки)</h2>
                     </div>
                     <div class="col-md-6 col-sm-12 text-right">
                         <ul class="breadcrumb">
                             <li class="breadcrumb-item">
                                 <a href="../index.html"><i class="icon-home"></i></a>
                             </li>
-                            <li class="breadcrumb-item active">Профиль пользователя</li>
+                            <li class="breadcrumb-item active">Профиль пользователя(Настройки)</li>
                         </ul>
                     </div>
                 </div>
@@ -155,260 +150,339 @@
                 <div class="row clearfix">
                     <div class="col-sm-12">
                         <div class="card" id="documenter_cover">
-                            <div class="body">
+                            <div class="body user-profile-settings">
+                                <form action="" method="post" class="user-profile-form form">
+                                    <div class="form-group">
+                                        <h4>Основные настройки</h4>
+                                        <div class="form-fl-row">
+                                            <div class="input-group">
+                                                <label for="">ФИО</label>
+                                                <input type="text" class="form-control" value="Петров Алексей Иванович" />
+                                            </div>
+                                            <div class="input-group">
+                                                <label for="">Пол</label>
+                                                <div class="gender-rg">
+                                                    <label class="fancy-radio">
+                                                            <input name="gender" value="male" type="radio" checked>
+                                                            <span><i></i>Мужской</span>
+                                                        </label>
+                                                    <label class="fancy-radio">
+                                                            <input name="gender" value="female" type="radio">
+                                                            <span><i></i>Женский</span>
+                                                        </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-fl-row">
+                                            <div class="input-group">
+                                                <label for="">Дата рождения</label>
+                                                <input type="date" class="form-control" />
+                                            </div>
+                                        </div>
+                                        <div class="form-fl-row">
+                                            <div class="input-group">
+                                                <div class="input-group">
+                                                    <label for="">Адрес</label>
+                                                    <textarea name="" id=""></textarea>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <h4>Настройки профиля</h4>
+                                        <div class="form-fl-row">
+                                            <div class="input-group">
+                                                <label for="">Фото</label>
+                                                <input type="file" />
+                                            </div>
+                                        </div>
+                                        <div class="form-fl-row">
+                                            <div class="input-group">
+                                                <label for="">Телефон</label>
+                                                <input type="tel" />
+                                            </div>
+                                            <div class="input-group">
+                                                <label for="">e-mail</label>
+                                                <input type="email" />
+                                            </div>
+                                        </div>
+                                        <h5>Изменить пароль</h5>
+                                        <div class="form-fl-row">
+                                            <div class="input-group">
+                                                <label for="">Текущий пароль</label>
+                                                <input type="password" />
+                                            </div>
+                                            <div class="input-group">
+                                                <label for="">Новый пароль</label>
+                                                <input type="password" />
+                                            </div>
+                                            <div class="input-group">
+                                                <label for="">Новый пароль еще раз</label>
+                                                <input type="password" />
+                                            </div>
+                                        </div>
 
+
+
+
+
+                                    </div>
+                                    <div class=" form-fl-row fl-s-arnd ">
+                                        <button type="submit " class="btn btn-info ">Сохранить</button>
+                                        <button class="btn btn-secondary " data-dismiss="modal ">Отмена</button>
+                                    </div>
+                                </form>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <!-- Modal Windows -->
-    <div class="modal fade" id="query-create-modal" role="dialog" aria-modal="true">
-        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title">
-                        Создать запрос
-                    </h5>
-                </div>
-                <div class="modal-body">
-                    <form action="" method="post" class="query-form modal-form">
-                        <div class="form-fl-row fl-start">
-                            <div class="input-group">
-                                <label>Дата</label>
-                                <input type="date" />
+        <!-- Modal Windows -->
+        <div class="modal fade " id="query-create-modal " role="dialog " aria-modal="true ">
+            <div class="modal-dialog modal-dialog-centered modal-lg " role="document ">
+                <div class="modal-content ">
+                    <div class="modal-header ">
+                        <h5 class="modal-title ">
+                            Создать запрос
+                        </h5>
+                    </div>
+                    <div class="modal-body ">
+                        <form action=" " method="post " class="query-form modal-form ">
+                            <div class="form-fl-row fl-start ">
+                                <div class="input-group ">
+                                    <label>Дата</label>
+                                    <input type="date " />
+                                </div>
                             </div>
-                        </div>
-                        <div class="form-fl-row">
-                            <div class="input-group">
-                                <label for="">ФИО</label>
-                                <input type="text" class="form-control" />
+                            <div class="form-fl-row ">
+                                <div class="input-group ">
+                                    <label for=" ">ФИО</label>
+                                    <input type="text " class="form-control " />
+                                </div>
+                                <div class="input-group ">
+                                    <label for=" ">Телефон</label>
+                                    <input type="text " class="form-control " />
+                                </div>
                             </div>
-                            <div class="input-group">
-                                <label for="">Телефон</label>
-                                <input type="text" class="form-control" />
-                            </div>
-                        </div>
-                        <div class="form-fl-row">
-                            <div class="input-group">
-                                <label for="">Наименование запроса</label>
-                                <input type="text" class="form-control" />
-                            </div>
-                            <div class="input-group">
-                                <label for="">Наименование компании</label>
-                                <select class="form-control">
-                    <option value="Компания 1">Компания 1</option>
-                    <option value="Компания 2">Компания 2</option>
-                    <option value="Компания 3">Компания 3</option>
+                            <div class="form-fl-row ">
+                                <div class="input-group ">
+                                    <label for=" ">Наименование запроса</label>
+                                    <input type="text " class="form-control " />
+                                </div>
+                                <div class="input-group ">
+                                    <label for=" ">Наименование компании</label>
+                                    <select class="form-control ">
+                    <option value="Компания 1 ">Компания 1</option>
+                    <option value="Компания 2 ">Компания 2</option>
+                    <option value="Компания 3 ">Компания 3</option>
                   </select>
+                                </div>
                             </div>
-                        </div>
-                        <div class="form-fl-row">
-                            <div class="input-group">
-                                <div class="form-fl-row">
-                                    <div class="fancy-checkbox">
-                                        <label>
-                        <input type="checkbox" />
+                            <div class="form-fl-row ">
+                                <div class="input-group ">
+                                    <div class="form-fl-row ">
+                                        <div class="fancy-checkbox ">
+                                            <label>
+                        <input type="checkbox " />
                         <span>Поставка</span>
                       </label>
-                                    </div>
-                                    <div class="fancy-checkbox">
-                                        <label>
-                        <input type="checkbox" />
+                                        </div>
+                                        <div class="fancy-checkbox ">
+                                            <label>
+                        <input type="checkbox " />
                         <span>Завод под ключ</span>
                       </label>
+                                        </div>
                                     </div>
-                                </div>
 
-                                <label for="">Вид отрасли</label>
-                                <select value="" class="form-control" placeholder="Тип пользователей">
-                    <option value="">Отрасль 1</option>
-                    <option value="">Отрасль 2</option>
-                    <option value="">Отрасль 3</option>
+                                    <label for=" ">Вид отрасли</label>
+                                    <select value=" " class="form-control " placeholder="Тип пользователей ">
+                    <option value=" ">Отрасль 1</option>
+                    <option value=" ">Отрасль 2</option>
+                    <option value=" ">Отрасль 3</option>
                   </select>
+                                </div>
                             </div>
-                        </div>
-                        <div class="form-fl-row">
-                            <div class="input-group">
-                                <input type="file" />
+                            <div class="form-fl-row ">
+                                <div class="input-group ">
+                                    <input type="file " />
+                                </div>
                             </div>
-                        </div>
-                        <div class="form-fl-row">
-                            <textarea class="description" rows="7"></textarea>
-                        </div>
-                        <div class="form-fl-row fl-s-arnd">
-                            <button type="submit" class="btn btn-info">Создать</button>
-                            <button class="btn btn-secondary" data-dismiss="modal">
+                            <div class="form-fl-row ">
+                                <textarea class="description " rows="7 "></textarea>
+                            </div>
+                            <div class="form-fl-row fl-s-arnd ">
+                                <button type="submit " class="btn btn-info ">Создать</button>
+                                <button class="btn btn-secondary " data-dismiss="modal ">
                   Отмена
                 </button>
-                        </div>
-                    </form>
+                            </div>
+                        </form>
+                    </div>
+                    <!-- <div class="modal-footer "></div> -->
                 </div>
-                <!-- <div class="modal-footer"></div> -->
             </div>
         </div>
-    </div>
-    <div class="modal fade" id="query-edit-modal-1" role="dialog" aria-modal="true">
-        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title">
-                        Редактировать запрос
-                    </h5>
-                </div>
-                <div class="modal-body">
-                    <form action="" method="post" class="query-form modal-form">
-                        <div class="form-fl-row fl-start">
-                            <div class="input-group">
-                                <label>Дата</label>
-                                <input type="date" value="2021-10-10" />
+        <div class="modal fade " id="query-edit-modal-1 " role="dialog " aria-modal="true ">
+            <div class="modal-dialog modal-dialog-centered modal-lg " role="document ">
+                <div class="modal-content ">
+                    <div class="modal-header ">
+                        <h5 class="modal-title ">
+                            Редактировать запрос
+                        </h5>
+                    </div>
+                    <div class="modal-body ">
+                        <form action=" " method="post " class="query-form modal-form ">
+                            <div class="form-fl-row fl-start ">
+                                <div class="input-group ">
+                                    <label>Дата</label>
+                                    <input type="date " value="2021-10-10 " />
+                                </div>
                             </div>
-                        </div>
-                        <div class="form-fl-row">
-                            <div class="input-group">
-                                <label for="">ФИО</label>
-                                <input type="text" class="form-control" value="Петров Алексей Иванович" />
+                            <div class="form-fl-row ">
+                                <div class="input-group ">
+                                    <label for=" ">ФИО</label>
+                                    <input type="text " class="form-control " value="Петров Алексей Иванович " />
+                                </div>
+                                <div class="input-group ">
+                                    <label for=" ">Телефон</label>
+                                    <input type="text " class="form-control " value="678567345 " />
+                                </div>
                             </div>
-                            <div class="input-group">
-                                <label for="">Телефон</label>
-                                <input type="text" class="form-control" value="678567345" />
-                            </div>
-                        </div>
-                        <div class="form-fl-row">
-                            <div class="input-group">
-                                <label for="">Наименование запроса</label>
-                                <input type="text" class="form-control" value="Запрос 10" />
-                            </div>
-                            <div class="input-group">
-                                <label for="">Наименование компании</label>
-                                <select class="form-control" value="Компания 3">
-                    <option value="Компания 1">Компания 1</option>
-                    <option value="Компания 2">Компания 2</option>
-                    <option value="Компания 3">Компания 3</option>
+                            <div class="form-fl-row ">
+                                <div class="input-group ">
+                                    <label for=" ">Наименование запроса</label>
+                                    <input type="text " class="form-control " value="Запрос 10 " />
+                                </div>
+                                <div class="input-group ">
+                                    <label for=" ">Наименование компании</label>
+                                    <select class="form-control " value="Компания 3 ">
+                    <option value="Компания 1 ">Компания 1</option>
+                    <option value="Компания 2 ">Компания 2</option>
+                    <option value="Компания 3 ">Компания 3</option>
                   </select>
+                                </div>
                             </div>
-                        </div>
-                        <div class="form-fl-row">
-                            <div class="input-group">
-                                <div class="form-fl-row">
-                                    <div class="fancy-checkbox">
-                                        <label>
-                        <input type="checkbox" checked />
+                            <div class="form-fl-row ">
+                                <div class="input-group ">
+                                    <div class="form-fl-row ">
+                                        <div class="fancy-checkbox ">
+                                            <label>
+                        <input type="checkbox " checked />
                         <span>Поставка</span>
                       </label>
-                                    </div>
-                                    <div class="fancy-checkbox">
-                                        <label>
-                        <input type="checkbox" />
+                                        </div>
+                                        <div class="fancy-checkbox ">
+                                            <label>
+                        <input type="checkbox " />
                         <span>Завод под ключ</span>
                       </label>
+                                        </div>
                                     </div>
-                                </div>
 
-                                <label for="">Вид отрасли</label>
-                                <select value="Отрасль 2" class="form-control" placeholder="Тип пользователей">
-                    <option value="">Отрасль 1</option>
-                    <option value="">Отрасль 2</option>
-                    <option value="">Отрасль 3</option>
+                                    <label for=" ">Вид отрасли</label>
+                                    <select value="Отрасль 2 " class="form-control " placeholder="Тип пользователей ">
+                    <option value=" ">Отрасль 1</option>
+                    <option value=" ">Отрасль 2</option>
+                    <option value=" ">Отрасль 3</option>
                   </select>
+                                </div>
                             </div>
-                        </div>
-                        <div class="form-fl-row">
-                            <div class="input-group">
-                                <input type="file" />
+                            <div class="form-fl-row ">
+                                <div class="input-group ">
+                                    <input type="file " />
+                                </div>
                             </div>
-                        </div>
-                        <div class="form-fl-row">
-                            <textarea class="description" rows="7"></textarea>
-                        </div>
-                        <div class="form-fl-row fl-s-arnd">
-                            <button type="submit" class="btn btn-info">Создать</button>
-                            <button class="btn btn-secondary" data-dismiss="modal">
+                            <div class="form-fl-row ">
+                                <textarea class="description " rows="7 "></textarea>
+                            </div>
+                            <div class="form-fl-row fl-s-arnd ">
+                                <button type="submit " class="btn btn-info ">Создать</button>
+                                <button class="btn btn-secondary " data-dismiss="modal ">
                   Отмена
                 </button>
-                        </div>
-                    </form>
+                            </div>
+                        </form>
+                    </div>
+                    <!-- <div class="modal-footer "></div> -->
                 </div>
-                <!-- <div class="modal-footer"></div> -->
             </div>
         </div>
-    </div>
 
-    <!-- Javascript -->
-    <script src="../../light/assets/bundles/libscripts.bundle.js"></script>
-    <script src="../../light/assets/bundles/vendorscripts.bundle.js"></script>
+        <!-- Javascript -->
+        <script src="../../light/assets/bundles/libscripts.bundle.js "></script>
+        <script src="../../light/assets/bundles/vendorscripts.bundle.js "></script>
 
-    <script src="../../light/assets/bundles/mainscripts.bundle.js"></script>
-    <!-- Javascript -->
+        <script src="../../light/assets/bundles/mainscripts.bundle.js "></script>
+        <!-- Javascript -->
 
-    <script src="../../light/assets/bundles/datatablescripts.bundle.js"></script>
-    <script src="../../assets/vendor/jquery-datatable/buttons/dataTables.buttons.min.js"></script>
-    <script src="../../assets/vendor/jquery-datatable/buttons/buttons.bootstrap4.min.js"></script>
-    <script src="../../assets/vendor/jquery-datatable/buttons/buttons.colVis.min.js"></script>
-    <script src="../../assets/vendor/jquery-datatable/buttons/buttons.html5.min.js"></script>
-    <script src="../../assets/vendor/jquery-datatable/buttons/buttons.print.min.js"></script>
+        <script src="../../light/assets/bundles/datatablescripts.bundle.js "></script>
+        <script src="../../assets/vendor/jquery-datatable/buttons/dataTables.buttons.min.js "></script>
+        <script src="../../assets/vendor/jquery-datatable/buttons/buttons.bootstrap4.min.js "></script>
+        <script src="../../assets/vendor/jquery-datatable/buttons/buttons.colVis.min.js "></script>
+        <script src="../../assets/vendor/jquery-datatable/buttons/buttons.html5.min.js "></script>
+        <script src="../../assets/vendor/jquery-datatable/buttons/buttons.print.min.js "></script>
 
-    <script src="../../assets/vendor/sweetalert/sweetalert.min.js"></script>
-    <!-- SweetAlert Plugin Js -->
-    <script src="../../light/assets/js/pages/tables/jquery-datatable.js"></script>
-    <script>
-        $('.metismenu li').click(function() {
-            var $this = $(this)
-            if (!$this.is('active')) {
-                $('.metismenu li').removeClass('active').removeData('top')
-                $this.addClass('active').data('top', $this.offset().top)
-            }
-        })
-        document.createElement('section')
-        var duration = '500',
-            easing = 'swing'
-
-        // Select all links with hashes
-        $('a[href*="#"]')
-            // Remove links that don't actually link to anything
-            .not('[href="#"]')
-            .not('[href="#0"]')
-            .click(function(event) {
-                // On-page links
-                if (
-                    location.pathname.replace(/^\//, '') ==
-                    this.pathname.replace(/^\//, '') &&
-                    location.hostname == this.hostname
-                ) {
-                    // Figure out element to scroll to
-                    var target = $(this.hash)
-                    target = target.length ?
-                        target :
-                        $('[name=' + this.hash.slice(1) + ']')
-                        // Does a scroll target exist?
-                    if (target.length) {
-                        // Only prevent default if animation is actually gonna happen
-                        event.preventDefault()
-                        $('html, body').animate({
-                                scrollTop: target.offset().top,
-                            },
-                            1000,
-                            function() {
-                                // Callback after animation
-                                // Must change focus!
-                                var $target = $(target)
-                                $target.focus()
-                                if ($target.is(':focus')) {
-                                    // Checking if the target was focused
-                                    return false
-                                } else {
-                                    $target.attr('tabindex', '-1') // Adding tabindex for elements not focusable
-                                    $target.focus() // Set focus again
-                                }
-                            },
-                        )
-                    }
+        <script src="../../assets/vendor/sweetalert/sweetalert.min.js "></script>
+        <!-- SweetAlert Plugin Js -->
+        <script src="../../light/assets/js/pages/tables/jquery-datatable.js "></script>
+        <script>
+            $('.metismenu li').click(function() {
+                var $this = $(this)
+                if (!$this.is('active')) {
+                    $('.metismenu li').removeClass('active').removeData('top')
+                    $this.addClass('active').data('top', $this.offset().top)
                 }
             })
-    </script>
+            document.createElement('section')
+            var duration = '500',
+                easing = 'swing'
+
+            // Select all links with hashes
+            $('a[href*="# "]')
+                // Remove links that don't actually link to anything
+                .not('[href="# "]')
+                .not('[href="#0 "]')
+                .click(function(event) {
+                    // On-page links
+                    if (
+                        location.pathname.replace(/^\//, '') ==
+                        this.pathname.replace(/^\//, '') &&
+                        location.hostname == this.hostname
+                    ) {
+                        // Figure out element to scroll to
+                        var target = $(this.hash)
+                        target = target.length ?
+                            target :
+                            $('[name=' + this.hash.slice(1) + ']')
+                            // Does a scroll target exist?
+                        if (target.length) {
+                            // Only prevent default if animation is actually gonna happen
+                            event.preventDefault()
+                            $('html, body').animate({
+                                    scrollTop: target.offset().top,
+                                },
+                                1000,
+                                function() {
+                                    // Callback after animation
+                                    // Must change focus!
+                                    var $target = $(target)
+                                    $target.focus()
+                                    if ($target.is(':focus')) {
+                                        // Checking if the target was focused
+                                        return false
+                                    } else {
+                                        $target.attr('tabindex', '-1') // Adding tabindex for elements not focusable
+                                        $target.focus() // Set focus again
+                                    }
+                                },
+                            )
+                        }
+                    }
+                })
+        </script>
 </body>
 
 </html>
