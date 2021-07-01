@@ -71,7 +71,7 @@
         <div id="left-sidebar" class="sidebar">
             <div class="navbar-brand">
                 <a href="#">
-                    <img src="../../assets/images/atlantica/logo_full_black.png" alt="Atlantica Logo" class="img-fluid logo" />
+                    <img src="../../assets/images/atlantica/logo_full_color.png" alt="Atlantica Logo" class="img-fluid logo" />
                 </a>
                 <button type="button" class="btn-toggle-offcanvas btn btn-sm float-right">
 						<i class="lnr lnr-menu fa fa-chevron-circle-left"></i>
@@ -88,17 +88,12 @@
                         </a>
                         <ul class="dropdown-menu dropdown-menu-right account">
                             <li>
-                                <a href="#">
+                                <a href="user-profile.html">
                                     <i class="icon-user"></i> Профиль
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
-                                    <i class="icon-envelope-open"></i> Сообщения
-                                </a>
-                            </li>
-                            <li>
-                                <a href="javascript:void(0);">
+                                <a href="user-profile-settings.html">
                                     <i class="icon-settings"></i> Настройки
                                 </a>
                             </li>
@@ -135,7 +130,7 @@
                             <a href="contract-templates.html"><span>Шаблоны договоров</span></a>
                         </li>
                         <li>
-                            <a href="#SCSS"><span>Онлайн чат</span></a>
+                            <a href="chat.html"><span>Онлайн чат</span></a>
                         </li>
                         <li class="active">
                             <a href="#"><span>Продукция</span></a>
@@ -158,7 +153,7 @@
                             </li>
                             <li class="breadcrumb-item active">Продукция</li>
                         </ul>
-                        <button data-toggle="modal" data-target="#l" class="btn btn-sm btn-primary" title="Создать">
+                        <button data-toggle="modal" data-target="#production-add-modal" class="btn btn-sm btn-primary" title="Создать">
                 Добавить
               </button>
                     </div>
@@ -178,7 +173,7 @@
                                         <img src="../../assets/images/atlantica/star.png" alt="">
                                         <img src="../../assets/images/atlantica/star.png" alt="">
                                     </div>
-                                    
+
                                 </div>
                                 <div class="gallery-item rating-block" data-gallery-tag="Поставщик 2">
                                     <div class="stars">
@@ -187,166 +182,145 @@
                                     </div>
                                 </div>
                                 <div class="gallery-item" data-gallery-tag="Поставщик 1">
-                                    <a href="provider-detail.html">
-                                        <h5>
-                                            1Завод по производству ...
-                                        </h5>
-                                        <img class="news-img img-fluid" src="../../assets/images/atlantica/zavod_1.jpg" alt="" />
-                                        <p class="description">
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem amet magni numquam ex accusantium, ipsa eligendi sed non nisi
-                                        </p>
-                                        <div class="ctrl-btns toggle-block">
-                                            <button class="btn btn-primary" title="Просмотр"><i class="fa fa-eye" aria-hidden="true"></i></button>
-                                            <button class="btn btn-secondary" title="Редактировать"><i class="fa fa-pencil-square" aria-hidden="true"></i></button>
-                                            <button class="btn btn-danger" title="Удалить"><i class="fa fa-trash-o" aria-hidden="true"></i></button>
-                                        </div>
-                                    </a>
+                                    <h5>
+                                        1Завод по производству ...
+                                    </h5>
+                                    <img class="news-img img-fluid" src="../../assets/images/atlantica/zavod_1.jpg" alt="" />
+                                    <p class="description">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem amet magni numquam ex accusantium, ipsa eligendi sed non nisi
+                                    </p>
+                                    <div class="ctrl-btns toggle-block">
+                                        <button data-toggle="modal" data-target="#production-show-modal" class="btn btn-primary" title="Просмотр"><i class="fa fa-eye" aria-hidden="true"></i></button>
+                                        <button data-toggle="modal" data-target="#production-edit-modal" data-toggle="modal" data-target="#production-edit-modal" class="btn btn-secondary" title="Редактировать"><i class="fa fa-pencil-square" aria-hidden="true"></i></button>
+                                        <button class="btn btn-danger" title="Удалить"><i class="fa fa-trash-o" aria-hidden="true"></i></button>
+                                    </div>
                                 </div>
                                 <div class="gallery-item" data-gallery-tag="Поставщик 1">
-                                    <a href="provider-detail.html">
-                                        <h5>
-                                            1Завод по производству ...
-                                        </h5>
-                                        <img class="news-img img-fluid" src="../../assets/images/atlantica/zavod_1.jpg" alt="" />
-                                        <p class="description">
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem amet magni numquam ex accusantium, ipsa eligendi sed non nisi
-                                        </p>
-                                        <div class="ctrl-btns toggle-block">
-                                            <button class="btn btn-primary" title="Просмотр"><i class="fa fa-eye" aria-hidden="true"></i></button>
-                                            <button class="btn btn-secondary" title="Редактировать"><i class="fa fa-pencil-square" aria-hidden="true"></i></button>
-                                            <button class="btn btn-danger" title="Удалить"><i class="fa fa-trash-o" aria-hidden="true"></i></button>
-                                        </div>
-                                    </a>
+                                    <h5>
+                                        1Завод по производству ...
+                                    </h5>
+                                    <img class="news-img img-fluid" src="../../assets/images/atlantica/zavod_1.jpg" alt="" />
+                                    <p class="description">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem amet magni numquam ex accusantium, ipsa eligendi sed non nisi
+                                    </p>
+                                    <div class="ctrl-btns toggle-block">
+                                        <button data-toggle="modal" data-target="#production-show-modal" class="btn btn-primary" title="Просмотр"><i class="fa fa-eye" aria-hidden="true"></i></button>
+                                        <button data-toggle="modal" data-target="#production-edit-modal" class="btn btn-secondary" title="Редактировать"><i class="fa fa-pencil-square" aria-hidden="true"></i></button>
+                                        <button class="btn btn-danger" title="Удалить"><i class="fa fa-trash-o" aria-hidden="true"></i></button>
+                                    </div>
                                 </div>
                                 <div class="gallery-item" data-gallery-tag="Поставщик 2">
-                                    <a href="provider-detail.html">
-                                        <h5>
-                                            2Завод по производству ...
-                                        </h5>
-                                        <img class="news-img img-fluid" src="../../assets/images/atlantica/zavod_1.jpg" alt="" />
-                                        <p class="description">
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem amet magni numquam ex accusantium, ipsa eligendi sed non nisi
-                                        </p>
-                                        <div class="ctrl-btns toggle-block">
-                                            <button class="btn btn-primary" title="Просмотр"><i class="fa fa-eye" aria-hidden="true"></i></button>
-                                            <button class="btn btn-secondary" title="Редактировать"><i class="fa fa-pencil-square" aria-hidden="true"></i></button>
-                                            <button class="btn btn-danger" title="Удалить"><i class="fa fa-trash-o" aria-hidden="true"></i></button>
-                                        </div>
-                                    </a>
+                                    <h5>
+                                        2Завод по производству ...
+                                    </h5>
+                                    <img class="news-img img-fluid" src="../../assets/images/atlantica/zavod_1.jpg" alt="" />
+                                    <p class="description">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem amet magni numquam ex accusantium, ipsa eligendi sed non nisi
+                                    </p>
+                                    <div class="ctrl-btns toggle-block">
+                                        <button data-toggle="modal" data-target="#production-show-modal" class="btn btn-primary" title="Просмотр"><i class="fa fa-eye" aria-hidden="true"></i></button>
+                                        <button data-toggle="modal" data-target="#production-edit-modal" class="btn btn-secondary" title="Редактировать"><i class="fa fa-pencil-square" aria-hidden="true"></i></button>
+                                        <button class="btn btn-danger" title="Удалить"><i class="fa fa-trash-o" aria-hidden="true"></i></button>
+                                    </div>
                                 </div>
                                 <div class="gallery-item" data-gallery-tag="Поставщик 2">
-                                    <a href="provider-detail.html">
-                                        <h5>
-                                            2Завод по производству ...
-                                        </h5>
-                                        <img class="news-img img-fluid" src="../../assets/images/atlantica/zavod_1.jpg" alt="" />
-                                        <p class="description">
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem amet magni numquam ex accusantium, ipsa eligendi sed non nisi
-                                        </p>
-                                        <div class="ctrl-btns toggle-block">
-                                            <button class="btn btn-primary" title="Просмотр"><i class="fa fa-eye" aria-hidden="true"></i></button>
-                                            <button class="btn btn-secondary" title="Редактировать"><i class="fa fa-pencil-square" aria-hidden="true"></i></button>
-                                            <button class="btn btn-danger" title="Удалить"><i class="fa fa-trash-o" aria-hidden="true"></i></button>
-                                        </div>
-                                    </a>
+                                    <h5>
+                                        2Завод по производству ...
+                                    </h5>
+                                    <img class="news-img img-fluid" src="../../assets/images/atlantica/zavod_1.jpg" alt="" />
+                                    <p class="description">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem amet magni numquam ex accusantium, ipsa eligendi sed non nisi
+                                    </p>
+                                    <div class="ctrl-btns toggle-block">
+                                        <button data-toggle="modal" data-target="#production-show-modal" class="btn btn-primary" title="Просмотр"><i class="fa fa-eye" aria-hidden="true"></i></button>
+                                        <button data-toggle="modal" data-target="#production-edit-modal" class="btn btn-secondary" title="Редактировать"><i class="fa fa-pencil-square" aria-hidden="true"></i></button>
+                                        <button class="btn btn-danger" title="Удалить"><i class="fa fa-trash-o" aria-hidden="true"></i></button>
+                                    </div>
                                 </div>
                                 <div class="gallery-item" data-gallery-tag="Поставщик 2">
-                                    <a href="provider-detail.html">
-                                        <h5>
-                                            2Завод по производству ...
-                                        </h5>
-                                        <img class="news-img img-fluid" src="../../assets/images/atlantica/zavod_1.jpg" alt="" />
-                                        <p class="description">
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem amet magni numquam ex accusantium, ipsa eligendi sed non nisi
-                                        </p>
-                                        <div class="ctrl-btns toggle-block">
-                                            <button class="btn btn-primary" title="Просмотр"><i class="fa fa-eye" aria-hidden="true"></i></button>
-                                            <button class="btn btn-secondary" title="Редактировать"><i class="fa fa-pencil-square" aria-hidden="true"></i></button>
-                                            <button class="btn btn-danger" title="Удалить"><i class="fa fa-trash-o" aria-hidden="true"></i></button>
-                                        </div>
-                                    </a>
+                                    <h5>
+                                        2Завод по производству ...
+                                    </h5>
+                                    <img class="news-img img-fluid" src="../../assets/images/atlantica/zavod_1.jpg" alt="" />
+                                    <p class="description">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem amet magni numquam ex accusantium, ipsa eligendi sed non nisi
+                                    </p>
+                                    <div class="ctrl-btns toggle-block">
+                                        <button data-toggle="modal" data-target="#production-show-modal" class="btn btn-primary" title="Просмотр"><i class="fa fa-eye" aria-hidden="true"></i></button>
+                                        <button data-toggle="modal" data-target="#production-edit-modal" class="btn btn-secondary" title="Редактировать"><i class="fa fa-pencil-square" aria-hidden="true"></i></button>
+                                        <button class="btn btn-danger" title="Удалить"><i class="fa fa-trash-o" aria-hidden="true"></i></button>
+                                    </div>
                                 </div>
                                 <div class="gallery-item" data-gallery-tag="Поставщик 2">
-                                    <a href="provider-detail.html">
-                                        <h5>
-                                            2Завод по производству ...
-                                        </h5>
-                                        <img class="news-img img-fluid" src="../../assets/images/atlantica/zavod_1.jpg" alt="" />
-                                        <p class="description">
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem amet magni numquam ex accusantium, ipsa eligendi sed non nisi
-                                        </p>
-                                        <div class="ctrl-btns toggle-block">
-                                            <button class="btn btn-primary" title="Просмотр"><i class="fa fa-eye" aria-hidden="true"></i></button>
-                                            <button class="btn btn-secondary" title="Редактировать"><i class="fa fa-pencil-square" aria-hidden="true"></i></button>
-                                            <button class="btn btn-danger" title="Удалить"><i class="fa fa-trash-o" aria-hidden="true"></i></button>
-                                        </div>
-                                    </a>
+                                    <h5>
+                                        2Завод по производству ...
+                                    </h5>
+                                    <img class="news-img img-fluid" src="../../assets/images/atlantica/zavod_1.jpg" alt="" />
+                                    <p class="description">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem amet magni numquam ex accusantium, ipsa eligendi sed non nisi
+                                    </p>
+                                    <div class="ctrl-btns toggle-block">
+                                        <button data-toggle="modal" data-target="#production-show-modal" class="btn btn-primary" title="Просмотр"><i class="fa fa-eye" aria-hidden="true"></i></button>
+                                        <button data-toggle="modal" data-target="#production-edit-modal" class="btn btn-secondary" title="Редактировать"><i class="fa fa-pencil-square" aria-hidden="true"></i></button>
+                                        <button class="btn btn-danger" title="Удалить"><i class="fa fa-trash-o" aria-hidden="true"></i></button>
+                                    </div>
                                 </div>
                                 <div class="gallery-item" data-gallery-tag="Поставщик 2">
-                                    <a href="provider-detail.html">
-                                        <h5>
-                                            2Завод по производству ...
-                                        </h5>
-                                        <img class="news-img img-fluid" src="../../assets/images/atlantica/zavod_1.jpg" alt="" />
-                                        <p class="description">
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem amet magni numquam ex accusantium, ipsa eligendi sed non nisi
-                                        </p>
-                                        <div class="ctrl-btns toggle-block">
-                                            <button class="btn btn-primary" title="Просмотр"><i class="fa fa-eye" aria-hidden="true"></i></button>
-                                            <button class="btn btn-secondary" title="Редактировать"><i class="fa fa-pencil-square" aria-hidden="true"></i></button>
-                                            <button class="btn btn-danger" title="Удалить"><i class="fa fa-trash-o" aria-hidden="true"></i></button>
-                                        </div>
-                                    </a>
+                                    <h5>
+                                        2Завод по производству ...
+                                    </h5>
+                                    <img class="news-img img-fluid" src="../../assets/images/atlantica/zavod_1.jpg" alt="" />
+                                    <p class="description">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem amet magni numquam ex accusantium, ipsa eligendi sed non nisi
+                                    </p>
+                                    <div class="ctrl-btns toggle-block">
+                                        <button data-toggle="modal" data-target="#production-show-modal" class="btn btn-primary" title="Просмотр"><i class="fa fa-eye" aria-hidden="true"></i></button>
+                                        <button data-toggle="modal" data-target="#production-edit-modal" class="btn btn-secondary" title="Редактировать"><i class="fa fa-pencil-square" aria-hidden="true"></i></button>
+                                        <button class="btn btn-danger" title="Удалить"><i class="fa fa-trash-o" aria-hidden="true"></i></button>
+                                    </div>
                                 </div>
                                 <div class="gallery-item" data-gallery-tag="Поставщик 2">
-                                    <a href="provider-detail.html">
-                                        <h5>
-                                            2Завод по производству ...
-                                        </h5>
-                                        <img class="news-img img-fluid" src="../../assets/images/atlantica/zavod_1.jpg" alt="" />
-                                        <p class="description">
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem amet magni numquam ex accusantium, ipsa eligendi sed non nisi
-                                        </p>
-                                        <div class="ctrl-btns toggle-block">
-                                            <button class="btn btn-primary" title="Просмотр"><i class="fa fa-eye" aria-hidden="true"></i></button>
-                                            <button class="btn btn-secondary" title="Редактировать"><i class="fa fa-pencil-square" aria-hidden="true"></i></button>
-                                            <button class="btn btn-danger" title="Удалить"><i class="fa fa-trash-o" aria-hidden="true"></i></button>
-                                        </div>
-                                    </a>
+                                    <h5>
+                                        2Завод по производству ...
+                                    </h5>
+                                    <img class="news-img img-fluid" src="../../assets/images/atlantica/zavod_1.jpg" alt="" />
+                                    <p class="description">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem amet magni numquam ex accusantium, ipsa eligendi sed non nisi
+                                    </p>
+                                    <div class="ctrl-btns toggle-block">
+                                        <button data-toggle="modal" data-target="#production-show-modal" class="btn btn-primary" title="Просмотр"><i class="fa fa-eye" aria-hidden="true"></i></button>
+                                        <button data-toggle="modal" data-target="#production-edit-modal" class="btn btn-secondary" title="Редактировать"><i class="fa fa-pencil-square" aria-hidden="true"></i></button>
+                                        <button class="btn btn-danger" title="Удалить"><i class="fa fa-trash-o" aria-hidden="true"></i></button>
+                                    </div>
                                 </div>
                                 <div class="gallery-item" data-gallery-tag="Поставщик 2">
-                                    <a href="provider-detail.html">
-                                        <h5>
-                                            2Завод по производству ...
-                                        </h5>
-                                        <img class="news-img img-fluid" src="../../assets/images/atlantica/zavod_1.jpg" alt="" />
-                                        <p class="description">
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem amet magni numquam ex accusantium, ipsa eligendi sed non nisi
-                                        </p>
-                                        <div class="ctrl-btns toggle-block">
-                                            <button class="btn btn-primary" title="Просмотр"><i class="fa fa-eye" aria-hidden="true"></i></button>
-                                            <button class="btn btn-secondary" title="Редактировать"><i class="fa fa-pencil-square" aria-hidden="true"></i></button>
-                                            <button class="btn btn-danger" title="Удалить"><i class="fa fa-trash-o" aria-hidden="true"></i></button>
-                                        </div>
-                                    </a>
+                                    <h5>
+                                        2Завод по производству ...
+                                    </h5>
+                                    <img class="news-img img-fluid" src="../../assets/images/atlantica/zavod_1.jpg" alt="" />
+                                    <p class="description">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem amet magni numquam ex accusantium, ipsa eligendi sed non nisi
+                                    </p>
+                                    <div class="ctrl-btns toggle-block">
+                                        <button data-toggle="modal" data-target="#production-show-modal" class="btn btn-primary" title="Просмотр"><i class="fa fa-eye" aria-hidden="true"></i></button>
+                                        <button data-toggle="modal" data-target="#production-edit-modal" class="btn btn-secondary" title="Редактировать"><i class="fa fa-pencil-square" aria-hidden="true"></i></button>
+                                        <button class="btn btn-danger" title="Удалить"><i class="fa fa-trash-o" aria-hidden="true"></i></button>
+                                    </div>
                                 </div>
                                 <div class="gallery-item" data-gallery-tag="Поставщик 2">
-                                    <a href="provider-detail.html">
-                                        <h5>
-                                            2Завод по производству ...
-                                        </h5>
-                                        <img class="news-img img-fluid" src="../../assets/images/atlantica/zavod_1.jpg" alt="" />
-                                        <p class="description">
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem amet magni numquam ex accusantium, ipsa eligendi sed non nisi
-                                        </p>
-                                        <div class="ctrl-btns toggle-block">
-                                            <button class="btn btn-primary" title="Просмотр"><i class="fa fa-eye" aria-hidden="true"></i></button>
-                                            <button class="btn btn-secondary" title="Редактировать"><i class="fa fa-pencil-square" aria-hidden="true"></i></button>
-                                            <button class="btn btn-danger" title="Удалить"><i class="fa fa-trash-o" aria-hidden="true"></i></button>
-                                        </div>
-                                    </a>
+                                    <h5>
+                                        2Завод по производству ...
+                                    </h5>
+                                    <img class="news-img img-fluid" src="../../assets/images/atlantica/zavod_1.jpg" alt="" />
+                                    <p class="description">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem amet magni numquam ex accusantium, ipsa eligendi sed non nisi
+                                    </p>
+                                    <div class="ctrl-btns toggle-block">
+                                        <button data-toggle="modal" data-target="#production-show-modal" class="btn btn-primary" title="Просмотр"><i class="fa fa-eye" aria-hidden="true"></i></button>
+                                        <button data-toggle="modal" data-target="#production-edit-modal" class="btn btn-secondary" title="Редактировать"><i class="fa fa-pencil-square" aria-hidden="true"></i></button>
+                                        <button class="btn btn-danger" title="Удалить"><i class="fa fa-trash-o" aria-hidden="true"></i></button>
+                                    </div>
                                 </div>
-
                             </div>
                         </div>
                     </div>
@@ -356,6 +330,152 @@
     </div>
 
     <!-- Modal Windows -->
+    <div class="modal fade" id="production-add-modal" role="dialog" aria-modal="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content" style="border-radius: 45px">
+                <div class="modal-header" style="justify-content: center">
+                    <h5 class="modal-title">Добавить продукт</h5>
+                </div>
+                <div class="modal-body">
+                    <form action="" method="post" class="client-create-form">
+                        <!-- client add-->
+                        <div class="form-group" style="padding: 0">
+                            <div class="form-group-flex-row">
+                                <div class="form-group-flex-column">
+                                    <div class="input-group" style="width: 620px">
+                                        <label for="textarea-announcement" class="text-center">Заголовок</label>
+                                        <input id="news-title" type="text" class="form-control" placeholder="Заголовок" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group-flex-row">
+                                <div class="form-group-flex-column">
+                                    <div class="input-group" style="width: 620px">
+                                        <label for="textarea-announcement" class="text-center">Описание</label>
+                                        <textarea class="form-control" id="textarea-announcement" rows="3" style="resize:none"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group-flex-row">
+                                <!-- table -->
+                                <div class="form-group-flex-column m-t-10 m-r-35" style="justify-content: start; width: 620px">
+                                    <div class="upload-file m-l-15">
+                                        <div class="upload">
+                                            <label for="news-img"></label>
+                                            <input type="file" name="news-img" id="upload-file" style="top: 0px" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group-flex-row">
+                                <div class="form-group-flex-column">
+                                    <div class="input-group" style="flex-direction: row">
+                                        <button type="submit" class="btn btn-info">Сохранить</button>
+                                    </div>
+                                </div>
+                                <div class="form-group-flex-column" style="text-align: center">
+                                    <div class="input-group">
+                                        <button class="btn btn-secondary" data-dismiss="modal">
+												Отмена
+											</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <!-- <div class="modal-footer"></div> -->
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="production-edit-modal" role="dialog" aria-modal="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content" style="border-radius: 45px">
+                <div class="modal-header" style="justify-content: center">
+                    <h5 class="modal-title">Редактировать продукт</h5>
+                </div>
+                <div class="modal-body">
+                    <form action="" method="post" class="client-create-form">
+                        <div class="form-group" style="padding: 0">
+                            <div class="form-group-flex-row">
+                                <div class="form-group-flex-column">
+                                    <div class="input-group " style="width: 620px">
+                                        <label for="news-title" class="text-center">Заголовок</label>
+                                        <input type="text" id="news-title" class="form-control news-title" placeholder="Заголовок" value="1Завод по производству ..." />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group-flex-row ">
+                                <div class="form-group-flex-column ">
+                                    <div class="input-group " style="width: 620px ">
+                                        <label for="text-anon " class="text-center ">Описание</label>
+                                        <textarea class="form-control " id="text-anon " placeholder="Описание " rows="3 " style="resize: none ">
+																					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem amet magni numquam ex accusantium, ipsa eligendi sed non nisi
+																				</textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group-flex-row ">
+                                <div class="form-group-flex-column ">
+                                    <div>
+                                        <img class="news-img" src="../../assets/images/atlantica/zavod_4.jpg" alt="" />
+                                        <input type="file">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-group-flex-row ">
+                                <div class="form-group-flex-column ">
+                                    <div class="input-group " style="flex-direction: row ">
+                                        <button type="submit " class="btn btn-info ">Сохранить</button>
+                                    </div>
+                                </div>
+                                <div class="form-group-flex-column " style="text-align: center ">
+                                    <div class="input-group ">
+                                        <button class="btn btn-secondary " data-dismiss="modal">
+												Отмена
+											</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <!-- <div class="modal-footer "></div> -->
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="production-show-modal" role="dialog" aria-modal="true">
+        <div class="modal-dialog modal-dialog-centered modal news-show-dialog " role="document">
+            <div class="modal-content " style="border-radius: 45px ">
+                <div class="modal-header " style="justify-content: center ">
+                    <h5 class="modal-title ">Показать продукт</h5>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group " style="padding: 0 ">
+                        <div class="form-group-flex-row ">
+                            <div class="form-group-flex-column content ">
+                                <div class="img">
+                                    <img src="../../assets/images/atlantica/zavod_1.jpg " alt=" " />
+                                </div>
+                                <h3>1Завод по производству ...</h3>
+                                <p>
+                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam distinctio, quia nostrum ut ipsa eaque id reprehenderit ad, esse earum error ea ratione. Eum, atque! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam distinctio,
+                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam distinctio, quia nostrum ut ipsa eaque id reprehenderit ad, esse earum error ea ratione. Eum, atque! Lorem ipsum dolor sit, amet consectetur adipisicing
+                                    elit. Laboriosam distinctio, quia nostrum ut ipsa eaque id reprehenderit ad, esse earum error ea ratione. Eum, atque!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ctrl-btns">
+                        <button class="btn btn-secondary " data-dismiss="modal">Ok</button>
+                    </div>
+                </div>
+
+                <!-- <div class="modal-footer "></div> -->
+            </div>
+        </div>
+    </div>
 
     <!-- Javascript -->
     <script src="../../light/assets/bundles/libscripts.bundle.js"></script>

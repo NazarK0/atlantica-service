@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <title>Atlantica :: Профиль(Настройки)</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <!-- VENDOR CSS -->
+    <link rel="stylesheet" href="../../assets/vendor/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../../assets/vendor/font-awesome/css/font-awesome.min.css" />
+
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="../../light/assets/css/main.css" />
+    <link rel="stylesheet" href="../../light/assets/css/color_skins.css" />
+    <link rel="stylesheet" href="../../assets/vendor/jquery-datatable/dataTables.bootstrap4.min.css" />
+    <link rel="stylesheet" href="../../light/assets/css/my_styles.css" />
+    <link rel="stylesheet" href="../../light/assets/css/my_media.css" />
+    <style>
+        .card .body {
+            font-size: 15px;
+        }
+        
+        .main_features li {
+            line-height: 35px;
+        }
+        
+        .main_features li.divider {
+            border-bottom: 1px solid #ececec;
+            margin: 10px 0;
+            list-style: none;
+            font-size: 12px;
+            text-transform: uppercase;
+            line-height: 1;
+            color: #ff0000;
+            padding-top: 15px;
+        }
+    </style>
+</head>
+
+<body class="theme-orange">
+    <!-- Page Loader -->
+    <div class="page-loader-wrapper">
+        <div class="loader">
+            <div class="m-t-30">
+                <img src="../../assets/images/atlantica/logo_full_black.png" height="48" alt="Atlantica" />
+            </div>
+            <p>Пожалуйста, подождите...</p>
+        </div>
+    </div>
+    <!-- Overlay For Sidebars -->
+    <div class="overlay"></div>
+
+    <div id="wrapper">
+        <nav class="navbar navbar-fixed-top">
+        </nav>
+
+        <div id="left-sidebar" class="sidebar">
+            <div class="navbar-brand">
+                <a href="#">
+                    <img src="../../assets/images/atlantica/logo_full_color.png" alt="Atlantica Logo" class="img-fluid logo" />
+                </a>
+                <button type="button" class="btn-toggle-offcanvas btn btn-sm float-right">
+            <i class="lnr lnr-menu fa fa-chevron-circle-left"></i>
+          </button>
+            </div>
+            <div class="sidebar-scroll">
+                <div class="user-account">
+                    <div class="user_div">
+                        <img src="../../assets/images/user.png" class="user-photo" alt="User Profile Picture" />
+                    </div>
+                    <div class="dropdown">
+                        <a href="javascript:void(0);" class="dropdown-toggle user-name" data-toggle="dropdown">
+                            <strong>Петров О. П.</strong>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-right account">
+                            <li>
+                                <a href="user-profile.html">
+                                    <i class="icon-user"></i> Профиль
+                                </a>
+                            </li>
+                            <li>
+                                <a href="user-profile-settings.html">
+                                    <i class="icon-settings"></i> Настройки
+                                </a>
+                            </li>
+                            <li class="divider"></li>
+                            <li>
+                                <a href="#">
+                                    <i class="icon-power"></i> Выйти
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <nav id="left-sidebar-nav" class="sidebar-nav">
+                    <ul id="main-menu" class="metismenu">
+                        <li>
+                            <a href="../index.html"><span>Пользователи</span></a>
+                        </li>
+                        <li class="active">
+                            <a href="queries.html"><span>Запросы</span></a>
+                        </li>
+                        <li>
+                            <a href="client.html"><span>Клиенты</span></a>
+                        </li>
+                        <li>
+                            <a href="provider.html"><span>Поставщики</span></a>
+                        </li>
+                        <li>
+                            <a href="news.html"><span>Новости</span></a>
+                        </li>
+                        <li>
+                            <a href="reference-books.html"><span>Справочники</span></a>
+                        </li>
+                        <li>
+                            <a href="contract-templates.html"><span>Шаблоны договоров</span></a>
+                        </li>
+                        <li>
+                            <a href="chat.html"><span>Онлайн чат</span></a>
+                        </li>
+                        <li>
+                            <a href="production.html"><span>Продукция</span></a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <div id="main-content">
+            <div class="block-header">
+                <div class="row clearfix">
+                    <div class="col-md-6 col-sm-12">
+                        <h2>Профиль пользователя(Настройки)</h2>
+                    </div>
+                    <div class="col-md-6 col-sm-12 text-right">
+                        <ul class="breadcrumb">
+                            <li class="breadcrumb-item">
+                                <a href="../index.html"><i class="icon-home"></i></a>
+                            </li>
+                            <li class="breadcrumb-item active">Профиль пользователя(Настройки)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-fluid">
+                <div class="row clearfix">
+                    <div class="col-sm-12">
+                        <div class="card" id="documenter_cover">
+                            <div class="body user-profile-settings">
+                                <form action="" method="post" class="user-profile-form form">
+                                    <div class="form-group">
+                                        <h4>Основные настройки</h4>
+                                        <div class="form-fl-row">
+                                            <div class="input-group">
+                                                <label for="">ФИО</label>
+                                                <input type="text" class="form-control" value="Петров Алексей Павлович" />
+                                            </div>
+                                            <div class="input-group">
+                                                <label for="">Пол</label>
+                                                <div class="gender-rg">
+                                                    <label class="fancy-radio">
+                                                            <input name="gender" value="male" type="radio" checked>
+                                                            <span><i></i>Мужской</span>
+                                                        </label>
+                                                    <label class="fancy-radio">
+                                                            <input name="gender" value="female" type="radio">
+                                                            <span><i></i>Женский</span>
+                                                        </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-fl-row">
+                                            <div class="input-group">
+                                                <label for="">Дата рождения</label>
+                                                <input type="date" class="form-control" />
+                                            </div>
+                                        </div>
+                                        <div class="form-fl-row">
+                                            <div class="input-group">
+                                                <div class="input-group">
+                                                    <label for="">Адрес</label>
+                                                    <textarea name="" id=""></textarea>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <h4>Настройки профиля</h4>
+                                        <div class="form-fl-row">
+                                            <div class="input-group">
+                                                <label for="">Фото</label>
+                                                <input type="file" />
+                                            </div>
+                                        </div>
+                                        <div class="form-fl-row">
+                                            <div class="input-group">
+                                                <label for="">Телефон</label>
+                                                <input type="tel" />
+                                            </div>
+                                            <div class="input-group">
+                                                <label for="">e-mail</label>
+                                                <input type="email" />
+                                            </div>
+                                        </div>
+                                        <h5>Изменить пароль</h5>
+                                        <div class="form-fl-row">
+                                            <div class="input-group">
+                                                <label for="">Текущий пароль</label>
+                                                <input type="password" />
+                                            </div>
+                                            <div class="input-group">
+                                                <label for="">Новый пароль</label>
+                                                <input type="password" />
+                                            </div>
+                                            <div class="input-group">
+                                                <label for="">Новый пароль еще раз</label>
+                                                <input type="password" />
+                                            </div>
+                                        </div>
+
+
+
+
+
+                                    </div>
+                                    <div class=" form-fl-row fl-s-arnd ">
+                                        <button type="submit " class="btn btn-info ">Сохранить</button>
+                                        <button class="btn btn-secondary " data-dismiss="modal ">Отмена</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal Windows -->
+
+        <!-- Javascript -->
+        <script src="../../light/assets/bundles/libscripts.bundle.js "></script>
+        <script src="../../light/assets/bundles/vendorscripts.bundle.js "></script>
+
+        <script src="../../light/assets/bundles/mainscripts.bundle.js "></script>
+        <!-- Javascript -->
+
+        <script src="../../light/assets/bundles/datatablescripts.bundle.js "></script>
+        <script src="../../assets/vendor/jquery-datatable/buttons/dataTables.buttons.min.js "></script>
+        <script src="../../assets/vendor/jquery-datatable/buttons/buttons.bootstrap4.min.js "></script>
+        <script src="../../assets/vendor/jquery-datatable/buttons/buttons.colVis.min.js "></script>
+        <script src="../../assets/vendor/jquery-datatable/buttons/buttons.html5.min.js "></script>
+        <script src="../../assets/vendor/jquery-datatable/buttons/buttons.print.min.js "></script>
+
+        <script src="../../assets/vendor/sweetalert/sweetalert.min.js "></script>
+        <!-- SweetAlert Plugin Js -->
+        <script src="../../light/assets/js/pages/tables/jquery-datatable.js "></script>
+        <script>
+            $('.metismenu li').click(function() {
+                var $this = $(this)
+                if (!$this.is('active')) {
+                    $('.metismenu li').removeClass('active').removeData('top')
+                    $this.addClass('active').data('top', $this.offset().top)
+                }
+            })
+            document.createElement('section')
+            var duration = '500',
+                easing = 'swing'
+
+            // Select all links with hashes
+            $('a[href*="# "]')
+                // Remove links that don't actually link to anything
+                .not('[href="# "]')
+                .not('[href="#0 "]')
+                .click(function(event) {
+                    // On-page links
+                    if (
+                        location.pathname.replace(/^\//, '') ==
+                        this.pathname.replace(/^\//, '') &&
+                        location.hostname == this.hostname
+                    ) {
+                        // Figure out element to scroll to
+                        var target = $(this.hash)
+                        target = target.length ?
+                            target :
+                            $('[name=' + this.hash.slice(1) + ']')
+                            // Does a scroll target exist?
+                        if (target.length) {
+                            // Only prevent default if animation is actually gonna happen
+                            event.preventDefault()
+                            $('html, body').animate({
+                                    scrollTop: target.offset().top,
+                                },
+                                1000,
+                                function() {
+                                    // Callback after animation
+                                    // Must change focus!
+                                    var $target = $(target)
+                                    $target.focus()
+                                    if ($target.is(':focus')) {
+                                        // Checking if the target was focused
+                                        return false
+                                    } else {
+                                        $target.attr('tabindex', '-1') // Adding tabindex for elements not focusable
+                                        $target.focus() // Set focus again
+                                    }
+                                },
+                            )
+                        }
+                    }
+                })
+        </script>
+</body>
+
+</html>

@@ -83,6 +83,7 @@ module.exports = function(grunt) {
                     ] /* ChartJs js*/ ,
                     "assets/bundles/my.bundle.js": [
                         "./assets/js/myScripts/toggle-on-hover.js",
+                        "./assets/js/myScripts/sub-rows-in-table.js",
                     ] /* my scripts*/ ,
                 },
             },

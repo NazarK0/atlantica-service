@@ -1,142 +1,142 @@
 .client-create-form {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	input[type="file"] {
-		position: relative;
-		top: 32px;
-	}
-	.form-group {
-		display: flex;
-		flex-direction: column;
-		justify-content: space-around;
-		align-items: center;
-		padding: 10px;
-		width: 100%;
-		&-flex-column {
-			display: flex;
-			flex-direction: column;
-			justify-content: space-between;
-			align-items: flex-start;
-			flex-wrap: wrap;
-			height: 100%;
-			.upload-file {
-				display: flex;
-				justify-content: flex-start;
-				flex-direction: row;
-				align-items: center;
-				height: 100%;
-				flex-wrap: wrap;
-				label {
-					cursor: pointer;
-				}
-			}
-		}
-		&-flex-row {
-			display: flex;
-			flex-direction: row;
-			justify-content: space-around;
-			align-items: flex-start;
-			flex-wrap: wrap;
-		}
-		// > div {
-		//   display: inline-block;
-		// }
-		.input-group {
-			display: flex;
-			flex-direction: column;
-			width: 200px;
-			margin: 5px;
-		}
-		.form-other {
-			width: 100%;
-			display: flex;
-			justify-content: space-between;
-			flex-direction: row-reverse;
-			label {
-				padding: 5px;
-			}
-		}
-	}
-	.description {
-		width: 100%;
-		&-wrapper {
-			width: 100%;
-		}
-	}
-	button {
-		width: 150px;
-		margin-bottom: 10px;
-	}
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    input[type="file"] {
+        position: relative;
+        top: 32px;
+    }
+    .form-group {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        padding: 10px;
+        width: 100%;
+        &-flex-column {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            height: 100%;
+            .upload-file {
+                display: flex;
+                justify-content: flex-start;
+                flex-direction: row;
+                align-items: center;
+                height: 100%;
+                flex-wrap: wrap;
+                label {
+                    cursor: pointer;
+                }
+            }
+        }
+        &-flex-row {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: flex-start;
+            flex-wrap: wrap;
+        }
+        // > div {
+        //   display: inline-block;
+        // }
+        .input-group {
+            display: flex;
+            flex-direction: column;
+            width: 200px;
+            margin: 5px;
+        }
+        .form-other {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row-reverse;
+            label {
+                padding: 5px;
+            }
+        }
+    }
+    .description {
+        width: 100%;
+        &-wrapper {
+            width: 100%;
+        }
+    }
+    button {
+        width: 150px;
+        margin-bottom: 10px;
+    }
 }
 
 .search-trash {
-	display: flex;
-	justify-content: center;
-	align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .main-content.news {
-	.news {
-		padding-bottom: 15px;
-		.ctrl-btns {
-			display: flex;
-			justify-content: center;
-			flex-wrap: nowrap;
-			padding-top: 10px;
-			button {
-				margin-right: 10px;
-			}
-			button i {
-				font-size: 1.5rem;
-				display: flex;
-				justify-content: space-around;
-				flex-wrap: nowrap;
-			}
-		}
-	}
-	.card {
-		padding: 10px;
-	}
-	// .block-header {
-	// 	h2 {
-	// 		color: black;
-	// 		font-size: 25px;
-	// 		line-height: 50px;
-	// 	}
-	// 	.add-news-btn {
-	// 		display: flex;
-	// 		justify-content: flex-end;
-	// 		flex-wrap: wrap;
-	// 		align-content: center;
-	// 	}
-	// }
-	.list-news {
-		.news-title h2 {
-			text-align: left;
-			font-size: 16px;
-			font-weight: bold;
-			color: black;
-			&:hover {
-				color: rgb(20, 15, 59);
-			}
-		}
-		.news-text {
-			text-align: left;
-			color: black;
-			display: flex;
-			flex-direction: column;
-			p {
-				color: lighten($color: #000000, $amount: 30%);
-				font-size: xx-small;
-				padding-top: 5px;
-			}
-		}
-	}
+    .news {
+        padding-bottom: 15px;
+        .ctrl-btns {
+            display: flex;
+            justify-content: center;
+            flex-wrap: nowrap;
+            padding-top: 10px;
+            button {
+                margin-right: 10px;
+            }
+            button i {
+                font-size: 1.5rem;
+                display: flex;
+                justify-content: space-around;
+                flex-wrap: nowrap;
+            }
+        }
+    }
+    .card {
+        padding: 10px;
+    }
+    // .block-header {
+    // 	h2 {
+    // 		color: black;
+    // 		font-size: 25px;
+    // 		line-height: 50px;
+    // 	}
+    // 	.add-news-btn {
+    // 		display: flex;
+    // 		justify-content: flex-end;
+    // 		flex-wrap: wrap;
+    // 		align-content: center;
+    // 	}
+    // }
+    .list-news {
+        .news-title h2 {
+            text-align: left;
+            font-size: 16px;
+            font-weight: bold;
+            color: black;
+            &:hover {
+                color: rgb(20, 15, 59);
+            }
+        }
+        .news-text {
+            text-align: left;
+            color: black;
+            display: flex;
+            flex-direction: column;
+            p {
+                color: lighten($color: #000000, $amount: 30%);
+                font-size: .8rem;
+                padding-top: 5px;
+            }
+        }
+    }
 }
 
 #main-content {
-	margin-top: 45px;
+    margin-top: 45px;
 }
 
 .chat-app {
@@ -324,12 +324,13 @@
 		}
 	}
 }
+
 .btn-cust {
-	display: flex;
-	justify-content: center;
-	align-content: center;
-	align-items: center;
-	flex-direction: row;
-	flex-wrap: wrap;
-	width: 30px !important;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 30px !important;
 }
