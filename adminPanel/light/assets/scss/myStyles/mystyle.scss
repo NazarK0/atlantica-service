@@ -251,6 +251,7 @@
 		display: flex;
 		flex-direction: column;
 		border: 2px solid rgb(213, 220, 223);
+		position: relative;
 		.fio-staff {
 			h2 {
 				font-size: 20px;
@@ -276,7 +277,7 @@
 			}
 			.input-search {
 				font-size: 14px;
-				width: 85%;
+				width: 75%;
 				border: 0;
 				padding: 7px 0;
 				border-bottom: 1px solid #ccc;
@@ -284,29 +285,42 @@
 					outline: none;
 				}
 			}
-			.effect-2 {
-				border: 0;
-				padding: 7px 0;
-				border-bottom: 1px solid #ccc;
-			}
-			.effect-2 ~ .focus-border {
-				position: absolute;
-				bottom: 0;
-				left: 50%;
-				width: 0;
-				height: 2px;
-				background-color: #3399ff;
-				transition: 0.4s;
-			}
-			.effect-2:focus ~ .focus-border {
-				width: 100%;
-				transition: 0.4s;
-				left: 0;
-			}
 			.button-group-search-cust {
 				display: flex;
 				flex-direction: row;
+				justify-content: space-evenly;
+				width: 20%;
 			}
+		}
+		.message-box {
+			min-width: 100%;
+			height: 600px;
+			display: flex;
+			flex-direction: column;
+			align-content: center;
+			justify-content: center;
+			align-items: center;
+			.icon-message-c {
+				transform: scale(-1, 1);
+				font-size: 24px;
+				font-weight: 100;
+				padding-bottom: 25px;
+			}
+			.new-chat {
+				padding-bottom: 5px;
+				font-size: 14px;
+				font-weight: 700;
+				font-family: "Open Sans";
+			}
+			.wr-new-message {
+				font-size: 10px;
+				font-weight: 500;
+				font-family: "Open Sans";
+			}
+		}
+		.send-message-row {
+			position: absolute;
+			bottom: 0;
 		}
 	}
 }
