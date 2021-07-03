@@ -1,0 +1,122 @@
+* {
+  font-family: 'Roboto Slab', serif;
+}
+ul li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  width: 300px;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+.accent {
+  color: #d5523f;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+}
+
+header .desktop-navbar,
+header .desktop-navbar ul,
+header .mobile-navbar .top-links ul {
+  display: flex;
+}
+
+header .mobile-navbar .top-links .menu,
+header .mobile-navbar .top-links .socials {
+  padding-inline-start: 20px;
+}
+header .mobile-navbar .top-links .menu {
+  flex-direction: column;
+}
+header .mobile-navbar .top-links .socials {
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+header .desktop-navbar {
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffffc9;
+  box-shadow: 0px 3px 11px 1px rgba(0, 0, 0, 0.753);
+}
+
+header .desktop-navbar .top-links {
+  display: flex;
+  justify-content: space-around;
+  margin-right: 17px;
+  font-weight: bold;
+}
+header .desktop-navbar .top-links a:hover {
+  color: #d5523f;
+}
+
+header .desktop-navbar .top-links li {
+  margin-right: 7px;
+}
+
+header .company-logo__img {
+  height: 60px;
+}
+section {
+  height: 100vh;
+}
+
+section.main {
+  background: url('../assets/factory-bg-2.jpg') no-repeat center center fixed;
+  
+}
+section.main .container {
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+section.main .overlay {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  transition: 0.3s;
+}
+
+section.about {
+  background: rgb(94, 177, 115);
+}
+
+section.services {
+  background: rgb(195, 204, 69);
+}
+
+section.projects {
+  background: rgb(54, 118, 155);
+}
+
+section.advantages {
+  background: rgb(168, 48, 48);
+}
+
+section.about-blog {
+  background: rgb(128, 173, 85);
+}
+
+section.contacts {
+  background: rgb(83, 145, 170);
+}
+
+footer {
+  min-height: 45px;
+}

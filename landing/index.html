@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Atlantica</title>
+
+  <link rel="stylesheet" href="styles/normalize.css" />
+  <link rel="stylesheet" href="styles/mobile-navbar.css" />
+  <link rel="stylesheet" href="styles/fonts.css" />
+  <link rel="stylesheet" href="styles/main.css" />
+  <link rel="stylesheet" href="styles/media.css" />
+
+  <script src="https://kit.fontawesome.com/539e519a18.js" crossorigin="anonymous"></script>
+  <script src="js/toggleMobileNavbar.js" defer ></script>
+</head>
+<body>
+  <header>
+    <nav class="mobile-navbar">
+     <a href="#home" class="home-logo">
+       <img src="assets/logo_full_color.png" alt="Atlantica" class="company-logo__img">
+     </a>
+      <!-- Navigation links (hidden by default) -->
+      <div id="topLinks" class="top-links">
+        <ul class="menu">
+        <li><a href="#home">Главная</a></li>
+        <li><a href="#about">О Компании</a></li>
+        <li><a href="#services">Услуги</a></li>
+        <li><a href="#projects">Проекты</a></li>
+        <li><a href="#advantages">Преимущества</a></li>
+        <li><a href="#about-blog">Наш Блог</a></li>
+        <li><a href="contacts">Контакты</a></li>
+        
+      </ul>
+      <ul class="socials">
+        <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+        <li><a href=""><i class="fab fa-vk"></i></a></li>
+        <li><a href=""><i class="fab fa-linkedin-in"></i></a></li>
+        <li><a href=""><i class="fab fa-twitter"></i></a></li>
+      </ul>
+      </div>
+      <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+      <a href="javascript:void(0);" class="icon" onclick="toggleMobileNavbar()">
+        <i class="fas fa-bars"></i>
+      </a>
+    </nav>
+    
+    <nav class="desktop-navbar">
+      <a href="#home" class="company-logo">
+        <img src="assets/logo_full_color.png" alt="Atlantica" class="company-logo__img">
+      </a>
+      <div class="top-links">
+          <ul class="menu">
+            <li><a href="#home">Главная</a></li>
+            <li><a href="#about">О Компании</a></li>
+            <li><a href="#services">Услуги</a></li>
+            <li><a href="#projects">Проекты</a></li>
+            <li><a href="#advantages">Преимущества</a></li>
+            <li><a href="#about-blog">Наш Блог</a></li>
+            <li><a href="#contacts">Контакты</a></li>
+            
+          </ul>
+          <ul class="socials">
+            <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href=""><i class="fab fa-vk"></i></a></li>
+            <li><a href=""><i class="fab fa-linkedin-in"></i></a></li>
+            <li><a href=""><i class="fab fa-twitter"></i></a></li>
+          </ul>   
+      </div>
+      
+    </nav>
+  </header>
+  <section id="home" class="main">
+    <div class="overlay"></div>
+    <div class="container">
+      <h1 class="accent">Какой-то слоган</h1>
+    </div>
+  </section>
+  <section id="about" class="about">
+    <div class="container">
+
+    </div>
+  </section>
+  <section id="services" class="services"></section>
+  <section id="projects" class="projects"></section>
+  <section id="advantages" class="advantages"></section>
+  <section id="about-blog" class="about-blog"></section>
+  <section id="contacts" class="contacts"></section>
+  <footer></footer>
+</body>
+</html>
