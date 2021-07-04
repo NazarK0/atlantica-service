@@ -43,6 +43,7 @@
         }
         section.services .services-list,
         section.projects .projects-list,
+        section.about-blog .last-news,
         section.advantages .advantages-list {
             flex-direction: row;
             justify-content: space-evenly;
@@ -70,6 +71,9 @@
             display: flex;
             flex-direction: row;
             box-shadow: none;
+        }
+        section.advantages .advantage-tile .arrow {
+            display: block;
         }
         section.advantages .advantage-tile.active div {
             display: flex;

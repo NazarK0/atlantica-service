@@ -333,7 +333,7 @@
         font-size: 78px;
     }
     
-    section.advantages .advantage-tile .arrow i {
+    section.advantages .advantage-tile .arrow {
         display: none;
     }
     
@@ -352,7 +352,55 @@
     }
     
     section.about-blog {
-        background: rgb(128, 173, 85);
+        background: url('../assets/factory-bg-3black.jpg') no-repeat center center fixed;
+        color: #fff;
+        padding-top: 60px;
+    }
+    
+    section.about-blog .last-news {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 70px;
+        padding-inline-start: 0;
+    }
+    
+    section.about-blog .news-tile {
+        width: 270px;
+        margin-bottom: 30px;
+    }
+    
+    section.about-blog .news-tile .image-block {
+        position: relative;
+    }
+    
+    section.about-blog .news-tile .date {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        box-sizing: border-box;
+        text-align: center;
+    }
+    
+    section.about-blog .news-tile .date .day {
+        font-size: .8rem;
+        background-color: #fff;
+        padding: 10px;
+        border-radius: 4px 4px 0 0;
+        color: #d5523f;
+        font-weight: bold;
+    }
+    
+    section.about-blog .news-tile .date .month {
+        font-size: .8rem;
+        background-color: #d5523f;
+        padding: 5px 10px;
+        border-radius: 0 0 4px 4px;
+    }
+    
+    section.about-blog .btn {
+        border-color: #fff;
+        margin: 0 auto;
     }
     
     section.contacts {
@@ -376,6 +424,17 @@
         font-weight: bold;
         font-size: .9rem;
         padding: 0 20px;
+    }
+    
+    .btn-tiny {
+        background-color: #fff;
+        border-radius: 3px;
+        color: #d5523f;
+        font-size: .7rem;
+        box-sizing: border-box;
+        padding: 7px 12px;
+        text-transform: uppercase;
+        font-weight: bold;
     }
     
     .overlay {
