@@ -1,122 +1,287 @@
 * {
-  font-family: 'Roboto Slab', serif;
+    font-family: 'Roboto Slab', serif;
+    font-size: medium;
 }
+
+h1 {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+h4 {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+h5 {
+    font-size: .8rem;
+    font-weight: bold;
+}
+
+h6 {
+    font-size: .5rem;
+    font-weight: bold;
+}
+
 ul li {
-  list-style: none;
+    list-style: none;
 }
 
 a {
-  text-decoration: none;
-  color: inherit;
+    text-decoration: none;
+    color: inherit;
+}
+
+p {
+    line-height: 1.7;
+    font-weight: 300;
+}
+
+p.tiny {
+    font-size: .7rem;
 }
 
 .container {
-  width: 300px;
-  height: 100%;
-  margin: 0 auto;
-  padding: 0 40px;
+    width: 300px;
+    height: 100%;
+    margin: 0 auto;
+    padding: 40px 0;
+    box-sizing: border-box;
 }
 
 .accent {
-  color: #d5523f;
+    color: #d5523f;
 }
 
 header {
-  position: fixed;
-  width: 100%;
-  z-index: 1000;
+    position: fixed;
+    width: 100%;
+    z-index: 2000;
 }
 
 header .desktop-navbar,
 header .desktop-navbar ul,
 header .mobile-navbar .top-links ul {
-  display: flex;
+    display: flex;
 }
 
 header .mobile-navbar .top-links .menu,
 header .mobile-navbar .top-links .socials {
-  padding-inline-start: 20px;
+    padding-inline-start: 20px;
 }
+
 header .mobile-navbar .top-links .menu {
-  flex-direction: column;
+    flex-direction: column;
 }
+
 header .mobile-navbar .top-links .socials {
-  flex-direction: row;
-  justify-content: space-between;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 header .desktop-navbar {
-  display: none;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #ffffffc9;
-  box-shadow: 0px 3px 11px 1px rgba(0, 0, 0, 0.753);
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffffc9;
+    box-shadow: 0px 3px 11px 1px rgba(0, 0, 0, 0.753);
 }
 
 header .desktop-navbar .top-links {
-  display: flex;
-  justify-content: space-around;
-  margin-right: 17px;
-  font-weight: bold;
+    display: flex;
+    justify-content: space-around;
+    margin-right: 17px;
+    font-weight: bold;
 }
+
 header .desktop-navbar .top-links a:hover {
-  color: #d5523f;
+    color: #686160;
 }
 
 header .desktop-navbar .top-links li {
-  margin-right: 7px;
+    margin-right: 12px;
 }
 
 header .company-logo__img {
-  height: 60px;
+    height: 60px;
 }
+
 section {
-  height: 100vh;
+    min-height: 100vh;
+    max-height: fit-content;
 }
 
 section.main {
-  background: url('../assets/factory-bg-2.jpg') no-repeat center center fixed;
-  
+    background: url('../assets/factory-bg-2.jpg') no-repeat center center fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
 section.main .container {
-  z-index: 1000;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 section.main .overlay {
-  position: absolute;
-  background: rgba(0, 0, 0, 0.5);
-  width: 100%;
-  height: 100%;
-  transition: 0.3s;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+section.services .overlay {
+    align-self: flex-start;
+    background: #af240fd2;
+    min-height: 200%;
+    min-height: fit-content;
+}
+
+section.main .title {
+    z-index: 900;
 }
 
 section.about {
-  background: rgb(94, 177, 115);
+    background: rgb(244, 253, 246);
+    padding-top: 40px;
+}
+
+section.about .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section.about .bl-1 {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 25px;
+}
+
+section.about .bl-1 .btn,
+section.about .bl-1 .block-title {
+    align-self: center;
+}
+
+section.about .bl-2 .tile {
+    width: 200px;
+    height: 350px;
+    margin: 5px;
+    box-shadow: 0px 3px 11px 1px rgba(0, 0, 0, 0.753);
+}
+
+section.about .bl-2 div.tile {
+    background-color: #d5523f;
+    padding: 20px;
+    box-sizing: border-box;
+    line-height: 1.5;
 }
 
 section.services {
-  background: rgb(195, 204, 69);
+    background: url('../assets/factory-bg-1red.jpeg') no-repeat center center fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+section.services .accent {
+    color: black;
+}
+
+section.services .title,
+section.services .block-title {
+    text-align: center;
+}
+
+section.services .container,
+section.services a {
+    z-index: 1000;
+}
+
+section.services .services-list {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+section.services .service-tile {
+    border: 5px solid rgba(255, 255, 255, 0.514);
+    width: 200px;
+    box-sizing: border-box;
+    padding: 15px;
+    margin: 7px;
+    box-shadow: 0px 3px 24px 1px rgb(0 0 0 / 45%);
+    background-color: #d5523f
+}
+
+section.services .btn {
+    margin: 0 auto;
+}
+
+section.services .service-tile .icon {
+    display: flex;
+    justify-content: center;
+}
+
+section.services .service-tile .icon i {
+    font-size: 78px;
+}
+
+section.services .service-tile h5 {
+    text-align: center;
 }
 
 section.projects {
-  background: rgb(54, 118, 155);
+    background: rgb(54, 118, 155);
 }
 
 section.advantages {
-  background: rgb(168, 48, 48);
+    background: rgb(168, 48, 48);
 }
 
 section.about-blog {
-  background: rgb(128, 173, 85);
+    background: rgb(128, 173, 85);
 }
 
 section.contacts {
-  background: rgb(83, 145, 170);
+    background: rgb(83, 145, 170);
 }
 
 footer {
-  min-height: 45px;
+    min-height: 45px;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 120px;
+    max-width: fit-content;
+    height: 50px;
+    background: transparent;
+    border: 2px solid black;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: .9rem;
+    padding: 0 20px;
+}
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
 }

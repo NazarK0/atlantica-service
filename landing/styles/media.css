@@ -1,39 +1,70 @@
 /* Small devices (landscape phones, 576px and up) */
+
 @media (min-width: 576px) {
-  .container {
-  width: 500px;
+    .container {
+        width: 500px;
+    }
 }
-}
+
 
 /* Medium devices (tablets, 768px and up) */
+
 @media (min-width: 768px) {
-  .container {
-  width: 700px;
-  
+    .container {
+        width: 700px;
+    }
 }
-}
+
 
 /* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {
-  header .desktop-navbar {
-    display: flex;
-  }
-  header .mobile-navbar {
-    display: none;
-  }
 
-  .container {
-  width: 900px;
+@media (min-width: 992px) {
+    header .desktop-navbar {
+        display: flex;
+    }
+    header .mobile-navbar {
+        display: none;
+    }
+    .container {
+        width: 900px;
+    }
+    section.about .container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        height: 100vh;
+    }
+    section.about .bl-2 {
+        margin-left: 20px;
+        display: flex;
+        flex-direction: row;
+    }
+    section.about .bl-2 .tile {
+        margin-right: 15px;
+    }
+    section.about .bl-1 .btn {
+        align-self: flex-end;
+    }
+    section.services .services-list {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
 }
-}
+
 
 /* X-Large devices (large desktops, 1200px and up) */
+
 @media (min-width: 1200px) {
-  .container {
-  width: 1100px;
-}
+    .container {
+        width: 1100px;
+    }
 }
 
+
 /* XX-Large devices (larger desktops, 1400px and up) */
+
 @media (min-width: 1400px) {
+    .container {
+        width: 1300px;
+    }
 }
