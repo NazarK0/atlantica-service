@@ -404,7 +404,35 @@
     }
     
     section.contacts {
-        background: rgb(83, 145, 170);
+        background: url('../assets/sunset-bgRed.jpeg') no-repeat center center fixed;
+    }
+    
+    section.contacts .tile {
+        max-width: 80vh;
+        border: 5px solid rgba(255, 255, 255, 0.514);
+    }
+    
+    section.contacts .tile span,
+    section.contacts .tile span nobr,
+    section.contacts .tile span i {
+        font-size: 0.7rem;
+    }
+    
+    section.contacts .tile ul {
+        max-width: 80vh;
+        padding-inline-start: 0;
+    }
+    
+    section.contacts .tile .description {
+        font-weight: bold;
+    }
+    
+    section.contacts .tile.address img {
+        max-width: 60vh;
+    }
+    
+    section.contacts .tile.phone {
+        border-color: rgba(0, 0, 0, 0.616);
     }
     
     footer {
