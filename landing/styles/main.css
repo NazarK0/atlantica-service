@@ -244,8 +244,32 @@ section.services .service-tile h5 {
     text-align: center;
 }
 
-section.projects {
-    background: rgb(54, 118, 155);
+section.projects .container {
+    padding-top: 60px;
+}
+
+section.projects .projects-list {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    padding: 0;
+}
+
+section.projects .ctrl-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section.projects .ctrl-buttons .btn {
+    margin-bottom: 25px;
+}
+
+section.projects .project-tile {
+    margin-bottom: 10px;
 }
 
 section.advantages {

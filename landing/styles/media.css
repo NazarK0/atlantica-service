@@ -45,9 +45,21 @@
     section.about .bl-1 .btn {
         align-self: flex-end;
     }
-    section.services .services-list {
+    section.services .services-list,
+    section.projects .projects-list {
         flex-direction: row;
         justify-content: space-evenly;
+    }
+    section.projects .project-tile {
+        margin-bottom: 20px;
+    }
+    section.projects .ctrl-buttons {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    section.projects .ctrl-buttons .btn {
+        margin-right: 20px;
     }
 }
 
