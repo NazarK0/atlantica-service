@@ -1,533 +1,567 @@
 * {
-  font-family: 'Roboto Slab', serif;
-  font-size: medium;
+    font-family: 'Roboto Slab', serif;
+    font-size: medium;
 }
 
 h1 {
-  font-size: 2.5rem;
-  text-transform: uppercase;
-  font-weight: bold;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    font-weight: bold;
 }
 
 h2 {
-  font-size: 1.8rem;
-  text-transform: uppercase;
-  font-weight: bold;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: bold;
 }
 
 h3 {
-  font-size: 1.5rem;
-  font-weight: bold;
+    font-size: 1.5rem;
+    font-weight: bold;
 }
 
 h4 {
-  font-size: 1.3rem;
-  font-weight: bold;
+    font-size: 1.3rem;
+    font-weight: bold;
 }
 
 h5 {
-  font-size: 0.8rem;
-  font-weight: bold;
+    font-size: 0.8rem;
+    font-weight: bold;
 }
 
 h6 {
-  font-size: 0.5rem;
-  font-weight: bold;
+    font-size: 0.5rem;
+    font-weight: bold;
 }
 
 ul li {
-  list-style: none;
+    list-style: none;
 }
 
 a {
-  text-decoration: none;
-  color: inherit;
+    text-decoration: none;
+    color: inherit;
 }
 
 p {
-  line-height: 1.7;
-  font-weight: 300;
+    line-height: 1.7;
+    font-weight: 300;
 }
 
 p.tiny {
-  font-size: 0.7rem;
+    font-size: 0.7rem;
 }
 
 .container {
-  width: 300px;
-  height: 100%;
-  margin: 0 auto;
-  padding: 40px 0;
-  box-sizing: border-box;
+    width: 300px;
+    height: 100%;
+    margin: 0 auto;
+    padding: 40px 0;
+    box-sizing: border-box;
 }
 
 .accent {
-  color: #d5523f;
+    color: #d5523f;
 }
 
 header {
-  position: fixed;
-  width: 100%;
-  z-index: 2000;
+    position: fixed;
+    width: 100%;
+    z-index: 2000;
 }
 
 header .desktop-navbar,
 header .desktop-navbar ul,
 header .mobile-navbar .top-links ul {
-  display: flex;
+    display: flex;
 }
 
 header .mobile-navbar .top-links .menu,
 header .mobile-navbar .top-links .user,
 header .mobile-navbar .top-links .socials {
-  padding-inline-start: 20px;
+    padding-inline-start: 20px;
 }
 
 header .mobile-navbar .top-links .menu {
-  flex-direction: column;
+    flex-direction: column;
 }
 
 header .mobile-navbar .top-links .socials {
-  flex-direction: row;
-  justify-content: space-between;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 header .mobile-navbar .top-links .user {
-  flex-direction: row;
-  justify-content: center;
+    flex-direction: row;
+    justify-content: center;
 }
+
 header .mobile-navbar .top-links .user i {
-  color: #d5523f !important;
-  font-size: 2.5rem;
+    color: #d5523f !important;
+    font-size: 2.5rem;
 }
 
 header .desktop-navbar {
-  display: none;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #ffffffc9;
-  box-shadow: 0px 3px 11px 1px rgba(0, 0, 0, 0.753);
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffffc9;
+    box-shadow: 0px 3px 11px 1px rgba(0, 0, 0, 0.753);
 }
 
 header .desktop-navbar .top-links {
-  display: flex;
-  justify-content: space-around;
-  margin-right: 17px;
-  font-weight: bold;
+    display: flex;
+    justify-content: space-around;
+    margin-right: 17px;
+    font-weight: bold;
 }
 
 header .desktop-navbar .top-links a:hover {
-  color: #686160;
+    color: #686160;
 }
 
 header .desktop-navbar .top-links li {
-  margin-right: 12px;
+    margin-right: 12px;
 }
 
 header .company-logo__img {
-  height: 60px;
+    height: 60px;
 }
 
 section {
-  min-height: 100vh;
-  max-height: fit-content;
+    min-height: 100vh;
+    max-height: fit-content;
 }
 
 section.main {
-  background: url('../assets/factory-bg-2.jpg') no-repeat center center fixed;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    background: url('../assets/factory-bg-2.jpg') no-repeat center center fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 section.main .container {
-  z-index: 1000;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 section.main .overlay {
-  background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.5);
 }
 
 section.services .overlay {
-  align-self: flex-start;
-  background: #af240fd2;
-  min-height: 200%;
-  min-height: fit-content;
+    align-self: flex-start;
+    background: #af240fd2;
+    min-height: 200%;
+    min-height: fit-content;
 }
 
 section.main .title {
-  z-index: 900;
+    z-index: 900;
 }
 
 section.about {
-  background: rgb(244, 253, 246);
-  padding-top: 40px;
+    background: rgb(244, 253, 246);
+    padding-top: 40px;
 }
 
 section.about .container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 section.about .bl-1 {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 25px;
 }
 
 section.about .bl-1 .btn,
 section.about .bl-1 .block-title {
-  align-self: center;
+    align-self: center;
 }
 
 section.about .bl-2 .tile {
-  width: 200px;
-  height: 350px;
-  margin: 5px;
-  box-shadow: 0px 3px 11px 1px rgba(0, 0, 0, 0.753);
+    width: 200px;
+    height: 350px;
+    margin: 5px;
+    box-shadow: 0px 3px 11px 1px rgba(0, 0, 0, 0.753);
 }
 
 section.about .bl-2 div.tile {
-  background-color: #d5523f;
-  padding: 20px;
-  box-sizing: border-box;
-  line-height: 1.5;
+    background-color: #d5523f;
+    padding: 20px;
+    box-sizing: border-box;
+    line-height: 1.5;
 }
 
 section.services {
-  background: url('../assets/factory-bg-1red.jpeg') no-repeat center center
-    fixed;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
+    background: url('../assets/factory-bg-1red.jpeg') no-repeat center center fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
 }
 
 section.services .accent {
-  color: black;
+    color: black;
 }
 
 section.advantages .accent {
-  color: white;
+    color: white;
 }
 
 section.advantages .advantages-list .accent {
-  color: #d5523f;
+    color: #d5523f;
 }
 
 section.services .title,
 section.services .block-title {
-  text-align: center;
+    text-align: center;
 }
 
 section.services .container,
 section.services a {
-  z-index: 1000;
+    z-index: 1000;
 }
 
 section.services .services-list {
-  display: flex;
-  flex-direction: column;
-  margin-top: 40px;
-  margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    margin-bottom: 30px;
 }
 
 section.services .service-tile {
-  border: 5px solid rgba(255, 255, 255, 0.514);
-  width: 200px;
-  box-sizing: border-box;
-  padding: 15px;
-  margin: 7px;
-  box-shadow: 0px 3px 24px 1px rgb(0 0 0 / 45%);
-  background-color: #d5523f;
+    border: 5px solid rgba(255, 255, 255, 0.514);
+    width: 200px;
+    box-sizing: border-box;
+    padding: 15px;
+    margin: 7px;
+    box-shadow: 0px 3px 24px 1px rgb(0 0 0 / 45%);
+    background-color: #d5523f;
 }
 
 section.services .btn {
-  margin: 0 auto;
+    margin: 0 auto;
 }
 
 section.services .service-tile .icon {
-  display: flex;
-  justify-content: center;
+    display: flex;
+    justify-content: center;
 }
 
 section.services .service-tile .icon i {
-  font-size: 78px;
+    font-size: 78px;
 }
 
 section.services .service-tile h5 {
-  text-align: center;
+    text-align: center;
 }
 
 section.projects .container {
-  padding-top: 60px;
+    padding-top: 60px;
 }
 
 section.projects .projects-list {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  margin-top: 20px;
-  padding: 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    padding: 0;
 }
 
 section.projects .ctrl-buttons {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 section.projects .ctrl-buttons .btn {
-  margin-bottom: 25px;
+    margin-bottom: 25px;
 }
 
 section.projects .project-tile {
-  margin-bottom: 10px;
+    margin-bottom: 10px;
 }
 
 section.advantages {
-  background: #d5523f;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    background: #d5523f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 section.advantages .container {
-  padding-top: 60px;
-  z-index: 1000;
+    padding-top: 60px;
+    z-index: 1000;
 }
 
 section.advantages .advantages-list {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 70px;
-  margin-bottom: 30px;
-  padding-inline-start: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 70px;
+    margin-bottom: 30px;
+    padding-inline-start: 0;
 }
 
 section.advantages .advantage-tile {
-  width: 150px;
-  height: 150px;
-  box-sizing: border-box;
-  padding: 15px;
-  margin: 7px;
-  background-color: #ffffff;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin-top: 20px;
+    width: 150px;
+    height: 150px;
+    box-sizing: border-box;
+    padding: 15px;
+    margin: 7px;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
 }
 
 section.advantages .advantage-tile.active {
-  box-shadow: 2px 5px 9px 0px rgb(0 0 0 / 45%);
-  background-color: rgba(255, 255, 255, 0.699);
+    box-shadow: 2px 5px 9px 0px rgb(0 0 0 / 45%);
+    background-color: rgba(255, 255, 255, 0.699);
 }
 
 section.advantages .advantage-tile.active div {
-  text-align: center;
+    text-align: center;
 }
 
 section.advantages .advantage-tile.active div .accent {
-  font-size: 26px;
-  margin: 0;
+    font-size: 26px;
+    margin: 0;
 }
 
 section.advantages .advantage-tile .icon i {
-  font-size: 78px;
+    font-size: 78px;
 }
 
 section.advantages .advantage-tile .arrow {
-  display: none;
+    display: none;
 }
 
 section.advantages .white-block {
-  display: none;
-  height: 40vh;
-  background-color: #fff;
-  width: 100%;
-  align-self: flex-end;
-  position: absolute;
-  z-index: 0;
+    display: none;
+    height: 40vh;
+    background-color: #fff;
+    width: 100%;
+    align-self: flex-end;
+    position: absolute;
+    z-index: 0;
 }
 
 section.advantages .btn {
-  margin: 0 auto;
+    margin: 0 auto;
 }
 
 section.about-blog {
-  background: url('../assets/factory-bg-3black.jpg') no-repeat center center
-    fixed;
-  color: #fff;
-  padding-top: 60px;
+    background: url('../assets/factory-bg-3black.jpg') no-repeat center center fixed;
+    color: #fff;
+    padding-top: 60px;
 }
 
 section.about-blog .last-news {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 70px;
-  padding-inline-start: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 70px;
+    padding-inline-start: 0;
 }
 
 section.about-blog .news-tile {
-  width: 270px;
-  margin-bottom: 30px;
+    width: 270px;
+    margin-bottom: 30px;
 }
 
 section.about-blog .news-tile .image-block {
-  position: relative;
+    position: relative;
 }
 
 section.about-blog .news-tile .date {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  box-sizing: border-box;
-  text-align: center;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    box-sizing: border-box;
+    text-align: center;
 }
 
 section.about-blog .news-tile .date .day {
-  font-size: 0.8rem;
-  background-color: #fff;
-  padding: 10px;
-  border-radius: 4px 4px 0 0;
-  color: #d5523f;
-  font-weight: bold;
+    font-size: 0.8rem;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 4px 4px 0 0;
+    color: #d5523f;
+    font-weight: bold;
 }
 
 section.about-blog .news-tile .date .month {
-  font-size: 0.8rem;
-  background-color: #d5523f;
-  padding: 5px 10px;
-  border-radius: 0 0 4px 4px;
+    font-size: 0.8rem;
+    background-color: #d5523f;
+    padding: 5px 10px;
+    border-radius: 0 0 4px 4px;
 }
 
 section.about-blog .btn {
-  border-color: #fff;
-  margin: 0 auto;
+    border-color: #fff;
+    margin: 0 auto;
 }
 
 section.contacts {
-  background: url('../assets/sunset-bgRed.jpeg') no-repeat center center fixed;
+    background: url('../assets/sunset-bgRed.jpeg') no-repeat center center fixed;
 }
 
 section.contacts .tile {
-  max-width: 80vh;
-  border: 5px solid rgba(255, 255, 255, 0.514);
+    max-width: 80vh;
+    border: 5px solid rgba(255, 255, 255, 0.514);
 }
 
 section.contacts .tile span,
 section.contacts .tile span nobr,
 section.contacts .tile span i {
-  font-size: 0.7rem;
+    font-size: 0.7rem;
 }
 
 section.contacts .tile ul {
-  max-width: 80vh;
-  padding-inline-start: 0;
+    max-width: 80vh;
+    padding-inline-start: 0;
 }
 
 section.contacts .tile .description {
-  font-weight: bold;
+    font-weight: bold;
 }
 
 section.contacts .tile.address img {
-  max-width: 60vh;
+    max-width: 60vh;
 }
 
 section.contacts .tile.phone {
-  border-color: rgba(0, 0, 0, 0.616);
+    border-color: rgba(0, 0, 0, 0.616);
 }
 
 footer {
-  min-height: 45px;
+    min-height: 45px;
+}
+
+.main-content.chat {
+    margin-top: 71px !important;
+}
+
+.main-content.chat .card {
+    margin-right: 71px;
+}
+
+.main-content.chat .card {
+    padding: 7px 12px 148px;
+}
+
+.main-content.chat .btn-tiny {
+    color: #000;
+}
+
+.main-content.chat .ctrl-buttons {
+    display: flex;
+}
+
+.main-content.chat .ctrl-buttons button {
+    margin: 0 4px;
+}
+
+.custom-chat header {
+    top: 0;
 }
 
 .to-buyers {
-  background: url('../assets/buyer-bgBlack.jpg') no-repeat center center fixed;
-  color: #fff;
+    background: url('../assets/buyer-bgBlack.jpg') no-repeat center center fixed;
+    color: #fff;
 }
+
 .to-sellers {
-  background: url('../assets/seller-bgWhite.jpg') no-repeat center center fixed;
+    background: url('../assets/seller-bgWhite.jpg') no-repeat center center fixed;
 }
 
 .btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-width: 120px;
-  max-width: fit-content;
-  height: 50px;
-  background: transparent;
-  border: 2px solid black;
-  text-transform: uppercase;
-  font-weight: bold;
-  font-size: 0.9rem;
-  padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 120px;
+    max-width: fit-content;
+    height: 50px;
+    background: transparent;
+    border: 2px solid black;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 0.9rem;
+    padding: 0 20px;
 }
 
 .btn-tiny {
-  background-color: #fff;
-  border-radius: 3px;
-  color: #d5523f;
-  font-size: 0.7rem;
-  box-sizing: border-box;
-  padding: 7px 12px;
-  text-transform: uppercase;
-  font-weight: bold;
+    background-color: #fff;
+    border-radius: 3px;
+    color: #d5523f;
+    font-size: 0.7rem;
+    box-sizing: border-box;
+    padding: 7px 12px;
+    text-transform: uppercase;
+    font-weight: bold;
 }
+
 .menu-btn {
-  background-color: #fff;
-  border-radius: 3px;
-  color: #d5523f;
-  font-size: 0.7rem;
-  box-sizing: border-box;
-  padding: 7px 12px;
-  text-transform: uppercase;
-  font-weight: bold;
-  outline: 0 !important;
-  border: 0;
-  display: block;
+    background-color: #fff;
+    border-radius: 3px;
+    color: #d5523f;
+    font-size: 0.7rem;
+    box-sizing: border-box;
+    padding: 7px 12px;
+    text-transform: uppercase;
+    font-weight: bold;
+    outline: 0 !important;
+    border: 0;
+    display: block;
 }
 
 .menu-btn:hover {
-  color: rgb(99, 99, 99);
+    color: rgb(99, 99, 99);
 }
 
 ::-moz-focus-outer,
 ::-moz-focus-inner {
-  border: 0;
-  padding: 0;
+    border: 0;
+    padding: 0;
 }
 
 .overlay {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  z-index: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
 }
 
 button,
 button:active,
 button:focus {
-  outline: none;
+    outline: none;
 }
 
 .login-modal form {
     display: flex;
     flex-direction: column;
 }
+
 .login-modal .form-group {
-   margin-bottom: 6px;
+    margin-bottom: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
+
 .login-modal .my-content {
     margin-top: 30px;
     padding: 30px;
@@ -536,4 +570,8 @@ button:focus {
 .modal input {
     height: 30px;
     margin: 5px;
+}
+
+.main-content {
+    margin-left: 30px;
 }
