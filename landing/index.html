@@ -11,12 +11,14 @@
     <link rel="stylesheet" href="styles/animate.min.css" />
     <link rel="stylesheet" href="styles/mobile-navbar.css" />
     <link rel="stylesheet" href="styles/fonts.css" />
+    <link rel="stylesheet" href="styles/modal.css" />
     <link rel="stylesheet" href="styles/main.css" />
     <link rel="stylesheet" href="styles/media.css" />
 
     <script src="https://kit.fontawesome.com/539e519a18.js" crossorigin="anonymous"></script>
     <script src="js/toggleMobileNavbar.js" defer></script>
     <script src="js/animation.js" defer></script>
+    <script src="js/modal.js" defer></script>
 </head>
 
 <body>
@@ -29,13 +31,16 @@
             <div id="topLinks" class="top-links">
                 <ul class="menu">
                     <li><a href="#home">Главная</a></li>
-                    <li><a href="#about">О Компании</a></li>
+                    <li><a href="#about">О Нас</a></li>
+                    <li><a href="#news">Новости</a></li>
                     <li><a href="#services">Услуги</a></li>
-                    <li><a href="#projects">Проекты</a></li>
-                    <li><a href="#advantages">Преимущества</a></li>
-                    <li><a href="#about-blog">Наш Блог</a></li>
-                    <li><a href="contacts">Контакты</a></li>
-
+                    <li><a href="#to-buyers">Покупателям</a></li>
+                    <li><a href="#to-sellers">Продавцам</a></li>
+                    <li><a href="#advantages">Опыт</a></li>
+                </ul>
+                <ul class="user accent">
+                    <li><a href=""><i class="fas fa-sign-in-alt"></i></a></li>
+                    <li><a href=""><i class="fas fa-comments"></i></a></li>
                 </ul>
                 <ul class="socials">
                     <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
@@ -57,13 +62,17 @@
             <div class="top-links">
                 <ul class="menu">
                     <li><a href="#home">Главная</a></li>
-                    <li><a href="#about">О Компании</a></li>
+                    <li><a href="#about">О Нас</a></li>
+                    <li><a href="#news">Новости</a></li>
                     <li><a href="#services">Услуги</a></li>
-                    <li><a href="#projects">Проекты</a></li>
-                    <li><a href="#advantages">Преимущества</a></li>
-                    <li><a href="#about-blog">Наш Блог</a></li>
-                    <li><a href="#contacts">Контакты</a></li>
-
+                    <li><a href="#to-buyers">Покупателям</a></li>
+                    <li><a href="#to-sellers">Продавцам</a></li>
+                    <li><a href="#advantages">Опыт</a></li>
+                </ul>
+                <ul class="user">
+                    
+                    <li><button class="menu-btn accent" id="btn_login_modal_window"><i class="fas fa-sign-in-alt"></i></button></li>
+                    <li><a class="menu-btn accent" href="pages/chat.html"><i class="fas fa-comments"></i></a></li>
                 </ul>
                 <ul class="socials">
                     <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
@@ -100,132 +109,7 @@
             </div>
         </div>
     </section>
-    <section id="services" class="services">
-        <div class="container">
-            <h5 class="accent block-title">ЧТО МЫ ДЕЛАЕМ</h5>
-            <h3 class="title">НАШИ УСЛУГИ</h3>
-            <ul class="services-list">
-                <li class="service-tile">
-                    <div class="icon">
-                        <i class="fas fa-home"></i>
-                    </div>
-                    <h5>Проекты домов</h5>
-                    <p class="tiny">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium, optio commodi quam quod hic illo.</p>
-                </li>
-                <li class="service-tile">
-                    <div class="icon">
-                        <i class="fas fa-home"></i>
-                    </div>
-                    <h5>Проекты домов</h5>
-                    <p class="tiny">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium, optio commodi quam quod hic illo.</p>
-                </li>
-                <li class="service-tile">
-                    <div class="icon">
-                        <i class="fas fa-home"></i>
-                    </div>
-                    <h5>Проекты домов</h5>
-                    <p class="tiny">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium, optio commodi quam quod hic illo.</p>
-                </li>
-                <li class="service-tile">
-                    <div class="icon">
-                        <i class="fas fa-home"></i>
-                    </div>
-                    <h5>Проекты домов</h5>
-                    <p class="tiny">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium, optio commodi quam quod hic illo.</p>
-                </li>
-            </ul>
-            <a href="#" class="btn">Отправить заявку</a>
-        </div>
-    </section>
-    <section id="projects" class="projects">
-        <div class="container">
-            <h5 class="accent block-title">ПОРТФОЛИО</h5>
-            <h3 class="title">НАШИ ПРОЕКТЫ</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe harum neque repellendus beatae, similique alias odit impedit quod voluptatum eum, labore cumque tenetur minima, iste corrupti repellat numquam consequatur? Est.</p>
-            <ul class="projects-list">
-                <li class="project-tile">
-                    <a href="#">
-                        <img src="assets/zavod_1.jpg" alt="">
-                    </a>
-                </li>
-                <li class="project-tile">
-                    <a href="#">
-                        <img src="assets/zavod_2.jpg" alt="">
-                    </a>
-                </li>
-                <li class="project-tile">
-                    <a href="#">
-                        <img src="assets/zavod_3.jpg" alt="">
-                    </a>
-                </li>
-                <li class="project-tile">
-                    <a href="#">
-                        <img src="assets/zavod_4.jpg" alt="">
-                    </a>
-                </li>
-                <li class="project-tile">
-                    <a href="#">
-                        <img src="assets/zavod_1.jpg" alt="">
-                    </a>
-                </li>
-                <li class="project-tile">
-                    <a href="#">
-                        <img src="assets/zavod_3.jpg" alt="">
-                    </a>
-                </li>
-            </ul>
-            <div class="ctrl-buttons">
-                <a href="#" class="btn">Показать еще</a>
-                <a href="#" class="btn accent">Смотреть все</a>
-            </div>
-
-        </div>
-    </section>
-    <section id="advantages" class="advantages">
-        <div class="container">
-            <h5 class="accent block-title">ЛУЧШЫЙ ВЫБОР</h5>
-            <h3 class="title">ПОЧЕМУ ВЫБИРАЮТ НАС</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, at. Dignissimos animi cum aut quam necessitatibus, earum explicabo non itaque soluta suscipit ducimus voluptatem doloribus, minima corporis quos ipsa consequatur!</p>
-            <ul class="advantages-list">
-                <li class="advantage-tile">
-                    <div class="icon">
-                        <i class="fas fa-hand-holding-usd"></i>
-                    </div>
-                </li>
-                <li class="advantage-tile">
-                    <div class="icon">
-                        <i class="fas fa-phone-volume"></i>
-                    </div>
-                </li>
-                <li class="advantage-tile active">
-                    <a href="" class="arrow">
-                        <i class="fas fa-chevron-left"></i>
-                    </a>
-                    <div>
-                        <h5 class="accent">6000+</h5>
-                        <p class="tiny">Проекты выполненные с полным успехом</p>
-                    </div>
-                    <a href="" class="arrow">
-                        <i class="fas fa-chevron-right"></i>
-                    </a>
-
-                </li>
-                <li class="advantage-tile">
-                    <div class="icon">
-                        <i class="fas fa-gifts"></i>
-                    </div>
-                </li>
-                <li class="advantage-tile">
-                    <div class="icon">
-                        <i class="far fa-clock"></i>
-                    </div>
-                </li>
-            </ul>
-            <a href="#" class="btn">Отправить заявку</a>
-        </div>
-        <div class="white-block"></div>
-    </section>
-    <section id="about-blog" class="about-blog">
+    <section id="news" class="about-blog">
         <div class="container">
             <h5 class="accent block-title">ПОСЛЕДНИЕ НОВОСТИ</h5>
             <h3 class="title">НАШ БЛОГ</h3>
@@ -283,52 +167,128 @@
 
         </div>
     </section>
-    <section id="contacts" class="contacts">
+    <section id="services" class="services">
         <div class="container">
-            <h5 class="accent block-title">СВЯЗАТСЯ С НАМИ</h5>
-            <h3 class="title">КОНТАКТЫ</h3>
-            <div class="tile address">
-                <img src="assets/logo_base_black.png" alt="">
-                <h4>Atlantica Company</h4>
-                <ul class="contact-list">
-                    <li class="contact">
-                        <span class="bullet"><i class="fas fa-chevron-right"></i></span>
-                        <span class="description">Адрес:</span>
-                        <span class="value"><nobr>Москва ул. Тверская дом 15 офис 77</nobr></span>
-                    </li>
-                    <li class="contact">
-                        <span class="bullet"><i class="fas fa-chevron-right"></i></span>
-                        <span class="description">E-mail</span>
-                        <span class="value">test@mail.com</span>
-                    </li>
-                </ul>
-
-            </div>
-            <div class="tile phone">
-                <h4>Позвоните нам</h4>
-                <span class="main accent">8-800-123-4567</span>
-                <span>8-800-123-4568</span>
-            </div>
-            <div class="tile form">
-                <form action="">
-                    <div class="form-group">
-                        <label for="">Ваше имя</label>
-                        <input type="text">
+            <h5 class="accent block-title">ЧТО МЫ ДЕЛАЕМ</h5>
+            <h3 class="title">НАШИ УСЛУГИ</h3>
+            <ul class="services-list">
+                <li class="service-tile">
+                    <div class="icon">
+                        <i class="fas fa-home"></i>
                     </div>
-                    <div class="form-group">
-                        <label for="">Ваш e-mail</label>
-                        <input type="text">
+                    <h5>Проекты домов</h5>
+                    <p class="tiny">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium, optio commodi quam quod hic illo.</p>
+                </li>
+                <li class="service-tile">
+                    <div class="icon">
+                        <i class="fas fa-home"></i>
                     </div>
-                    <div class="form-group">
-                        <label for="">Сообщение</label>
-                        <textarea name="" id="" cols="30" rows="10"></textarea>
+                    <h5>Проекты домов</h5>
+                    <p class="tiny">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium, optio commodi quam quod hic illo.</p>
+                </li>
+                <li class="service-tile">
+                    <div class="icon">
+                        <i class="fas fa-home"></i>
                     </div>
-                    <button type="submit">Отправить</button>
-                </form>
-            </div>
+                    <h5>Проекты домов</h5>
+                    <p class="tiny">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium, optio commodi quam quod hic illo.</p>
+                </li>
+                <li class="service-tile">
+                    <div class="icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <h5>Проекты домов</h5>
+                    <p class="tiny">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium, optio commodi quam quod hic illo.</p>
+                </li>
+            </ul>
+            <a href="#" class="btn">Отправить заявку</a>
         </div>
     </section>
+    <section id="to-buyers" class="projects to-buyers">
+        <div class="container">
+            <h5 class="accent block-title">ИНФОРМАЦИЯ</h5>
+            <h3 class="title">ДЛЯ ПОКУПЦОВ</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe harum neque repellendus beatae, similique alias odit impedit quod voluptatum eum, labore cumque tenetur minima, iste corrupti repellat numquam consequatur? Est.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe harum neque repellendus beatae, similique alias odit impedit quod voluptatum eum, labore cumque tenetur minima, iste corrupti repellat numquam consequatur? Est.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe harum neque repellendus beatae, similique alias odit impedit quod voluptatum eum, labore cumque tenetur minima, iste corrupti repellat numquam consequatur? Est.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe harum neque repellendus beatae, similique alias odit impedit quod voluptatum eum, labore cumque tenetur minima, iste corrupti repellat numquam consequatur? Est.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe harum neque repellendus beatae, similique alias odit impedit quod voluptatum eum, labore cumque tenetur minima, iste corrupti repellat numquam consequatur? Est.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe harum neque repellendus beatae, similique alias odit impedit quod voluptatum eum, labore cumque tenetur minima, iste corrupti repellat numquam consequatur? Est.</p>
+        </div>
+    </section>
+    <section id="to-sellers" class="projects to-sellers">
+        <div class="container">
+            <h5 class="accent block-title">ИНФОРМАЦИЯ</h5>
+            <h3 class="title">ДЛЯ ПРОДАВЦОВ</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe harum neque repellendus beatae, similique alias odit impedit quod voluptatum eum, labore cumque tenetur minima, iste corrupti repellat numquam consequatur? Est.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe harum neque repellendus beatae, similique alias odit impedit quod voluptatum eum, labore cumque tenetur minima, iste corrupti repellat numquam consequatur? Est.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe harum neque repellendus beatae, similique alias odit impedit quod voluptatum eum, labore cumque tenetur minima, iste corrupti repellat numquam consequatur? Est.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe harum neque repellendus beatae, similique alias odit impedit quod voluptatum eum, labore cumque tenetur minima, iste corrupti repellat numquam consequatur? Est.</p>
+        </div>
+    </section>
+    <section id="advantages" class="advantages">
+        <div class="container">
+            <h5 class="accent block-title">ЛУЧШЫЙ ВЫБОР</h5>
+            <h3 class="title">ПОЧЕМУ ВЫБИРАЮТ НАС</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, at. Dignissimos animi cum aut quam necessitatibus, earum explicabo non itaque soluta suscipit ducimus voluptatem doloribus, minima corporis quos ipsa consequatur!</p>
+            <ul class="advantages-list">
+                <li class="advantage-tile">
+                    <div class="icon">
+                        <i class="fas fa-hand-holding-usd"></i>
+                    </div>
+                </li>
+                <li class="advantage-tile">
+                    <div class="icon">
+                        <i class="fas fa-phone-volume"></i>
+                    </div>
+                </li>
+                <li class="advantage-tile active">
+                    <a href="" class="arrow">
+                        <i class="fas fa-chevron-left"></i>
+                    </a>
+                    <div>
+                        <h5 class="accent">6000+</h5>
+                        <p class="tiny">Проекты выполненные с полным успехом</p>
+                    </div>
+                    <a href="" class="arrow">
+                        <i class="fas fa-chevron-right"></i>
+                    </a>
+
+                </li>
+                <li class="advantage-tile">
+                    <div class="icon">
+                        <i class="fas fa-gifts"></i>
+                    </div>
+                </li>
+                <li class="advantage-tile">
+                    <div class="icon">
+                        <i class="far fa-clock"></i>
+                    </div>
+                </li>
+            </ul>
+            <a href="#" class="btn">Отправить заявку</a>
+        </div>
+        <div class="white-block"></div>
+    </section>
     <footer></footer>
+    <div id="login-modal" class="modal login-modal">
+        <div class="modal_content">
+        <span class="close_modal_window">×</span>
+        <div class="my-content">
+            <h3>Ввойдите</h3>
+        <form action="" method="post">
+            <div class="form-group">
+                <label for="">Логин</label>
+                <input type="text">
+            </div>
+            <div class="form-group">
+                <label for="">Пароль</label>
+                <input type="password">
+            </div>
+        </form>
+        </div>
+        </div>
+    </div>
 </body>
 
 </html>
