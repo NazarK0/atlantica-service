@@ -64,6 +64,17 @@ p.tiny {
 .accent {
     color: #d5523f;
 }
+body {
+    width: 100%;
+}
+
+body.chat {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
 
 header {
     position: fixed;
@@ -73,13 +84,15 @@ header {
 
 header .desktop-navbar,
 header .desktop-navbar ul,
-header .mobile-navbar .top-links ul {
+header .mobile-navbar .top-links ul,
+footer .socials {
     display: flex;
 }
 
 header .mobile-navbar .top-links .menu,
 header .mobile-navbar .top-links .user,
-header .mobile-navbar .top-links .socials {
+header .mobile-navbar .top-links .user,
+footer .socials {
     padding-inline-start: 20px;
 }
 
@@ -87,7 +100,8 @@ header .mobile-navbar .top-links .menu {
     flex-direction: column;
 }
 
-header .mobile-navbar .top-links .socials {
+header .mobile-navbar .top-links .socials,
+footer .socials {
     flex-direction: row;
     justify-content: space-between;
 }
@@ -410,44 +424,54 @@ section.about-blog .news-tile .date .month {
 }
 
 section.about-blog .btn {
-    border-color: #fff;
+    border-color: rgb(32, 32, 32);
     margin: 0 auto;
 }
 
-section.contacts {
-    background: url('../assets/sunset-bgRed.jpeg') no-repeat center center fixed;
-}
 
-section.contacts .tile {
-    max-width: 80vh;
-    border: 5px solid rgba(255, 255, 255, 0.514);
-}
-
-section.contacts .tile span,
-section.contacts .tile span nobr,
-section.contacts .tile span i {
-    font-size: 0.7rem;
-}
-
-section.contacts .tile ul {
-    max-width: 80vh;
-    padding-inline-start: 0;
-}
-
-section.contacts .tile .description {
-    font-weight: bold;
-}
-
-section.contacts .tile.address img {
-    max-width: 60vh;
-}
-
-section.contacts .tile.phone {
-    border-color: rgba(0, 0, 0, 0.616);
-}
 
 footer {
-    min-height: 45px;
+    min-height: 125px;
+    background-color: rgb(51, 51, 51);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    color: #fff;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+footer .socials {
+    width: 150px;
+    margin-left: 20px;
+}
+footer .socials a:hover {
+    color: #d5523f;
+}
+
+.login-modal form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-modal .form-group {
+    margin-bottom: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.login-modal .my-content {
+    margin-top: 30px;
+    padding: 30px;
+}
+
+.login-modal .ctrl-buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
 }
 
 .main-content.chat {
@@ -459,7 +483,7 @@ footer {
 }
 
 .main-content.chat .card {
-    padding: 7px 12px 148px;
+    padding: 7px 12px 8px;
 }
 
 .main-content.chat .btn-tiny {
@@ -468,15 +492,20 @@ footer {
 
 .main-content.chat .ctrl-buttons {
     display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .main-content.chat .ctrl-buttons button {
     margin: 0 4px;
+    border: 1px solid #d5523f
 }
 
 .custom-chat header {
     top: 0;
 }
+
+
 
 .to-buyers {
     background: url('../assets/buyer-bgBlack.jpg') no-repeat center center fixed;
@@ -548,24 +577,11 @@ button,
 button:active,
 button:focus {
     outline: none;
+    border: 0;
+    cursor: pointer;
 }
 
-.login-modal form {
-    display: flex;
-    flex-direction: column;
-}
 
-.login-modal .form-group {
-    margin-bottom: 6px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.login-modal .my-content {
-    margin-top: 30px;
-    padding: 30px;
-}
 
 .modal input {
     height: 30px;

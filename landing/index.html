@@ -38,9 +38,9 @@
                     <li><a href="#to-sellers">Продавцам</a></li>
                     <li><a href="#advantages">Опыт</a></li>
                 </ul>
-                <ul class="user accent">
-                    <li><a href=""><i class="fas fa-sign-in-alt"></i></a></li>
-                    <li><a href=""><i class="fas fa-comments"></i></a></li>
+                <ul class="user">
+                    <li><button class="menu-btn accent" id="btn_login_modal_window"><i class="fas fa-sign-in-alt"></i></button></li>
+                    <li><a class="menu-btn accent" href="pages/chat.html"><i class="fas fa-comments"></i></a></li>
                 </ul>
                 <ul class="socials">
                     <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
@@ -270,7 +270,15 @@
         </div>
         <div class="white-block"></div>
     </section>
-    <footer></footer>
+    <footer>
+        <ul class="socials">
+            <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href=""><i class="fab fa-vk"></i></a></li>
+            <li><a href=""><i class="fab fa-linkedin-in"></i></a></li>
+            <li><a href=""><i class="fab fa-twitter"></i></a></li>
+        </ul>
+        <span>Copyright 2021. All Rights Reserved</span>
+    </footer>
     <div id="login-modal" class="modal login-modal">
         <div class="modal_content">
         <span class="close_modal_window">×</span>
@@ -285,6 +293,11 @@
                 <label for="">Пароль</label>
                 <input type="password">
             </div>
+            <div class="ctrl-buttons">
+                <button type="submit" class="btn-tiny accent">Вход</button>
+                <button class="btn-tiny">Отмена</button>
+            </div>
+            
         </form>
         </div>
         </div>
