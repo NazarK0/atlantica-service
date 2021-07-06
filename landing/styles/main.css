@@ -87,12 +87,12 @@ header .desktop-navbar ul,
 header .mobile-navbar .top-links ul,
 footer .socials {
     display: flex;
+    padding-inline-start: 0;
 }
 
 header .mobile-navbar .top-links .menu,
 header .mobile-navbar .top-links .user,
-header .mobile-navbar .top-links .user,
-footer .socials {
+footer ul.socials {
     padding-inline-start: 20px;
 }
 

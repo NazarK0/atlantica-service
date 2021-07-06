@@ -1,8 +1,12 @@
  var modal = document.getElementById("login-modal");
- var btn = document.getElementById("btn_login_modal_window");
+ var btnDesktop = document.getElementById("btn_login_modal_window_desktop");
+ var btnMobile = document.getElementById("btn_login_modal_window_mobile");
  var span = document.getElementsByClassName("close_modal_window")[0];
 
- btn.onclick = function () {
+ btnDesktop.onclick = function () {
+    modal.style.display = "block";
+ }
+ btnMobile.onclick = function () {
     modal.style.display = "block";
  }
 
