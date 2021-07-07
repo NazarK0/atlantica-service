@@ -35,7 +35,12 @@
     }
   }
 
-  
+  .wrapper.client .search-form {
+    input[type="text"] {
+      width: 150px !important;
+      box-sizing: border-box;
+    }
+  }
 }
 
 /* Extra large devices (large laptops and desktops, 1230px and up) */
