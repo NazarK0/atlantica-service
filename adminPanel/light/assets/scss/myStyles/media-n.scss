@@ -18,30 +18,39 @@
 @media only screen and (min-width: 1230px) {
   .search-in-table {
     position: relative;
-    top: 6px;
-    left: 310px;
-    width: 55vw;
+    top: -12px;
+    left: 7px;
+    width: 65vw;
+    max-width: 1100px;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
+    justify-content: space-around;
+    align-items: center;
+    &.clients {
+      top: 0px;
+      left: 38px;
+      .form-control {
+        width: 160px;
+        margin-right: 5px;
+      }
+    }
 
-    input, select {
+    input,
+    select {
       border: 1px solid rgb(49, 49, 49) !important;
     }
-    
+
     .form-control {
       width: 170px;
       height: 35px;
-      
     }
     .date-period {
       display: flex;
-      flex-direction: column;
+      flex-direction: row;
       align-items: center;
       justify-content: space-between;
-      .form-group {
-        width: 100%;
+      .input-group {
+        // width: 100%;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -64,7 +73,7 @@
   }
 
   .wrapper.client .search-form {
-    input[type="text"] {
+    input[type='text'] {
       width: 150px !important;
       box-sizing: border-box;
     }
@@ -77,22 +86,9 @@
 
 /* Extra large devices (large laptops and desktops, 1230px and up) */
 @media only screen and (min-width: 1440px) {
-  .navbar-form.search-form.client {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+  .search-in-table.clients {
     .form-control {
-      width: 200px;
-    }
-
-    .btn {
-      position: static;
-      padding: 0 10px !important;
-      color: #000;
-    }
-
-    input[type='date'] {
-      width: fit-content;
+      width: 170px;
     }
   }
 }

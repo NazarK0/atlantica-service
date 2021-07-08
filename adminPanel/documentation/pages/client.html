@@ -65,19 +65,6 @@
 							<i class="lnr lnr-menu fa fa-bars"></i>
 						</button>
                 </div>
-                <form id="navbar-search" class="navbar-form navbar-right search-form standart">
-                    <input value="" class="form-control" placeholder="Компания" type="text" />
-                    <input value="" class="form-control" placeholder="Представитель" type="text" />
-                    <input value="" class="form-control" placeholder="Менеджер" type="text" />
-                    <div>
-                        <label>Регистрация: с</label>
-                        <input value="" class="form-control" type="date" style="display: inline-block;" />
-                        <span>&nbsp;по&nbsp;</span>
-                        <input value="" class="form-control" type="date" style="display: inline-block;" />
-                    </div>
-                    <button type="button" class="btn btn-default"><i class="fa fa-search" aria-hidden="true"></i></button>
-                    <button type="button" class="btn btn-default"><i class="icon-trash"></i></button>
-                </form>
             </div>
         </nav>
 
@@ -179,6 +166,26 @@
                         <div class="card border-danger" id="documenter_cover">
                             <div class="body">
                                 <div class="table-responsive">
+                                    <form id="navbar-search-clients" class="search-in-table clients">
+                                        <input value="" class="form-control" placeholder="Компания" type="text" />
+                                        <input value="" class="form-control" placeholder="Представитель" type="text" />
+                                        <input value="" class="form-control" placeholder="Менеджер" type="text" />
+                                        <label>Регистрация:</label>
+                                        <div class="date-period">
+                                            <div class="input-group">
+                                                <label>с&nbsp;</label>
+                                                <input value="" class="form-control" type="date" style="display: inline-block;" />
+                                            </div>
+                                            <div class="input-group">
+                                                <span>&nbsp;по&nbsp;</span>
+                                                <input value="" class="form-control" type="date" style="display: inline-block;" />
+                                            </div>
+                                        </div>
+                                        <div class="ctrl-buttons">
+                                            <button type="button" class="btn btn-default"><i class="fa fa-search" aria-hidden="true"></i></button>
+                                            <button type="button" class="btn btn-default"><i class="icon-trash"></i></button>
+                                        </div>   
+                                    </form>
                                     <table class="content-table table js-basic-example dataTable" id="DataTables_Table_0" role="grid" aria-describedby="DataTables_Table_0_info">
                                         <thead class="thead-dark">
                                             <tr role="row">

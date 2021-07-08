@@ -328,4 +328,57 @@
         justify-content: space-around;
     }
 
+    .search-in-table {
+    position: relative;
+    top: -12px;
+    left: 7px;
+    width: 85vw;
+    max-width: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    &.clients {
+      top: 0px;      
+    }
+
+    input, select {
+      border: 1px solid rgb(49, 49, 49) !important;
+    }
+    
+    .form-control {
+      width: 170px;
+      height: 35px;
+      margin-bottom: 10px;
+      
+    }
+    .date-period {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      .input-group {
+        // width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+    }
+
+    .btn {
+      position: static;
+      padding: 0 10px !important;
+      color: #000;
+    }
+
+    // input[type='date'] {
+    //   width: fit-content;
+    // }
+    .ctrl-buttons {
+      display: flex;
+      flex-direction: row;
+    }
+  }
+
     
