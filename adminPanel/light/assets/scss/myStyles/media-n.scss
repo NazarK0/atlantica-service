@@ -16,12 +16,36 @@
 
 /* Extra large devices (large laptops and desktops, 1230px and up) */
 @media only screen and (min-width: 1230px) {
-  .navbar-form.search-form.standart {
+  .search-in-table {
+    position: relative;
+    top: 6px;
+    left: 310px;
+    width: 55vw;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: flex-start;
+
+    input, select {
+      border: 1px solid rgb(49, 49, 49) !important;
+    }
+    
     .form-control {
-      width: 200px;
+      width: 170px;
+      height: 35px;
+      
+    }
+    .date-period {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      .form-group {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
     }
 
     .btn {
@@ -30,8 +54,12 @@
       color: #000;
     }
 
-    input[type='date'] {
-      width: fit-content;
+    // input[type='date'] {
+    //   width: fit-content;
+    // }
+    .ctrl-buttons {
+      display: flex;
+      flex-direction: column;
     }
   }
 
@@ -40,6 +68,10 @@
       width: 150px !important;
       box-sizing: border-box;
     }
+  }
+
+  .content-table.with-search {
+    margin-top: 150px;
   }
 }
 
