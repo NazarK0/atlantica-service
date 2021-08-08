@@ -1,0 +1,3 @@
+v1.0.0 - Initial release
+v1.0.1 - Fix minor icon bug, check for compatibility for latest wp core, add more information on documentation
+v1.0.2 - Updating Slider Revolution plugin, check for compatibility for latest wp core and theme plugin required, provide the new theme documentation

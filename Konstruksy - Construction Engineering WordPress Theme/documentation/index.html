@@ -1,0 +1,412 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>Documentation - Konstruksy WordPress Theme</title>
+	<link rel="stylesheet" href="files/css/meanmenu.css" type="text/css" media="all">
+	<link rel="stylesheet" href="files/vendor/scrollbar/jquery.mCustomScrollbar.min.css" type="text/css" media="all">
+	<link rel="stylesheet" href="files/css/style.css" type="text/css" media="all">
+</head>
+<body>
+	<div id="wrapper">
+		<div id="meanmenu"></div>
+		<div class="col-left">
+			<div class="left-menu" style="padding-bottom: 30px;">
+				<h2 style="padding-top: 20px;"><img src="images/logo.png"></h2>
+				<ul>
+					<li><a href="#requirements">Requirements</a></li>
+					<li><a href="#installation">Theme Installation</a></li>
+					<li><a href="#importdemo">Importing Demo contents</a></li>
+					<ul>
+						<li><a href="#importdemo-auto">Automatic Import</a></li>
+						<li><a href="#importdemo-alt">Alternative Import</a></li>
+					</ul>
+					<li>
+						<a href="#themesettings">Theme Settings</a>
+						<ul>
+							<li><a href="#header">Header Settings</a></li>
+							<li><a href="#style">Style Settings</a></li>
+							<li><a href="#preloader">Preloader Settings</a></li>
+							<li><a href="#banner">Banner Settings</a></li>
+							<li><a href="#blog">Blog Settings</a></li>
+							<li><a href="#footer">Footer Settings</a></li>
+							<li><a href="#woocommerce">Woocommerce</a></li>
+							<li><a href="#optional">Optional Settings</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#extrasettings">Extra Settings</a>
+						<ul>
+							<li><a href="#headerfooterbuilder">Header &amp; Footer Builder</a></li>
+							<li><a href="#pagebuilder">Page Builder</a></li>
+							<li><a href="#megamenu">Mega Menu</a></li>
+							<li><a href="#shopsystem">Shop System</a></li>
+							<li><a href="#themewidget">Theme Widget</a></li>
+							<li><a href="#formbuilder">Form Builder</a></li>
+							<li><a href="#mainslider">Main Slider</a></li>
+						</ul>
+					</li>
+					<li><a href="#elementorguide">Elementor Guide</a></li>
+					<li><a href="#elementskitguide">ElementsKit Guide</a></li>
+					<li><a href="#woocommerceguide">WooCommerce Guide</a></li>
+					<li><a href="#metformguide">MetForm Guide</a></li>
+					<li><a href="#sliderrevolutionguide">Slider Revolution Guide</a></li>
+					<li>
+						<a href="#howto">How to?</a>
+						<ul>
+							<li><a href="#selecthome">Select Home Page</a></li>
+							<li><a href="#error404">Fix Error 404 Page</a></li>
+							<li><a href="#installssl">Install SSL</a></li>
+							<li><a href="#importerror">Demo Import Error</a></li>
+							<li><a href="#elementorerror">Elementor Not Response</a></li>
+							<li><a href="#themeupdate">Updating Theme</a></li>
+						</ul>
+					</li>
+					<li><a href="#thankcredits">Thank You &amp; Credits</a></li>	
+				</ul>
+			</div>
+		</div>
+
+		<div class="col-right">
+			<h1 class="title">Konstruksy WordPress Theme Documentation</h1>
+			<div class="top-support">For any support please don't hesitate to message us on the TemplateMonster Support Ticket product.<br>We provide estimate 1 working day real-time support for our customers.<br>Also don't forget to rate this theme, because your rating making us motivated to continue develop this theme for the better future.</div>
+			<div style="padding-top: 20px;"><center><i>Last Theme Update : You can see on the <b>release-log.txt</b> documentation</i></center></div>
+			<hr>
+			<section id="requirements">
+				<h2>1| Requirements</h2>
+				<p>You need at least WordPress version 5.0+ installed for this theme to work properly. It is strongly recommended that you use the WordPress Compatibility core version on this product description to ensure all known bugs, compatibility plugin and security issues are fixed with that version of WordPress Core. Other requirements:</p>
+				<ul>
+					<li>PHP version 5.6 or greater. But we recommend you to use PHP version 7.0+ if your hosting are available.</li>
+					<li>To make instantly demo import from our server with normal function, we recommended your domain is already installing with SSL Certificate enabled.</li>
+				</ul>
+				<p>Here a <b>System Specification</b> we are using to run this theme:</p>
+				<ul>
+					<li><b>Current PHP version:</b> <span>7.4 (current).</span></li>
+					<li><b>?max_execution_time:</b> <span>1000.</span></li>
+					<li><b>?max_input_time:</b> <span>1000.</span></li>
+					<li><b>max_input_vars:</b> <span>5000.</span></li>
+					<li><b>memory_limit:</b> <span>512M.</span></li>
+					<li><b>?post_max_size:</b> <span>128M.</span></li>
+					<li><b>upload_max_filesize:</b> <span>128M.</span></li>
+				</ul>
+				<p>For more information about WordPress requirements you can check the official page from here: <a target="_blank" href="https://wordpress.org/about/requirements/">https://wordpress.org/about/requirements/</a></p>
+			</section>
+			<section id="installation">
+				<h2>2| Theme Installation</h2>
+				<p>When you are ready to install a theme, you must first upload the theme files and then activate the theme itself. The theme files can be uploaded in two ways:</p>
+				<ul>
+					<li><b>FTP Upload:</b> Using your FTP client, upload the non-zipped theme folder into the <b>/wp-content/themes/...</b> folder on your wordpress directory.</li>
+					<li><b>WordPress Upload:</b> Navigate to <b>Appearance -> Themes -> Add New -> Upload</b>. Go to browse, and select the zipped theme folder. Hit "Install Now" and the theme will be uploaded and installed.</li>
+				</ul>
+				<p>Once the theme is uploaded, you need to activate it. Go to <b>Appearance -> Themes</b> and activate your chosen theme.</p>
+				<p>After that you need to install and activate the following pre-packaged plugins:</p>
+				<ol class="plugins">
+					<li>Konstruksy Essential*: <span>Required and must install plugin.</span></li>
+					<li>Unyson*: <span>Required and must install plugin.</span></li>
+					<li>Elementor*: <span>Required and must install plugin.</span></li>
+					<li>Elementskit Lite*: <span>Required and must install plugin.</span></li>
+					<li>Slider Revolution*: <span>Required and must install plugin.</span></li>
+					<li>Metform*: <span>Required and must install plugin.</span></li>
+					<li>WooCommerce: <span>Optional plugin, you can skip if you don't need shop system on your wordpress.</span></li>
+				</ol>
+				<p><b>N.B:</b> All plugins must be installed and activated if you want your site to look exactly like demo.</p>
+				<p class="mt30">To install these plugins, navigate to <b>Appearance -> Install Plugins</b> and start installation.</p>
+				<p><img src="images/1.jpg"></p>
+				<p class="mt30">After installation process complete you have to <b>activate</b> these plugins.</p>
+				<p><img src="images/2.jpg"></p>
+			</section>
+			<section id="importdemo">
+				<h2>3| Importing Demo contents</h2>
+				<p>We are providing you two methods for importing demo contents: Automatic and Alternative. You can follow either one of these methods.</p>
+				<ol>
+					<li><b>Automatic (Recommended)</b>: This method will remove all your existing data, so use this method only in fresh website. This procedure will be faster because you just have to do one click and then everything will happen automatically. If you want an exact clone of demo website without doing any manual configuration after importing data then this method is appropiate for you.</li>
+					<li class="mt10"><b>Alternative</b>: Use this method only if:
+						<ul>
+							<li>Automatic demo import method fails (Only few of our customers like 5% have experienced this issue due to their hosting limits, in that case we also provide for sending manual demo import data <b>for free</b>). Please send us support ticket if you need to help for this case.</li>
+							<li>You already have a working website with existing contents; eg. posts, pages or etc (You will be <b>charged extra pay</b> for this).</li>
+							<li>You don't care about other configurations; eg. various plugin settings, you just want to import posts, pages etc from the demo (You will be <b>charged extra pay</b> for this).</li>
+							<li>Other customization outside function or demo view (You will be <b>charged extra pay</b> for this).</li>
+						</ul>
+					</li>
+				</ol>
+			</section>
+			<section id="importdemo-auto">
+				<h2>3.1| Automatic Import</h2>
+				<p>Want to build your site like the demo? You can do it by only one click!</p>
+				<p style="color:red;"><i><b>** Note: Before process, please remember that when you are done with the demo import, all existing settings and contents will be removed and replaced by the demo contents. So it is highly recommended that you should only do this in fresh site. **</b></i></p>
+				<p>Please make sure that <b>Konstruksy Parent Theme</b>, <b>Unyson Plugin</b> and <b>Backup &amp; Demo Content Unyson Extension</b> is activated on your wordpress.</p>
+				<p><img src="images/3.jpg"></p>
+				<p class="mt30">From Admin menu, navigate to <b>Tools -> Demo Content Install</b>.</p>
+				<p><img src="images/4.jpg"></p>
+				<p class="mt30">In this page, Click on the <b>Install</b> button for installing the demo.</p>
+				<p>It will take some time for importing the demo contents, just wait and don't reload the page until complete process.</p>
+				<p><img src="images/5.jpg"></p>
+				<p class="mt30">After importing demo data success, don't forget to update your permalink.</p>
+				<p>To update permalink, navigate to <b>Settings -> Permalink</b> and then click on <b>Save Changes</b> button.</p>
+				<p><img src="images/6.jpg"></p>
+				<p style="color:red;"><i><b>** If you get error 404 page on all link or menus, it's because you not update permalink after importing demo content, the case is the same in <a href="#error404">the following section</a>. **</b></i></p>
+			</section>
+			<section id="importdemo-alt">
+				<h2>3.2| Alternative Import</h2>
+				<p style="color:red;"><i><b>** We include this service for free until your wordpress is set normal like a demo theme, for details you check on <a href="#importdemo">this section</a>. **</b></i></p>
+				<p>If you have problems with Automatic Import, this is an Alternative Steps for manual importing:</p>
+				<ol>
+					<li>For this step is still same as on automatic import, you need <b>Unyson Plugin</b> and <b>Backup &amp; Demo Content Unyson Extension</b> is activated on your wordpress. <p class="mt10"><img src="images/3.jpg"></p></li>
+					<li  class="mt30">Download manual content source with the <b>.zip format</b> are you request to us via Support Ticket / Email. <b>Upload .zip</b> to your hosting directory <b>.../wp-content/uploads/fw-backup/...</b><br><p style="color:red;"><b>Note:</b> If you not found <b>"fw-backup"</b> folder on your server, please to make <b>"Create Backup"</b> from unyson before.</p> <p class="mt10"><img src="images/7.jpg"></p></li>
+					<li  class="mt30">After put .zip to your hosting, now go to Admin menu, navigate to <b><i>Unyson -> Backup &amp; Demo Content</i></b>. <p class="mt10"><img src="images/8.jpg"></p></li>
+					<li  class="mt30">On this page you can see your source content which was uploaded earlier. Now just <b>Select</b> them and click <b>Restore Backup</b> button, just wait and don't reload the page until complete process. <p class="mt10"><img src="images/9.jpg"></p></li>
+					<li  class="mt30">After importing demo data success, don't forget to update your permalink, navigate to <b>Settings -> Permalink</b> and then click on <b>Save Changes</b> button. <p class="mt10"><img src="images/6.jpg"></p></li>
+				</ol>
+			</section>
+			<section id="themesettings">
+				<h2>4| Theme Settings</h2>
+				<p>You can find default Theme Settings on the admin menu: <b><i>Appearance -> Customize</i></b>, if you already in Customize Page, then click <b><i>Theme Settings</i></b>.</p>
+				<p><img src="images/10.jpg"></p>
+				<p><img src="images/11.jpg"> -> <img src="images/12.jpg"></p>
+				<section id="header">
+					<h2>4.1| Header Settings</h2>
+					<p>This settings are located in <b><i>Theme Settings -> Header Settings</i></b>.</p>
+					<p>On this setting you can use this for default header theme. You can setting sticky header, top bar, and more information contact for your website.</p>
+					<p style="color:red;"><b>As note:</b> This header setting not use on the demo theme, we using <b>Extra Settings</b> for <b>header and footer live builder</b>, so if you need to customize header like a demo, please use <b><i><a href="#headerfooterbuilder">this method</a></i></b>.</p>
+					<p><img src="images/13.jpg"></p>
+					<p>After changing the settings, Click on <b><i>Publish</i></b> button on the top to save your setting.</p>
+				</section>
+				<section id="style">
+					<h2>4.2| Style Settings</h2>
+					<p>This settings are located in <b><i>Theme Settings -> Style Settings</i></b>.</p>
+					<p>This setting is required for general custom color &amp; font theme, like a main background color, general link color, default button color, main title font or more.</p>
+					<p><img src="images/14.jpg"></p>
+					<p>After changing the settings, Click on <b><i>Publish</i></b> button on the top to save your setting.</p>
+				</section>
+				<section id="preloader">
+					<h2>4.3| Preloader Settings</h2>
+					<p>This settings are located in <b><i>Theme Settings -> Preloader Settings</i></b>.</p>
+					<p>This setting show for preloader style. You can choose for showing yes/no and also you can choose loading animated style.</p>
+					<p><img src="images/15.jpg"></p>
+					<p>After changing the settings, Click on <b><i>Publish</i></b> button on the top to save your setting.</p>
+				</section>
+				<section id="banner">
+					<h2>4.4| Banner Settings</h2>
+					<p>This settings are located in <b><i>Theme Settings -> Banner Settings</i></b>.</p>
+					<p>This setting for you default banner. You can choose more setting if you need to show banner on your main page or blog.</p>
+					<p><img src="images/16.jpg"></p>
+					<p>After changing the settings, Click on <b><i>Publish</i></b> button on the top to save your setting.</p>
+				</section>
+				<section id="blog">
+					<h2>4.5| Blog Settings</h2>
+					<p>This settings are located in <b><i>Theme Settings -> Blog Settings</i></b>.</p>
+					<p>This setting for your blog page. You can setting widget sidebar, related post, showing author and other in this setting area.</p>
+					<p><img src="images/17.jpg"></p>
+					<p>After changing the settings, Click on <b><i>Publish</i></b> button on the top to save your setting.</p>
+				</section>
+				<section id="footer">
+					<h2>4.6| Footer Settings</h2>
+					<p>This settings are located in <b><i>Theme Settings -> Footer Settings</i></b>.</p>
+					<p>On this setting you can use this for default footer theme. You can setting footer background, text color, to top button or copyright information your website.</p>
+					<p style="color:red;"><b>As note:</b> This footer setting not use on the demo theme, we using <b>Extra Settings</b> for <b>header and footer live builder</b>, so if you need to customize footer like a demo, please use <b><i><a href="#headerfooterbuilder">this method</a></i></b>.</p>
+					<p><img src="images/18.jpg"></p>
+					<p>After changing the settings, Click on <b><i>Publish</i></b> button on the top to save your setting.</p>
+				</section>
+				<section id="woocommerce">
+					<h2>4.7| WooCommerce</h2>
+					<p>This settings are located in <b><i>Theme Settings -> WooCommerce</i></b>.</p>
+					<p>These are additional settings for the theme if you are using woocommerce on your site. There are several settings, such as: page layout, and banner settings for your shopping page.</p>
+					<p style="color:red;"><b>As note:</b> This setting is an optional, maybe this setting doesn't show if woocommerce plugin not installing on your site.</p>
+					<p><img src="images/19.jpg"></p>
+					<p>After changing the settings, Click on <b><i>Publish</i></b> button on the top to save your setting.</p>
+				</section>
+				<section id="optional">
+					<h2>4.8| Optional Settings</h2>
+					<p>This settings are located in <b><i>Theme Settings -> Optional Settings</i></b>.</p>
+					<p>This is another default setting for your website. In this feature you can change the default logo for this theme, and also add social media links by default, but this setting was not used in the demo.</p>
+					<p style="color:red;"><b>As note:</b> This features not use on the demo theme, we using <b>Extra Settings</b> for <b>header and footer live builder</b>, so if you need to customize logo and other social media links on the header or footer like a demo, please use <b><i><a href="#headerfooterbuilder">this method</a></i></b>.</p>
+					<p><img src="images/20.jpg"></p>
+					<p>After changing the settings, Click on <b><i>Publish</i></b> button on the top to save your setting.</p>
+				</section>
+			</section>
+			<section id="extrasettings">
+				<h2>5| Extra Settings</h2>
+				<p>In this section, you can learn about extra settings apart from the main Theme Setting. Extra Settings are also important for your know and some are used in the demo.<br>Here are some points to know:</p>
+				<section id="headerfooterbuilder">
+					<h2>5.1| Header &amp; Footer Builder</h2>
+					<p>Customize anything your Header &amp; Footer style with the Header &amp; Footer Live Builder.</p>
+					<p>This function will be work if <b>Elementor &amp; ElementsKit Lite</b> plugins already installed and activated.</p>
+					<p>If you already done with installing required plugins, in the Admin menu please go to menu <b><i>ElementsKit > Header Footer > Choose Header > Edit with Elementor</i></b>.</p>
+					<p><img src="images/21.jpg"></p>
+					<p class="mt30">We've provided a few samples for the header and footer from the demo importer, so you can use the samples and edit what you need.</p>
+					<p>Live builder for headers or footers is <b>based on Elementor</b>, if you are familiar with elementor then will be easy for you to use.</p>
+					<p><img src="images/22.jpg"></p>
+					<p class="mt30">When you have finished to changes the information from header or footer, you can save your settings with the <b>UPDATE</b> button, then exit the builder.</p>
+					<p><img src="images/23.jpg"></p>
+					<p class="mt30">Next to make the header or footer stick to the page you want, just back to menu <b><i>ElementsKit > Header Footer</i></b> then click <b><i>Edit</i></b> see detail on the image below.</p>
+					<p><img src="images/24.jpg"></p>
+					<p class="mt30">You will see a popup for further settings:</p>				
+					<p><img src="images/25.jpg"></p>
+					<ol>
+						<li>To Change Name or Title of the element.</li>
+						<li>It's an important part of setting on which page you want to put this elements <b>(you need to manually type name of the page on the search box, or you can set this element for all pages)</b>.</li>
+						<li>To save settings.</li>
+						<li>Don't forget to set the <b>Type</b>, whether this element is used for the <b>header</b> or <b>footer</b>.</li>
+					</ol>
+					<p class="mt30" style="color:red;">For detail to using <b>ElementsKit Lite</b>, you can learn more at this <b><i><a target="_blank" href="#elementskitguide">section</a></i></b>.</p>
+				</section>		
+				<section id="pagebuilder">
+					<h2>5.2| Page Builder</h2>
+					<p>This function will be work if <b>Elementor</b> plugins already installed and activated. This plugin is important part to run this theme.</p>
+					<p>For example, to edit existing content taken from a About page, as shown below:</p>
+					<p><img src="images/26.jpg"></p>
+					<p class="mt30">If you want to create a new page using the <b>Elementor Page Builder</b>, please look at the following image:</p>
+					<p><img src="images/27.jpg"></p>
+					<p class="mt30">We using <b>Elementor Full Width</b> Template for create page like a demo on the <b>Page Attributes</b> Section.</p>
+					<p><img src="images/28.jpg"></p>
+					<p class="mt30" style="color:red;">For detail to using <b>Elementor</b>, you can learn more at this <b><i><a target="_blank" href="#elementorguide">section</a></i></b>.</p>	
+				</section>
+				<section id="megamenu">
+					<h2>5.2| Mega Menu</h2>
+					<p>This section explains how you can apply the mega menu, although sometimes we don't apply the mega menu feature on every demo that we make, but this theme fully supports for the mega menu.</p>
+					<p>For example how to create your mega menu on this theme, navigate to <b><i>Appearance -> Menus</b></i>, Then select the menu what you want to create with click the <b>Mega Menu</b> button.</p>
+					<p>Don't forget to check the box <b>ElementsKit Megamenu</b> function as like a image below.</p>				
+					<p><img src="images/29.jpg"></p>
+					<p class="mt30">On the <b>content</b> tab you can click <b>EDIT MEGA MENU CONTENT</b> to enter the builder, also you can view the <b>settings</b> tab to check the size or position about that mega menu.</p>
+					<p><img src="images/30.jpg"></p>
+					<p class="mt30">You will enter the builder to create a mega menu, the builder still uses Elementor and you can customize it to your liking.</p>
+					<p><img src="images/31.jpg"></p>
+					<p class="mt30">After you create the mega menu, you can save all setting from the mega menu builder. That mega menu can automatic application to your menu on header.</p>
+					<p><img src="images/32.jpg"></p>
+					<p><img src="images/33.jpg"></p>
+					<p class="mt30" style="color:red;"><b>*NOTE:</b> Make sure the <b>Menu Name</b> you create is correct, if wrong the mega menu will not appear.</p>
+					<p><img src="images/34.jpg"></p>
+				</section>
+				<section id="shopsystem">
+					<h2>5.3| Shop System</h2>
+					<p><b>This section is an optional setting</b>, you may skip this section if you are not using the shop system on your wordpress.</p>
+					<p>This theme is compatible for <b>WooCommerce</b> plugin to support your store systems. If you have installed the WooCommerce plugin, you will see the important parts of this plugin as shown below.</p>
+					<p>Some of the menus that are marked in red color, are the menu sections of the WooCommerce plugin.</p>
+					<p><img src="images/35.jpg"></p>
+					<p class="mt30" style="color:red;">For detail to using <b>WooCommerce</b>, you can learn more at this <b><i><a target="_blank" href="#woocommerceguide">section</a></i></b>.</p>
+				</section>
+				<section id="themewidget">
+					<h2>5.4| Theme Widget</h2>
+					<p>Widget themes can be found on : <b><i>Appearance -> Widgets</i></b>. The widgets that are boxed in red color are the available theme widgets.</p>
+					<p><img src="images/36.jpg"></p>
+				</section>
+				<section id="formbuilder">
+					<h2>5.5| Form Builder</h2>
+					<p>This theme using <b>MetForm Plugin</b> to design form like demo theme. You need to install MetForm Plugin if you want to get form like a demo theme.</p>
+					<p>You can also using other form plugin like a Contact Form 7, Ninja Forms, Gravity Forms or other wordpress form plugins what you like. But you will lose demo form if you not installing main form plugin.</p>
+					<p>To using MetForm on the admin menu : <b><i>MetForm -> Form</i></b>.</p>
+					<p><img src="images/37.jpg"></p>
+					<p><img src="images/38.jpg"></p>
+						<ol>
+							<li class="mt30"><b>Edit (Menu):</b> To setting form like a confirmation email, redirect submit, success message and others.</li>
+							<li><b>Edit with Elementor (Menu):</b> To design form with Elementor Builder.</li>
+						</ol>	
+					<p class="mt30">Add MetForm to your page on the Elementor Page Builder, see on the image below.</p>
+					<p><img src="images/39.jpg"></p>					
+					<p class="mt30" style="color:red;">For detail to using <b>MetForm</b>, you can learn more at this <b><i><a target="_blank" href="#metformguide">section</a></i></b>.</p>
+				</section>
+				<section id="mainslider">
+					<h2>5.6| Main Slider</h2>
+					<p>This theme using <b>Slider Revolution Plugin</b> to design the main slider <b>(This is Premium Plugins for free, you save $59)</b>. You need to install that plugin if you want to get slider design like a demo theme.</p>
+					<p>You can also using other plugin like Layer Slider, Smart Slider, Slide Anything or any slider plugins what you like. But you will lose demo slider if you use other slider plugin.</p>
+					<p>To using Slider Revolution on the admin menu : <b><i>Slider Revolution</i></b>.</p>
+					<p></p>
+					<p><img src="images/40.jpg"></p>					
+					<p class="mt30" style="color:red;">For detail to using <b>Slider Revolution</b>, you can learn more at this <b><i><a target="_blank" href="#sliderrevolutionguide">section</a></i></b>.</p>
+				</section>					
+			</section>
+			<section id="elementorguide"></section>
+				<h2>6| Elementor Guide</h2>
+				<p>Here is video tutorial to using basic <b>Elementor</b>.</p>
+				<p><iframe width="560" height="315" src="https://www.youtube.com/embed/43j6h3oCm0U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+				<p>Learn the official <b><i>Online Documentation -> <a target="_blank" href="https://elementor.com/help/">HERE</a></i></b>.</p>
+			<section id="elementskitguide"></section>
+				<h2>7| ElementsKit Guide</h2>
+				<p>Here is video tutorial to using basic <b>ElementsKit</b>.</p>
+				<p><iframe width="560" height="315" src="https://www.youtube.com/embed/UHUozuIiLpo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+				<p>Learn the official <b><i>Online Documentation -> <a target="_blank" href="https://help.wpmet.com/docs-cat/elements-kit/">HERE</a></i></b>.</p>
+			<section id="woocommerceguide"></section>
+				<h2>8| WooCommerce Guide</h2>
+				<p>Here is video tutorial to using basic <b>WooCommerce</b>.</p>
+				<p><iframe width="560" height="315" src="https://www.youtube.com/embed/sFtXa00Jf_o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+				<p>Learn the official <b><i>Online Documentation -> <a target="_blank" href="https://docs.woocommerce.com/">HERE</a></i></b>.</p>
+			<section id="metformguide"></section>
+				<h2>9| MetForm Guide</h2>
+				<p>Here is video tutorial to using basic <b>MetForm</b>.</p>
+				<p><iframe width="560" height="315" src="https://www.youtube.com/embed/8R4-Q14cu-w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+				<p>Learn the official <b><i>Online Documentation -> <a target="_blank" href="https://help.wpmet.com/docs-cat/metform/">HERE</a></i></b>.</p>
+			<section id="sliderrevolutionguide"></section>
+				<h2>10| Slider Revolution Guide</h2>
+				<p>Here is video tutorial to using basic <b>Slider Revolution</b>.</p>
+				<p><iframe width="560" height="315" src="https://www.youtube.com/embed/BTM2LjgdDQI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+				<p>Learn the official <b><i>Online Documentation -> <a target="_blank" href="https://www.sliderrevolution.com/manual/creating-your-own-modules-from-the-ground-up/">HERE</a></i></b>.</p>
+			<section id="howto">
+				<h2>11| How to?</h2>
+				<p>Some of the points below are usually asked by customers, and the following is a brief description of the solution to the problem:</p>
+				<section id="selecthome">
+					<h2>11.1| Select Home Page</h2>
+					<p>This is a simple guide if you don't know how to change or selecting your default homepage with the available variation homepage provide on the theme, just follow on the image below.</p>
+					<p><img src="images/45.jpg"></p>
+				</section>
+				<section id="error404">
+					<h2>11.2| Fix Error 404 Page</h2>
+					<p>This often happens to some customers when they have finished importing the demo, but some of them <b>forget to rearrange the Permalinks</b> on their wordpress so that all demo urls turn <b>into active urls</b>.</p>
+					<p>If you are one of those who experience this, simply set the permalinks to be active in your admin menu in <b><i>Settings -> Permalinks</i></b>, set like a images below then save the changes.
+					<p><img src="images/41.jpg"></p>
+					<p><img src="images/42.jpg"></p>					
+				</section>
+				<section id="installssl">
+					<h2>11.3| Install SSL</h2>
+					<p>Our theme demo contents are made with compatibility <b>(https://)</b> url. In this section, we explain a little about how to add the <b>Instant SSL feature</b> (https://) into your wordpress.</p>
+					<p>Usually hosting service providers currently provide free SSL to their customers such as <b>Let's Encrypt, CloudFlare, cPanel SSL or others</b>, If you not sure about that, you need to contact your hosting provider and make them help you implement it, because this is also very important for the security of your website.</p>
+					<p>If you are sure everything is running, here are the points to make the content on your wordpress completely change using the SSL (https://) url, as follows:
+						<ol>
+							<li>Make sure your hosting server and domain supports SSL Certification and you have installed the SSL certification.</li>
+							<li>You need SSL plugin, here we show for example a plugin <b>Really Simple SSL.</b></li>
+							<li>Install and activate the plugin as usual, and follow the instructions for setting up the SSL plugin as needed.</li>
+							<li>After everything is done, usually you will be asked to re-login admin and start to go back into your wordpress admin.</li>
+							<li>Done, your url has changed to https://...</li>
+						</ol>					
+					<p><img src="images/43.jpg"></p>
+					<p><img src="images/44.jpg"></p>
+					<p class="mt30">For the detail about the Realy Simple SSL plugin you can see at <b><a target="_blank" href="https://wordpress.org/plugins/really-simple-ssl/">HERE</a></i></b>.</p>	
+				</section>
+				<section id="importerror">
+					<h2>11.4| Demo Import Error</h2>
+					<p>This case can happen when there is an error on the network or the limit of your hosting in accessing content downloads to our servers, but usually this rarely happens.</p>
+					<p>However if you get this trouble, you can contact our support team through the available item support tickets, but beforehand please try to study in more detail on this <b><a href="#importdemo">SECTION</a></i></b> or contact your hosting provider, before you try to submit a support tickets regarding this issue, maybe your hosting provider limit you network access.</p>				
+				</section>
+				<section id="elementorerror">
+					<h2>11.5| Elementor Not Response</h2>
+					<p><b>Elementor not response just still loading so long</b>.</p>
+					<p>Regarding this issue, it is possible that the Elementor has made a <b>significant major update</b>, and our theme hasn't been upgraded with the latest Elementor version.</p>
+					<p>For that, our theme development team <b>needs to update the theme</b> code structure, and essential plugins to stay compatible with the latest WordPress core versions and Elementor plugin.</p>
+					<p>If this happens you don't have to worry, you can <b>try to downgrade version of the Elementor Plugin</b> from the currently installed version to version which is compatible with the last theme.</p>
+					<p><b>How do I downgrade an Elementor version?</b> you can try at <b><a target="_blank" href="https://elementor.com/help/rolling-back-to-a-previous-version-of-elementor/">THIS ARTICLE</a></i></b>.</p>
+					<p>You can see the <b>CHANGELOG / RELEASE-LOG</b> in the description of theme, what date this theme was upgraded to be compatible with Elementor version or what core version of WordPress.</b>
+					<p>When this problem occurs, our team will work to improve the compatibility theme to match with the last elementor plugin or wp core, and you <b>just have to wait for an update to become available on this theme</b>.</p>
+				</section>	
+				<section id="themeupdate">
+					<h2>11.6| Updating Theme</h2>
+					<p><b>FOR UPDATING THEME :</b> just replace old theme with new update theme, then deactivate theme while and active back them to get automatic notification update and just update plugin required.</p>
+				</section>				
+			</section>
+			<section id="thankcredits">
+				<h2>12| Thank You &amp; Credits</h2>
+				<p>If you need help or just send us inquiry, don't hesitate to message us from your <b>item support tickets</b>.</p>
+				<p><b>Thank You Credits:</b> <i>Bootstrap, Ajax Chimp, Unison Framework, Elementor, Wpmet, Behance, Font Awesome, Google Fonts, Freepik, Unsplash, Flicker, SmoothScroll, Slider Revolution, WordPress.org</i>.</p>
+				<p style="color:red;"><b>Noted:</b> Images used in the demo may be copyrighted in their own right and are only used as demo previews and as personal use only. Or maybe you have to include a credit image for images that are allowed.</b>
+				<hr>
+				<h3 style="color:#ff0000;">THANK YOU FOR PURCHASING OUR THEME &amp; DON'T FORGET TO GIVE US A RATING STAR :)</h3>
+				<p class="mt50"></p>
+			</section>
+			<h1 class="title">Konstruksy WordPress Theme Documentation</h1>
+		</div>
+	</div>
+	<script src="files/js/jquery.min.js"></script>
+	<script type="text/javascript" src="files/vendor/scrollbar/jquery.mCustomScrollbar.min.js"></script>
+	<script src="files/js/jquery.meanmenu.min.js"></script>
+	<script type="text/javascript" src="files/js/main.js"></script>
+</body>
+</html>

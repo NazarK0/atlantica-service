@@ -1,0 +1,99 @@
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  border: 1px solid #888;
+  width: 350px;
+  height: 100%;
+}
+
+/* The Close Button */
+.modal-close {
+  color: #00235A;
+  float: right;
+  margin-top: 20px;
+  margin-right: 10px;
+}
+.modal-close i {
+  font-size: 34px;
+}
+
+.modal-close:hover,
+.modal-close:focus {
+  color: #FF6C00;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-menu .menu {
+  padding-left: 15px;
+}
+
+.modal-menu .menu .menu-item,
+.modal-menu .menu .menu-item i {
+  color: #00235A;
+}
+.modal-menu .menu .menu-item {
+  padding: 10px 0;
+  cursor: pointer;
+}
+.modal-menu .menu .menu-item span {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.143rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+.modal-menu .menu .menu-item.active,
+.modal-menu .menu .menu-item:hover,
+.modal-menu .menu .menu-item:hover .sub-menu i,
+.modal-menu .menu .menu-item.active .sub-menu i {
+  color: #FF6C00;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  padding: 20px;
+  position: absolute;
+  min-width: 160px;
+  z-index: 1;
+}
+
+.dropdown-content .dropdown-menu {
+  background-color: #f4f4f4;
+  border-bottom: 3px solid #FF6C00;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 0;
+  margin-top: 25px;
+  margin-left: -40px;
+  color:#00235A;  
+}
+.dropdown-content .dropdown-menu .menu-item {
+  padding: 20px;
+  width: 100%;
+}
+.dropdown-content .dropdown-menu .menu-item:hover {
+  background-color: #ffffff;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
