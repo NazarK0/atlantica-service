@@ -1,4 +1,4 @@
-const menuItems = document.querySelectorAll('.block .menu>.menu-item');
+const menuItems = document.querySelectorAll('.block.menu .menu>.menu-item');
 
 menuItems.forEach(item => {
   item.addEventListener('mouseover', () => {

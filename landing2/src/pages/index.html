@@ -5,7 +5,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Atlantica</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
@@ -15,12 +16,17 @@
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
   />
   <link rel="stylesheet" href="../styles/normalize.css">
+  <link rel="stylesheet" href="../styles/slider.css">
   <link rel="stylesheet" href="../styles/main.css">
   <link rel="stylesheet" href="../styles/components.css">
   <link rel="stylesheet" href="../styles/index.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   <script src="https://kit.fontawesome.com/539e519a18.js" crossorigin="anonymous"></script>
   <script src="../js/modalMenu.js" defer></script>
   <script src="../js/animations.js" defer></script>
+  <script src="../js/slider.js" defer></script>
 </head>
 <body>
   <header class="header">
@@ -54,19 +60,82 @@
               </nav>
             </div>
           </li>
-          <li class="menu-item dropdown"><a href="#">Home<span class="bullet">+</span></a></li>
-          
+          <li class="menu-item dropdown"><a href="#">Our Services<span class="bullet">+</span></a></li>
+          <li class="menu-item dropdown"><a href="#">Contact Us<span class="bullet">+</span></a></li>
         </ul>
-        
       </nav>
       <button class="search accent-with-hover" id="searchButton">
         <i class="icofont-search-1"></i>
       </button>
     </div>
-
   </header>
   <main class="main-section">
+    <section class="hero-text">
+      <div class="hero" data-arrows="false" data-autoplay="true">
+        <div class="hero-slide">
+          <img class="img-responsive cover" src="../assets/images/image-slide1.jpg">
+          <div class="header-content text-white position-absolute slide-content col-lg-4">
+            <h1 class="mb-4">PROFESSIONAL</h1> 
+            <div class="data">
+              <h3>We build</br> with Technique</h3>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Veritatis omnis laborum inventore pariatur tenetur explicabo qui 
+                tempore enim, ad voluptate quos delectus necessitatibus similique
+                labore repellat consectetur dolorum molestias nisi?
+              </p>
+              <div class="ctrl-btns">
+                <button class="sl-btn accent">Learn More</button>
+                <button class="sl-btn primary">Contact Us</button>
+              </div>
+            </div> 
+            
+          </div>
+        </div>
+        <div class="hero-slide">
+          <img class="img-responsive cover" src="../assets/images/image-slide2.jpg">
+          <div class="header-content text-white position-absolute slide-content col-lg-4">
+            <h1 class="mb-4">PROFESSIONAL</h1> 
+            <div class="data">
+              <h3>We build</br> with Technique</h3>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Veritatis omnis laborum inventore pariatur tenetur explicabo qui 
+                tempore enim, ad voluptate quos delectus necessitatibus similique
+                labore repellat consectetur dolorum molestias nisi?
+              </p>
+              <div class="ctrl-btns">
+                <button class="sl-btn accent">Learn More</button>
+                <button class="sl-btn primary">Contact Us</button>
+              </div>
+            </div> 
+            
+          </div>
+        </div>
+        <div class="hero-slide">
+          <img class="img-responsive cover" src="../assets/images/image-slide3.jpg">
+          <div class="header-content text-white position-absolute slide-content col-lg-4">
+            <h1 class="mb-4">PROFESSIONAL</h1> 
+            <div class="data">
+              <h3>We build</br> with Technique</h3>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Veritatis omnis laborum inventore pariatur tenetur explicabo qui 
+                tempore enim, ad voluptate quos delectus necessitatibus similique
+                labore repellat consectetur dolorum molestias nisi?
+              </p>
+              <div class="ctrl-btns">
+                <button class="sl-btn accent">Learn More</button>
+                <button class="sl-btn primary">Contact Us</button>
+              </div>
+            </div> 
+            
+          </div>
+        </div>
+        
 
+      </div><!--.hero-->
+    </section>
   </main>
   <footer>
     <div class="nav-block">

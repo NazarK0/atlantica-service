@@ -4,7 +4,7 @@
   font-size: 14px;
 }
 
-a {
+a, a:hover{
   text-decoration: none;
   color: inherit;
 }
@@ -80,6 +80,7 @@ h3 {
     justify-content: center;
     transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
     background-color: #fff;
+    z-index: 100;
   }
 
   header.header .block {
@@ -144,7 +145,7 @@ h3 {
   }
 
   main.main-section {
-    height: 100vh;
+    height: fit-content;
   }
 
   footer *{

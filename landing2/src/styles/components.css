@@ -97,3 +97,22 @@
 .dropdown:hover .dropdown-content {
   display: block;
 }
+
+.sl-btn {
+  width: 117px;
+  height: 50px;
+  color: #fff;
+  margin: 5px;
+}
+.sl-btn.accent {
+  background-color: #FF6C00;
+}
+.sl-btn.primary {
+  background-color: #00235A;
+}
+.sl-btn.accent:hover {
+  background-color: #00235A;
+}
+.sl-btn.primary:hover {
+  background-color: #FF6C00;
+}
