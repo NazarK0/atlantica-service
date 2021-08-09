@@ -144,9 +144,7 @@ h3 {
     
   }
 
-  main.main-section {
-    height: fit-content;
-  }
+  
 
   footer *{
     color:#fff;
@@ -265,6 +263,7 @@ h3 {
     padding-left: 4%;
   }
 }
+
 @media (min-width:1025px) {
    /* big landscape tablets, laptops, and desktops */ 
   header.header .block {
@@ -311,6 +310,3 @@ h3 {
     padding: 0 5%;
   }
 }
-@media (min-width:1281px) {
-   /* hi-res laptops and desktops */ 
-  }
