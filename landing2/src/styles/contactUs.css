@@ -21,6 +21,12 @@ input {
   height: 48px;
 }
 
+input::placeholder,
+textarea::placeholder {
+  color: rgba(197, 197, 197, 0.712);
+  font-size: 12px;
+}
+
 form {
   padding: 12px;
 }
