@@ -1,0 +1,25 @@
+
+/* Media Queries */
+
+@media (min-width:320px)  {
+  /* smartphones, iPhone, portrait 480x320 phones */
+  .hero .hero-slide img {
+    width: 240px;
+    height: 160px;
+    object-fit: cover;
+    object-position: center center;
+    transition: opacity .5s ease;
+  }
+  .hero .hero-slide:hover img {
+    opacity: .5;
+  }
+
+}
+
+@media (min-width: 790px) {
+  
+}
+
+@media (min-width:1281px) {
+   /* hi-res laptops and desktops */ 
+} 

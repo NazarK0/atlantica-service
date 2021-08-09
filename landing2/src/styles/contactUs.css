@@ -135,7 +135,6 @@ section {
     color: #FF6C00;
     font-weight: 600;
     margin-left: 15px;
-   
   }
   section.contact-form .info .contact-list .description:hover {
     color: #00235A;
@@ -171,6 +170,17 @@ section {
     width: 100%;
     height: 100%;
   }
+
+  section.partners {
+    background-color: #FF6C00;
+    background-image: url('../assets/images/bg2.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 225px;
+    padding-top: 40px;
+  }
+  
 
 }
 
