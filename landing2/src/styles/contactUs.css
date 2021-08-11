@@ -10,7 +10,7 @@ textarea:hover,
 textarea:active {
   border: 0;
   background-color: transparent;
-  border-bottom: 3px solid #FF6C00;
+  border-bottom: 3px solid #DE5542;
   padding: 12px;
   font-size: 16px;
   background-color: #fff;
@@ -37,7 +37,7 @@ form .required-field-mark {
 
 label {
   font-size: 16px;
-  color: #00235A;
+  color: #1D1918;
   font-weight: 600;
 }
 
@@ -84,7 +84,7 @@ section {
   }
 
   main.main-section .title-block .subtitle{
-    color: #FF6C00;
+    color: #DE5542;
     font-size: 12px;
     font-weight: 600;
     letter-spacing: 2px;
@@ -97,11 +97,11 @@ section {
   main.main-section .title-block .title .line{
     width: 3px;
     height: 40px;
-    background-color: #FF6C00;
+    background-color: #DE5542;
     margin-right: 25px;
   }
   main.main-section .title-block .section-title{
-    color: #00235A;
+    color: #1D1918;
     font-size: 38px;
     margin-top: 15px;
   }
@@ -132,18 +132,18 @@ section {
     margin-bottom: 7px;
   }
   section.contact-form .info .contact-list .icon {
-    color: #00235A;
+    color: #1D1918;
   }
   section.contact-form .info .contact-list .icon i{
     font-size: 20px;
   }
   section.contact-form .info .contact-list .description {
-    color: #FF6C00;
+    color: #DE5542;
     font-weight: 600;
     margin-left: 15px;
   }
   section.contact-form .info .contact-list .description:hover {
-    color: #00235A;
+    color: #1D1918;
   }
 
   section.contact-form form {
@@ -178,8 +178,8 @@ section {
   }
 
   section.partners {
-    background-color: #FF6C00;
-    background-image: url('../assets/images/bg2.png');
+    background-color: #DE5542;
+    background-image: url('../assets/images/bg10.png');
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;

@@ -30,16 +30,16 @@ h3 {
 }
 
 .accent-with-hover {
-  background-color: #FF6C00;
+  background-color: #DE5542;
 }
 .accent-with-hover:hover {
-  background-color: #00235A;
+  background-color: #1D1918;
 }
 .anti-accent-with-hover {
-  background-color: #00235A;
+  background-color: #1D1918;
 }
 .anti-accent-with-hover:hover {
-  background-color: #FF6C00;
+  background-color: #DE5542;
 }
 
 .menu-hamburger {
@@ -50,18 +50,18 @@ h3 {
   padding: 8px;
   padding-bottom: 4px;
   width: 45px;
-  border: 2px solid #00235A;
+  border: 2px solid #1D1918;
 }
 
 .menu-hamburger:hover {
-  border: 2px solid #FF6C00;
+  border: 2px solid #DE5542;
 }
 .menu-hamburger:hover .hamburger-line {
-  background-color: #FF6C00;
+  background-color: #DE5542;
 }
 
 .menu-hamburger .hamburger-line {
-  background-color: #00235A;
+  background-color: #1D1918;
   height: 1px;
   width: 100%;
   display: block;
@@ -110,7 +110,7 @@ h3 {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    color: #00235A;
+    color: #1D1918;
     text-transform: uppercase;
     font-weight: bold;
     font-size: 1.143rem;
@@ -121,7 +121,7 @@ h3 {
     margin-right: 45px;
   }
   header.header .block.menu .nav-menu .menu-item:hover{
-    color: #FF6C00;
+    color: #DE5542;
   }
 
   header.header .block.menu .nav-menu .menu .bullet{
@@ -151,7 +151,7 @@ h3 {
     font-family: 'Poppins', sans-serif;
   }
   footer .accent {
-    color:#FF6C00;
+    color:#DE5542;
   }
 
   footer .nav-block {
@@ -202,7 +202,7 @@ h3 {
   }
 
   footer .nav-block .link-block h3 span {
-    color: #FF6C00;
+    color: #DE5542;
     font-size: .85rem;
     display: block;
   }
@@ -212,7 +212,7 @@ h3 {
   }
 
   footer .nav-block .link-block .link-item:hover a>span{
-    color: #FF6C00 !important;
+    color: #DE5542 !important;
   }
 
   footer .footer {
