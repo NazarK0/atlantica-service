@@ -1,0 +1,210 @@
+* {
+  font-family: 'Poppins', sans-serif;
+}
+
+h2 {
+  font-weight: 600;
+  color: #1D1918;
+  font-size: 38px;
+}
+
+@media (min-width:320px)  {
+  /* smartphones, iPhone, portrait 480x320 phones */ 
+  main.main-section {
+    height: 258px;
+    padding: 75px 15px;
+    background-color: #f2f2f2;
+    background-image: url('../assets/images/bg12.png');
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size:cover;
+    position: relative;
+    top: 130px;
+    transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+  }
+
+  main.main-section .image-block {
+    display: none;
+    background-image: url('../assets/images/img16.jpg');
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size:cover;
+    position: relative;
+  }
+ 
+
+  main.main-section .title-block .subtitle{
+    color: #DE5542;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    margin-left: 30px;
+  }
+  main.main-section .title-block .title{
+    display: flex;
+    align-items: center;
+  }
+  main.main-section .title-block .title .line{
+    width: 3px;
+    height: 40px;
+    background-color: #DE5542;
+    margin-right: 25px;
+  }
+  main.main-section .title-block .section-title{
+    margin-top: 15px;
+  }
+
+  section.history,
+  section.vision-mission {
+    display: flex;
+    align-items: center;
+  }
+
+  section.history {
+    flex-direction: column;
+    padding: 75px 15px 20px;
+    height: fit-content;
+    margin-top: 130px;
+  }
+
+  section.vision-mission {
+    flex-direction: column-reverse;
+    padding: 20px 15px 75px;
+  }
+
+  section .img {
+    max-width: 730px;
+    width: 100%;
+  }
+
+  section.history .text {
+    margin-top: 75px;
+  }
+
+  section .text .subtitle {
+    color: #DE5542;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 2px;
+  }
+  section .text .section-title {
+    margin-top: 15px;
+  }
+  section .text p {
+    line-height: 1.7;
+    color: #7a7a7a;
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0;
+    margin-bottom: 25px;
+  }
+  
+  section.statistics {
+    padding: 75px 15px;
+    background-color: #DE5542;
+    background-image: url('../assets/images/bg10.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  section.statistics * {
+    color: #fff;
+  }
+
+  section.statistics .statistics-list{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+  }
+
+  section.statistics .statistic-item{
+    padding: 0 0 20px;
+    width: 100%;
+  }
+  section.statistics .statistic-item .counter{
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 5px;
+  }
+  section.statistics .statistic-item .number{
+    font-size: 74px;
+    font-weight: 600;
+    margin-right: 5px;
+  }
+  section.statistics .statistic-item .plus{
+    font-size: 32px;
+    font-weight: 600;
+  }
+  section.statistics .statistic-item .title{
+    margin: 0;
+    font-size: 16px;
+    font-weight: 400;
+  }
+
+
+}
+
+@media (min-width:790px)  {
+   /* tablet, landscape iPad, lo-res laptops ands desktops */ 
+  main.main-section {
+    padding: 75px 30px;
+  }
+
+  section.history {
+    padding: 75px 30px 20px;
+    margin-top: 110px;
+  }
+  
+  section.vision-mission {
+    padding: 20px 30px 75px;
+  }
+
+  section.statistics .statistic-item{
+    width: 50%;
+  }
+}
+
+@media (min-width:1025px) {
+   /* big landscape tablets, laptops, and desktops */ 
+  main.main-section {
+    height: 243px;
+    top: 110px;
+  }
+
+  section.history {
+    padding: 150px 0 75px;
+    height: fit-content;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  section.vision-mission {
+    padding: 75px 0 150px;
+    flex-direction: row-reverse;
+    height: fit-content;
+    justify-content: center;
+  }
+
+  section.history .img {
+    padding-right: 30px;
+    width: 540px;
+  }
+  section.history .text {
+    padding: 35px 0 0 30px;
+    margin-top: 0;
+    width: 540px;
+  }
+  section.vision-mission .img {
+    padding-left: 30px;
+    width: 540px;
+  }
+  section.vision-mission .text {
+    padding: 35px 30px 0 0;
+    width: 540px;
+  }
+
+  section.statistics .statistic-item{
+    width: 25%;
+  }
+}

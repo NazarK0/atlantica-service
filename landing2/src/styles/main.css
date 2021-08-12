@@ -155,7 +155,7 @@ h3 {
   }
 
   footer .nav-block {
-    background-color: #00183E;
+    background-color: #1D1918;
     background-image: url('../assets/images/bg10.png');
     background-position: center center;
     background-repeat: no-repeat;
@@ -217,7 +217,7 @@ h3 {
 
   footer .footer {
     height: 150px;
-    background-color: #001435;
+    background-color: #131010;
     display: flex;
     flex-direction: column;
     justify-content: center;
