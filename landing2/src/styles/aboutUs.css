@@ -77,7 +77,7 @@ h2 {
     margin-bottom: 25px;
   }
   
-  section.statistics {
+  /* section.statistics {
     padding: 75px 15px;
     background-color: #DE5542;
     background-image: url('../assets/images/bg10.png');
@@ -117,7 +117,7 @@ h2 {
     margin: 0;
     font-size: 16px;
     font-weight: 400;
-  }
+  } */
 
   section.why-us {
     padding: 75px 15px;
@@ -216,9 +216,9 @@ h2 {
     padding: 20px 30px 75px;
   }
 
-  section.statistics .statistic-item{
+  /* section.statistics .statistic-item{
     width: 50%;
-  }
+  } */
 
   section.our-teams .image-block{
     height: 400px;
