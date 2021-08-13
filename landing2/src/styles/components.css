@@ -162,6 +162,57 @@
   font-size: 14px;
 }
 
+.accordion * {
+  font-family: 'Poppins', sans-serif;
+}
+
+.accordion-head {
+  background-color: #f8f8f8;
+  color: #1D1918;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border-bottom: 2px solid #DE5542;
+  font-size: 16px;
+  font-weight: 600;
+  transition: 0.4s;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.accordion-head .icon i{
+  font-size: 30px;
+  font-weight: 300;
+}
+.accordion-head .icon-expanded{
+  display: none;
+}
+.accordion-head .icon-closed{
+  display: inline;
+}
+.accordion-head.active .icon-expanded{
+  display: inline;
+}
+.accordion-head.active .icon-closed{
+  display: none;
+}
+
+
+.accordion-head.active, 
+.accordion-head:focus, 
+.accordion-head:hover {
+  background-color: #ccc;
+}
+
+.accordion-panel {
+  padding: 0 18px;
+  background-color: white;
+  /* display: none; */
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
 
 @media (min-width:320px)  {
   /* smartphones, iPhone, portrait 480x320 phones */ 
@@ -195,7 +246,7 @@
   }
 
   .cards-list .card:hover .link i {
-    color: #1D1918;
+    color: #DE5542;
   }
   .cards-list .card.accent{
     background-color: #DE5542;
@@ -232,7 +283,7 @@
   }
   .cards-list .card .link i{
     font-size: 42px;
-    color: #DE5542;
+    color: #1D1918;
   }
 
   section.statistics .statistics-list{

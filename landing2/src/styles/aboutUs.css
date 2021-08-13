@@ -77,48 +77,6 @@ h2 {
     margin-bottom: 25px;
   }
   
-  /* section.statistics {
-    padding: 75px 15px;
-    background-color: #DE5542;
-    background-image: url('../assets/images/bg10.png');
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  section.statistics * {
-    color: #fff;
-  }
-
-  section.statistics .statistics-list{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-
-  section.statistics .statistic-item{
-    padding: 0 0 20px;
-    width: 100%;
-  }
-  section.statistics .statistic-item .counter{
-    display: flex;
-    align-items: flex-start;
-    margin-bottom: 5px;
-  }
-  section.statistics .statistic-item .number{
-    font-size: 74px;
-    font-weight: 600;
-    margin-right: 5px;
-  }
-  section.statistics .statistic-item .plus{
-    font-size: 32px;
-    font-weight: 600;
-  }
-  section.statistics .statistic-item .title{
-    margin: 0;
-    font-size: 16px;
-    font-weight: 400;
-  } */
-
   section.why-us {
     padding: 75px 15px;
     background-color: #f2f2f2;
@@ -316,7 +274,6 @@ h2 {
 }
 
 @media (min-width:1800px)  {
-  
   section.our-teams .text-block{
     position: absolute;
     width: 570px;

@@ -18,11 +18,15 @@ ul li {
   list-style-type: none;
 }
 
-button {
-  background-color: transparent;
+button,
+button:active,
+button:focus,
+button:hover {
+  background-color:#fff;
   outline: none;
   border: 0;
   cursor: pointer;
+  user-select: none;
 }
 
 h3 {
@@ -89,10 +93,6 @@ h3 {
     flex-direction: row;
     align-items: center;
     padding-left: 30px;
-  }
-
-  header.header .block.logo {
-    
   }
 
   header.header .block.menu {
