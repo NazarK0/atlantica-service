@@ -38,6 +38,14 @@ h2 {
   background-image: linear-gradient(180deg, #DE5542 0%, #DE5542 100%);
 }
 
+.btn {
+  padding: 20px 30px;
+  display: block;
+  width: fit-content;
+  height: fit-content;
+  transition: all .4s ease;
+}
+
 @media (min-width:320px)  {
   /* smartphones, iPhone, portrait 480x320 phones */ 
   main.main-section {
@@ -227,6 +235,18 @@ h2 {
     display: flex;
     flex-direction: column;
   }
+
+  section.our-teams .btn {
+    background-color: #DE5542;
+  }
+  section.our-teams .btn:hover {
+    background-color: #fff;
+    color: #DE5542;
+  }
+  section.our-teams .btn:hover i {
+    color: #DE5542;
+  }
+
   section.our-teams .image-block{
     background-image: url('../assets/images/img2.jpg');
     background-position: center center;
@@ -254,19 +274,33 @@ h2 {
   section.our-teams .text-block * {
     color: #fff;
   }
-  section.our-teams .text-block .btn {
+
+  section.consultation {
+    padding: 50px 15px;
+    height: fit-content;
     background-color: #DE5542;
-    padding: 20px 30px;
-    display: block;
-    width: fit-content;
-    transition: all .4s ease;
+    background-image: url('../assets/images/bg10.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
-  section.our-teams .text-block .btn:hover {
+  section.consultation .title-block{
+    margin: 0 0 15px;
+  }
+
+  section.consultation .btn {
+    background-color: #1D1918;
+    color: #fff;
+  }
+  section.consultation .btn:hover {
     background-color: #fff;
-    color: #DE5542;
+    color: #1D1918;
   }
-  section.our-teams .text-block .btn:hover i {
-    color: #DE5542;
+  section.consultation .btn:hover i {
+    color: #1D1918;
   }
 }
 
@@ -389,5 +423,27 @@ h2 {
   section.our-teams .text-block{
     position: absolute;
     width: 570px;
+    top: 25%;
+    left: 35%;
+  }
+
+  section.consultation {
+    padding: 45px 0 30px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  section.consultation .title-block{
+    width: 70%;
+  }
+}
+
+@media (min-width:1800px)  {
+  
+  section.our-teams .text-block{
+    position: absolute;
+    width: 570px;
+    top: 25%;
+    left: 45%;
   }
 }
