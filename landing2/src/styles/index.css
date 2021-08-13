@@ -1,3 +1,51 @@
 main.main-section {
-    height: fit-content;
+  height: fit-content;
+}
+
+.cards-list .card .link{
+  position: relative;
+}
+.cards-list .card .link i{
+  color: #1D1918;
+  font-weight: 600;
+  font-size: 34px;
+}
+.cards-list .card .link::before{
+  position: absolute;
+  left: -1px;
+  top: -1px;
+  content: '';
+  border: 2px solid #1D1918;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+}
+
+@media (min-width:320px)  {
+  /* smartphones, iPhone, portrait 480x320 phones */ 
+
+}
+
+@media (min-width:790px)  {
+   /* tablet, landscape iPad, lo-res laptops ands desktops */ 
+
+}
+
+@media (min-width:1025px) {
+   /* big landscape tablets, laptops, and desktops */ 
+  section.cards {
+    padding: 150px 0;
   }
+  section.cards .cards-list {
+    max-width: 1025px;
+  }
+  section.cards .cards-list .card {
+    width: 275px;
+  }
+  section.cards .cards-list .card:hover .link i{
+    color: #DE5542;
+  }
+  section.cards .cards-list .card:hover .link::before {
+    border-color: #DE5542;
+  }
+}
