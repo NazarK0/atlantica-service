@@ -21,9 +21,43 @@ main.main-section {
   border-radius: 50%;
 }
 
+section.about-company .btn {
+  background-color: #DE5542;
+  color: #fff;
+}
+section.about-company .btn:hover {
+  background-color: #1D1918;
+}
+section.about-company .btn:hover i {
+  color: #fff;
+}
+
 @media (min-width:320px)  {
   /* smartphones, iPhone, portrait 480x320 phones */ 
+  section.about-company {
+    background-image: url('../assets/images/bg1.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 75px 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  section.about-company img {
+    width: 100%;
+    max-width: 540px;
+  }
+  section.about-company .text-block {
+    padding: 75px 0 0;
+  }
 
+  section.about-company .description{
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.5;
+    margin-bottom: 45px;
+    max-width: 540px;
+  }
 }
 
 @media (min-width:790px)  {
@@ -47,5 +81,19 @@ main.main-section {
   }
   section.cards .cards-list .card:hover .link::before {
     border-color: #DE5542;
+  }
+
+  section.about-company {
+    flex-direction: row;
+    justify-content: center;
+    padding: 150px 0;
+  }
+
+  section.about-company img {
+    padding-right: 30px;
+  }
+
+  section.about-company .text-block {
+    padding: 20px 0 0 30px;
   }
 }

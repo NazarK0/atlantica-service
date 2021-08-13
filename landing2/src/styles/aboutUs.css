@@ -8,43 +8,7 @@ h2 {
   font-size: 38px;
 }
 
-.title-block .subtitle{
-  color: #DE5542;
-  font-size: 12px;
-  font-weight: 600;
-  letter-spacing: 2px;
-  margin-bottom: 5px;
-  line-height: 1.5;
-}
-.title-block.has-border .subtitle{
-  margin-left: 30px;
-}
 
-.title-block .section-title{
-  margin: 0 0 20px;
-}
-.title-block.has-border .section-title{
-  padding-left: 30px;
-  position: relative;
-}
-.title-block.has-border .section-title::before{
-  content: '';
-  position: absolute;
-  width: 3px;
-  height: 100%;
-  top: 0px;
-  left: 0;
-  background-color: transparent;
-  background-image: linear-gradient(180deg, #DE5542 0%, #DE5542 100%);
-}
-
-.btn {
-  padding: 20px 30px;
-  display: block;
-  width: fit-content;
-  height: fit-content;
-  transition: all .4s ease;
-}
 
 @media (min-width:320px)  {
   /* smartphones, iPhone, portrait 480x320 phones */ 
@@ -223,7 +187,7 @@ h2 {
   section.consultation .title-block{
     margin: 0 0 15px;
   }
-
+  
   section.consultation .btn {
     background-color: #1D1918;
     color: #fff;
