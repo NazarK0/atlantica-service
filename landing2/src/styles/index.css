@@ -76,15 +76,15 @@ section.about-company .btn:hover i {
     color: #DE5542;
   }
 
-  section.free-consultation .image-block{
+  section.free-consultation .block-2{
     background-image: url('../assets/images/img2.jpg');
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
     height: 200px;
   }
-  section.free-consultation .image-block-2,
-  section.free-consultation .image-block-3{
+  section.free-consultation .block-1,
+  section.free-consultation .block-3 {
     display: none;
   }
   section.free-consultation .text-block{
@@ -157,35 +157,45 @@ section.about-company .btn:hover i {
     flex-wrap: wrap;
     position: relative;
   }
-  section.free-consultation .image-block {
-    width: 60%;
-    height: 650px;
-  }
-  section.free-consultation .image-block-2 {
+  section.free-consultation .block-1 {
     display: block;
+    width: 35%;
+    height: 650px;
     background-image: url('../assets/images/bg3.png');
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
+  }
+  section.free-consultation .block-2 {
     height: 650px;
-    width: 40%;
+    width: 65%;
   }
 
-  section.free-consultation .image-block-3{
+  section.free-consultation .block-3{
     display: block;
     background-image: url('../assets/images/bg4.png');
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    width: 100%;
-    height: 570px;
+    width: 56%;
+    height: 355px;
+  }
+
+  section.free-consultation .block-4 {
+    display: block;
+    width: 44%;
+    height: 355px;
+    padding-top: 70px;
+    padding-right: 20px;
+    max-width: 1000px;
+    z-index: 5;
   }
 
   section.free-consultation .text-block{
     position: absolute;
     width: 570px;
     top: 25%;
-    left: 35%;
+    left: 12%;
   }
 }
 
@@ -194,6 +204,30 @@ section.about-company .btn:hover i {
     position: absolute;
     width: 570px;
     top: 25%;
-    left: 45%;
+    left: 15%;
+  }
+
+  section.free-consultation .block-3{
+    width: 50%;
+  }
+
+  section.free-consultation .block-4 {
+    width: 50%;
+  }
+}
+@media (min-width:2700px)  {
+  section.free-consultation .text-block{
+    position: absolute;
+    width: 570px;
+    top: 25%;
+    left: 20%;
+  }
+
+  section.free-consultation .block-3{
+    width: 43%;
+  }
+
+  section.free-consultation .block-4 {
+    width: 57%;
   }
 }

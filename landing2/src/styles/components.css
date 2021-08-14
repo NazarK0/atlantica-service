@@ -167,12 +167,12 @@
 }
 
 .accordion-head {
-  background-color: #f8f8f8;
-  color: #1D1918;
+  background-color: #dad8d6;
+  color: #a3938e;
   cursor: pointer;
-  padding: 18px;
+  padding: 14px 30px;
   width: 100%;
-  border-bottom: 2px solid #DE5542;
+  border-bottom: 2px solid #cf7f75;
   font-size: 16px;
   font-weight: 600;
   transition: 0.4s;
@@ -180,6 +180,7 @@
   align-items: center;
   justify-content: space-between;
 }
+
 .accordion-head .icon i{
   font-size: 30px;
   font-weight: 300;
@@ -197,20 +198,32 @@
   display: none;
 }
 
+.accordion-head.active {
+  background-color: #E1D8CF;
+  color: #1D1918;
+  border-bottom: 2px solid #DE5542;
+}
 
-.accordion-head.active, 
 .accordion-head:focus, 
 .accordion-head:hover {
-  background-color: #ccc;
+  background-color: #dad8d6;
+  color: #a3938e;
+  border-bottom: 2px solid #cf7f75;
+}
+.accordion-head.active:focus, 
+.accordion-head.hover:hover {
+  background-color: #E1D8CF;
+  color: #1D1918;
+  border-bottom: 2px solid #DE5542;
 }
 
 .accordion-panel {
-  padding: 0 18px;
-  background-color: white;
-  /* display: none; */
-  max-height: 0;
+  padding: 30px 85px 30px 65px;
+  background-color: #fff;
+  display: none;
+  max-height: 0px;
   overflow: hidden;
-  transition: max-height 0.2s ease-out;
+  transition: max-height .6s ease-out;
 }
 
 
