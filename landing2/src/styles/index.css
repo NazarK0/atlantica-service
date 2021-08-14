@@ -176,6 +176,41 @@ section.about-company .btn:hover i {
     opacity: .6;
     z-index: -1;
   }
+
+  section.blog {
+    padding: 75px 15px;
+  }
+  section.blog *{
+    font-family: 'Poppins', sans-serif;
+  }
+
+  section.blog .btn {
+    background-color: #1D1918;
+    color: #fff;
+  }
+  section.blog .btn:hover {
+    background-color: #DE5542;
+  }
+
+  section.blog .last-articles{
+    display: flex;
+    flex-direction: column;
+  }
+  section.blog .last-articles .article-card{
+    width: 100%;
+    height: fit-content;
+  }
+  section.blog .last-articles .article-card .card-text{
+    padding: 20px 40px 40px;
+  }
+  section.blog .last-articles .article-card .card-text .title {
+    font-size: 18px;
+    font-weight: 600;
+  }
+  section.blog .last-articles .article-card .card-text .description {
+    margin: 25px 0;
+    line-height: 1.9;
+  }
 }
 
 @media (min-width:790px)  {
