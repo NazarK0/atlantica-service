@@ -111,6 +111,71 @@ section.about-company .btn:hover i {
     background-repeat: no-repeat;
     background-size: cover;
   }
+
+  section.learn {
+    position: relative;
+    background-image: url('../assets/images/image-slide1.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 150px 15px;
+  }
+  section.learn *{
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+  }
+  section.learn .bg-overlay {
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background-color: #000;
+    opacity: .5;
+    transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+  }
+  section.learn .container {
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+  }
+  section.learn .text-block {
+    z-index: 10;
+    max-width: 540px;
+  }
+  section.learn .text-block .title-block{
+    padding-bottom: 15px;
+  }
+  section.learn .text-block .description{
+    line-height: 1.5;
+    font-size: 16px;
+    margin-bottom: 25px;
+  }
+  section.learn .play-video {
+    padding: 35px 0 0 10px;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 150px;
+  }
+  section.learn .play-video i{
+    font-size: 86px;
+  }
+
+  section.learn .play-video i::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    animation: button-ripple 3s infinite;
+    opacity: .6;
+    z-index: -1;
+  }
 }
 
 @media (min-width:790px)  {
@@ -197,6 +262,14 @@ section.about-company .btn:hover i {
     top: 25%;
     left: 12%;
   }
+
+  section.learn{
+    padding: 200px 0;
+  }
+  section.learn .container{
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
 
 @media (min-width:1800px)  {
