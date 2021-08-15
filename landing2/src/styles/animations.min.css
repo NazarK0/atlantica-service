@@ -1,3 +1,26 @@
+@keyframes rotateAndZoom {
+  from {
+    transform: scale(1) rotate(0deg);
+    opacity: 1;
+  }
+  to {
+    transform: scale(1.1) rotate(4deg);
+    opacity: .5;
+  }
+}
+
+@keyframes button-ripple {
+  70% {
+    box-shadow: 0 0 0 15px currentColor;
+    opacity: 0;
+  }
+  100% {
+    box-shadow: 0 0 0 0 currentColor;
+    opacity: 0;
+  }
+}
+
+
 @keyframes bounce {
   20%,
   53%,
