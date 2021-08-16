@@ -30,6 +30,7 @@
   <script src="../js/animations.js" defer></script>
   <!-- <script src="../js/animationsAboutUs.js" defer></script> -->
   <script src="../js/sliderPartners.js" defer></script>
+  <script src="../js/skill-graph.js" defer></script>
 </head>
 <body>
   <header class="header">
@@ -169,20 +170,60 @@
     </div>
   </section>
   <section class="our-teams">
-    <div class="image-block"></div>
-    <div class="image-block-2"></div>
-    <div class="image-block-3"></div>
-    <div class="text-block">
-      <div class="title-block">
-        <span class="subtitle">TOL FREE</span>
-        <h2 class="section-title">Free Project<br>Consultation</h2>
+    <div class="top-block">
+      <div class="image-block-1"></div>
+      <div class="image-block-2"></div>
+    </div>
+    <div class="bottom-block">
+      <div class="wrapper">
+        <div class="image-block-3">
+          <ul id="skill-graph" class="graph">
+            <li class="skill-bar">
+              <div class="skill-track">
+                <span class="title">Quality Construction</span>
+                <span class="value">
+                  <span class="number" id="track-bar-number">100</span>
+                  <span class="percentage">%</span>
+                  <i class="icofont-check"></i>
+                </span>
+              </div>
+            </li>
+            <li class="skill-bar">
+              <div class="skill-track">
+                <span class="title">Project Management</span>
+                <span class="value">
+                  <span class="number">80</span>
+                  <span class="percentage">%</span>
+                  <i class="icofont-check"></i>
+                </span>
+              </div>
+            </li>
+            <li class="skill-bar">
+              <div class="skill-track">
+                <span class="title">Design Quality</span>
+                <span class="value">
+                  <span class="number" id="track-bar-number">70</span>
+                  <span class="percentage">%</span>
+                  <i class="icofont-check"></i>
+                </span>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="text-block">
+          <div class="title-block">
+            <span class="subtitle">TOL FREE</span>
+            <h2 class="section-title">Free Project<br>Consultation</h2>
+          </div>
+          <p class="description">
+            Lorem ipsum dolor sit amet consectetur adipisicing 
+            elit. Assumenda illo corporis molestias ex repellendus 
+            ipsum eum.
+          </p>
+          <a href="#" class="btn">Learn More&nbsp;<i class="icofont-long-arrow-right"></i></a>
+        </div>
       </div>
-      <p class="description">
-        Lorem ipsum dolor sit amet consectetur adipisicing 
-        elit. Assumenda illo corporis molestias ex repellendus 
-        ipsum eum.
-      </p>
-      <a href="#" class="btn">Learn More&nbsp;<i class="icofont-long-arrow-right"></i></a>
+      
     </div>
   </section>
   <section class="pricing-table">

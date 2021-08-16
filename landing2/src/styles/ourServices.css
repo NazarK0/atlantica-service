@@ -153,17 +153,56 @@ h2 {
   section.our-teams .btn:hover i {
     color: #DE5542;
   }
+  section.our-teams .top-block, 
+  section.our-teams .bottom-block .wrapper{
+    width: 100%;
+    display: flex;
+    padding: 0;
+  }
+  section.our-teams .top-block {
+    flex-direction: column;
+  }
+  section.our-teams .bottom-block .wrapper{
+    flex-direction: column-reverse;
+  }
+  section.our-teams .graph .skill-bar {
+    width: 100%;
+    height: 35px;
+    margin-bottom: 18px;
+  }
+  section.our-teams .graph .skill-track {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+    color: #fff;
+    height: 100%;
+    transition: width 5s ease;
+  }
+  section.our-teams .graph .skill-bar:nth-child(even) .skill-track {
+    background-image: linear-gradient(-90deg, #FFFFFF 0%, #1D1918 30%);
+  }
+  section.our-teams .graph .skill-bar:nth-child(odd) .skill-track {
+    background-image: linear-gradient(-90deg, #FFFFFF 0%, #DE5542 30%);
+  }
 
-  section.our-teams .image-block{
+  section.our-teams .graph .skill-track  .value .percentage{
+    padding-right: 7px;
+  }
+
+  section.our-teams .image-block-1{
     background-image: url('../assets/images/img2.jpg');
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
     height: 200px;
   }
-  section.our-teams .image-block-2,
-  section.our-teams .image-block-3{
+  section.our-teams .image-block-2{
     display: none;
+  }
+  section.our-teams .image-block-3{
+    padding: 75px 0 0;
   }
   section.our-teams .text-block{
     padding: 120px 30px;
@@ -344,7 +383,13 @@ h2 {
     position: relative;
     padding: 0;
   }
-  section.our-teams .image-block {
+  section.our-teams .top-block, 
+  section.our-teams .bottom-block .wrapper{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+  }
+  section.our-teams .image-block-1 {
     width: 60%;
     height: 650px;
   }
@@ -364,15 +409,25 @@ h2 {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    width: 100%;
+    width: 50%;
     height: 570px;
+  }
+  section.our-teams .image-block-3 .wrapper{
+    max-width: 1080px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  section.our-teams .image-block-3 .skill-bar{
+    padding-left: 50px;
   }
 
   section.our-teams .text-block{
-    position: absolute;
-    width: 570px;
-    top: 25%;
-    left: 35%;
+    position: relative;
+    /* margin: -350px 0px 100px 0px;
+    padding: 150px 75px 150px 75px; */
+    width: 50%;
+    top: -180px;
+    
   }
 
   section.pricing-table {
@@ -380,11 +435,11 @@ h2 {
   }
 }
 
-@media (min-width:1800px)  {
+/* @media (min-width:1800px)  {
   section.our-teams .text-block{
     position: absolute;
     width: 570px;
     top: 25%;
     left: 45%;
   }
-}
+} */
