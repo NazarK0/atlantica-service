@@ -31,6 +31,7 @@
   <script src="../js/animationsIndex.js" defer></script>
   <script src="../js/slider.js" defer></script>
   <script src="../js/questionsAccordion.js" defer></script>
+  <script src="../js/scrollToTop.js" defer></script>
 </head>
 <body>
   <header class="header">
@@ -46,31 +47,13 @@
       <nav class="nav-menu">
         <ul class="menu">
           <li class="menu-item dropdown"><a href="#">Home<span class="bullet">+</span></a></li>
-          <!-- <li class="menu-item dropdown">
-            <span>Pages<span class="bullet">+</span></span>
-            <div class="dropdown-content animate__animated">
-              <nav>
-                <ul class="dropdown-menu">
-                  <li class="menu-item ">
-                    <a href="#">About Us</a>
-                  </li>
-                  <li class="menu-item">
-                    <a href="#">About Us</a>
-                  </li>
-                  <li class="menu-item">
-                    <a href="#">About Us</a>
-                  </li>
-                </ul>
-              </nav>
-            </div>
-          </li> -->
           <li class="menu-item dropdown"><a href="news.html">News<span class="bullet">+</span></a></li>
           <li class="menu-item dropdown"><a href="ourServices.html">Our Services<span class="bullet">+</span></a></li>
           <li class="menu-item dropdown"><a href="aboutUs.html">About Us<span class="bullet">+</span></a></li>
           <li class="menu-item dropdown"><a href="contactUs.html">Contact Us<span class="bullet">+</span></a></li>
         </ul>
       </nav>
-      <button class="search accent-with-hover" id="searchButton">
+      <button class="search accent-with-hover" id="search-open">
         <i class="icofont-search-1"></i>
       </button>
     </div>
@@ -567,32 +550,49 @@
       <nav>
         <ul class="menu">
           <li class="menu-item active">
-            <span>Item</span>
-            <button class="sub-menu" id="subMenu">
+            <a href="index.html" class="sub-menu" id="subMenu">
+              <span>Home</span>
               <i class="icofont-hand-drawn-down"></i>
-            </button>
+            </a>
           </li>
           <li class="menu-item">
-            <span>Item</span>
-            <button class="sub-menu" id="subMenu">
+            <a href="news.html" class="sub-menu" id="subMenu">
+              <span>News</span>
               <i class="icofont-hand-drawn-down"></i>
-            </button>
+            </a>
           </li>
           <li class="menu-item">
-            <span>Item</span>
-            <button class="sub-menu" id="subMenu">
+            <a href="ourServices.html" class="sub-menu" id="subMenu">
+              <span>Our Services</span>
               <i class="icofont-hand-drawn-down"></i>
-            </button>
+            </a>
           </li>
           <li class="menu-item">
-            <span>Item</span>
-            <button class="sub-menu" id="subMenu">
+            <a href="aboutUs.html" class="sub-menu" id="subMenu">
+              <span>About Us</span>
               <i class="icofont-hand-drawn-down"></i>
-            </button>
+            </a>
+          </li>
+          <li class="menu-item">
+            <a href="contactUs.html" class="sub-menu" id="subMenu">
+              <span>Contact Us</span>
+              <i class="icofont-hand-drawn-down"></i>
+            </a>
           </li>
         </ul>
       </nav>
     </div>
   </div>
+  <div id="modalSearch" class="modal modal-search">
+    <div class="search-close"><i class="icofont-close-circled"></i></i></div>
+    <!-- Modal content -->
+    <div class="modal-content">
+      <form action="">
+        <input type="search" name="" id="" placeholder="Search...">
+        <button><i class="icofont-search"></i></button>
+      </form>
+    </div>
+  </div>
+  <button class="scroll-to-top"><i class="icofont-arrow-up"></i></button>
 </body>
 </html>

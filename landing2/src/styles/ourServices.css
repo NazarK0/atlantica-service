@@ -435,11 +435,8 @@ h2 {
   }
 }
 
-/* @media (min-width:1800px)  {
-  section.our-teams .text-block{
-    position: absolute;
-    width: 570px;
-    top: 25%;
-    left: 45%;
+@media (min-width:1800px)  {
+  section.our-teams .image-block-3 .wrapper{
+    max-width: 1700px;
   }
-} */
+}

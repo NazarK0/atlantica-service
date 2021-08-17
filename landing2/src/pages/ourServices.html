@@ -28,9 +28,9 @@
   <script src="https://kit.fontawesome.com/539e519a18.js" crossorigin="anonymous"></script>
   <script src="../js/modalMenu.js" defer></script>
   <script src="../js/animations.js" defer></script>
-  <!-- <script src="../js/animationsAboutUs.js" defer></script> -->
   <script src="../js/sliderPartners.js" defer></script>
   <script src="../js/skill-graph.js" defer></script>
+  <script src="../js/scrollToTop.js" defer></script>
 </head>
 <body>
   <header class="header">
@@ -44,34 +44,15 @@
         <span class="hamburger-line"></span>
       </button>
       <nav class="nav-menu">
-         <ul class="menu">
+        <ul class="menu">
           <li class="menu-item dropdown"><a href="index.html">Home<span class="bullet">+</span></a></li>
-          <!-- <li class="menu-item dropdown">
-            <span>Pages<span class="bullet">+</span></span>
-            <div class="dropdown-content animate__animated">
-              <nav>
-                <ul class="dropdown-menu">
-                  <li class="menu-item ">
-                    <a href="#">About Us</a>
-                  </li>
-                  <li class="menu-item">
-                    <a href="#">About Us</a>
-                  </li>
-                  <li class="menu-item">
-                    <a href="#">About Us</a>
-                  </li>
-                </ul>
-              </nav>
-            </div>
-          </li> -->
           <li class="menu-item dropdown"><a href="news.html">News<span class="bullet">+</span></a></li>
           <li class="menu-item dropdown"><a href="#">Our Services<span class="bullet">+</span></a></li>
           <li class="menu-item dropdown"><a href="aboutUs.html">About Us<span class="bullet">+</span></a></li>
           <li class="menu-item dropdown"><a href="contactUs.html">Contact Us<span class="bullet">+</span></a></li>
         </ul>
-        
       </nav>
-      <button class="search accent-with-hover" id="searchButton">
+      <button class="search accent-with-hover" id="search-open">
         <i class="icofont-search-1"></i>
       </button>
     </div>
@@ -241,7 +222,7 @@
           <span class="price">5.000</span>
           <sub class="period">Month</sub>
         </div>
-         <ul class="conditions-list">
+        <ul class="conditions-list">
           <li class="condition">5-10 Workers</li>
           <li class="condition">Including Design</li>
           <li class="condition">Project Management</li>
@@ -271,7 +252,7 @@
           <span class="price">5.000</span>
           <sub class="period">Month</sub>
         </div>
-         <ul class="conditions-list">
+        <ul class="conditions-list">
           <li class="condition">5-10 Workers</li>
           <li class="condition">Including Design</li>
           <li class="condition">Project Management</li>
@@ -434,33 +415,50 @@
       </div>
       <nav>
         <ul class="menu">
+          <li class="menu-item">
+            <a href="index.html" class="sub-menu" id="subMenu">
+              <span>Home</span>
+              <i class="icofont-hand-drawn-down"></i>
+            </a>
+          </li>
+          <li class="menu-item">
+            <a href="news.html" class="sub-menu" id="subMenu">
+              <span>News</span>
+              <i class="icofont-hand-drawn-down"></i>
+            </a>
+          </li>
           <li class="menu-item active">
-            <span>Item</span>
-            <button class="sub-menu" id="subMenu">
+            <a href="ourServices.html" class="sub-menu" id="subMenu">
+              <span>Our Services</span>
               <i class="icofont-hand-drawn-down"></i>
-            </button>
+            </a>
           </li>
           <li class="menu-item">
-            <span>Item</span>
-            <button class="sub-menu" id="subMenu">
+            <a href="aboutUs.html" class="sub-menu" id="subMenu">
+              <span>About Us</span>
               <i class="icofont-hand-drawn-down"></i>
-            </button>
+            </a>
           </li>
           <li class="menu-item">
-            <span>Item</span>
-            <button class="sub-menu" id="subMenu">
+            <a href="contactUs.html" class="sub-menu" id="subMenu">
+              <span>Contact Us</span>
               <i class="icofont-hand-drawn-down"></i>
-            </button>
-          </li>
-          <li class="menu-item">
-            <span>Item</span>
-            <button class="sub-menu" id="subMenu">
-              <i class="icofont-hand-drawn-down"></i>
-            </button>
+            </a>
           </li>
         </ul>
       </nav>
     </div>
   </div>
+  <div id="modalSearch" class="modal modal-search">
+    <div class="search-close"><i class="icofont-close-circled"></i></i></div>
+    <!-- Modal content -->
+    <div class="modal-content">
+      <form action="">
+        <input type="search" name="" id="" placeholder="Search...">
+        <button><i class="icofont-search"></i></button>
+      </form>
+    </div>
+  </div>
+  <button class="scroll-to-top"><i class="icofont-arrow-up"></i></button>
 </body>
 </html>

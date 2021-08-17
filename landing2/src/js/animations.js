@@ -1,4 +1,5 @@
 const menuItems = document.querySelectorAll('.block.menu .menu>.menu-item');
+const menuHeader = document.querySelector('.block.logo.accent-with-hover')
 
 menuItems.forEach(item => {
   item.addEventListener('mouseover', () => {
@@ -10,4 +11,13 @@ menuItems.forEach(item => {
     const submenu = item.querySelector('.dropdown-content')
     submenu?.classList.remove('animate__fadeInUp');
   });
+});
+
+menuHeader.addEventListener('mouseover', ()=> {
+  const img = menuHeader.querySelector('img');
+  img.src = '../assets/images/logo/logo_full_color.png'
+})
+menuHeader.addEventListener('mouseleave', ()=> {
+  const img = menuHeader.querySelector('img');
+  img.src = '../assets/images/logo/logo_full_black.png'
 })

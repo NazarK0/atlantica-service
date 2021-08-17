@@ -23,6 +23,7 @@
   <script src="../js/animateNumber.js"></script>
   <script src="../js/animations.js" defer></script>
   <script src="../js/animationsAboutUs.js" defer></script>
+  <script src="../js/scrollToTop.js" defer></script>
 </head>
 <body>
   <header class="header">
@@ -38,36 +39,16 @@
       <nav class="nav-menu">
         <ul class="menu">
           <li class="menu-item dropdown"><a href="index.html">Home<span class="bullet">+</span></a></li>
-          <!-- <li class="menu-item dropdown">
-            <span>Pages<span class="bullet">+</span></span>
-            <div class="dropdown-content animate__animated">
-              <nav>
-                <ul class="dropdown-menu">
-                  <li class="menu-item ">
-                    <a href="#">About Us</a>
-                  </li>
-                  <li class="menu-item">
-                    <a href="#">About Us</a>
-                  </li>
-                  <li class="menu-item">
-                    <a href="#">About Us</a>
-                  </li>
-                </ul>
-              </nav>
-            </div>
-          </li> -->
           <li class="menu-item dropdown"><a href="news.html">News<span class="bullet">+</span></a></li>
           <li class="menu-item dropdown"><a href="ourServices.html">Our Services<span class="bullet">+</span></a></li>
           <li class="menu-item dropdown"><a href="#">About Us<span class="bullet">+</span></a></li>
           <li class="menu-item dropdown"><a href="contactUs.html">Contact Us<span class="bullet">+</span></a></li>
         </ul>
-        
       </nav>
-      <button class="search accent-with-hover" id="searchButton">
+      <button class="search accent-with-hover" id="search-open">
         <i class="icofont-search-1"></i>
       </button>
     </div>
-
   </header>
   <main class="main-section">
     <div class="title-block has-border">
@@ -185,23 +166,6 @@
         </a>
       </li>
     </ul>
-  </section>
-  <section class="our-teams">
-    <div class="image-block"></div>
-    <div class="image-block-2"></div>
-    <div class="image-block-3"></div>
-    <div class="text-block">
-      <div class="title-block">
-        <span class="subtitle">OUR TEAMS</span>
-        <h2 class="section-title">Learn The<br>Professional Team</h2>
-      </div>
-      <p class="description">
-        Lorem ipsum dolor sit amet consectetur adipisicing 
-        elit. Assumenda illo corporis molestias ex repellendus 
-        ipsum eum.
-      </p>
-      <a href="#" class="btn">Learn More&nbsp;<i class="icofont-long-arrow-right"></i></a>
-    </div>
   </section>
   <section class="our-teams">
     <div class="image-block"></div>
@@ -345,33 +309,50 @@
       </div>
       <nav>
         <ul class="menu">
+          <li class="menu-item">
+            <a href="index.html" class="sub-menu" id="subMenu">
+              <span>Home</span>
+              <i class="icofont-hand-drawn-down"></i>
+            </a>
+          </li>
+          <li class="menu-item">
+            <a href="news.html" class="sub-menu" id="subMenu">
+              <span>News</span>
+              <i class="icofont-hand-drawn-down"></i>
+            </a>
+          </li>
+          <li class="menu-item">
+            <a href="ourServices.html" class="sub-menu" id="subMenu">
+              <span>Our Services</span>
+              <i class="icofont-hand-drawn-down"></i>
+            </a>
+          </li>
           <li class="menu-item active">
-            <span>Item</span>
-            <button class="sub-menu" id="subMenu">
+            <a href="aboutUs.html" class="sub-menu" id="subMenu">
+              <span>About Us</span>
               <i class="icofont-hand-drawn-down"></i>
-            </button>
+            </a>
           </li>
           <li class="menu-item">
-            <span>Item</span>
-            <button class="sub-menu" id="subMenu">
+            <a href="contactUs.html" class="sub-menu" id="subMenu">
+              <span>Contact Us</span>
               <i class="icofont-hand-drawn-down"></i>
-            </button>
-          </li>
-          <li class="menu-item">
-            <span>Item</span>
-            <button class="sub-menu" id="subMenu">
-              <i class="icofont-hand-drawn-down"></i>
-            </button>
-          </li>
-          <li class="menu-item">
-            <span>Item</span>
-            <button class="sub-menu" id="subMenu">
-              <i class="icofont-hand-drawn-down"></i>
-            </button>
+            </a>
           </li>
         </ul>
       </nav>
     </div>
   </div>
+  <div id="modalSearch" class="modal modal-search">
+    <div class="search-close"><i class="icofont-close-circled"></i></i></div>
+    <!-- Modal content -->
+    <div class="modal-content">
+      <form action="">
+        <input type="search" name="" id="" placeholder="Search...">
+        <button><i class="icofont-search"></i></button>
+      </form>
+    </div>
+  </div>
+  <button class="scroll-to-top"><i class="icofont-arrow-up"></i></button>
 </body>
 </html>

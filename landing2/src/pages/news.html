@@ -21,6 +21,7 @@
   <script src="https://kit.fontawesome.com/539e519a18.js" crossorigin="anonymous"></script>
   <script src="../js/modalMenu.js" defer></script>
   <script src="../js/animations.js" defer></script>
+  <script src="../js/scrollToTop.js" defer></script>
 </head>
 <body>
   <header class="header">
@@ -34,34 +35,15 @@
         <span class="hamburger-line"></span>
       </button>
       <nav class="nav-menu">
-         <ul class="menu">
+        <ul class="menu">
           <li class="menu-item dropdown"><a href="index.html">Home<span class="bullet">+</span></a></li>
-          <!-- <li class="menu-item dropdown">
-            <span>Pages<span class="bullet">+</span></span>
-            <div class="dropdown-content animate__animated">
-              <nav>
-                <ul class="dropdown-menu">
-                  <li class="menu-item ">
-                    <a href="#">About Us</a>
-                  </li>
-                  <li class="menu-item">
-                    <a href="#">About Us</a>
-                  </li>
-                  <li class="menu-item">
-                    <a href="#">About Us</a>
-                  </li>
-                </ul>
-              </nav>
-            </div>
-          </li> -->
           <li class="menu-item dropdown"><a href="#">News<span class="bullet">+</span></a></li>
           <li class="menu-item dropdown"><a href="ourServices.html">Our Services<span class="bullet">+</span></a></li>
           <li class="menu-item dropdown"><a href="aboutUs.html">About Us<span class="bullet">+</span></a></li>
           <li class="menu-item dropdown"><a href="contactUs.html">Contact Us<span class="bullet">+</span></a></li>
         </ul>
-        
       </nav>
-      <button class="search accent-with-hover" id="searchButton">
+      <button class="search accent-with-hover" id="search-open">
         <i class="icofont-search-1"></i>
       </button>
     </div>
@@ -189,20 +171,25 @@
         <ul class="posts-list">
           <li class="post-item">
             <a class="img" href="#"><img src="../assets/images/img3-70x70.jpg" alt=""></a>
-            <a class="date" href="#">27 Feb, 2021</a>
-            <a class="title" href="#">Best Construction Jobs by Professionals</a>
-          </li>
+            <div class="body">
+              <a class="date" href="#">27 Feb, 2021</a>
+              <a class="title" href="#">Best Construction Jobs by Professionals</a>
+            </div>
+          </li>       
           <li class="post-item">
             <a class="img" href="#"><img src="../assets/images/img3-70x70.jpg" alt=""></a>
-            <a class="date" href="#">27 Feb, 2021</a>
-            <a class="title" href="#">Best Construction Jobs by Professionals</a>
-          </li>
+            <div class="body">
+              <a class="date" href="#">27 Feb, 2021</a>
+              <a class="title" href="#">Best Construction Jobs by Professionals</a>
+            </div>
+          </li>       
           <li class="post-item">
             <a class="img" href="#"><img src="../assets/images/img3-70x70.jpg" alt=""></a>
-            <a class="date" href="#">27 Feb, 2021</a>
-            <a class="title" href="#">Best Construction Jobs by Professionals</a>
-          </li>
-          
+            <div class="body">
+              <a class="date" href="#">27 Feb, 2021</a>
+              <a class="title" href="#">Best Construction Jobs by Professionals</a>
+            </div>
+          </li>       
         </ul>
       </div>
       <div class="block categories">
@@ -228,36 +215,52 @@
           <li class="tag-item">
             <a href="#">building</a>
           </li>
-          <li class="category-item">
-            <a href="#">plan</a>
+          <li class="tag-item">
+            <a href="#">company</a>
           </li>
-          <li class="category-item">
+          <li class="tag-item">
+            <a href="#">construction</a>
+          </li>
+          
+          <li class="tag-item">
             <a href="#">energy</a>
           </li>
-          <li class="category-item">
+          <li class="tag-item">
+            <a href="#">equipment</a>
+          </li>
+          <li class="tag-item">
+            <a href="#">facility</a>
+          </li>
+          <li class="tag-item">
             <a href="#">industry</a>
           </li>
-          <li class="category-item">
-            <a href="#">worker</a>
-          </li>
-          <li class="category-item">
+          <li class="tag-item">
             <a href="#">infrastructure</a>
+          </li>
+          <li class="tag-item">
+            <a href="#">plan</a>
+          </li>
+          <li class="tag-item">
+            <a href="#">worker</a>
           </li>
         </ul>
       </div>
       <div class="block social">
         <h4 class="title">SOCIAL</h4>
         <ul class="social-links">
-          <li class="social-item">
+          <li class="social-item fb">
             <a href="#"><i class="icofont-facebook"></i></a>
           </li>
-          <li class="social-item">
+          <li class="social-item tw">
+            <a href="#"><i class="icofont-twitter"></i></a>
+          </li>
+          <li class="social-item it">
             <a href="#"><i class="icofont-instagram"></i></a>
           </li>
-          <li class="social-item">
+          <li class="social-item in">
             <a href="#"><i class="icofont-linkedin"></i></a>
           </li>
-          <li class="social-item">
+          <li class="social-item pi">
             <a href="#"><i class="icofont-pinterest"></i></a>
           </li>
         </ul>
@@ -382,33 +385,50 @@
       </div>
       <nav>
         <ul class="menu">
+          <li class="menu-item">
+            <a href="index.html" class="sub-menu" id="subMenu">
+              <span>Home</span>
+              <i class="icofont-hand-drawn-down"></i>
+            </a>
+          </li>
           <li class="menu-item active">
-            <span>Item</span>
-            <button class="sub-menu" id="subMenu">
+            <a href="news.html" class="sub-menu" id="subMenu">
+              <span>News</span>
               <i class="icofont-hand-drawn-down"></i>
-            </button>
+            </a>
           </li>
           <li class="menu-item">
-            <span>Item</span>
-            <button class="sub-menu" id="subMenu">
+            <a href="ourServices.html" class="sub-menu" id="subMenu">
+              <span>Our Services</span>
               <i class="icofont-hand-drawn-down"></i>
-            </button>
+            </a>
           </li>
           <li class="menu-item">
-            <span>Item</span>
-            <button class="sub-menu" id="subMenu">
+            <a href="aboutUs.html" class="sub-menu" id="subMenu">
+              <span>About Us</span>
               <i class="icofont-hand-drawn-down"></i>
-            </button>
+            </a>
           </li>
           <li class="menu-item">
-            <span>Item</span>
-            <button class="sub-menu" id="subMenu">
+            <a href="contactUs.html" class="sub-menu" id="subMenu">
+              <span>Contact Us</span>
               <i class="icofont-hand-drawn-down"></i>
-            </button>
+            </a>
           </li>
         </ul>
       </nav>
     </div>
   </div>
+  <div id="modalSearch" class="modal modal-search">
+    <div class="search-close"><i class="icofont-close-circled"></i></i></div>
+    <!-- Modal content -->
+    <div class="modal-content">
+      <form action="">
+        <input type="search" name="" id="" placeholder="Search...">
+        <button><i class="icofont-search"></i></button>
+      </form>
+    </div>
+  </div>
+  <button class="scroll-to-top"><i class="icofont-arrow-up"></i></button>
 </body>
 </html>
