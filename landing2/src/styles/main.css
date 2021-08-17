@@ -28,6 +28,13 @@ button:hover {
   cursor: pointer;
   user-select: none;
 }
+input,
+input:active,
+input:focus,
+input:hover {
+  outline: none;
+  border: 0;
+}
 
 h3 {
   font-size: 1.3rem;

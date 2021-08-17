@@ -1,0 +1,195 @@
+@media (min-width:320px)  {
+  /* smartphones, iPhone, portrait 480x320 phones */ 
+  main.main-section {
+    position: relative;
+    top: 130px;
+    padding: 80px 15px 50px;
+    display: flex;
+    flex-direction: column;
+    transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+  }
+  main.main-section *{
+    font-family: 'Poppins', sans-serif;
+  }
+  main.main-section section.news {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  main.main-section section.news .news-list{
+    /* display: flex;
+    flex-direction: column;
+    width: 100%; */
+  }
+  main.main-section section.news .news-list .news-item{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  main.main-section section.news .news-list .news-item img{
+    width: 100%;
+  }
+  main.main-section section.news .news-list .news-item .text-block {
+    padding: 50px 0 75px;
+  }
+  main.main-section section.news .news-list .news-item .meta-info {
+    display: flex;
+    margin: 0 0 25px;
+  }
+  main.main-section section.news .news-list .news-item .meta-group {
+    margin-right: 28px;
+    color: #666;
+  }
+  main.main-section section.news .news-list .news-item .meta-group .icon {
+    margin-right: 6px;
+    color: #DE5542;
+  }
+  main.main-section section.news .news-list .news-item .meta-group a {
+    color: #DE5542;
+  }
+  main.main-section section.news .news-list .news-item .title {
+    margin-bottom: 20px;
+  }
+  main.main-section section.news .news-list .news-item .title a{
+    color: #1D1918;
+    font-size: 24px;
+  }
+  main.main-section section.news .news-list .news-item .description{
+    color: #7a7a7a;
+    font-size: 16px;
+    line-height: 26px;
+    margin-bottom: 25px;
+  }
+
+  main.main-section section.news .news-list .news-item .btn {
+    background-color: #DE5542;
+    color: #fff;
+  }
+  main.main-section section.news .news-list .news-item .btn:hover {
+    background-color: #1D1918;
+  }
+  main.main-section section.news .pages-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+    padding-bottom: 28px;
+  }
+  main.main-section section.news .pages-list .page {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #dadada;
+    font-size: 16px;
+    margin-right: 8px;
+  }
+  main.main-section section.news .pages-list .page.active {
+    background-color: #DE5542;
+  }
+  main.main-section section.news .pages-list .page.active:hover {
+    background-color: #dadada;
+  }
+  main.main-section section.news .pages-list .page:hover {
+    background-color: #DE5542;
+  }
+  main.main-section section.news .pages-list .page a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    color: #666;;
+  }
+  main.main-section section.news .pages-list .page a span{
+    font-size: 16px;
+  }
+  main.main-section section.search-bar .search-field{
+    height: 52px;
+    display: flex;
+    align-items: stretch;
+    width: 100%;
+    margin-bottom: 40px;
+  }
+  main.main-section section.search-bar .search-field input{
+    flex: 1 1 auto;
+    border: 1px solid #eaeaea;
+    padding: 6px 12px;
+  }
+  main.main-section section.search-bar .search-field input::placeholder{
+    font-family: 'Poppins', sans-serif;
+    color: #7a7a7a;
+    font-size: 14px;
+  }
+  main.main-section section.search-bar .search-field button{
+    width: 52px;
+    color: #fff;
+    background-color: #DE5542;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  main.main-section section.search-bar .search-field button i{
+    font-size: 16px;
+  }
+  main.main-section section.search-bar .search-field button:hover{
+    background-color: #1D1918;
+  }
+  main.main-section section.search-bar .block{
+    padding: 40px;
+    margin-bottom: 40px;
+    border: 1px solid #EAEAEA;
+  }
+  main.main-section section.search-bar .block .title{
+    position: relative;
+    padding-bottom: 15px;
+    margin-bottom: 30px;
+    font-size: 18px;
+    color: #1D1918;
+  }
+  main.main-section section.search-bar .block>.title::before{
+    content: '';
+    position: absolute;
+    display: inline-block;
+    bottom: 0px;
+    width: 30px;
+    height: 3px;
+    left: 0;
+    z-index: 1;
+    background: #FF6C00;
+    border-color: #FF6C00;
+  }
+  main.main-section section.search-bar .block.recent-posts .post-item{
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-template-rows: 35px 35px;
+    grid-template-areas: 
+      'img date'
+      'img title';
+  }
+  main.main-section section.search-bar .block.recent-posts .post-item .img{
+    grid-area: img;
+  }
+  main.main-section section.search-bar .block.recent-posts .post-item .date{
+    grid-area: date;
+  }
+  main.main-section section.search-bar .block.recent-posts .post-item .title{
+    grid-area: title;
+  }
+  
+  
+
+
+}
+
+@media (min-width:790px)  {
+   /* tablet, landscape iPad, lo-res laptops ands desktops */ 
+  main.main-section {
+    padding: 75px 30px;
+  }
+}
+
+@media (min-width:1025px) {
+   /* big landscape tablets, laptops, and desktops */ 
+  
+}
+
